@@ -1,0 +1,225 @@
+#bodyIndex{
+    overflow-x: hidden;
+
+    .mockup-web {
+        width: 40%;
+    }
+}
+.headerEfecto{
+    color: $color3;
+    background-color: $color4;
+    width: 100%;
+}
+
+.heroIndex{
+    background-size: 100%;
+    width: 50%;
+    margin: 3rem auto 0rem;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+}
+
+.link-inicio a{
+    text-decoration: none;
+}
+.hidden-xs {
+    display: none;
+}
+.flex-design,
+.flex-web {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+}
+.contBlur{
+    background-size: contain;
+    width: 95%;
+    height: fit-content;
+    margin: 3rem auto;
+    position: center;
+    backdrop-filter: blur(0.5rem);
+    z-index: 0;
+    border-radius: 0.25rem;
+    border: 0.15rem solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 5px rgba(29, 29, 29, 0.247), 0px -10px 5px rgba(32, 32, 32, 0.199);
+}
+
+.contBlurNegro{
+    background-size: contain;
+    width: 100%;
+    height: fit-content;
+    position: center;
+    background-color: $color4;
+    z-index: 0;
+    border-radius: 0.25rem;
+}
+
+.containerServicios{
+    background-size: contain;
+    width: 95%;
+    height: fit-content;
+    margin: 3rem auto;
+    position: center;
+}
+
+.flex__servicios{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex__servicios--hijo{
+    width: 320px;
+    padding: 1%;
+    text-align: center;
+    animation-duration: 2s;
+    align-content: space-around;
+
+                i{
+                    justify-content: space-evenly;
+                    font-size: 2rem;
+                    color: $color2;
+                    margin-bottom: 0.5rem;
+                    opacity: 80%;
+                }
+                h2{
+                    text-align: center;
+                    color: $color1;
+                    text-shadow: 0px 0px 20px rgb(255, 111, 212);
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                }
+                p{
+                    text-align: left;
+                    color: $color4;
+                    font-size: 14px;
+                }
+                .pinkLine{
+                    color: $color1;
+                    text-shadow: 0px 0px 20px rgb(255, 111, 212);
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+}
+
+.titulo-referencias{
+    color: $color3;
+    text-shadow: 0px 0px 20px rgb(255, 111, 212);
+}
+
+
+// referencias sobre mí mobile
+
+
+
+
+    .titulo-referencias{
+        color: $color3;
+        text-shadow: 0px 0px 20px rgb(255, 111, 212);
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 1.75rem;
+    }
+
+
+.hidden-sm{
+    display: none;
+}
+
+.section-referencias{
+    background-image: url(/img/background-referencias.png);
+    background-size: 100% 14rem;
+    background-repeat: no-repeat;
+    height: 14rem !important;
+}
+
+.container-cards-web2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem auto;
+    gap: 0.5rem;
+
+
+    .card{
+        width: 14rem;
+        height: 12rem;
+        margin: 2.25rem 0.1rem 1rem 2.25rem;
+        background-color: transparent;
+        color: $color3;
+    }
+
+    h5{
+        text-shadow: 0px 0px 20px $color1;
+        color: $color3;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    p{
+        padding: 0.5rem 0rem 0.5rem 1.5rem;
+        margin: 0rem;
+        font-size: 0.75rem;
+        color: $color3;
+    }
+
+
+}
+
+    
+.titulo-webs{
+    color: $color3;
+    text-align: center;
+    margin: 1rem 1rem -2rem;
+    text-shadow: 0px 0px 20px $color1;
+    font-size: 1rem;
+}
+.referencias-sobre-mi{
+display: flex;
+justify-content: center;
+align-items: center;
+    background-image: url(../img/background-referencias-mobile.png);
+    height: auto;
+    width: 100vw;
+    padding-bottom: 6rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0rem;
+}
+
+.buttons-index-prev-next{
+    .carousel-control-prev,
+    .carousel-control-next{
+        margin-top: 79rem;
+    }
+
+    .carousel-control-prev{
+        margin-left: 1rem;
+    }
+}
+.hidden-sm { display: none;}
+@media only screen and (min-width: 767px){
+    .hidden-sm{
+        display: block;
+    }
+    
+    .hidden-xs {
+        display: block;
+    }
+    .heroIndex {
+        width: 20%;
+    }
+}
+
+#desarrolloWeb {
+  position: relative;
+  cursor: pointer;
+}

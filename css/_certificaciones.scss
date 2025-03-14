@@ -1,0 +1,194 @@
+
+/*--------------Productos: Galería con flex: Info general-------------*/
+/*--------------Productos: Galería con flex: Info general-------------*/
+/*--------------Productos: Galería con flex: Info general-------------*/
+
+#gallery {
+    background-size: 100vh;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.flex-item {
+    border: 0.15rem solid $color3;
+    border-radius: 0.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto !important;
+    height: 300px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex-item:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    filter: none;
+    box-shadow: 5px 5px 5px 1px rgba(43, 42, 42, 0.774);
+}
+
+.flex-container {
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13{
+    width: 350px !important;
+    height: 250px !important;
+}
+
+
+.item1 {
+    background-image: url(../img/certificados/desarrollo-web-domestika.png);
+}
+
+.item2 {
+    background-image: url(../img/certificados/desarrollo-web-coder.png);
+}
+
+.item3 {
+    background-image: url(../img/certificados/certificado-udemy-html.jpg);
+}
+
+.item4 {
+    background-image: url(../img/certificados/certificado-javascript-coder.png);
+}
+
+.item5 {
+    background-image: url(../img/certificados/react-coder.png);
+}
+
+.item6 {
+    background-image: url(../img/certificados/certificado-carrera-frontend.png);
+}
+
+.item7 {
+    background-image: url(../img/certificados/disenio-ux-ui.png);
+}
+
+.item8 {
+    background-image: url(../img/certificados/photophop-illustrator-coder.png);
+}
+
+.item9 {
+    background-image: url(../img/certificados/after-effects.png);
+}
+
+.item10 {
+    background-image: url(../img/certificados/ingles-coder.png);
+}
+
+.item11{
+    background-image: url(../img/certificados/certificado-community-manager.png);
+}
+
+.item12{
+    background-image: url(../img/certificados/certificado-scrum.png);
+}
+
+@media only screen and (min-width: 767px){
+#gallery {
+    background-size: 100vh;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 0.15rem solid $color3;
+    border-radius: 0.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto !important;
+    height: 300px !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex-item:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+    filter: none;
+    box-shadow: 5px 5px 5px 1px rgba(43, 42, 42, 0.774);
+}
+
+.flex-container {
+    width: 1200px;
+    margin: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+/*----------Galería con flex: Items con imágenes----------*/
+/*----------Galería con flex: Items con imágenes----------*/
+/*----------Galería con flex: Items con imágenes----------*/
+
+.item1 {
+    background-image: url(../img/certificados/desarrollo-web-domestika.png);
+}
+
+.item2 {
+    background-image: url(../img/certificados/desarrollo-web-coder.png);
+}
+
+.item3 {
+    background-image: url(../img/certificados/certificado-udemy-html.jpg);
+}
+
+.item4 {
+    background-image: url(../img/certificados/certificado-javascript-coder.png);
+}
+
+.item5 {
+    background-image: url(../img/certificados/react-coder.png);
+}
+
+.item6 {
+    background-image: url(../img/certificados/certificado-carrera-frontend.png);
+}
+
+.item7 {
+    background-image: url(../img/certificados/disenio-ux-ui.png);
+}
+
+.item8 {
+    background-image: url(../img/certificados/photophop-illustrator-coder.png);
+}
+
+.item9 {
+    background-image: url(../img/certificados/after-effects.png);
+}
+
+.item10 {
+    background-image: url(../img/certificados/ingles-coder.png);
+}
+
+.item11{
+    background-image: url(../img/certificados/certificado-community-manager.png);
+}
+
+.item12{
+    background-image: url(../img/certificados/certificado-scrum.png);
+}
+
+.item13{
+    background-image: url(../img/certificados/certificado-wordpress.jpg);
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13{
+    width: 450px !important;
+    height: 300px !important;
+}
+
+}

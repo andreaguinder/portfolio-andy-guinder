@@ -225,7 +225,7 @@
 
 .buttons-index-prev-next .carousel-control-prev,
 .buttons-index-prev-next .carousel-control-next {
-  margin-top: 79rem;
+  margin-top: 80rem;
 }
 
 .buttons-index-prev-next .carousel-control-prev {
@@ -742,6 +742,7 @@ p {
 .flex__sobremi--hijo {
   width: 656px;
   text-align: center;
+  padding: 0rem;
 }
 
 .flex__sobremi--hijo img {

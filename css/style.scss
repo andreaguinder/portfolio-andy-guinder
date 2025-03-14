@@ -283,6 +283,10 @@ div.menu-hamburguesa{
         margin: 0rem auto;
     }
 
+    .carousel-control-prev, .carousel-control-next{
+        display: none;
+    }
+
     .site__nav a.descargar-cv,
     .site__nav a.descargar-cv:hover{
         color: $color3;
@@ -432,7 +436,7 @@ div.menu-hamburguesa{
      background-color: $color1;
      padding: 0.35rem 1rem 0.25rem 0rem;
      border-radius: 0.35rem;
-     margin-top: 0.35rem;
+     margin-top: -0.65rem;
      margin-bottom: 0.75rem;
      width: 10.5rem;
      display: -webkit-box;

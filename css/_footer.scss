@@ -83,6 +83,10 @@ footer{
     z-index: 0;
     margin-right: 0px !important;
     margin-bottom: 0px !important;
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 }
 
 @media only screen and (min-width:350px) and (max-width: 768px) {

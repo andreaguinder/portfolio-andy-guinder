@@ -158,11 +158,6 @@
 .titulo-referencias {
   color: #ffffff;
   text-shadow: 0px 0px 20px #ff6fd4;
-}
-
-.titulo-referencias {
-  color: #ffffff;
-  text-shadow: 0px 0px 20px #ff6fd4;
   font-size: 1.1rem;
   text-align: center;
   margin-top: 1.75rem;
@@ -173,7 +168,7 @@
 }
 
 .section-referencias {
-  background-image: url(/img/background-referencias.png);
+  background-image: url(../img/background-referencias-mobile.png);
   background-size: 100% 14rem;
   background-repeat: no-repeat;
   height: 14rem !important;
@@ -228,25 +223,6 @@
   font-size: 1rem;
 }
 
-.referencias-sobre-mi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: url(../img/background-referencias-mobile.png);
-  height: auto;
-  width: 100vw;
-  padding-bottom: 6rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0rem;
-}
-
 .buttons-index-prev-next .carousel-control-prev,
 .buttons-index-prev-next .carousel-control-next {
   margin-top: 79rem;
@@ -261,6 +237,33 @@
 }
 
 @media only screen and (min-width: 767px) {
+  .titulo-referencias {
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #ff6fd4;
+    font-size: 1.75rem;
+  }
+  .section-referencias {
+    background-image: url(../img/background-referencias.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 21rem !important;
+  }
+  .container-referencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem;
+  }
+  .buttons-index-prev-next .carousel-control-prev,
+  .buttons-index-prev-next .carousel-control-next {
+    display: none;
+  }
   .hidden-sm {
     display: block;
   }
@@ -269,6 +272,44 @@
   }
   .heroIndex {
     width: 20%;
+  }
+  .container-referencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0rem auto;
+    gap: 0.5rem;
+    padding: 3rem 4rem 1rem 0rem;
+  }
+  .container-referencias .card {
+    width: 14rem;
+    height: 12rem;
+    margin: 2.25rem 0.1rem 1rem 2.25rem;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  .container-referencias h5 {
+    text-shadow: 0px 0px 20px #ff6fd4;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .container-referencias p {
+    padding: 0.5rem 0rem 0.5rem 1.5rem;
+    margin: 0rem;
+    font-size: 0.75rem;
+    color: #ffffff;
   }
 }
 
@@ -375,6 +416,19 @@ footer .behance:hover {
   z-index: 0;
   margin-right: 0px !important;
   margin-bottom: 0px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (min-width: 350px) and (max-width: 768px) {
@@ -669,6 +723,7 @@ p {
   height: -moz-fit-content;
   height: fit-content;
   position: center;
+  padding: 2rem 0rem 0rem 2rem;
 }
 
 .flex__sobremi {
@@ -799,7 +854,7 @@ p {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    margin: -24rem auto 3rem;
+    margin: 0rem auto 3rem;
     position: center;
     z-index: 0;
     border-radius: 0.25rem;
@@ -1438,6 +1493,9 @@ a.descargar-cv-abajo:hover .site__nav--icon-cv {
     height: 5rem;
     margin: 0rem auto;
   }
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
   .site__nav a.descargar-cv,
   .site__nav a.descargar-cv:hover {
     color: #ffffff;
@@ -1587,7 +1645,7 @@ a.descargar-cv-abajo:hover .site__nav--icon-cv {
     background-color: #ff6fd4;
     padding: 0.35rem 1rem 0.25rem 0rem;
     border-radius: 0.35rem;
-    margin-top: 0.35rem;
+    margin-top: -0.65rem;
     margin-bottom: 0.75rem;
     width: 10.5rem;
     display: -webkit-box;

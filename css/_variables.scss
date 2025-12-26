@@ -1,8 +1,100 @@
+// VARIABLES
 
-$color1: rgb(255, 111, 212);
-$color2: rgb(173, 9, 99);
-$color3: #ffffff;
-$color4: rgba(0, 0, 0, 0.171);
-$color5: rgb(216, 216, 216);
-$color6: rgb(0, 0, 0);
-$color7: rgb(95, 95, 95);
+$light-pink: rgb(255, 111, 212);
+$white: rgb(255, 255, 255);
+$black-light: rgba(18, 19, 24, 0.54);
+$black-dark: rgb(15, 15, 15);
+$black: rgb(0, 0, 0);
+$black-dark-cards: rgb(20, 19, 29);
+$light-pink-light: rgb(244, 194, 228);
+$dark-pink: rgb(207, 45, 134);
+$dark-pink-dark: rgb(137, 7, 78);
+$transparent: rgba(0,0,0,0);
+$bg-dark: rgb(40, 40, 48);
+$font-main: "Inter", sans-serif;
+$pink-light-light: rgb(240, 213, 231);
+
+@mixin flexCenter ($direct) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direct;
+}
+
+// THEME LIGHT MODE
+
+:root {
+
+    // Body
+
+    --bg-body: url('../img/bg-light.png') center/cover no-repeat fixed;
+
+    // Header & Footer
+
+    --bg-header-footer: #{$dark-pink-dark};
+
+    // Variables generales theme mode
+
+    --text-general: #{$black};
+    --accent: #{$light-pink};
+    --title-menu: #{$pink-light-light};
+    --font-general: #{$font-main};
+
+    // Cards
+
+    --bg-card: #{rgba($light-pink-light, 0.4)};
+    --text-card: #{$dark-pink};
+    --bg-card-light: #{rgba($light-pink-light, 0.15)};
+    --bg-dark-pink: #{$dark-pink};
+    --border-card: #{$light-pink};
+    --title-card: #{$dark-pink};
+
+    --img-card-front: #{url('../img/img-front.png')};
+    --img-card-graph: #{url('../img/img-graph.png')};
+    --img-card-social: #{url('../img/img-social.png')};
+
+    // Contacto
+
+    --bg-contacto-desk: url('../img/desk-contacto-white-ty.png');
+    --bg-contacto-mob: url('../img/mob-contacto-light-ty.png');
+     --bg-contacto-tablet: url('../img/bg-tablet-white-ty.png');
+}
+
+
+// THEME DARK MODE
+
+[data-theme="dark"] {
+
+    // Body
+
+    --bg-body: #{$bg-dark};
+
+    // Header
+
+    --bg-header-footer: #{$black-dark};
+
+    // Variables generales theme mode
+
+    --text-general: #{$white};
+    --accent: #{$light-pink};
+
+    // Cards
+
+    --bg-card: #{$black-dark-cards};
+    --text-card: #{$light-pink};
+    --bg-card-light: #{$black-light};
+    --bg-dark-pink: #{$black-dark};
+    --border-card: #{$light-pink};
+    --title-card: #{$white};
+    --title-menu: #{$light-pink};
+
+    --img-card-front: #{url('../img/img-front-dark.png')};
+    --img-card-graph: #{url('../img/img-graph-dark.png')};
+    --img-card-social: #{url('../img/img-social-dark.png')};
+
+    // Contacto
+
+    --bg-contacto-desk: url('../img/desk-contacto-new-ty.png');
+    --bg-contacto-mob: url('../img/mob-contact-new-ty.png');
+     --bg-contacto-tablet: url('../img/bg-tablet-dark-ty.png');
+}

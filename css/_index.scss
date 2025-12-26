@@ -1,278 +1,303 @@
-#bodyIndex{
-    overflow-x: hidden;
+@use "variables"as *;
 
-    .mockup-web {
-        width: 40%;
-    }
-}
-.headerEfecto{
-    color: $color3;
-    background-color: $color4;
+// ==========================================
+// SECCION HABILIDADES (TODO COMPLETO)
+// ==========================================
+
+.container__habilidades {
     width: 100%;
-}
+    height: auto;
+    @include flexCenter(column);
+    gap: 3rem;
+    margin: 3rem auto 5rem;
 
-.heroIndex{
-    background-size: 100%;
-    width: 50%;
-    margin: 3rem auto 0rem;
-    background-position: center;
-    justify-content: center;
-    display: flex;
-}
+    .card-habilidad {
+        @include flexCenter(column);
+        width: 20rem;
+        background: var(--bg-card);
+        position: relative;
+        padding: 0.9rem 0rem 1.8rem;
+        border-top-right-radius: 28px;
+                border-bottom-left-radius: 28px;
 
-.link-inicio a{
-    text-decoration: none;
-}
-.hidden-xs {
-    display: none;
-}
-.flex-design,
-.flex-web {
-    animation: fadeIn 1.5s ease;
-}
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18.8rem;
+            width: 20rem;
 
-@keyframes fadeIn {
-    0% { opacity: 0;}
-}
-.contBlur{
-    background-size: contain;
-    width: 95%;
-    height: fit-content;
-    margin: 3rem auto;
-    position: center;
-    backdrop-filter: blur(0.5rem);
-    z-index: 0;
-    border-radius: 0.25rem;
-    border: 0.15rem solid rgb(0, 0, 0);
-    box-shadow: 10px 10px 5px rgba(29, 29, 29, 0.247), 0px -10px 5px rgba(32, 32, 32, 0.199);
-}
+            background:
+                linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
+                linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
+                linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%,
+                linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
 
-.contBlurNegro{
-    background-size: contain;
-    width: 100%;
-    height: fit-content;
-    position: center;
-    background-color: $color4;
-    z-index: 0;
-    border-radius: 0.25rem;
-}
-
-.containerServicios{
-    background-size: contain;
-    width: 95%;
-    height: fit-content;
-    margin: 3rem auto;
-    position: center;
-}
-
-.flex__servicios{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flex__servicios--hijo{
-    width: 320px;
-    padding: 1%;
-    text-align: center;
-    animation-duration: 2s;
-    align-content: space-around;
-
-                i{
-                    justify-content: space-evenly;
-                    font-size: 2rem;
-                    color: $color2;
-                    margin-bottom: 0.5rem;
-                    opacity: 80%;
-                }
-                h2{
-                    text-align: center;
-                    color: $color1;
-                    text-shadow: 0px 0px 20px rgb(255, 111, 212);
-                    font-weight: 400;
-                    font-size: 1.2rem;
-                }
-                p{
-                    text-align: left;
-                    color: $color4;
-                    font-size: 14px;
-                }
-                .pinkLine{
-                    color: $color1;
-                    text-shadow: 0px 0px 20px rgb(255, 111, 212);
-                    font-size: 1rem;
-                    text-align: center;
-                }
-
-}
-
-
-
-
-// referencias sobre mí mobile
-
-
-
-
-    .titulo-referencias{
-        color: $color3;
-        text-shadow: 0px 0px 20px rgb(255, 111, 212);
-        font-size: 1.1rem;
-        text-align: center;
-        margin-top: 1.75rem;
-    }
-
-
-.hidden-sm{
-    display: none;
-}
-
-.section-referencias{
-    background-image: url(../img/background-referencias-mobile.png);
-    background-size: 100% 14rem;
-    background-repeat: no-repeat;
-    height: 14rem !important;
-}
-
-.container-cards-web2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem auto;
-    gap: 0.5rem;
-
-
-    .card{
-        width: 14rem;
-        height: 12rem;
-        margin: 2.25rem 0.1rem 1rem 2.25rem;
-        background-color: transparent;
-        color: $color3;
-    }
-
-    h5{
-        text-shadow: 0px 0px 20px $color1;
-        color: $color3;
-        text-align: center;
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    p{
-        padding: 0.5rem 0rem 0.5rem 1.5rem;
-        margin: 0rem;
-        font-size: 0.75rem;
-        color: $color3;
-    }
-
-
-}
-
-    
-.titulo-webs{
-    color: $color3;
-    text-align: center;
-    margin: 1rem 1rem -2rem;
-    text-shadow: 0px 0px 20px $color1;
-    font-size: 1rem;
-}
-
-
-.buttons-index-prev-next{
-    .carousel-control-prev,
-    .carousel-control-next{
-        margin-top: 80rem;
-    }
-
-    .carousel-control-prev{
-        margin-left: 1rem;
-    }
-}
-.hidden-sm { display: none;}
-@media only screen and (min-width: 767px){
-
-    .titulo-referencias{
-        color: $color3;
-        text-shadow: 0px 0px 20px rgb(255, 111, 212);
-        font-size: 1.75rem;
-    }
-
-    .section-referencias{
-            background-image: url(../img/background-referencias.png);
-            background-size: cover;
             background-repeat: no-repeat;
-            height: 21rem !important;
-    }
+            background-size: 7.3rem 4.3rem;
+            filter: drop-shadow(0 0 0.5rem var(--accent));
+        }
 
-    .container-referencias{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
+        h3 {
+            color: var(--title-card);
+            text-align: center;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            display: inline-flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .buttons-index-prev-next{
-        .carousel-control-prev,
-        .carousel-control-next{
-            display: none;
+        p {
+            margin: 0rem 1rem;
+            color: var(--text-general);
+            padding: 0rem 0.75rem;
+            font-size: 0.75rem;
+            font-family: var(--font-general);
+        }
+
+        .btn-link {
+            margin: 0.5rem auto 0rem;
+            font-size: 0.9rem;
+        }
+        
+        %card-habilidad-img {
+            width: 85%;
+            height: 150px;
+            object-fit: cover;
+            margin: -0.5rem auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-front {
+            background-image: var(--img-card-front);
+            @extend %card-habilidad-img;
+        }
+
+        .img-social {
+            background-image: var(--img-card-social);
+            @extend %card-habilidad-img;
+        }
+
+        .img-graph {
+            background-image: var(--img-card-graph);
+            @extend %card-habilidad-img;
         }
     }
-    .hidden-sm{
-        display: block;
-    }
-    
-    .hidden-xs {
-        display: block;
-    }
-    .heroIndex {
-        width: 20%;
-    }
-
-
-    
-    .container-referencias{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0rem auto;
-    gap: 0.5rem;
-    padding: 3rem 4rem 1rem 0rem;
-
-
-    .card{
-        width: 14rem;
-        height: 12rem;
-        margin: 2.25rem 0.1rem 1rem 2.25rem;
-        background-color: transparent;
-        color: $color3;
-    }
-
-    h5{
-        text-shadow: 0px 0px 20px $color1;
-        color: $color3;
-        text-align: center;
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    p{
-        padding: 0.5rem 0rem 0.5rem 1.5rem;
-        margin: 0rem;
-        font-size: 0.75rem;
-        color: $color3;
-    }
-
-
 }
 
 
+
+.card-habilidad.design::before {
+    height: 20.9rem;
 }
 
-#desarrolloWeb {
-  position: relative;
-  cursor: pointer;
+.card-habilidad.social::before {
+    height: 20.1rem;
+}
+
+// ==========================================
+// SECCION REFERENCIAS (CORREGIDA)
+// ==========================================
+
+.referencias {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2rem;
+
+    .swiper-referencias-index {
+        width: 100%;
+        margin: 0 auto;
+
+        .swiper {
+            width: 320px; // Mobile default
+            height: auto;
+            // Quitamos el overflow:visible de acá para que no se escapen en desktop
+            overflow: hidden;
+            padding: 0rem 0 3.75rem;
+            // Esto ayuda a que el swiper mismo se anime al cambiar altura
+            transition: height 0.6s ease-in-out;
+
+            .swiper-slide {
+                min-height: 7rem;
+                height: auto;
+                width: 100%;
+                display: flex;
+            }
+
+
+        }
+    }
+
+    // Estilos de paginación y flechas centrados en el flujo
+    .swiper-horizontal>.swiper-pagination-bullets {
+        top: auto;
+        bottom: 10px;
+
+        .swiper-pagination-bullet {
+            background-color: var(--title-card);
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 20px;
+        border-radius: 30px;
+        background-color: var(--accent);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: auto !important;
+        bottom: 5px !important;
+        color: var(--title-card);
+        width: 1.5rem;
+        height: 1.5rem;
+        z-index: 10;
+    }
+
+    .swiper-button-prev {
+        left: 4.35rem;
+    }
+
+    .swiper-button-next {
+        left: 14.5rem;
+    }
+}
+
+// ==========================================
+// MEDIA QUERIES
+// ==========================================
+
+@media only screen and (min-width: 768px) {
+    .container__habilidades {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2rem;
+
+        %card-habilidad-img {
+            height: 190px;
+        }
+
+    .card-habilidad .img-graph {
+                height: 135px;
+        padding: 2rem 0rem 0rem;
+    }
+
+    .card-habilidad .img-social {
+                height: 172px;
+    }
+
+            .card-habilidad.front::before {
+            height: 21.5rem;
+        }
+
+        .card-habilidad.design::before {
+            height: 20.9rem;
+        }
+
+        .card-habilidad.social::before {
+                        height: 21.5rem;
+        }
+    }
+
+    .referencias .swiper-referencias-index .swiper {
+        width: 664px;
+                margin-top: 1rem;
+
+        .card {
+            width: 320px;
+        }
+
+        .swiper-button-prev {
+            left: 15rem;
+        }
+
+        .swiper-button-next {
+            left: 25rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    // HABILIDADES DESK
+    .container__habilidades {
+        margin: 2.5rem auto 6rem;
+        
+        %card-habilidad-img {
+            height: 220px;
+        }
+
+                    .card-habilidad.front::before {
+            height: 28rem;
+        }
+
+        .card-habilidad {
+            justify-content: flex-start;
+            width: 22rem;
+            padding: 2rem 0rem 1rem;
+            height: 25rem;
+
+            &::before {
+                height: 28rem;
+                width: 22rem;
+            }
+
+            .img-front,
+            .img-graph,
+            .img-social {
+        height: 200px;
+        width: 90%;
+            }
+
+                        .img-graph {
+                            width: 93%;
+                        }
+
+                        .btn-link {
+        height: 1.5rem;
+        padding-bottom: 1.5rem;
+                        }
+
+            h3 {
+                font-size: 1.6rem;
+        margin: 0rem auto 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+
+        .card-habilidad.design::before,
+        .card-habilidad.social::before {
+            height: 28rem;
+            width: 22rem;
+        }
+    }
+
+    // REFERENCIAS DESK
+    .referencias {
+        margin: 0rem auto 2rem;
+
+        .swiper-referencias-index .swiper {
+            width: 1024px;
+
+
+            .swiper-button-prev {
+                left: 26rem;
+            }
+
+            .swiper-button-next {
+                left: 37rem;
+            }
+        }
+    }
 }

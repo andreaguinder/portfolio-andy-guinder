@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-------Info sitio SEO-------->
-  <meta name="description"
-    content="Trabajos de Desarrollo Web y Diseño Gráfico.">
+  <meta name="description" content="Trabajos de Desarrollo Web y Diseño Gráfico.">
   <meta name="keywords"
     content="WEB, DISEÑO, GRAFICA, COMMUNITY, MARKETING, DIGITAL, ESTILO, DESARROLLO, HTML, CSS, JAVASCRIPT, FRONTEND, BACKEND">
   <!-----Bots y especificaciones---->
@@ -27,10 +26,16 @@
   <!--------Autor y titulo-------->
   <meta name="author" content="Andrea Belén Guinder Vichich">
   <meta name="title" content="Andrea Guinder Portfolio">
-  <!----------Fuente de Google------------>
+  <!----------Fuentes de Google------------>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
   <!------------Logo en URL------------>
   <link rel="shortcut icon" href="img/short-icon.png" type="image/x-icon">
   <!--------Enlace a FontAwesome---------->
@@ -39,16 +44,16 @@
   <script src="https://kit.fontawesome.com/9f08a9e423.js" crossorigin="anonymous"></script>
   <!--------JavaScript Propio---------->
   <script src="js/app.js"></script>
-  
-  <!-----------Bootstrap---------->
-  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!--Swiper Librería-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
   <!--------Estilos propios----------->
 
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <title>Andrea Guinder DG</title>
 </head>
@@ -59,286 +64,236 @@
   <header>
     <div class="container-nav">
       <div class="logo">
-        <h1 id="nombreAndy"><a href="./index.html"><img src="./img/logo-ag.png" alt=""></a></h1>
+        <a href="./index.html"><img src="./img/logo-ag.png" alt="Logo de Andrea Guinder"></a>
       </div>
+
+      <div class="theme-switch-wrapper">
+        <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
+        <label for="theme-checkbox" class="theme-label" aria-label="Switch">
+          <span class="ball"></span>
+        </label>
+      </div>
+
       <nav id="site__nav" class="site__nav">
         <ul>
-          <li><a href="./index.html"><i class="fa fa-home site__nav--icon"></i>INICIO</a></li>
-          <li><a href="./pages/web.html"><i class="fa fa-edit site__nav--icon"></i>DESARROLLO WEB</a></li>
-          <li><a href="./pages/certificaciones.html"><i
-                class="fa-solid fa-note-sticky site__nav--icon"></i>CERTIFICACIONES</a></li>
-          <li><a href="./pages/contact.html"><i class="fa fa-envelope site__nav--icon"></i>CONTACTO</a></li>
-          <li><a class="descargar-cv"
-              href="https://drive.google.com/file/d/1ckHzpF2ub1_Z59Mo0uMyU9gnrxuZ3rE9/view?usp=sharing"><i
-                class="fa-solid fa-download site__nav--icon site__nav--icon-cv"></i>DESCARGAR CV</a></li>
+          <li><p class="active">[ INICIO ]</p></li>
+          <li><a href="./pages/web.html">[ DESARROLLO WEB ]</a></li>
+          <li><a href="./pages/conocimientos.html">[ CONOCIMIENTOS ]</a></li>
+          <li><a href="./pages/contact.html">[ CONTACTO ]</a></li>
         </ul>
       </nav>
-      <div id="menu-toggle" class="menu-toggle" onclick="cambiarClaseMenu()">
-        <div class="menu-hamburguesa"></div>
-      </div>
+
+<button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+    <div class="menu-hamburguesa"></div>
+</button>
     </div>
   </header>
 
 
   <main>
 
+    <section>
+
+      <div class="intro">
+        <h1 class="titulo-general">Visión profesional</h1>
+        <h2>Soy una desarrolladora enfocada en crear soluciones digitales donde la lógica y el diseño conviven en
+          equilibrio. Con más de 4 años en el mundo del desarrollo web y una sólida base de 10 años en diseño gráfico,
+          me especializo en transformar ideas complejas en interfaces funcionales, estéticas y pensadas para el usuario.
+        </h2>
+      </div>
+
+    </section>
+
     <!--- Info DW DG CM desktop --->
-    <section class="containers__main hidden-xs">
-      <div class="container__section-main">
-
-        <div id="desarrolloWeb>
-          <div">
-          <h5>Desarrollo Web &nbsp;&nbsp;<i class="fa fa-edit"></i></h5>
-          <p>
-            Desarrolladora Frontend con +4 años de experiencia. He trabajado 1 año en la
-            Distribuidora Mamámotos y 3 años para Movistar Argentina; puesto que actualmente tengo.
-            Realizo creación y mantenimiento de diferentes Landing Pages.
-          </p>
-        </div>
-
-        <div><img src="./img/developer.svg" alt="" /></div>
-      </div>
-      </div>
-      <div class="container__section-main">
-        <div><img src="./img/design.svg" alt="" /></div>
+    <section class="container__habilidades">
+      <div class="card-habilidad front">
+        <h3>Frontend Dev<i class="fa fa-edit" aria-label="Icono Frontend"></i></h3>
+        <div class="img-front"></div>
         <div>
-          <h5>Diseño Gráfico &nbsp;&nbsp;<i class="fa fa-pen-nib"></i></h5>
-          <p class="parrafo">
-            Diseñadora Gráfica con +10 años de experiencia en diferentes empresas y en mi proyecto personal,
-            Life Diseño Gráfico.
-            Para ver algunos de mis trabajos ingresar a mi <a href="https://www.behance.net/andreaguinder">Behance</a>.
-          </p>
-        </div>
-
-      </div>
-      <div class="container__section-main">
-
-
-        <div>
-          <h5>Community Management &nbsp;&nbsp;<i class="fa-solid fa-mobile-screen"></i></h5>
           <p>
-            Community Manager +2 años de experiencia trabajando en manejo de redes sociales, creaciones de marca,
-            trato con clientes para distintas Estéticas.
-            Para ver algunos de mis trabajos ingresar a mi <a href="https://www.behance.net/andreaguinder">Behance</a>.
+            Especialista en desarrollo de interfaces con +4 años de experiencia. Actualmente integrando el equipo de
+            desarrollo de <b>Movistar Argentina</b>. Foco en la construcción y mantenimiento de Landing Pages
+            optimizadas y escalables.
           </p>
         </div>
-        <div><img src="./img/community-management.svg" alt="" /></div>
+      </div>
+
+      <div class="card-habilidad design">
+        <h3>Graphic Design<i class="fa fa-pen-nib" aria-label="Icono Graphic Desing"></i></h3>
+        <div class="img-graph"></div>
+        <div>
+          <p>
+            +10 años creando conceptos visuales potentes. Desde mi proyecto <b>Life Diseño Gráfico</b> hasta
+            consultorías corporativas, traduzco valores de marca en diseño de alto nivel.<br>
+            <a class="btn-link" href="https://www.behance.net/andreaguinder">[ Explora mi portfolio en Behance ]</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card-habilidad social">
+        <h3>Social media<i class="fa-solid fa-mobile-screen" aria-label="Icono Social Media"></i></h3>
+        <div class="img-social"></div>
+        <div>
+          <p>
+            Gestión estratégica de redes para el rubro estética. +2 años potenciando marcas a través de contenido
+            creativo y trato personalizado con el cliente.<br>
+            <a class="btn-link" href="https://www.behance.net/andreaguinder">[ Ver casos de éxito en mi Behance ]</a>
+          </p>
+        </div>
       </div>
 
     </section>
 
 
 
-    <!--- Info DW DG CM mobile --->
-    <section class="containers__main hidden-md hidden-lg">
-      <div class="container__section-main">
 
 
-        <div>
-          <h5>Desarrollo Web &nbsp;&nbsp;<i class="fa fa-edit"></i></h5>
-          <div><img src="./img/developer.svg" alt="" /></div>
-          <p>
-            Desarrolladora Frontend con +4 años de experiencia. He trabajado 1 año en la
-            Distribuidora Mamámotos y 3 años para Movistar Argentina; puesto que actualmente tengo.
-            Realizo creación y mantenimiento de diferentes Landing Pages.
-          </p>
-        </div>
-
-      </div>
-      <div class="container__section-main">
-
-        <div>
-          <h5>Diseño Gráfico &nbsp;&nbsp;<i class="fa fa-pen-nib"></i></h5>
-          <div><img src="./img/design.svg" alt="" /></div>
-          <p class="parrafo">
-            Diseñadora Gráfica con +10 años de experiencia en diferentes empresas y en mi proyecto personal,
-            Life Diseño Gráfico.
-            Para ver algunos de mis trabajos ingresar a mi <a href="https://www.behance.net/andreaguinder">Behance</a>.
-          </p>
-        </div>
-
-      </div>
-      <div class="container__section-main">
-
-
-        <div>
-          <h5>Community Management &nbsp;&nbsp;<i class="fa-solid fa-mobile-screen"></i></h5>
-          <div><img src="./img/community-management.svg" alt="" /></div>
-          <p>
-            Community Manager +2 años de experiencia trabajando en manejo de redes sociales, creaciones de marca,
-            trato con clientes para distintas Estéticas.
-            Para ver algunos de mis trabajos ingresar a mi <a href="https://www.behance.net/andreaguinder">Behance</a>.
-          </p>
-        </div>
-
-      </div>
-
-    </section>
-
-    <h3 class="titulo-referencias">Algunas referencias sobre mí</h3>
     <!---Referencias sobre mí mobile-->
-    <section class="section-referencias hidden-md hidden-lg">
+    <section>
 
-      <div id="carouselExampleControls2" class="carousel slide container-cards-web2 hidden-lg hidden-md"
-        data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <h2 class="titulo-general">Experiencias compartidas</h2>
 
-            <div class="card">
 
-              <h5>Nicolás Dume</h5>
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab
-                ducimus
-                "</p>
+      <div class="referencias">
 
-            </div>
-          </div>
-          <div class="carousel-item">
 
-            <div class="card">
-              <h5>Agustín DiVincenzo</h5>
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab
-                ducimus
-                "</p>
+        <div class="swiper-referencias-index cards-expandibles">
+          <div class="swiper">
+            <div class="swiper-wrapper">
 
-            </div>
-          </div>
+              <div class="swiper-slide card card-referencia">
+                <h3>Lucas Giuliani</h3>
+                <p class="subtitulo">Ex-líder de team UX/Maquetado en Movistar Argentina</p>
+                <a class="btn-links-generales" href="https://www.linkedin.com/in/lucas-giuliani/" target="_blank" alt="enlace para ir a linkedin">[ Ver
+                  LinkedIn ]</a>
 
-          <div class="carousel-item">
-            <div class="card">
-              <h5>Nicolás Fernandéz</h5>
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab
-                ducimus
-                "</p>
+                <div class="expandible-wrapper">
+                  <p class="texto-info">
+                    "Tuve la oportunidad de trabajar con Andrea en Movistar y fue una experiencia muy enriquecedora. Andrea combina muy bien su mirada técnica con una gran sensibilidad hacia la experiencia del usuario. En cada proyecto se involucra de manera proactiva, analiza los desafíos con criterio y propone soluciones claras que luego ejecuta con GRAN EXPERTISE.
 
-            </div>
-</div>
-            <div class="carousel-item">
-              <div class="card">
-                <h5>Nicolás Palacios</h5>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab
-                  ducimus
-                  "</p>
+Lo que más destaco de ella es su capacidad para mantener la calidad incluso en varios contextos de presión que tuvimos, siempre con orden y atención al detalle. Además, su forma de trabajar hace que el equipo se sienta acompañado y seguro: transmite confianza y eleva el nivel del proyecto.
+
+Andrea es una profesional que aporta valor tanto desde el código como desde la visión integral del producto. Integra además, desde la mirada UX, fuertes herramientas de accesibilidad, para códigos limpios e inclusivos.
+Recomiendo sinceramente contar con ella en tu equipo de desarrollo."
+                  </p>
+
+                </div>
+
+
+                  <button class="btn-ver-mas" aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+
+              </div>
+
+              <div class="swiper-slide card card-referencia">
+                <h3>Jeanette Ulloa</h3>
+                <p class="subtitulo">Compañera team UX de CoE UX en Movistar Argentina</p>
+                <a class="btn-links-generales" href="https://www.linkedin.com/in/ulloa-jeanette/" target="_blank" alt="enlace para ir a linkedin">[ Ver
+                  LinkedIn ]</a>
+                <div class="expandible-wrapper">
+                  <p class="texto-info">
+                    "Andy es una persona resolutiva, empática y detallista. Combinó diseño centrado en el usuario con desarrollo web y logró dar vida a experiencias digitales atractivas funcionales y de alto impacto tanto para el negocio B2B como para B2C.Comprende el impacto de su labor y gracias a su sentido de responsabilidad genera entregables de alta calidad en tiempo y forma, lo que evita retrabajos y acorta los tiempos de puesta en producción. Trabajar con ella es un placer."
+                  </p>
+
+                </div>
+
+                  <button class="btn-ver-mas"  aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+
+              </div>
+
+              <div class="swiper-slide card card-referencia">
+                <h3>Nicolás Dume</h3>
+                <p class="subtitulo">Ex-compañero de estudios en Desarrollo Web</p>
+                <a class="btn-links-generales" href="https://www.linkedin.com/in/nicolas-artemio-dume-626223371/"
+                  target="_blank" alt="enlace para ir a linkedin">[ Ver LinkedIn ]</a>
+                <div class="expandible-wrapper">
+                  <p class="texto-info">
+                    "Andy tiene una visión clara de cómo crear productos que funcionen. En el MVP del supermercado, combinó principios de UX con un desarrollo sólido en HTML, CSS y JS. Su capacidad para estructurar el proyecto con Bootstrap permitió una navegación ágil y una estética profesional, priorizando siempre la usabilidad. Es una profesional con iniciativa que entiende que un buen diseño UI solo es efectivo si está respaldado por un código bien estructurado y eficiente."
+                  </p>
+
+                </div>
+
+                  <button class="btn-ver-mas"  aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus" aria-hidden="true" aria-label="boton para expandir y ver mas información"></i></button>
+
+              </div>
+
+              <div class="swiper-slide card card-referencia">
+                <h3>Nicolás Fernandéz</h3>
+                <p class="subtitulo">Compañero team Maquetado CoE UX en Movistar Argentina</p>
+                <a class="btn-links-generales" href="https://www.linkedin.com/in/nicolasfernandezstrizic/" target="_blank" alt="enlace para ir a linkedin">[
+                  Ver LinkedIn ]</a>
+                <div class="expandible-wrapper">
+                  <p class="texto-info">
+                    "Trabajar con ella ha sido una experiencia sumamente positiva y enriquecedora. Se destaca por su gran compañerismo, siempre dispuesta a colaborar, escuchar y aportar desde una actitud profesional. Tiene una atención al detalle admirable: cada proyecto que encara refleja dedicación, prolijidad y un cuidado especial en cada etapa del proceso. Además, demuestra un compromiso constante con su trabajo y con la empresa, asumiendo responsabilidades con seriedad, cumpliendo plazos y buscando siempre mejorar."
+                  </p>
+
+                </div>
+                  <button class="btn-ver-mas"  aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+
+              </div>
+
+              <div class="swiper-slide card card-referencia">
+                <h3>Sofía Goldenhörn</h3>
+                <p class="subtitulo">Compañera team UX de CoE UX en Movistar Argentina</p>
+                <a class="btn-links-generales" href="https://www.linkedin.com/in/sofiagolden/" target="_blank" alt="enlace para ir a linkedin">[ Ver
+                  LinkedIn ]</a>
+                <div class="expandible-wrapper">
+                  <p class="texto-info">
+                    "Andy es una persona muy atenta a la hora de trabajar y llevar los proyectos a producción. Se nota el empeño que pone en su labor, en especial el gran ojo al detalle que aplica a la hora de desarrollar el diseño que se le entrega. Con Andy, la comunicación UX-Dev es fluida, colaborativa y recíproca. Ella está siempre disponible para conversar y logra expresarse de manera clara, especialmente a la hora de explicar términos o metodologías propias de la disciplina a alguien que puede no estar tan familiarizado con el día a día de un developer. En mi experiencia personal, siempre respondió todas mis dudas con esmero para poder generar un buen entregable a desarrollo. ¡Tiene una gran pasión por su trabajo y eso se ve reflejado en el producto final!"
+                  </p>
+
+                </div>
+                  <button class="btn-ver-mas"  aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+
+              </div>
+
+              <div class="swiper-slide card card-referencia">
+                <h3>Agustín Di Vincenzo</h3>
+                <p class="subtitulo">Compañero team Maquetado CoE UX en Movistar Argentina</p>
+                <a class="btn-links-generales" href="https://www.linkedin.com/in/agustin-di-vincenzo/" target="_blank" alt="enlace para ir a linkedin">[
+                    Ver LinkedIn ]</a>
+                <div class="expandible-wrapper">
+                                    
+                  <p class="texto-info">
+                    "Trabajar con Andrea es contar con alguien muy atenta a los detalles, proactiva y consistente en la calidad de lo que entrega. Analiza los problemas a fondo, propone soluciones claras y las ejecuta con un buen criterio técnico. Cumple plazos, anticipa posibles errores que puedan ocurrir, y mantiene un buen estándar incluso bajo presión. Su forma de trabajar es ordenada y precisa, y eso eleva el nivel del proyecto."
+                  </p>
+
+                </div>
+                  <button class="btn-ver-mas"  aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
               </div>
             </div>
-
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-        </div>
-        <div class="buttons-index-prev-next">
-          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-</div>
-    </section>
-
-
-    <!--- Referencias sobre mi desktop--->
-    <section class="section-referencias hidden-xs hidden-sm">
-      <div class="container-referencias">
-        <div class="card">
-          <h5>Nicolás Dume</h5>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab ducimus
-            "</p>
-        </div>
-
-        <div class="card">
-          <h5>Agustín DiVincenzo</h5>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab ducimus
-            "</p>
-        </div>
-        <div class="card">
-          <h5>Nicolás Fernandéz</h5>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab ducimus
-            "</p>
-        </div>
-        <div class="card">
-          <h5>Nicolás Palacios</h5>
-          <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloribus molestias molestiae ab ducimus
-            "</p>
         </div>
       </div>
     </section>
-
-
-
-    <!-- Sobre mí -->
-    <section class="mainSpace mx-4">
-      <section class="contBlurSobre">
-        <div class="flex__sobremi">
-          <div class="flex__sobremi--hijo  containerSobreMi1">
-
-            <ul>
-              <li>Para ver mis certificaciones, podrás encontrarlas en la pestaña <a
-                  href="./pages/certificaciones.html"><strong>CERTIFICACIONES</strong></a>&nbsp;.
-              </li>
-              <li>Para saber más de mí, podrás mirar mis redes sociales o descargar mi CV,
-                si te interesa
-                comunicarte conmigo podés contactarme a través de ellas o de <a
-                  href="./pages/contact.html"><strong>CONTACTO</strong></a>&nbsp;.
-              </li>
-            </ul>
-
-            <img class="hidden-lg hidden-md" src="./img/yo.jpg" alt="Mi foto">
-          </div>
-          <div class="flex__sobremi--hijo flex__sobremi--hijo-img">
-            <div id="logosSobreMi">
-              <img class="hidden-xs" src="./img/yo.jpg" alt="Mi foto">
-            </div>
-            <div><a class="descargar-cv descargar-cv-abajo"
-                href="https://drive.google.com/file/d/1ckHzpF2ub1_Z59Mo0uMyU9gnrxuZ3rE9/view?usp=sharing"><i
-                  class="fa-solid fa-download site__nav--icon site__nav--icon-cv"></i>DESCARGAR CV</a>
-              </li>
-            </div>
-          </div>
-      </section>
-
-    </section>
-
 
   </main>
 
-
-
-
-
-
-
   <footer>
-    <div class="contBlurNegro2">
-      <div>
-        <a target="_blank" class="github" href="https://github.com/andreaguinder"><i class="fab fa-github"></i></a>
-        <a target="_blank" class="behance" href="https://www.behance.net/andreaguinder"><i
-            class="fa-brands fa-square-behance"></i></a>
-        <a target="_blank" class="linkedin"
-          href="https://www.linkedin.com/in/andrea-guinder/"><i
-            class="fab fa-linkedin"></i></a>
-        <a target="_blank" class="facebook" href="https://www.facebook.com/profile.php?id=100010447723135"><i
-            class="fab fa-facebook"></i></a>
-        <a target="_blank" class="instagram" href="https://www.instagram.com/andyguinder/"><i
-            class="fab fa-instagram"></i></a>
-      </div>
-      <p> Copyright © | 2021 - 2025 | Todos los Derechos Reservados<br class="hidden-md hidden-lg" />
-        Diseño y Desarrollo por <a href="./index.html" target="_blank">Andrea
-          Guinder</a>
+    <div>
+      <a target="_blank" class="github" href="https://github.com/andreaguinder" aria-label="Ir a mi perfil de GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a target="_blank" class="behance" href="https://www.behance.net/andreaguinder" aria-label="Ir a mi perfil de Behance"><i
+          class="fa-brands fa-square-behance" aria-hidden="true"></i></a>
+      <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/andrea-guinder/" aria-label="Ir a mi perfil de LinkedIn"><i
+          class="fab fa-linkedin" aria-hidden="true"></i></a>
+    </div>
+    <div>
+      <p>andreabelen.guinder@gmail.com</p>
+      <p>Residente en Buenos Aires, Argentina </p>
+    </div>
+    <div>
+      <p> Copyright © | 2025 | Todos los Derechos Reservados</p>
+      <p>
+        Diseño y Desarrollo por <a href="https://www.linkedin.com/in/andrea-guinder/" target="_blank">[ Andrea
+          Guinder ]</a>
       </p>
     </div>
+
   </footer>
 
-  <!---Scrips Bootstrap--->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
+  <script src="/js/swiperLpsDesarrollo.js"></script>
 </body>
 
 </html>

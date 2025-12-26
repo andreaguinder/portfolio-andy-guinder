@@ -1,238 +1,145 @@
-h4{
-    color: $color2;
-}
+@use "variables"as *;
 
-p{
-    color: $color4;
-}
-
-.formularioh4 {
-    font-size: 1rem !important;
-}
-
-.formularioParrafo {
-    font-size: 0.85rem;
-}
-
-.formularioButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form__contact{
-    color: $color3;
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 5px;
-    margin: 0rem 2rem 0rem;
-    width: 310px;
-    box-shadow: 0px 0px 20px rgb(255, 111, 212);
-
-        i{
-            font-size: 1.5rem;
-        }
-}
-
-.contact__h5{
-    font-weight: bold;
-}
-
-.modalContainer{
-    height: 100vh;
+.body-contacto {
+    background-image: var(--bg-contacto-mob);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     width: 100%;
-    background-color: $color4;
-    background-size: contain;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100vh;
+    background-attachment: unset;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .contacto {
 
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in;
-}
 
-.modalActive{
-    visibility: visible;
-    opacity: 1;
-    z-index: 100;
-}
+        .card-info {
+            @include flexCenter(column);
+            width: 100%;
 
-.modalForm{
-    color: $color6;
-    background-color: $color3;
-    background-size: contain;
-    width: 70%;
-    border-radius: 0.5rem;
-    text-align: center;
-    padding: 0.25rem;
-    margin: auto;
-    font-size: 1rem;
+            .titulo {
+                font-size: 3rem;
+                font-weight: 400;
+                color: var(--title-card);
 
-        button{
-            border: none;
-            
-            .fas{
-                font-weight: bold;
-                font-size: 2rem;
+                text-shadow:
+                    0 0 5px var(--accent),
+                    0 0 5px var(--accent),
+                    0 0 10px var(--accent),
+                    0 0 10px var(--accent);
+                padding: 10rem 0rem 1rem;
+            }
+
+            .bajada {
+                font-size: 0.75rem;
+                color: var(--text-general);
+                text-align: center;
+                padding: 0.5rem;
+                font-family: var(--font-general);
+                text-align: center;
+                font-weight: 400;
+            }
+
+            .titulo-general {
+                text-align: center;
+                    margin: 1.75rem auto 1rem;
+            }
+
+            .redes-contacto {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 2rem;
+                padding: 3rem 0rem;
+
+                h3,
+                a,
+                h4 {
+                    @include flexCenter(row);
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: var(--text-general);
+                    gap: 1rem;
+                    margin-top: 0rem;
+                }
+
+                .btn-link:hover {
+                    color: var(--accent);
+                }
+
+                i {
+                    font-size: 1.5rem;
+                    max-width: 35px;
+                    text-align: center;
+                }
             }
         }
+    }
 }
 
-// los servicios que ofrezco con input radio
-.servOfrecidos{
-    color: $color1;
-    background-color: $color1;
-}
+@media only screen and (min-width: 768px) {
 
-.form-check-input:checked {
-    background-color: $color2;
-    border-color: $color7;
-}
+    .body-contacto {
+    background-image: var(--bg-contacto-tablet);
 
-
-.formuario__label{
-    display: block;
-    font-weight: 1.5rem;
-    padding: 1rem;
-    cursor: pointer;
-}
-
-.formulario__entrada,
-.form__elegir{
-    font-size: 0.85rem;
-    color: $color6;
-}
-
-.formulario__entrada{
-    margin: 1rem 0rem;
-}
-
-.formulario__entrada-input{
-    position: relative;
-}
-
-.formulario__input{
-    width: 100%;
-    background-color: $color3;
-    border: 0.25rem solid transparent;
-    border-radius: 0.35rem;
-    height: 2.50rem;
-    line-height: auto;
-    padding: 0 3rem 0 1rem;
-    transition: .3s ease all;
-}
-
-.formulario__input--mensaje{
-    width: 100%;
-    background-color: $color3;
-    border: 0.25rem solid transparent;
-    border-radius: 0.35rem;
-    height: 5rem;
-    line-height: auto;
-    padding: 0 3rem 0 1rem;
-    transition: .3s ease all;
-}
-
-.formulario__input--mensaje:focus{
-    border: 0.3rem solid $color1;
-    outline: none;
-}
-
-.formulario__input:focus{
-    border: 0.1rem solid $color1;
-    outline: none;
-}
-
-// el texto de error debajo de los imput
-.formulario__input-error {
-    font-size: 0.75rem;
-    margin-bottom: 0;
-    display: none;
-    color: $color3;
-}
-
-.formulario__input-error-activo {
-    display: block;
-}
-
-
-.formulario__validacion-estado{
-    position: absolute;
-    right: 1rem;
-    top: 0.5rem;
-    z-index: 100;
-    font-size: 16px;
-    opacity: 0;
-}
-
-.formulario__mensaje{
-    height: auto;
-    padding: 20%;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    background-color: $color2;
-    padding: 0 15px ;
-    border-radius: 3px;
-    display: none;
-    color: $color3;
-}
-
-.formulario__mensaje-activo {
-    display: block;
-}
-
-.formulario__mensaje p{
-    padding: 5px;
-}
-
-.formulario__entrada-correcto .formulario__validacion-estado{
-    color: $color1;
-    opacity: 1;
-}
-
-.formulario__entrada-incorrecto .formulario__label{
-    color: $color1;
-}
-
-.formulario__entrada-incorrecto .formulario__validacion-estado{
-    color: $color2;
-    opacity: 1;
-}
-
-.formulario__entrada-incorrecto .formulario__input {
-    border: 2px solid $color2; 
-    box-shadow: none;
-}
-
-//suscripcion 
-
-.recibir__novedades:focus{
-    background-color: $color1;
-    color: $color3;
-}
-
-.formulario-contact{
-    margin: auto;
-    display: flex
-;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-
-}
-
-@media only screen and (min-width: 767px) {
-
-    .form__contact {
-        width: 26rem;
+    .contacto {
+        .card-info {
+            .bajada {
+                font-size: 0.8rem;
+                width: 80%;
+            }
+        }
+    }
     }
 
-    .formulario-contact{
-       justify-content: flex-start;
-    
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .body-contacto {
+        background-image: var(--bg-contacto-desk);
+        background-position: center;
+
+        .contacto {
+
+            .card-info {
+                width: 50%;
+
+                .titulo {
+                    font-size: 4rem;
+                    padding: 3rem 10rem 1rem;
+                }
+
+                .bajada {
+                    font-size: 1rem;
+                    padding: 0rem 2rem 1.25rem;
+                    margin: 0rem auto;
+                }
+
+
+                .titulo-general {
+                    text-align: left;
+                }
+
+                .redes-contacto {
+                    gap: 2rem;
+                    padding: 3rem 0rem 2rem;
+
+                    h3,
+                    a,
+                    h4 {
+                        @include flexCenter(row);
+                        font-size: 1.25rem;
+                        line-height: 2rem;
+                        gap: 1rem;
+                    }
+
+                                    i {
+                    font-size: 2rem;
+                    width: 40px;
+                }
+                }
+            }
+        }
     }
 }

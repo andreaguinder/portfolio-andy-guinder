@@ -1,28 +1,30 @@
 # Portfolio Andrea Guinder
 
-### [¡Mirá mi página web haciendo click acá!](https://andreaguinder.github.io/portfolio-andy-guinder/)
+### [Te invito a visitar mi página web: ](https://andreaguinder.github.io/portfolio-andy-guinder/)
 
 ## ¿Quién soy?
 
-Mi nombre es Andrea Guinder, mis amigos me llaman "Andy" y soy Diseñadora Gráfica y Desarrolladora Web. Actualmente me encuentro trabajando para Movistar Argentina y en formación constante para mejorar mis habilidades en Programación. Este es mi Portfolio.
+Soy Andrea Guinder, Diseñadora Gráfica y Desarrolladora Web. Actualmente formo parte del equipo de Movistar Argentina. Mi perfil combina la sensibilidad estética del diseño con la lógica técnica de la programación, manteniéndome en formación constante para crear experiencias digitales de alto impacto.
 
 ## Tecnologías utilizadas:
 
-Este sitio web fue creado con: HTML5, CSS3, SASS y JavaScript.
+* Frontend: HTML5, CSS3, JavaScript Vanilla.
 
-## Información sobre el proyecto:
+* Preprocesadores: SASS (Arquitectura modular).
 
-* Se utilizan etiquetas HTML5 para su estructuración.
-* Se utiliza SASS como compilador de CSS.
-* Maquetación mediante Flexbox.
-* Diseños y estilo propio. Multiportafolio.
-* Formulario de Contacto funcional, validado con JavaScript y Formspree (sin Backend).
-* Diseño web responsive mediante el uso de Media Queries, para 3 dispositivos (celular, tablet y PC; vertical u horizontal).
+## Sobre el proyecto:
 
-## Contactame:
+* Arquitectura Limpia: Organización modular mediante carpetas independientes para pages, css, js e imágenes, garantizando un proyecto escalable.
 
-Por información o servicios no dudes en contactarme a través de mis redes, mi teléfono que se encuentra en el CV, o el formulario de mi Portfolio:
+* SASS Avanzado: Implementación de mixins, placeholders y anidación profunda. Estructura de archivos parciales compilados en un estilo global.
 
-### [CONTACTAME](https://andreaguinder.github.io/portfolio-andy-guinder/pages/contact.html)
+* Desarrollo "Vanilla": Estilos 100% de mi autoría y lógica de programación pura, sin dependencia de frameworks externos.
 
-## CV: [Descargar CV](https://drive.google.com/file/d/1ckHzpF2ub1_Z59Mo0uMyU9gnrxuZ3rE9/view?usp=sharing)
+* Experiencia de Usuario (UX): Implementación de Light y Dark Mode dinámico mediante JavaScript.
+
+* Responsive Design: Adaptabilidad total mediante Media Queries para una visualización óptima en mobile, tablet y desktop (orientación vertical y horizontal).
+
+## Contáctame:
+
+Por información o servicios no dudes en contactarme a través de
+### [LinkedIn](https://www.linkedin.com/in/andrea-guinder/)

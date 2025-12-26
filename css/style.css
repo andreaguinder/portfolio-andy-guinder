@@ -930,6 +930,7 @@ header .container-nav .logo img {
 header .container-nav .theme-switch-wrapper {
   order: 2;
   margin: 0 8.25rem 0rem 0rem;
+  transform: translateX(-4px);
 }
 header .container-nav .theme-switch-wrapper .theme-checkbox {
   display: none;

@@ -25,7 +25,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 19.8rem;
+            height: 18.8rem;
             width: 20rem;
 
             background:
@@ -96,11 +96,11 @@
 
 
 .card-habilidad.design::before {
-    height: 21.9rem;
+    height: 20.9rem;
 }
 
 .card-habilidad.social::before {
-    height: 21.1rem;
+    height: 21rem;
 }
 
 // ==========================================
@@ -199,11 +199,11 @@
         }
 
         .card-habilidad.design::before {
-            height: 20.9rem;
+            height: 19.9rem;
         }
 
         .card-habilidad.social::before {
-                        height: 21.5rem;
+                        height: 22rem;
         }
     }
 
@@ -246,7 +246,7 @@
             height: 25rem;
 
             &::before {
-                height: 28rem;
+                height: 25rem;
                 width: 22rem;
             }
 
@@ -278,7 +278,7 @@
 
         .card-habilidad.design::before,
         .card-habilidad.social::before {
-            height: 28rem;
+            height: 25rem;
             width: 22rem;
         }
     }

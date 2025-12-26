@@ -67,7 +67,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 18.8rem;
+  height: 19.8rem;
   width: 20rem;
   background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
   background-repeat: no-repeat;
@@ -119,11 +119,11 @@
 }
 
 .card-habilidad.design::before {
-  height: 20.9rem;
+  height: 21.4rem;
 }
 
 .card-habilidad.social::before {
-  height: 21rem;
+  height: 20.8rem;
 }
 
 .referencias {
@@ -193,10 +193,10 @@
     height: 172px;
   }
   .container__habilidades .card-habilidad.front::before {
-    height: 21.5rem;
+    height: 22.2rem;
   }
   .container__habilidades .card-habilidad.design::before {
-    height: 19.9rem;
+    height: 20.7rem;
   }
   .container__habilidades .card-habilidad.social::before {
     height: 22rem;
@@ -446,7 +446,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 13.7rem;
+  height: 11rem;
   width: 20rem;
   background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
   background-repeat: no-repeat;
@@ -461,7 +461,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0rem 0rem 1rem;
+  padding: 0rem 0rem 0rem 1rem;
 }
 .conocimientos .formacion .container-formacion .box-formacion h3 {
   color: var(--text-general);
@@ -502,7 +502,7 @@
 .conocimientos .formacion .container-formacion .box-formacion button {
   border: none;
   background: transparent;
-  transform: translateX(11.8rem);
+  transform: translate(11.8rem, -1rem);
 }
 .conocimientos i {
   margin-left: 1rem;
@@ -827,6 +827,7 @@ body {
   padding: 0.5rem;
   font-family: var(--font-general);
   text-align: center;
+  font-weight: 400;
 }
 
 .cards-expandibles .card.card-referencia,

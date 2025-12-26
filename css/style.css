@@ -67,7 +67,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 18.8rem;
+  height: 19.8rem;
   width: 20rem;
   background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
   background-repeat: no-repeat;
@@ -119,11 +119,11 @@
 }
 
 .card-habilidad.design::before {
-  height: 20.9rem;
+  height: 21.9rem;
 }
 
 .card-habilidad.social::before {
-  height: 20.1rem;
+  height: 21.1rem;
 }
 
 .referencias {

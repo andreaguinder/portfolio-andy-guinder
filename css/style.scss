@@ -97,8 +97,7 @@ position: absolute;
 
 .cards-expandibles {
 
-            .card.card-referencia,
-            .card.card-proyectos {
+            .card.card-secondary{
 padding: 1rem 0rem 0rem;
                 display: flex;
                 flex-direction: column;
@@ -142,8 +141,7 @@ padding: 1rem 0rem 0rem;
     margin-top: 0.5rem;
                 }
 
-                &.card.card-referencia-abierta,
-                &.card.card-proyectos-abierta {
+                &.card.card-secondary-abierta {
                     height: auto !important;
                 }
 
@@ -174,7 +172,7 @@ padding: 1rem 0rem 0rem;
                     padding-top: 1rem;
                 }
 
-                                            .card-referencia .btn {
+                                            .card-secondary .btn {
                     margin-left: 2rem;
                     margin-top: 1rem;
                 }
@@ -479,8 +477,7 @@ footer{
 
     .cards-expandibles {
 
-            .card.card-referencia,
-            .card.card-proyectos {
+            .card.card-secondary {
                 width: 320px;
                         justify-content: flex-start;
             }
@@ -520,8 +517,7 @@ footer{
 
         .cards-expandibles {
 
-            .card-referencia,
-            .card-proyectos {
+            .card-secondary {
 
                 p {
                     padding: 0rem 0rem 0.5rem 2rem;

@@ -11,9 +11,11 @@
     gap: 3rem;
     margin: 3rem auto 5rem;
 
-    .card-habilidad {
+    .card-primary-habilidad {
         @include flexCenter(column);
+        justify-content: flex-start;
         width: 20rem;
+        height: 21rem;
         background: var(--bg-card);
         position: relative;
         padding: 0.9rem 0rem 1.8rem;
@@ -25,7 +27,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 19.8rem;
+            height: 21rem;
             width: 20rem;
 
             background:
@@ -58,12 +60,11 @@
             font-family: var(--font-general);
         }
 
-        .btn-link {
-            margin: 0.5rem auto 0rem;
-            font-size: 0.9rem;
+        .btn {
+            margin-top: 1rem;
         }
         
-        %card-habilidad-img {
+        %card-primary-habilidad-img {
             width: 85%;
             height: 150px;
             object-fit: cover;
@@ -78,29 +79,19 @@
 
         .img-front {
             background-image: var(--img-card-front);
-            @extend %card-habilidad-img;
+            @extend %card-primary-habilidad-img;
         }
 
         .img-social {
             background-image: var(--img-card-social);
-            @extend %card-habilidad-img;
+            @extend %card-primary-habilidad-img;
         }
 
         .img-graph {
             background-image: var(--img-card-graph);
-            @extend %card-habilidad-img;
+            @extend %card-primary-habilidad-img;
         }
     }
-}
-
-
-
-.card-habilidad.design::before {
-    height: 21.4rem;
-}
-
-.card-habilidad.social::before {
-    height: 20.8rem;
 }
 
 // ==========================================
@@ -181,30 +172,27 @@
         flex-direction: row;
         gap: 2rem;
 
-        %card-habilidad-img {
+        .card-primary-habilidad {
+            height: 22rem;
+
+            &::before {
+                height: 22rem;
+            }
+        }
+
+        %card-primary-habilidad-img {
             height: 190px;
         }
 
-    .card-habilidad .img-graph {
+    .card-primary-habilidad .img-graph {
                 height: 135px;
         padding: 2rem 0rem 0rem;
     }
 
-    .card-habilidad .img-social {
+    .card-primary-habilidad .img-social {
                 height: 172px;
     }
 
-            .card-habilidad.front::before {
-            height: 22.2rem;
-        }
-
-        .card-habilidad.design::before {
-            height: 20.7rem;
-        }
-
-        .card-habilidad.social::before {
-                        height: 22rem;
-        }
     }
 
     .referencias .swiper-referencias-index .swiper {
@@ -231,15 +219,12 @@
     .container__habilidades {
         margin: 2.5rem auto 6rem;
         
-        %card-habilidad-img {
+        %card-primary-habilidad-img {
             height: 220px;
         }
 
-                    .card-habilidad.front::before {
-            height: 28rem;
-        }
 
-        .card-habilidad {
+        .card-primary-habilidad {
             justify-content: flex-start;
             width: 22rem;
             padding: 2rem 0rem 1rem;
@@ -275,8 +260,8 @@
             }
         }
 
-        .card-habilidad.design::before,
-        .card-habilidad.social::before {
+        .card-primary-habilidad.design::before,
+        .card-primary-habilidad.social::before {
             height: 25rem;
             width: 22rem;
         }
@@ -284,7 +269,7 @@
 
     // REFERENCIAS DESK
     .referencias {
-        margin: 0rem auto 2rem;
+        margin: 3rem auto 2rem;
 
         .swiper-referencias-index .swiper {
             width: 1024px;

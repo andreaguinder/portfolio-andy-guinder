@@ -16,7 +16,7 @@
                     grid-template-columns: 1fr;
                     gap: 2rem;
 
-                .card {
+                .card-primary {
                     height: 23rem;
                                             width: 19.4rem;
                     @include flexCenter(column);
@@ -48,6 +48,10 @@
 
                         filter: drop-shadow(0 0 0.5rem var(--accent));
                         border-radius: 2px;
+                    }
+
+                    .btn {
+                        margin-top: 1rem;
                     }
                 }
 
@@ -142,7 +146,7 @@
         .container-cards-web {
                             grid-template-columns: 1fr 1fr 1fr;
 
-                    .card {
+                    .card-primary {
                         color: $white;
                         display: flex;
                         flex-direction: column;
@@ -165,7 +169,7 @@
                         }
 
                         &::before {
-                            width: 20.3rem;
+                            width: 19.5rem;
                             height: 23rem;
                             top: 0;
                         }

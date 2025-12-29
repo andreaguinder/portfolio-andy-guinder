@@ -2,6 +2,7 @@
 :root {
   --bg-body: url("../img/bg-light.png") center/cover no-repeat fixed;
   --bg-header-footer: rgb(137, 7, 78);
+  --line: rgb(255, 255, 255);
   --text-general: rgb(0, 0, 0);
   --accent: rgb(207, 45, 134);
   --title-menu: rgb(240, 213, 231);
@@ -22,8 +23,9 @@
 }
 
 [data-theme=dark] {
-  --bg-body: rgb(40, 40, 48);
+  --bg-body: url("../img/bg-dark.png") center/cover no-repeat fixed;
   --bg-header-footer: rgb(15, 15, 15);
+  --line: rgb(255, 111, 212);
   --text-general: rgb(255, 255, 255);
   --accent: rgb(255, 111, 212);
   --bg-card: rgb(20, 19, 29);
@@ -807,7 +809,7 @@ button {
 }
 
 .btn-link:hover {
-  color: rgb(255, 111, 212);
+  color: var(--accent);
 }
 
 .intro {
@@ -902,7 +904,7 @@ header {
   width: 100% !important;
   margin-right: 0px !important;
   top: 0%;
-  border-bottom: 3px solid rgb(255, 111, 212);
+  border-bottom: 3px solid var(--line);
   z-index: 9;
   display: flex;
   align-items: center;
@@ -917,7 +919,6 @@ header .container-nav {
   justify-content: space-between;
   position: relative;
   padding: 0 1rem;
-  background-color: var(--bg-header-footer);
   height: 100%;
 }
 header .container-nav .logo img {
@@ -926,8 +927,7 @@ header .container-nav .logo img {
 }
 header .container-nav .theme-switch-wrapper {
   order: 2;
-  margin: 0 8.25rem 0rem 0rem;
-  transform: translateX(-4px);
+  transform: translateX(-8.5rem);
 }
 header .container-nav .theme-switch-wrapper .theme-checkbox {
   display: none;
@@ -953,7 +953,7 @@ header .container-nav .theme-switch-wrapper .theme-label .ball {
   transition: transform 0.3s ease;
 }
 header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label {
-  background-color: rgb(255, 111, 212);
+  background-color: var(--accent);
   border-color: rgb(255, 255, 255);
 }
 header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label .ball {
@@ -979,10 +979,10 @@ header .container-nav .site__nav ul {
   margin-bottom: 0px !important;
   height: -moz-fit-content;
   height: fit-content;
-  border: 0.1rem solid rgb(255, 111, 212);
+  border: 0.1rem solid var(--line);
 }
 header .container-nav .site__nav ul li {
-  border-bottom: 2px solid rgb(255, 111, 212);
+  border-bottom: 2px solid var(--line);
 }
 header .container-nav .site__nav ul li a, header .container-nav .site__nav ul li p {
   color: rgb(255, 255, 255);
@@ -1000,8 +1000,6 @@ header .container-nav .site__nav ul li a:hover, header .container-nav .site__nav
   color: rgb(240, 213, 231) !important;
   font-weight: bold !important;
   outline: none !important;
-  box-shadow: none !important;
-  text-shadow: 0px 0px 10px rgba(255, 111, 212, 0.5) !important;
 }
 header .container-nav .site__nav ul li:last-child {
   border-bottom: none;
@@ -1074,14 +1072,12 @@ footer {
   background-position-x: center;
   width: 100%;
   color: rgb(255, 255, 255);
-  box-shadow: 0px -5px 7px 0px rgb(255, 111, 212);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
   height: 12rem;
-  margin: 3rem auto 0rem;
   padding: 1rem 0rem;
 }
 footer div:first-child {
@@ -1123,7 +1119,7 @@ footer .fab:hover,
 footer .fa-brands:hover,
 footer .fa-square-behance:hover,
 footer .behance:hover {
-  color: rgb(255, 111, 212);
+  color: var(--accent);
   text-shadow: rgb(255, 255, 255);
 }
 
@@ -1191,10 +1187,8 @@ footer .behance:hover {
     height: 4.5rem;
     padding: 1rem 0;
     position: relative;
-    border-bottom: 2px solid rgb(255, 111, 212);
-    box-shadow: 0 10px 14px -5px rgb(255, 111, 212);
+    border-bottom: 2px solid var(--accent);
     margin-right: 0px !important;
-    box-shadow: 0 10px 14px -5px rgb(255, 111, 212);
   }
   header .container-nav {
     width: 100%;
@@ -1205,7 +1199,7 @@ footer .behance:hover {
   }
   header .container-nav .theme-switch-wrapper {
     order: 3;
-    margin: 0rem;
+    transform: translateX(0rem);
   }
   header .container-nav .site__nav {
     order: 2;
@@ -1301,7 +1295,7 @@ footer .behance:hover {
   footer .fa-brands:hover,
   footer .fa-square-behance:hover,
   footer .behance:hover {
-    color: rgb(255, 111, 212);
+    color: var(--accent);
     text-shadow: rgb(255, 255, 255);
   }
 }/*# sourceMappingURL=style.css.map */

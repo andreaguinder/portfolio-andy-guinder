@@ -32,6 +32,7 @@ $pink-light-light: rgb(240, 213, 231);
     // Header & Footer
 
     --bg-header-footer: #{$dark-pink-dark};
+    --line: #{$white};
 
     // Variables generales theme mode
 
@@ -69,11 +70,12 @@ $pink-light-light: rgb(240, 213, 231);
 
     // Body
 
-    --bg-body: #{$bg-dark};
+    --bg-body: url('../img/bg-dark.png') center/cover no-repeat fixed;
 
     // Header
 
     --bg-header-footer: #{$black-dark};
+        --line: #{$light-pink};
 
     // Variables generales theme mode
 

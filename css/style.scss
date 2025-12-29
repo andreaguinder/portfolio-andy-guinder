@@ -114,11 +114,6 @@ padding: 1rem 0rem 0rem;
                         border-top-right-radius: 28px;
                 border-bottom-left-radius: 28px;
 
-
-                .btn {
-                    margin: 1rem 0rem;
-                }
-
             }
 
                 .expandible-wrapper {
@@ -155,7 +150,7 @@ padding: 1rem 0rem 0rem;
                 h3 {
                     font-size: 1rem;
                     color: var(--text-card);
-    margin: 1rem 1.5rem 0rem;
+    margin: 1rem 2rem 0rem;
                 }
 
                 .subtitulo {
@@ -171,12 +166,17 @@ padding: 1rem 0rem 0rem;
                     line-height: 0.8rem;
                     font-family: var(--font-general);
                     width: 265px;
-                    padding-left: 1.5rem;
+                    padding-left: 2rem;
         margin: 0rem 0rem 1rem;
                 }
 
                 .texto-info {
                     padding-top: 1rem;
+                }
+
+                                            .card-referencia .btn {
+                    margin-left: 2rem;
+                    margin-top: 1rem;
                 }
 
 
@@ -540,9 +540,7 @@ footer{
 
             }
 
-                            .card.card-referencia .btn {
-                    margin-left: 2rem;
-                }
+
 
     }
     

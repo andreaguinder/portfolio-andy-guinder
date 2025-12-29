@@ -605,7 +605,7 @@
     font-size: 1.8rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion button {
-    transform: translate(20.8rem, 14.5rem);
+    transform: translate(22.8rem, 13.5rem);
     position: absolute;
   }
   .conocimientos .formacion .container-formacion .box-formacion .btn {
@@ -683,6 +683,11 @@
   color: var(--text-general);
   gap: 1rem;
   margin-top: 0rem;
+}
+.body-contacto .contacto .card-info .redes-contacto h3 a,
+.body-contacto .contacto .card-info .redes-contacto a a,
+.body-contacto .contacto .card-info .redes-contacto h4 a {
+  color: rgb(255, 255, 255);
 }
 .body-contacto .contacto .card-info .redes-contacto .btn-link:hover {
   color: var(--accent);
@@ -847,10 +852,6 @@ button {
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
 }
-.cards-expandibles .card.card-referencia .btn,
-.cards-expandibles .card.card-proyectos .btn {
-  margin: 1rem 0rem;
-}
 .cards-expandibles .expandible-wrapper {
   max-height: 0;
   overflow: hidden;
@@ -880,7 +881,7 @@ button {
 .cards-expandibles h3 {
   font-size: 1rem;
   color: var(--text-card);
-  margin: 1rem 1.5rem 0rem;
+  margin: 1rem 2rem 0rem;
 }
 .cards-expandibles .subtitulo {
   color: var(--text-general);
@@ -894,11 +895,15 @@ button {
   line-height: 0.8rem;
   font-family: var(--font-general);
   width: 265px;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   margin: 0rem 0rem 1rem;
 }
 .cards-expandibles .texto-info {
   padding-top: 1rem;
+}
+.cards-expandibles .card-referencia .btn {
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 header {
@@ -1186,9 +1191,6 @@ footer .behance:hover {
   .cards-expandibles .card-proyectos h3 {
     padding: 0rem 0rem 0.5rem 2rem;
     margin-left: 0rem;
-  }
-  .cards-expandibles .card.card-referencia .btn {
-    margin-left: 2rem;
   }
   .intro {
     width: 60%;

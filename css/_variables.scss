@@ -36,9 +36,10 @@ $pink-light-light: rgb(240, 213, 231);
     // Variables generales theme mode
 
     --text-general: #{$black};
-    --accent: #{$light-pink};
+    --accent: #{$dark-pink};
     --title-menu: #{$pink-light-light};
     --font-general: #{$font-main};
+
 
     // Cards
 
@@ -46,8 +47,9 @@ $pink-light-light: rgb(240, 213, 231);
     --text-card: #{$dark-pink};
     --bg-card-light: #{rgba($light-pink-light, 0.15)};
     --bg-dark-pink: #{$dark-pink};
-    --border-card: #{$light-pink};
+    --border-card: #{$dark-pink};
     --title-card: #{$dark-pink};
+        --bg-btn-hover: #{$dark-pink-dark};
 
     --img-card-front: #{url('../img/img-front.png')};
     --img-card-graph: #{url('../img/img-graph.png')};
@@ -87,6 +89,7 @@ $pink-light-light: rgb(240, 213, 231);
     --border-card: #{$light-pink};
     --title-card: #{$white};
     --title-menu: #{$light-pink};
+        --bg-btn-hover: #{$dark-pink};
 
     --img-card-front: #{url('../img/img-front-dark.png')};
     --img-card-graph: #{url('../img/img-graph-dark.png')};

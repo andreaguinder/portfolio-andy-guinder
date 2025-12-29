@@ -35,18 +35,18 @@
 
                         background:
 
-                            linear-gradient(to right, $light-pink 0.3rem, transparent 0.3rem) 0 0,
-                            linear-gradient(to bottom, $light-pink 0.3rem, transparent 0.3rem) 0 0,
+                            linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
+                            linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
 
 
-                            linear-gradient(to left, $light-pink 0.3rem, transparent 0.3rem) 100% 100%,
-                            linear-gradient(to top, $light-pink 0.3rem, transparent 0.3rem) 100% 100%;
+                            linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%,
+                            linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
 
                         background-repeat: no-repeat;
                         background-size: 7.3rem 4.3rem;
 
 
-                        filter: drop-shadow(0 0 0.5rem $light-pink);
+                        filter: drop-shadow(0 0 0.5rem var(--accent));
                         border-radius: 2px;
                     }
                 }
@@ -71,9 +71,6 @@
                         font-family: var(--font-general);
                 }
 
-                .btn-link {
-                    margin-top: 0rem;
-                }
 
             }
 
@@ -173,8 +170,8 @@
                             top: 0;
                         }
 
-                        .btn-link {
-                            padding-top: 1rem;
+                        .btn{
+                            margin-top: 1rem;
                         }
                     }
 

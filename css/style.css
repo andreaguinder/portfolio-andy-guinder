@@ -366,47 +366,54 @@
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 100vh;
   background-attachment: unset;
 }
-.body-contacto .contacto .card-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.body-contacto .contacto {
   width: 100%;
 }
-.body-contacto .contacto .card-info .titulo {
+.body-contacto .card-primary {
+  margin: 9rem auto 5rem;
+  height: 30rem;
+  padding: 1rem;
+  width: 21rem;
+}
+.body-contacto .card-primary::before {
+  height: 30rem;
+  width: 21rem;
+}
+.body-contacto .card-primary .titulo {
   font-size: 3rem;
   font-weight: 400;
   color: var(--title-card);
+  padding: 1rem 0rem 1rem;
   text-shadow: 0 0 5px var(--accent), 0 0 5px var(--accent), 0 0 10px var(--accent), 0 0 10px var(--accent);
-  padding: 10rem 0rem 1rem;
 }
-.body-contacto .contacto .card-info .bajada {
+.body-contacto .card-primary .bajada {
   font-size: 0.75rem;
+  color: var(--text-general);
+  text-align: left;
+  padding: 0rem;
+  font-family: var(--font-general);
+  font-weight: 400;
+}
+.body-contacto .card-primary .subtitulo {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
   color: var(--text-general);
   text-align: center;
   padding: 0.5rem;
-  font-family: var(--font-general);
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
 }
-.body-contacto .contacto .card-info .titulo-general {
-  text-align: center;
-  margin: 1.75rem auto 1rem;
-}
-.body-contacto .contacto .card-info .redes-contacto {
+.body-contacto .card-primary .redes-contacto {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 2rem;
-  padding: 3rem 0rem;
+  gap: 1.5rem;
+  padding: 1.5rem 0rem;
 }
-.body-contacto .contacto .card-info .redes-contacto h3,
-.body-contacto .contacto .card-info .redes-contacto a,
-.body-contacto .contacto .card-info .redes-contacto h4 {
+.body-contacto .card-primary .redes-contacto h4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,27 +424,25 @@
   gap: 1rem;
   margin-top: 0rem;
 }
-.body-contacto .contacto .card-info .redes-contacto h3 a,
-.body-contacto .contacto .card-info .redes-contacto a a,
-.body-contacto .contacto .card-info .redes-contacto h4 a {
+.body-contacto .card-primary .redes-contacto h4 a {
   color: rgb(255, 255, 255);
 }
-.body-contacto .contacto .card-info .redes-contacto .btn-link:hover {
-  color: var(--accent);
+.body-contacto .card-primary .btn {
+  flex-direction: row;
+  gap: 0.3rem;
+  font-size: 1rem;
+  margin: 0rem;
 }
-.body-contacto .contacto .card-info .redes-contacto i {
+.body-contacto .card-primary i {
   font-size: 1.5rem;
   max-width: 35px;
   text-align: center;
+  margin-left: 0rem;
 }
 
 @media only screen and (min-width: 768px) {
   .body-contacto {
     background-image: var(--bg-contacto-tablet);
-  }
-  .body-contacto .contacto .card-info .bajada {
-    font-size: 0.8rem;
-    width: 80%;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -445,39 +450,19 @@
     background-image: var(--bg-contacto-desk);
     background-position: center;
   }
-  .body-contacto .contacto .card-info {
+  .body-contacto .contacto {
     width: 50%;
   }
-  .body-contacto .contacto .card-info .titulo {
-    font-size: 4rem;
-    padding: 3rem 10rem 1rem;
+  .body-contacto .contacto .card-primary {
+    margin: 5rem auto;
+    width: 28rem;
+    align-items: flex-start;
   }
-  .body-contacto .contacto .card-info .bajada {
-    font-size: 1rem;
-    padding: 0rem 2rem 1.25rem;
-    margin: 0rem auto;
+  .body-contacto .contacto .card-primary::before {
+    width: 28rem;
   }
-  .body-contacto .contacto .card-info .titulo-general {
-    text-align: left;
-  }
-  .body-contacto .contacto .card-info .redes-contacto {
-    gap: 2rem;
-    padding: 3rem 0rem 2rem;
-  }
-  .body-contacto .contacto .card-info .redes-contacto h3,
-  .body-contacto .contacto .card-info .redes-contacto a,
-  .body-contacto .contacto .card-info .redes-contacto h4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    gap: 1rem;
-  }
-  .body-contacto .contacto .card-info .redes-contacto i {
-    font-size: 2rem;
-    width: 40px;
+  .body-contacto .contacto .card-primary .bajada {
+    padding: 0rem 1rem;
   }
 }
 * {

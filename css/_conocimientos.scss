@@ -72,27 +72,23 @@
                 }
 
                 ul {
-                            padding: 0rem 0.5rem 1rem 1rem;
+                    padding: 0rem 0.5rem 1rem 1rem;
                 }
 
                 li {
                     margin: 0.5rem 0rem 0rem 0rem;
                     color: var(--text-general);
                     padding: 0rem 0.25rem 0rem 1.5rem;
-                    /* Aumentamos el padding-left para que el punto no tape el texto */
                     font-size: 1rem;
                     font-family: var(--font-general);
                     position: relative;
                     list-style: none;
-                    /* Sacamos el punto por defecto para que no se duplique */
 
                     &::before {
                         content: "•";
-                        /* ESTO ES LO QUE FALTA: sin contenido no se ve */
                         position: absolute;
                         left: 0;
                         top: -0.6rem;
-                        /* Lo ajustamos un poquito para que alinee por el tamaño grande */
                         color: var(--title-card);
                         font-size: 1.5rem;
                     }
@@ -101,7 +97,7 @@
                 button {
                     border: none;
                     background: transparent;
-                        transform: translate(9rem, -1rem);
+                    transform: translate(9rem, -0.5rem);
                 }
 
             }
@@ -168,8 +164,17 @@
 
                 .box-formacion {
                     padding: 1.8rem 0.5rem;
+
+                    li {
+                        padding: 0rem 0.25rem 0.25rem 1.5rem;
+                    }
+
                     h2 {
                         font-size: 1.1rem;
+                    }
+
+                    button {
+                                            transform: translate(9rem, -1rem);
                     }
                 }
             }
@@ -237,23 +242,29 @@
                         padding: 0rem 0rem 0rem 2rem;
                     }
 
+
                     li {
                         font-size: 1rem;
-
-                        &::before {
-                            font-size: 1.8rem;
-                        }
+                        padding: 0rem 0.25rem 0.5rem 1.5rem;
                     }
 
-                    button {
-        transform: translate(22.8rem, 13.5rem);
-    position: absolute;
+
+                    &::before {
+                        font-size: 1.8rem;
                     }
 
-                    .btn {
-                        font-size: 1rem;
-                    }
+                    
+                button {
+                    transform: translate(22.8rem, 14rem);
+                    position: absolute;
                 }
+                }
+
+
+                .btn {
+                    font-size: 1rem;
+                }
+
 
 
 

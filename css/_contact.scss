@@ -28,11 +28,7 @@
             font-weight: 400;
             color: var(--title-card);
             padding: 1rem 0rem 1rem;
-            text-shadow:
-                0 0 5px var(--accent),
-                0 0 5px var(--accent),
-                0 0 10px var(--accent),
-                0 0 10px var(--accent);
+                transform: translateX(0rem);
         }
 
         .bajada {
@@ -74,6 +70,9 @@
                     color: $white;
                 }
 
+                i {
+                    width: 30px;
+                }
             }
         }
 
@@ -118,11 +117,20 @@
         align-items: flex-start;
 
         &::before {
-            width: 28rem;
+            width: 27.9rem;
+            left: 0rem;
+        }
+
+        .titulo {
+                transform: translateX(4.5rem);
         }
 
         .bajada {
                 padding: 0rem 1rem;
+        }
+
+        .redes-contacto {
+            padding: 1.5rem 1rem;
         }
     }
 }

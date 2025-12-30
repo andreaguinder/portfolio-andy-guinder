@@ -17,6 +17,10 @@
         gap: 2rem;
     }
 
+        span {
+    @include flexCenter(row);
+}
+
 }
 
 

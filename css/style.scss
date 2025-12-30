@@ -64,12 +64,29 @@ button {
     font-size: 0.7rem;
     text-decoration: none;
     font-weight: 500;
+        position: relative;
+    z-index: 1;
     @include flexCenter(column);
 }
 
 .btn:hover {
     color: $white;
     background-color: var(--bg-btn-hover);
+}
+
+.btn-square {
+    background: var(--bg-card-light);
+    color: var(--botones);
+    cursor: pointer;
+    font-family: var(--font-general);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transform: translate(15.6rem, -1rem);
+    border: 3px solid var(--border-card);
+    padding: 0.4rem 0.8rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    display: block;
 }
 
 .btn-link:hover {
@@ -113,10 +130,10 @@ header {
         position: relative;
         padding: 0 1rem;
         height: 100%;
+        gap: 62%;
 
         .logo img {
             width: 4.5rem;
-            padding-top: 1rem;
         }
 
         // switch light mode / dark mode
@@ -399,6 +416,27 @@ footer {
         font-size: 1.1rem;
     }
 
+    .h3-con-boton {
+        @include flexCenter(row);
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        .btn-square {
+            text-decoration: none;
+            padding: 0.7rem;
+            @include flexCenter(column);
+            transform: translateX(0rem);
+            margin-top: 0rem;
+
+            i {
+                margin: 0rem;
+            }
+        }
+    }
+
     img {
         width: 100%;
         height: auto;
@@ -536,22 +574,6 @@ footer {
         &.abierto {
             max-height: 700px;
         }
-    }
-
-    .btn-ver-mas,
-    .btn-ver-mas-referencias {
-        background: var(--bg-card-light);
-        border: none;
-        color: var(--title-card);
-        cursor: pointer;
-        font-family: var(--font-general);
-        font-size: 1.5rem;
-        font-weight: 700;
-        transform: translate(15.6rem, -1rem);
-        border: 3px solid var(--border-card);
-        padding: 0.4rem 0.8rem;
-        border-radius: 10px;
-        margin-top: 0.5rem;
     }
 
     &.card.card-secondary-abierta {
@@ -698,6 +720,7 @@ footer {
         .container-nav {
             width: 100%;
             padding: 0rem 3rem;
+            gap: 0%;
 
             .logo {
                 order: 1;
@@ -832,6 +855,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         height: 23rem;
+        width: 20rem;
 
 
         h3 {
@@ -841,13 +865,17 @@ footer {
             padding: 2rem 1rem;
         }
 
+        .h3-con-boton {
+            gap: 0.75rem;
+        }
+
         p {
             padding: 2rem 2rem 0rem 2rem;
             margin-left: 0rem;
         }
 
         &::before {
-            width: 19.5rem;
+            width: 20rem;
             height: 23rem;
             top: 0;
         }

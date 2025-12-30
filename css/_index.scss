@@ -13,6 +13,15 @@
     overflow: hidden;
     padding-bottom: 2rem;
 
+        .dos-botones {
+    @include flexCenter(row);
+        transform: translate(11.25rem, -1rem);
+    gap: 1rem;
+
+    .btn-square {
+        transform: translate(0rem);
+    }
+}
 }
 
 @media only screen and (min-width: 768px) {

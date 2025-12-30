@@ -7,12 +7,13 @@
   --accent: rgb(207, 45, 134);
   --title-menu: rgb(240, 213, 231);
   --font-general: Inter, sans-serif;
+  --botones: rgb(207, 45, 134);
   --bg-card: rgba(244, 194, 228, 0.4);
   --text-card: rgb(207, 45, 134);
   --bg-card-light: rgba(244, 194, 228, 0.15);
   --bg-dark-pink: rgb(207, 45, 134);
   --border-card: rgb(207, 45, 134);
-  --title-card: rgb(207, 45, 134);
+  --title-card: rgb(0, 0, 0);
   --bg-btn-hover: rgb(137, 7, 78);
   --img-card-front: url("../img/img-front.png");
   --img-card-graph: url("../img/img-graph.png");
@@ -28,6 +29,7 @@
   --line: rgb(255, 111, 212);
   --text-general: rgb(255, 255, 255);
   --accent: rgb(255, 111, 212);
+  --botones: rgb(255, 255, 255);
   --bg-card: rgb(20, 19, 29);
   --text-card: rgb(255, 111, 212);
   --bg-card-light: rgba(18, 19, 24, 0.54);
@@ -60,6 +62,17 @@
   overflow: hidden;
   padding-bottom: 2rem;
 }
+.referencias .dos-botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  transform: translate(11.25rem, -1rem);
+  gap: 1rem;
+}
+.referencias .dos-botones .btn-square {
+  transform: translate(0rem);
+}
 
 @media only screen and (min-width: 768px) {
   .container__habilidades {
@@ -88,6 +101,12 @@
   align-items: center;
   grid-template-columns: 1fr;
   gap: 2rem;
+}
+.proyectos span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .otros-proyectos {
@@ -386,7 +405,7 @@
   font-weight: 400;
   color: var(--title-card);
   padding: 1rem 0rem 1rem;
-  text-shadow: 0 0 5px var(--accent), 0 0 5px var(--accent), 0 0 10px var(--accent), 0 0 10px var(--accent);
+  transform: translateX(0rem);
 }
 .body-contacto .card-primary .bajada {
   font-size: 0.75rem;
@@ -427,6 +446,9 @@
 .body-contacto .card-primary .redes-contacto h4 a {
   color: rgb(255, 255, 255);
 }
+.body-contacto .card-primary .redes-contacto h4 i {
+  width: 30px;
+}
 .body-contacto .card-primary .btn {
   flex-direction: row;
   gap: 0.3rem;
@@ -459,10 +481,17 @@
     align-items: flex-start;
   }
   .body-contacto .contacto .card-primary::before {
-    width: 28rem;
+    width: 27.9rem;
+    left: 0rem;
+  }
+  .body-contacto .contacto .card-primary .titulo {
+    transform: translateX(4.5rem);
   }
   .body-contacto .contacto .card-primary .bajada {
     padding: 0rem 1rem;
+  }
+  .body-contacto .contacto .card-primary .redes-contacto {
+    padding: 1.5rem 1rem;
   }
 }
 * {
@@ -523,6 +552,8 @@ button {
   font-size: 0.7rem;
   text-decoration: none;
   font-weight: 500;
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -532,6 +563,21 @@ button {
 .btn:hover {
   color: rgb(255, 255, 255);
   background-color: var(--bg-btn-hover);
+}
+
+.btn-square {
+  background: var(--bg-card-light);
+  color: var(--botones);
+  cursor: pointer;
+  font-family: var(--font-general);
+  font-size: 1.5rem;
+  font-weight: 700;
+  transform: translate(15.6rem, -1rem);
+  border: 3px solid var(--border-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  display: block;
 }
 
 .btn-link:hover {
@@ -575,10 +621,10 @@ header .container-nav {
   position: relative;
   padding: 0 1rem;
   height: 100%;
+  gap: 62%;
 }
 header .container-nav .logo img {
   width: 4.5rem;
-  padding-top: 1rem;
 }
 header .container-nav .theme-switch-wrapper {
   order: 2;
@@ -816,6 +862,30 @@ footer .behance:hover {
   padding: 1rem 2rem 2rem;
   font-size: 1.1rem;
 }
+.card-primary .h3-con-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.card-primary .h3-con-boton .btn-square {
+  text-decoration: none;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(0rem);
+  margin-top: 0rem;
+}
+.card-primary .h3-con-boton .btn-square i {
+  margin: 0rem;
+}
 .card-primary img {
   width: 100%;
   height: auto;
@@ -927,21 +997,6 @@ footer .behance:hover {
 .cards-expandibles .expandible-wrapper.abierto {
   max-height: 700px;
 }
-.cards-expandibles .btn-ver-mas,
-.cards-expandibles .btn-ver-mas-referencias {
-  background: var(--bg-card-light);
-  border: none;
-  color: var(--title-card);
-  cursor: pointer;
-  font-family: var(--font-general);
-  font-size: 1.5rem;
-  font-weight: 700;
-  transform: translate(15.6rem, -1rem);
-  border: 3px solid var(--border-card);
-  padding: 0.4rem 0.8rem;
-  border-radius: 10px;
-  margin-top: 0.5rem;
-}
 .cards-expandibles.card.card-secondary-abierta {
   height: auto !important;
 }
@@ -1044,6 +1099,7 @@ footer .behance:hover {
   header .container-nav {
     width: 100%;
     padding: 0rem 3rem;
+    gap: 0%;
   }
   header .container-nav .logo {
     order: 1;
@@ -1160,6 +1216,7 @@ footer .behance:hover {
     justify-content: flex-start;
     align-items: center;
     height: 23rem;
+    width: 20rem;
   }
   .card-primary h3 {
     text-align: center;
@@ -1167,12 +1224,15 @@ footer .behance:hover {
     margin: 0rem auto;
     padding: 2rem 1rem;
   }
+  .card-primary .h3-con-boton {
+    gap: 0.75rem;
+  }
   .card-primary p {
     padding: 2rem 2rem 0rem 2rem;
     margin-left: 0rem;
   }
   .card-primary::before {
-    width: 19.5rem;
+    width: 20rem;
     height: 23rem;
     top: 0;
   }

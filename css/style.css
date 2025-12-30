@@ -922,7 +922,7 @@ footer .behance:hover {
 }
 .card-primary .img-graph, .card-primary .img-social, .card-primary .img-front {
   width: 85%;
-  height: 130px;
+  height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: -0.5rem auto;
@@ -941,7 +941,7 @@ footer .behance:hover {
 }
 .card-primary .img-graph {
   background-image: var(--img-card-graph);
-  height: 120px;
+  height: 108px;
 }
 
 .swiper-cards-secondary {

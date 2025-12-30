@@ -458,7 +458,7 @@ footer {
 
     %card-primary-habilidad-img {
         width: 85%;
-        height: 130px;
+        height: 125px;
         object-fit: cover;
         margin: -0.5rem auto;
         text-align: center;
@@ -482,7 +482,7 @@ footer {
     .img-graph {
         background-image: var(--img-card-graph);
         @extend %card-primary-habilidad-img;
-        height: 120px;
+        height: 108px;
     }
 }
 

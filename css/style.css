@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --bg-body: url("../img/bg-light.png") center/cover no-repeat fixed;
+  --bg-body: url("../img/bg-light-tiny.png") center/cover no-repeat fixed;
   --bg-header-footer: rgb(137, 7, 78);
   --line: rgb(255, 255, 255);
   --text-general: rgb(0, 0, 0);
@@ -24,7 +24,7 @@
 }
 
 [data-theme=dark] {
-  --bg-body: url("../img/bg-dark.png") center/cover no-repeat fixed;
+  --bg-body: url("../img/bg-dark-tiny.png") center/cover no-repeat fixed;
   --bg-header-footer: rgb(15, 15, 15);
   --line: rgb(255, 111, 212);
   --text-general: rgb(255, 255, 255);
@@ -908,7 +908,7 @@ footer .behance:hover {
 }
 .card-primary img {
   width: 100%;
-  height: auto;
+  height: 125px;
 }
 .card-primary p {
   padding: 1rem 1rem 0rem 1rem;

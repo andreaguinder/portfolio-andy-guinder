@@ -11,7 +11,7 @@
         .container-formacion {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 2rem;
+            gap: 3rem;
 
             .box-formacion {
                 @include flexCenter(column);
@@ -165,7 +165,6 @@
             .container-formacion {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 2rem;
             }
         }
 
@@ -200,7 +199,6 @@
 
             .container-formacion {
                 grid-template-columns: 1fr 1fr;
-                gap: 2rem;
                 width: 71.25rem;
                 margin: 4rem auto;
 

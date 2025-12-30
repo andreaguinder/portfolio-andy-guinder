@@ -50,7 +50,7 @@ button {
 .titulo-general {
     font-weight: 700;
     color: var(--text-general);
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 1.75rem auto 2.5rem;
 }
@@ -61,7 +61,7 @@ button {
     padding: 0.5rem;
     height: auto;
     border-radius: 2px;
-    font-size: 0.7rem;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 500;
         position: relative;
@@ -85,7 +85,7 @@ button {
     border: 3px solid var(--border-card);
     padding: 0.4rem 0.8rem;
     border-radius: 10px;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     display: block;
 }
 
@@ -94,11 +94,11 @@ button {
 }
 
 .intro {
-    width: 80%;
+    width: 84%;
     margin: 8rem auto 2rem;
 
     h2 {
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: var(--text-general);
         text-align: center;
         padding: 0.5rem;
@@ -371,9 +371,10 @@ footer {
 // CARDS PRIMARY
 
 .card-primary {
-    height: 23rem;
+    height: 24rem;
     width: 19.4rem;
     @include flexCenter(column);
+    justify-content: flex-start;
     background-color: var(--bg-card);
     backdrop-filter: blur(2rem);
     border-top-right-radius: 28px;
@@ -383,7 +384,7 @@ footer {
     &::before {
         content: '';
         position: absolute;
-        height: 23rem;
+        height: 24rem;
         width: 19.4rem;
         overflow: hidden;
 
@@ -412,8 +413,8 @@ footer {
     h3 {
         color: var(--title-card);
         text-align: center;
-        padding: 1rem 2rem 2rem;
-        font-size: 1.1rem;
+    padding: 2rem 0.5rem;
+        font-size: 1.2rem;
     }
 
     .h3-con-boton {
@@ -443,9 +444,9 @@ footer {
     }
 
     p {
-        padding: 1.75rem 2rem;
+                padding: 1rem 1rem 0rem 1rem;
         margin: 0rem;
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: var(--text-general);
         font-family: var(--font-general);
     }
@@ -581,22 +582,22 @@ footer {
     }
 
     h3 {
-        font-size: 1rem;
+        font-size: 1.25rem;
         color: var(--text-card);
         margin: 1rem 2rem 0rem;
     }
 
     .subtitulo {
         color: var(--text-general);
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.1rem;
         margin: 1rem 0rem;
     }
 
     p {
         color: var(--text-general);
-        font-size: 0.75rem;
-        line-height: 0.8rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
         font-family: var(--font-general);
         width: 265px;
         padding-left: 2rem;
@@ -617,13 +618,17 @@ footer {
     // ESTILOS GENERALES
 
     .titulo-general {
-        font-size: 1.3rem;
+        font-size: 2rem;
         margin: 1rem auto 2rem;
     }
 
-    .intro h2 {
-        font-size: 0.8rem;
+    .intro {
+        width: 85%;
+
+        h2 {
+        font-size: 1.1rem;
     }
+    } 
 
     // FOOTER
 
@@ -691,17 +696,17 @@ footer {
     .titulo-general {
         color: var(--text-general);
         margin-bottom: 1.5rem;
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
 
 
     .intro {
-        width: 60%;
+        width: 75%;
         margin: 4rem auto 2rem;
 
         h2 {
-            font-size: 1rem;
+            font-size: 1.25rem;
             margin: 1rem auto -2.5rem;
             padding: 2rem;
             margin: 0rem auto;
@@ -870,7 +875,7 @@ footer {
         }
 
         p {
-            padding: 2rem 2rem 0rem 2rem;
+                    padding: 1rem 1.5rem 0rem 1.5rem;
             margin-left: 0rem;
         }
 

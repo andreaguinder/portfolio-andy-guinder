@@ -8,9 +8,9 @@
     width: 100%;
     background-attachment: unset;
 
-        .contacto {
-            width: 100%;
-        }
+    .contacto {
+        width: 100%;
+    }
 
     .card-primary {
         margin: 9rem auto 5rem;
@@ -21,18 +21,19 @@
         &::before {
             height: 30rem;
             width: 21rem;
+            top: -0.2rem;
         }
 
         .titulo {
             font-size: 3rem;
             font-weight: 400;
             color: var(--title-card);
-            padding: 1rem 0rem 1rem;
-                transform: translateX(0rem);
+            padding: 0rem 0rem 0.5rem;
+            transform: translateX(0rem);
         }
 
         .bajada {
-            font-size: 0.75rem;
+            font-size: 1rem;
             color: var(--text-general);
             text-align: left;
             padding: 0rem;
@@ -96,8 +97,35 @@
 
     .body-contacto {
         background-image: var(--bg-contacto-tablet);
+        background-position: center;
 
+        .contacto {
+            width: 100%;
 
+            .card-primary {
+                margin: 10rem auto 5rem;
+                width: 28rem;
+                align-items: flex-start;
+
+                &::before {
+                    width: 27.9rem;
+                    left: 0rem;
+                }
+
+                .titulo {
+                    transform: translateX(4.5rem);
+                    padding: 1rem 0rem;
+                }
+
+                .bajada {
+                    padding: 0rem 1rem;
+                }
+
+                .redes-contacto {
+                    padding: 1.5rem 1rem;
+                }
+            }
+        }
     }
 
 }
@@ -109,30 +137,13 @@
         background-position: center;
 
         .contacto {
-    width: 50%;
+            width: 50%;
 
-    .card-primary {
-        margin: 5rem auto;
-        width: 28rem;
-        align-items: flex-start;
-
-        &::before {
-            width: 27.9rem;
-            left: 0rem;
+            .card-primary {
+                margin: 5rem auto;
+                width: 28rem;
+                align-items: flex-start;
+            }
         }
-
-        .titulo {
-                transform: translateX(4.5rem);
-        }
-
-        .bajada {
-                padding: 0rem 1rem;
-        }
-
-        .redes-contacto {
-            padding: 1.5rem 1rem;
-        }
-    }
-}
     }
 }

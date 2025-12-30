@@ -18,9 +18,9 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 width: 20rem;
-                height: 13rem;
+                height: 14.5rem;
                 background: var(--bg-card);
-                padding: 1.8rem 0rem;
+                padding: 1.8rem 1rem;
                 border-top-right-radius: 28px;
                 border-bottom-left-radius: 28px;
                 position: relative;
@@ -31,7 +31,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    height: 13rem;
+                    height: 14.5rem;
                     width: 20rem;
 
                     background:
@@ -78,7 +78,7 @@
                 li {
                     margin: 0.5rem 0rem 0rem 0rem;
                     color: var(--text-general);
-                    padding: 0rem 0.5rem 0rem 1.5rem;
+                    padding: 0rem 0.25rem 0rem 1.5rem;
                     /* Aumentamos el padding-left para que el punto no tape el texto */
                     font-size: 0.65rem;
                     font-family: var(--font-general);
@@ -101,7 +101,7 @@
                 button {
                     border: none;
                     background: transparent;
-                        transform: translate(12.8rem, -1rem);
+                        transform: translate(11rem, -1rem);
                 }
 
             }

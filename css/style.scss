@@ -4,12 +4,10 @@
 @use "conocimientos";
 @use "contact";
 
-
-// Estilos generales
-
+// ESTILOS GENERALES
 
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
@@ -39,7 +37,7 @@ button {
 }
 
 .texto-oculto-accesibilidad {
-position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
@@ -63,13 +61,13 @@ position: absolute;
     padding: 0.5rem;
     height: auto;
     border-radius: 2px;
-                        font-size: 0.7rem;
-                    text-decoration: none;
-                    font-weight: 500;
-                        @include flexCenter(column);
+    font-size: 0.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    @include flexCenter(column);
 }
 
-.btn:hover{
+.btn:hover {
     color: $white;
     background-color: var(--bg-btn-hover);
 }
@@ -83,103 +81,16 @@ position: absolute;
     margin: 8rem auto 2rem;
 
     h2 {
-    font-size: 0.75rem;
-    color: var(--text-general);
-    text-align: center;
-    padding: 0.5rem;
+        font-size: 0.75rem;
+        color: var(--text-general);
+        text-align: center;
+        padding: 0.5rem;
         font-family: var(--font-general);
         text-align: center;
         font-weight: 400;
     }
 }
 
-// Cards expansibles
-
-.cards-expandibles {
-
-            .card.card-secondary{
-padding: 1rem 0rem 0rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                background-color: var(--bg-card-light);
-                backdrop-filter: blur(10px);
-                border: 2px solid var(--border-card);
-                box-sizing: border-box;
-                transition: all 0.6s ease-in-out;
-                width: 100%; // La card toma los 335px del slide
-                max-width: 320px;
-                        border-top-right-radius: 28px;
-                border-bottom-left-radius: 28px;
-
-            }
-
-                .expandible-wrapper {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height 0.6s ease-in-out;
-
-                    &.abierto {
-                        max-height: 700px;
-                    }
-                }
-
-                .btn-ver-mas,
-                .btn-ver-mas-referencias {
-                    background: var(--bg-card-light);
-    border: none;
-    color: var(--title-card);
-    cursor: pointer;
-    font-family: var(--font-general);
-    font-size: 1.5rem;
-    font-weight: 700;
-    transform: translate(15.6rem, -1rem);
-    border: 3px solid var(--border-card);
-    padding: 0.4rem 0.8rem;
-    border-radius: 10px;
-    margin-top: 0.5rem;
-                }
-
-                &.card.card-secondary-abierta {
-                    height: auto !important;
-                }
-
-                h3 {
-                    font-size: 1rem;
-                    color: var(--text-card);
-    margin: 1rem 2rem 0rem;
-                }
-
-                .subtitulo {
-                    color: var(--text-general);
-                    font-size: 0.9rem;
-                    line-height: 1.1rem;
-                        margin: 1rem 0rem;
-                }
-
-                p {
-                    color: var(--text-general);
-                    font-size: 0.75rem;
-                    line-height: 0.8rem;
-                    font-family: var(--font-general);
-                    width: 265px;
-                    padding-left: 2rem;
-        margin: 0rem 0rem 1rem;
-                }
-
-                .texto-info {
-                    padding-top: 1rem;
-                }
-
-                                            .card-secondary .btn {
-                    margin-left: 2rem;
-                    margin-top: 1rem;
-                }
-
-
-
-}
 // MENU MOB
 
 header {
@@ -203,18 +114,16 @@ header {
         padding: 0 1rem;
         height: 100%;
 
-
         .logo img {
             width: 4.5rem;
             padding-top: 1rem;
         }
 
-
         // switch light mode / dark mode
 
         .theme-switch-wrapper {
             order: 2;
-                transform: translateX(-8.5rem);
+            transform: translateX(-8.5rem);
 
             .theme-checkbox {
                 display: none;
@@ -252,7 +161,6 @@ header {
             }
         }
 
-
         .site__nav {
             top: 100%;
             right: 0%;
@@ -276,7 +184,8 @@ header {
                 li {
                     border-bottom: 2px solid var(--line);
 
-                    a,p {
+                    a,
+                    p {
                         color: $white;
                         display: block;
                         padding: 0rem;
@@ -302,7 +211,6 @@ header {
                     border-bottom: none;
                 }
             }
-
         }
 
         .site__navAbrir {
@@ -311,7 +219,6 @@ header {
             z-index: 100;
         }
 
-
         // MENU HAMBURGUESA
 
         .menu-toggle {
@@ -319,13 +226,13 @@ header {
             height: 3.25rem;
             border: 2px solid $white;
             border-radius: 0.3rem;
-    padding: 0.35rem 1rem 1rem 0.9rem;
+            padding: 0.35rem 1rem 1rem 0.9rem;
             position: absolute;
             top: 0.25rem;
             right: 1rem;
             margin-top: 0.3rem;
             background: transparent;
-    cursor: pointer;
+            cursor: pointer;
         }
 
         .menu-toggle.menu-abierto {
@@ -370,9 +277,7 @@ header {
         .menu-hamburguesa::after {
             transform: translateY(0.35rem);
         }
-
     }
-
 }
 
 header::after {
@@ -381,10 +286,9 @@ header::after {
     display: block;
 }
 
-
 // FOOTER MOB
 
-footer{
+footer {
     background-color: var(--bg-header-footer);
     background-size: cover;
     font-family: var(--font-general);
@@ -400,41 +304,39 @@ footer{
     padding: 1rem 0rem;
 
     div:first-child {
-            @include flexCenter(row);
+        @include flexCenter(row);
         gap: 1em;
     }
 
-    
-    div:nth-child(2){
+    div:nth-child(2) {
         display: flex;
         gap: 1rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
     }
-        p{
-            text-align: center;
+
+    p {
+        text-align: center;
+        color: $white;
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        padding: 0rem 1rem;
+
+        a {
+            text-decoration: none;
             color: $white;
-            font-size: 0.75rem;
-            line-height: 1.2rem;
-            padding: 0rem 1rem;
-            
-
-            a{
-                text-decoration: none;
-                color: $white;
-            }
-
-            a:hover{
-                color: rgb(255, 131, 199);
-            }
         }
-    
+
+        a:hover {
+            color: rgb(255, 131, 199);
+        }
+    }
 
     .fab,
     .fa-brands,
     .fa-square-behance,
-    .behance{
+    .behance {
         font-size: 1.8rem;
         color: white;
     }
@@ -442,13 +344,266 @@ footer{
     .fab:hover,
     .fa-brands:hover,
     .fa-square-behance:hover,
-    .behance:hover{
+    .behance:hover {
         color: var(--accent);
         text-shadow: $white;
     }
 }
 
+
+// CARDS PRIMARY
+
+.card-primary {
+    height: 23rem;
+    width: 19.4rem;
+    @include flexCenter(column);
+    background-color: var(--bg-card);
+    backdrop-filter: blur(2rem);
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 23rem;
+        width: 19.4rem;
+        overflow: hidden;
+
+        background:
+
+            linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
+            linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
+
+
+            linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%,
+            linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
+
+        background-repeat: no-repeat;
+        background-size: 7.3rem 4.3rem;
+
+
+        filter: drop-shadow(0 0 0.5rem var(--accent));
+        border-radius: 2px;
+    }
+
+    .btn {
+        margin-top: 1rem;
+    }
+
+
+    h3 {
+        color: var(--title-card);
+        text-align: center;
+        padding: 1rem 2rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        padding: 1.75rem 2rem;
+        margin: 0rem;
+        font-size: 0.75rem;
+        color: var(--text-general);
+        font-family: var(--font-general);
+    }
+
+    i {
+        margin-left: 1rem;
+    }
+
+
+    %card-primary-habilidad-img {
+        width: 85%;
+        height: 130px;
+        object-fit: cover;
+        margin: -0.5rem auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .img-front {
+        background-image: var(--img-card-front);
+        @extend %card-primary-habilidad-img;
+    }
+
+    .img-social {
+        background-image: var(--img-card-social);
+        @extend %card-primary-habilidad-img;
+    }
+
+    .img-graph {
+        background-image: var(--img-card-graph);
+        @extend %card-primary-habilidad-img;
+        height: 120px;
+    }
+}
+
+
+// SWIPERS CARDS SECONDARY
+
+.swiper-cards-secondary {
+    width: 100%;
+    margin: 0 auto;
+
+    .swiper {
+        width: 320px;
+        height: auto;
+        overflow: hidden;
+        padding: 0rem 0 3.75rem;
+        transition: height 0.6s ease-in-out;
+
+        .swiper-slide {
+            min-height: 7rem;
+            height: auto;
+            width: 100%;
+            display: flex;
+        }
+
+        .swiper-button-prev {
+            left: 4.35rem;
+        }
+
+        .swiper-button-next {
+            left: 14.5rem;
+        }
+
+
+    }
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets {
+    top: auto;
+    bottom: 10px;
+
+    .swiper-pagination-bullet {
+        background-color: var(--title-card);
+    }
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 30px;
+    background-color: var(--accent);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: auto !important;
+    bottom: 5px !important;
+    color: var(--title-card);
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 10;
+}
+
+
+
+// ESTILOS
+
+.cards-expandibles {
+    .card.card-secondary {
+        padding: 1rem 0rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: var(--bg-card-light);
+        backdrop-filter: blur(10px);
+        border: 2px solid var(--border-card);
+        box-sizing: border-box;
+        transition: all 0.6s ease-in-out;
+        width: 100%; // La card toma los 335px del slide
+        max-width: 320px;
+        border-top-right-radius: 28px;
+        border-bottom-left-radius: 28px;
+    }
+
+    .expandible-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.6s ease-in-out;
+
+        &.abierto {
+            max-height: 700px;
+        }
+    }
+
+    .btn-ver-mas,
+    .btn-ver-mas-referencias {
+        background: var(--bg-card-light);
+        border: none;
+        color: var(--title-card);
+        cursor: pointer;
+        font-family: var(--font-general);
+        font-size: 1.5rem;
+        font-weight: 700;
+        transform: translate(15.6rem, -1rem);
+        border: 3px solid var(--border-card);
+        padding: 0.4rem 0.8rem;
+        border-radius: 10px;
+        margin-top: 0.5rem;
+    }
+
+    &.card.card-secondary-abierta {
+        height: auto !important;
+    }
+
+    h3 {
+        font-size: 1rem;
+        color: var(--text-card);
+        margin: 1rem 2rem 0rem;
+    }
+
+    .subtitulo {
+        color: var(--text-general);
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        margin: 1rem 0rem;
+    }
+
+    p {
+        color: var(--text-general);
+        font-size: 0.75rem;
+        line-height: 0.8rem;
+        font-family: var(--font-general);
+        width: 265px;
+        padding-left: 2rem;
+        margin: 0rem 0rem 1rem;
+    }
+
+    .texto-info {
+        padding-top: 1rem;
+    }
+
+    .card-secondary .btn {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+}
+
 @media only screen and (min-width: 768px) {
+    // ESTILOS GENERALES
+
+    .titulo-general {
+        font-size: 1.3rem;
+        margin: 1rem auto 2rem;
+    }
+
+    .intro h2 {
+        font-size: 0.8rem;
+    }
+
+    // FOOTER
 
     footer {
         flex-direction: row;
@@ -459,31 +614,41 @@ footer{
         }
     }
 
-    .titulo-general {
-        font-size: 1.3rem;
-                margin: 1rem auto 2rem;
+    // CARDS PRIMARY
+
+
+
+    // CARDS SECONDARY SWIPER
+
+    .swiper-cards-secondary .swiper {
+        width: 664px;
+        margin-top: 1rem;
+
+        .card {
+            width: 320px;
+        }
+
+        .swiper-button-prev {
+            left: 15rem;
+        }
+
+        .swiper-button-next {
+            left: 25rem;
+        }
     }
 
-    .intro h2 {
-        font-size: 0.8rem;
-    }
-
+    // ESTILOS
 
     .cards-expandibles {
-
-            .card.card-secondary {
-                width: 320px;
-                        justify-content: flex-start;
-            }
-
-
+        .card.card-secondary {
+            width: 320px;
+            justify-content: flex-start;
+        }
     }
 }
 
-
 @media only screen and (min-width: 1024px) {
-
-    // Estilos generales
+    // ESTILOS GENERALES
 
     .hidden-xs {
         display: block;
@@ -497,11 +662,9 @@ footer{
         font-size: 1rem;
     }
 
-    
-                .btn {
-                    font-size: 0.85rem;
-                }
-
+    .btn {
+        font-size: 0.85rem;
+    }
 
     .titulo-general {
         color: var(--text-general);
@@ -509,44 +672,18 @@ footer{
         font-size: 1.75rem;
     }
 
-        .cards-expandibles {
 
-            .card-secondary {
-
-                p {
-                    padding: 0rem 0rem 0.5rem 2rem;
-                    margin-left: 0rem;
-                }
-
-                .texto-info {
-                    padding-top: 1rem;
-                    font-size: 0.85rem;
-                }
-
-                h3 {
-                    padding: 0rem 0rem 0.5rem 2rem;
-                    margin-left: 0rem;
-                }
-
-            }
-
-
-
-    }
-    
-    /// Intro desk
 
     .intro {
-width: 60%;
-margin: 4rem auto 2rem;
+        width: 60%;
+        margin: 4rem auto 2rem;
 
         h2 {
-        font-size: 1rem;
-        margin: 1rem auto -2.5rem;
-        padding: 2rem;
-        margin: 0rem auto;
-    }
-
+            font-size: 1rem;
+            margin: 1rem auto -2.5rem;
+            padding: 2rem;
+            margin: 0rem auto;
+        }
     }
 
     // MENU DESK
@@ -557,7 +694,6 @@ margin: 4rem auto 2rem;
         position: relative;
         border-bottom: 2px solid var(--accent);
         margin-right: 0px !important;
-
 
         .container-nav {
             width: 100%;
@@ -604,8 +740,8 @@ margin: 4rem auto 2rem;
                         display: flex;
                         align-items: center;
 
-
-                        a,p {
+                        a,
+                        p {
                             padding: 0;
                             margin-top: 1.3rem;
                             margin-left: 0.9rem;
@@ -625,69 +761,161 @@ margin: 4rem auto 2rem;
                         }
                     }
                 }
-
             }
-            
 
             // MENU HAMBURGUESA
 
             .menu-toggle {
                 display: none;
             }
-
         }
-
-
     }
 
-// FOOTER DESK
+    // FOOTER DESK
 
-
-    footer{
+    footer {
         width: 100%;
         @include flexCenter(row);
         gap: 5rem;
         height: 4rem;
-    
-            p{
-                text-align: left;
-                align-content: space-around;
+
+        p {
+            text-align: left;
+            align-content: space-around;
+            color: $white;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem 0rem;
+
+            a {
+                text-decoration: none;
                 color: $white;
-                font-size: 0.75rem;
-                padding: 0.25rem 0.5rem 0rem;
-    
-                a{
-                    text-decoration: none;
-                    color: $white;
-                }
-    
-                a:hover{
-                    color: rgb(255, 131, 199);
-                }
             }
-            div:nth-child(2){
-                display: flex;
-                gap: 0rem;
-                align-items: center;
-                align-items: flex-start;
-                justify-content: center;
+
+            a:hover {
+                color: rgb(255, 131, 199);
             }
-    
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            gap: 0rem;
+            align-items: center;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
         .fab,
         .fa-brands,
         .fa-square-behance,
-        .behance{
+        .behance {
             font-size: 1.8rem;
             color: white;
         }
-    
+
         .fab:hover,
         .fa-brands:hover,
         .fa-square-behance:hover,
-        .behance:hover{
+        .behance:hover {
             color: var(--accent);
             text-shadow: $white;
         }
     }
 
+    // CARDS PRIMARY
+
+
+
+    .card-primary {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 23rem;
+
+
+        h3 {
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 0rem auto;
+            padding: 2rem 1rem;
+        }
+
+        p {
+            padding: 2rem 2rem 0rem 2rem;
+            margin-left: 0rem;
+        }
+
+        &::before {
+            width: 19.5rem;
+            height: 23rem;
+            top: 0;
+        }
+
+        .btn {
+            margin-top: 1rem;
+        }
+    }
+
+
+    %card-primary-habilidad-img {
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .img-front,
+    .img-graph,
+    .img-social {
+        height: 200px;
+        width: 90%;
+    }
+
+    .img-graph {
+        width: 93%;
+    }
+
+
+
+
+    .card-primary-habilidad.design::before,
+    .card-primary-habilidad.social::before {
+        height: 25rem;
+        width: 22rem;
+    }
+
+
+
+    // CARDS SECONDARY SWIPER
+
+    .cards-expandibles {
+        .card-secondary {
+            p {
+                padding: 0rem 0rem 0.5rem 2rem;
+                margin-left: 0rem;
+            }
+
+            .texto-info {
+                padding-top: 1rem;
+                font-size: 0.85rem;
+            }
+
+            h3 {
+                padding: 0rem 0rem 0.5rem 2rem;
+                margin-left: 0rem;
+            }
+        }
+    }
+
+    .swiper-cards-secondary .swiper {
+        width: 1024px;
+
+
+        .swiper-button-prev {
+            left: 26rem;
+        }
+
+        .swiper-button-next {
+            left: 37rem;
+        }
+    }
 }

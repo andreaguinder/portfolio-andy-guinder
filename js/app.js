@@ -1,5 +1,4 @@
-// 1. FUNCIONES GLOBALES (Fuera del DOMContent para que el HTML las vea si las llaman por onclick)
-// 1. FUNCIONES GLOBALES
+// FUNCIONES GLOBALES
 function cambiarClaseMenu() {
     var siteNav = document.getElementById("site__nav");
     var menuAbierto = document.getElementById("menu-toggle");
@@ -14,17 +13,15 @@ function cambiarClaseMenu() {
     }
 }
 
-// 2. VINCULACIÓN DE EVENTOS (Cuando carga el DOM)
+// VINCULACIÓN DE EVENTOS 
 document.addEventListener("DOMContentLoaded", function() {
     var botonMenu = document.getElementById("menu-toggle");
     if (botonMenu) {
         botonMenu.addEventListener("click", cambiarClaseMenu);
     }
-    
-    // Acá podés llamar a la función de los proyectos que hicimos antes
 });
 
-// 2. PREFERENCIA DE SISTEMA (Inmediato para evitar el "flash" blanco en modo oscuro)
+// PREFERENCIA DE SISTEMA
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -34,7 +31,7 @@ if (savedTheme) {
     document.documentElement.setAttribute('data-theme', 'dark');
 }
 
-// 3. LÓGICA QUE DEPENDE DEL HTML (DOM)
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- LIGHT / DARK MODE ---
@@ -48,8 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- CARDS DEL INICIO (CON SWIPER) ---
-    // Usamos el código original que te funcionaba
     document.querySelectorAll('.btn-ver-mas').forEach(boton => {
         boton.addEventListener('click', function() {
             const card = this.closest('.card');
@@ -74,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             function syncHeight() {
                 const elapsed = Date.now() - startTime;
-                if (typeof swiperReferenciasIndex !== 'undefined') {
-                    swiperReferenciasIndex.updateAutoHeight(0);
+                if (typeof swiperGeneral !== 'undefined') {
+                    swiperGeneral.updateAutoHeight(0);
                 }
                 if (elapsed < duration) {
                     requestAnimationFrame(syncHeight);
-                } else if (typeof swiperReferenciasIndex !== 'undefined') {
-                    swiperReferenciasIndex.updateAutoHeight(200);
+                } else if (typeof swiperGeneral !== 'undefined') {
+                    swiperGeneral.updateAutoHeight(200);
                 }
             }
             requestAnimationFrame(syncHeight);

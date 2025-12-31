@@ -25,6 +25,8 @@ Bienvenido a mi portfolio personal. Este proyecto ha sido diseñado y desarrolla
 ├── /img         # Imágenes y assets optimizados
 ├── index.html   # Home principal con SEO configurado
 └── README.md    # Documentación técnica del repositorio
+```
 
-📫 Contacto & Disponibilidad
+## 📫 Contacto & Disponibilidad
+
 Me encuentro en Olavarría, Buenos Aires, Argentina, con total disponibilidad para trabajo remoto. Estoy en constante aprendizaje y abierta a nuevos desafíos técnicos.

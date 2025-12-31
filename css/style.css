@@ -150,7 +150,7 @@
 }
 @media only screen and (min-width: 1024px) {
   .proyectos {
-    height: 48rem;
+    height: 78rem;
     margin: 2rem auto 8rem;
   }
   .proyectos .container-cards-web {

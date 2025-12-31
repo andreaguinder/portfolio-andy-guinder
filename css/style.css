@@ -8,6 +8,8 @@
   --title-menu: rgb(240, 213, 231);
   --font-general: Inter, sans-serif;
   --botones: rgb(207, 45, 134);
+  --botones-bg: rgb(207, 45, 134);
+  --text-botones: rgb(255, 255, 255);
   --bg-card: rgba(244, 194, 228, 0.4);
   --text-card: rgb(207, 45, 134);
   --bg-card-light: rgba(244, 194, 228, 0.25);
@@ -15,6 +17,7 @@
   --border-card: rgb(207, 45, 134);
   --title-card: rgb(0, 0, 0);
   --bg-btn-hover: rgb(137, 7, 78);
+  --text-botones: rgb(255, 255, 255);
   --img-card-front: url("../img/img-front.png");
   --img-card-graph: url("../img/img-graph.png");
   --img-card-social: url("../img/img-social.png");
@@ -24,12 +27,14 @@
 }
 
 [data-theme=dark] {
-  --bg-body: url("../img/bg-dark-tiny.png") center/cover no-repeat scroll;
+  --bg-body: rgb(40, 40, 48);
   --bg-header-footer: rgb(15, 15, 15);
   --line: rgb(255, 111, 212);
+  --text-botones: rgb(0, 0, 0);
   --text-general: rgb(255, 255, 255);
   --accent: rgb(255, 111, 212);
   --botones: rgb(255, 255, 255);
+  --botones-bg: rgb(255, 255, 255);
   --bg-card: rgb(20, 19, 29);
   --text-card: rgb(255, 111, 212);
   --bg-card-light: rgba(18, 19, 24, 0.54);
@@ -600,14 +605,14 @@ button {
 }
 
 .btn {
-  background-color: var(--accent);
-  color: rgb(255, 255, 255);
+  background-color: var(--botones-bg);
+  color: var(--text-botones);
   padding: 0.5rem;
   height: auto;
   border-radius: 2px;
   font-size: 1rem;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
   z-index: 1;
   display: flex;

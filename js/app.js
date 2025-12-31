@@ -2,18 +2,18 @@
 function cambiarClaseMenu() {
     var siteNav = document.getElementById("site__nav");
     var menuAbierto = document.getElementById("menu-toggle");
-    
+
     if (siteNav && menuAbierto) {
         siteNav.classList.toggle("site__navAbrir");
         menuAbierto.classList.toggle("menu-abierto");
-        
+
         var estaAbierto = menuAbierto.classList.contains("menu-abierto");
         menuAbierto.setAttribute("aria-expanded", estaAbierto);
     }
 }
 
 // VINCULACIÓN DE EVENTOS 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var botonMenu = document.getElementById("menu-toggle");
     if (botonMenu) {
         botonMenu.addEventListener("click", cambiarClaseMenu);
@@ -45,11 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.querySelectorAll('.btn-ver-mas').forEach(boton => {
-        boton.addEventListener('click', function() {
+        boton.addEventListener('click', function () {
             const card = this.closest('.card');
             const wrapper = card.querySelector('.expandible-wrapper');
             const estaAbriendo = !wrapper.classList.contains('abierto');
-            
+
             if (estaAbriendo) {
                 wrapper.style.maxHeight = wrapper.scrollHeight + "px";
                 wrapper.classList.add('abierto');
@@ -81,11 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
-// FOOTER YEAR
 
-const yearSpan = document.getElementById('year');
+    // FOOTER YEAR
 
-yearSpan.textContent = new Date().getFullYear();
+    const yearSpan = document.getElementById('year');
+
+    yearSpan.textContent = new Date().getFullYear();
 
 });

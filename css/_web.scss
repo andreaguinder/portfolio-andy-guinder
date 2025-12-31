@@ -17,9 +17,9 @@
         gap: 3rem;
     }
 
-        span {
-    @include flexCenter(row);
-}
+    span {
+        @include flexCenter(row);
+    }
 
 }
 

@@ -56,14 +56,14 @@ button {
 }
 
 .btn {
-    background-color: var(--accent);
-    color: $white;
+    background-color: var(--botones-bg);
+    color: var(--text-botones);
     padding: 0.5rem;
     height: auto;
     border-radius: 2px;
     font-size: 1rem;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     z-index: 1;
     @include flexCenter(column);
@@ -782,7 +782,7 @@ footer {
             justify-content: center;
         }
 
-                div:nth-child(3) {
+        div:nth-child(3) {
             width: 400px;
         }
 

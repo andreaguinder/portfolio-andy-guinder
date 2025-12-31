@@ -1,30 +1,30 @@
-# Portfolio Andrea Guinder
+# 🚀 Portfolio Profesional - Andrea Guinder
 
-### [Te invito a visitar mi página web: ](https://andreaguinder.github.io/portfolio-andy-guinder/)
+Bienvenido a mi portfolio personal. Este proyecto ha sido diseñado y desarrollado desde cero, integrando mis capacidades como **Diseñadora Gráfica y Desarrolladora Frontend** para ofrecer una experiencia de usuario (UX) de alta calidad y un código técnicamente robusto.
 
-## ¿Quién soy?
+## 🛠️ Stack Técnico & Metodología
+* **HTML5 Semántico**: Código estructurado para SEO técnico (etiquetas META) y accesibilidad (WCAG).
+* **SASS (Procesador Avanzado)**: Arquitectura modular con variables dinámicas, mixins, placeholders y anidación prolija.
+* **JavaScript Vanilla & Swiper JS**: Lógica propia para la manipulación del DOM y el sistema de temas (Dark/Light Mode), integrada con la librería **Swiper JS Bundle** para lograr carruseles fluidos, táctiles y de alto rendimiento.
+* **Zero Frameworks**: Estilos 100% propios, priorizando la performance y la originalidad visual. No se utilizaron frameworks de CSS (como Bootstrap o Tailwind).
+* **Optimización de Assets**: Imágenes editadas en **Ps/Ai** y comprimidas para una carga ultra-rápida.
 
-Soy Andrea Guinder, Diseñadora Gráfica y Desarrolladora Web. Actualmente formo parte del equipo de Movistar Argentina. Mi perfil combina la sensibilidad estética del diseño con la lógica técnica de la programación, manteniéndome en formación constante para crear experiencias digitales de alto impacto.
+## ✨ Características Destacadas
+* **Experiencia Inclusiva**: Dark/Light mode con contraste chequeado, tamaños tipográficos adaptativos y etiquetas **ARIA-labels**.
+* **UX Writing**: Textos optimizados y pulidos con herramientas como Wordtune para una comunicación clara y profesional.
+* **Código Reutilizable**: Sistema de cards y componentes escalables para futuros proyectos.
+* **Evolución Transparente**: Acceso a versiones anteriores de mi portfolio para observar mi crecimiento técnico.
+* **Documentación Individual**: Cada proyecto destacado cuenta con su propio archivo MD con el detalle del proceso.
 
-## Tecnologías utilizadas:
+## 📁 Estructura del Proyecto
+```text
+/root
+├── /pages       # Vistas internas (Web, Contacto, etc.)
+├── /css         # Estilos SASS y variables de paleta viva
+├── /js          # Lógica funcional y librerías de terceros (Carruseles)
+├── /img         # Imágenes y assets optimizados
+├── index.html   # Home principal con SEO configurado
+└── README.md    # Documentación técnica del repositorio
 
-* Frontend: HTML5, CSS3, JavaScript Vanilla.
-
-* Preprocesadores: SASS (Arquitectura modular).
-
-## Sobre el proyecto:
-
-* Arquitectura Limpia: Organización modular mediante carpetas independientes para pages, css, js e imágenes, garantizando un proyecto escalable.
-
-* SASS Avanzado: Implementación de mixins, placeholders y anidación profunda. Estructura de archivos parciales compilados en un estilo global.
-
-* Desarrollo "Vanilla": Estilos 100% de mi autoría y lógica de programación pura, sin dependencia de frameworks externos.
-
-* Experiencia de Usuario (UX): Implementación de Light y Dark Mode dinámico mediante JavaScript.
-
-* Responsive Design: Adaptabilidad total mediante Media Queries para una visualización óptima en mobile, tablet y desktop (orientación vertical y horizontal).
-
-## Contáctame:
-
-Por información o servicios no dudes en contactarme a través de
-### [LinkedIn](https://www.linkedin.com/in/andrea-guinder/)
+📫 Contacto & Disponibilidad
+Me encuentro en Olavarría, Buenos Aires, Argentina, con total disponibilidad para trabajo remoto. Estoy en constante aprendizaje y abierta a nuevos desafíos técnicos.

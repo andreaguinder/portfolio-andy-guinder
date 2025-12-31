@@ -42,6 +42,8 @@ $pink-light-light: rgb(240, 213, 231);
     --title-menu: #{$pink-light-light};
     --font-general: #{$font-main};
     --botones: #{$dark-pink};
+    --botones-bg: #{$dark-pink};
+    --text-botones: #{$white};
 
 
     // Cards
@@ -53,6 +55,7 @@ $pink-light-light: rgb(240, 213, 231);
     --border-card: #{$dark-pink};
     --title-card: #{$black};
     --bg-btn-hover: #{$dark-pink-dark};
+    --text-botones: #{$white};
 
     --img-card-front: #{url('../img/img-front.png')};
     --img-card-graph: #{url('../img/img-graph.png')};
@@ -72,18 +75,20 @@ $pink-light-light: rgb(240, 213, 231);
 
     // Body
 
-    --bg-body: url('../img/bg-dark-tiny.png') center/cover no-repeat scroll;
+    --bg-body: #{$bg-dark};
 
     // Header
 
     --bg-header-footer: #{$black-dark};
     --line: #{$light-pink};
+    --text-botones: #{$black};
 
     // Variables generales theme mode
 
     --text-general: #{$white};
     --accent: #{$light-pink};
     --botones: #{$white};
+    --botones-bg: #{$white};
 
     // Cards
 

@@ -21,14 +21,13 @@
         &::before {
             height: 30rem;
             width: 21rem;
-            top: -0.2rem;
         }
 
         .titulo {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 400;
             color: var(--title-card);
-            padding: 0rem 0rem 0.5rem;
+            padding: 0.5rem 0rem 0.5rem;
             transform: translateX(0rem);
         }
 
@@ -43,7 +42,7 @@
 
         .subtitulo {
             margin-bottom: 1rem;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             color: var(--text-general);
             text-align: center;
             padding: 0.5rem;
@@ -110,11 +109,17 @@
                 &::before {
                     width: 27.9rem;
                     left: 0rem;
+                            top: 0rem;
                 }
 
                 .titulo {
+                    font-size: 3rem;
                     transform: translateX(4.5rem);
                     padding: 1rem 0rem;
+                }
+
+                .subtitulo {
+            font-size: 1.25rem;
                 }
 
                 .bajada {

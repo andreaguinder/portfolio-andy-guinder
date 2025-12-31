@@ -5,7 +5,7 @@
     height: auto;
     @include flexCenter(column);
     gap: 3rem;
-    margin: 3rem auto 5rem;
+    margin: 3rem auto 4rem;
 }
 
 .referencias {
@@ -28,7 +28,7 @@
     .container__habilidades {
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 2rem;
+        gap: 2.5rem;
     }
 
 }
@@ -37,7 +37,7 @@
 
     // HABILIDADES DESK
     .container__habilidades {
-        margin: 2.5rem auto 6rem;
+        margin: 0rem auto 6rem;
 
     }
 

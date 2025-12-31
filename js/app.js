@@ -82,4 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    
+// FOOTER YEAR
+
+const yearSpan = document.getElementById('year');
+
+yearSpan.textContent = new Date().getFullYear();
+
 });

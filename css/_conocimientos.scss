@@ -8,6 +8,10 @@
     .formacion {
         margin-bottom: 1.5rem;
 
+        h1.titulo-general {
+            margin: 1.75rem auto 1.5rem;
+        }
+
         .container-formacion {
             display: grid;
             grid-template-columns: 1fr;
@@ -48,26 +52,25 @@
                 h2 {
                     color: var(--text-card);
                     text-align: center;
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     display: inline-flex;
                     gap: 1rem;
                     justify-content: center;
                     align-items: center;
                     padding: 0rem 0rem 0rem 1rem;
-
+    margin-top: -0.5rem;
                 }
 
                 h3 {
                     color: var(--text-general);
                     text-align: center;
-                    font-size: 1.1rem !important;
+                    font-size: 1.05rem !important;
                     display: inline-flex;
                     gap: 1rem;
                     justify-content: center;
                     align-items: center;
                     text-align: left;
                     padding: 0rem 0rem 0rem 1rem;
-                    font-size: 0.8rem;
 
                 }
 
@@ -113,19 +116,18 @@
     }
 
     .toolbox {
-        margin-bottom: 1.5rem;
 
 
         .container-tools {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
-            margin-top: -2rem;
+            margin-top: -1rem;
 
 
             .box-toolbox {
                 @include flexCenter(column);
-                padding: 1rem;
+    padding: 1rem 0.5rem;
                 background-color: var(--bg-card-light);
                 backdrop-filter: blur(10px);
                 border: 2px solid var(--border-card);
@@ -138,7 +140,7 @@
 
 
                 h3 {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     color: var(--title-card);
                 }
             }
@@ -161,6 +163,7 @@
             .container-formacion {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                margin-bottom: 2rem;
 
                 .box-formacion {
                     padding: 1.8rem 0.5rem;
@@ -170,7 +173,7 @@
                     }
 
                     h2 {
-                        font-size: 1.1rem;
+                        font-size: 1.2rem;
                     }
 
                     button {
@@ -183,8 +186,12 @@
         .toolbox {
             .container-tools {
                 grid-template-columns: 1fr 1fr 1fr;
-                gap: 1rem;
+                gap: 1.5rem;
                 margin-top: -1rem;
+
+                .box-toolbox {
+                    padding: 1rem;
+                }
             }
 
         }
@@ -195,7 +202,6 @@
 
 @media only screen and (min-width: 1024px) {
 
-    // MOBILE
     .conocimientos {
         margin: 0rem;
 
@@ -207,12 +213,11 @@
         }
 
         .formacion {
-            margin: 4rem auto 1rem;
-
+margin-top: -2rem;
             .container-formacion {
                 grid-template-columns: 1fr 1fr;
                 width: 71.25rem;
-                margin: 4rem auto;
+                        margin: 2.5rem auto;
 
                 .box-formacion {
                     width: 34rem;
@@ -279,7 +284,7 @@
             .container-tools {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 2rem;
-                margin: 4rem auto 6rem;
+                        margin: 2.5rem auto 6rem;
 
                 .box-toolbox {
                     width: 16rem;

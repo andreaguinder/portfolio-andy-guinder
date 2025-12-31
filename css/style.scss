@@ -318,6 +318,7 @@ footer {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        width: 320px;
     }
 
     p {
@@ -780,6 +781,11 @@ footer {
             align-items: flex-start;
             justify-content: center;
         }
+
+                div:nth-child(3) {
+            width: 400px;
+        }
+
 
         .fab,
         .fa-brands,

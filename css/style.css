@@ -308,7 +308,7 @@
     padding: 0rem 0.25rem 0.25rem 1.5rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion button {
     transform: translate(9rem, -1rem);
@@ -816,6 +816,7 @@ footer div:nth-child(3) {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 320px;
 }
 footer p {
   text-align: center;
@@ -1209,6 +1210,9 @@ footer .behance:hover {
     gap: 0rem;
     align-items: flex-start;
     justify-content: center;
+  }
+  footer div:nth-child(3) {
+    width: 400px;
   }
   footer .fab,
   footer .fa-brands,

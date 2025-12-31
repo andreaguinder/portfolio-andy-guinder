@@ -261,6 +261,9 @@
   margin: 1rem auto 2rem;
   color: var(--text-general);
 }
+.conocimientos .toolbox {
+  margin-bottom: 2rem;
+}
 .conocimientos .toolbox .container-tools {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -287,6 +290,15 @@
 .conocimientos .toolbox .container-tools .box-toolbox h3 {
   font-size: 1rem;
   color: var(--title-card);
+}
+.conocimientos .toolbox-soft {
+  margin-bottom: 0rem;
+}
+.conocimientos .toolbox-soft .container-tools {
+  grid-template-columns: 1fr;
+}
+.conocimientos .toolbox-soft .container-tools .box-toolbox {
+  width: 18rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -320,6 +332,9 @@
   }
   .conocimientos .toolbox .container-tools .box-toolbox {
     padding: 1rem;
+  }
+  .conocimientos .toolbox-soft .container-tools {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -383,13 +398,25 @@
   .conocimientos .toolbox .container-tools {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
-    margin: 2.5rem auto 6rem;
+    margin: 2.5rem auto 1rem;
   }
   .conocimientos .toolbox .container-tools .box-toolbox {
     width: 16rem;
   }
   .conocimientos .toolbox .container-tools .box-toolbox h3 {
     font-size: 1.1rem;
+  }
+  .conocimientos .toolbox-soft {
+    margin-bottom: 5rem;
+  }
+  .conocimientos .toolbox-soft .container-tools {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    width: 22rem;
+    justify-content: center;
+  }
+  .conocimientos .toolbox-soft .container-tools .box-toolbox {
+    width: 20rem;
   }
 }
 .body-contacto {

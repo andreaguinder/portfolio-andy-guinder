@@ -7,7 +7,6 @@ function cambiarClaseMenu() {
         siteNav.classList.toggle("site__navAbrir");
         menuAbierto.classList.toggle("menu-abierto");
         
-        // Accesibilidad: Avisamos al lector de pantalla si el menú se expandió
         var estaAbierto = menuAbierto.classList.contains("menu-abierto");
         menuAbierto.setAttribute("aria-expanded", estaAbierto);
     }

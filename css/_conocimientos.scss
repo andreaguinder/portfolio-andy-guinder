@@ -58,7 +58,7 @@
                     justify-content: center;
                     align-items: center;
                     padding: 0rem 0rem 0rem 1rem;
-    margin-top: -0.5rem;
+                    margin-top: -0.5rem;
                 }
 
                 h3 {
@@ -116,6 +116,7 @@
     }
 
     .toolbox {
+        margin-bottom: 2rem;
 
 
         .container-tools {
@@ -127,7 +128,7 @@
 
             .box-toolbox {
                 @include flexCenter(column);
-    padding: 1rem 0.5rem;
+                padding: 1rem 0.5rem;
                 background-color: var(--bg-card-light);
                 backdrop-filter: blur(10px);
                 border: 2px solid var(--border-card);
@@ -147,6 +148,18 @@
         }
 
 
+    }
+
+    .toolbox-soft {
+        margin-bottom: 0rem;
+
+        .container-tools {
+            grid-template-columns: 1fr;
+
+            .box-toolbox {
+                width: 18rem;
+            }
+        }
     }
 }
 
@@ -195,6 +208,14 @@
             }
 
         }
+
+        .toolbox-soft {
+
+            .container-tools {
+                grid-template-columns: 1fr 1fr;
+
+            }
+        }
     }
 }
 
@@ -213,11 +234,12 @@
         }
 
         .formacion {
-margin-top: -2rem;
+            margin-top: -2rem;
+
             .container-formacion {
                 grid-template-columns: 1fr 1fr;
                 width: 71.25rem;
-                        margin: 2.5rem auto;
+                margin: 2.5rem auto;
 
                 .box-formacion {
                     width: 34rem;
@@ -238,8 +260,8 @@ margin-top: -2rem;
                     }
 
                     h3 {
-                                padding: 0.25rem 0rem 1rem 2rem;
-        font-size: 1.4rem;
+                        padding: 0.25rem 0rem 1rem 2rem;
+                        font-size: 1.4rem;
                     }
 
                     ul {
@@ -284,7 +306,7 @@ margin-top: -2rem;
             .container-tools {
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 gap: 2rem;
-                        margin: 2.5rem auto 6rem;
+                margin: 2.5rem auto 1rem;
 
                 .box-toolbox {
                     width: 16rem;
@@ -293,6 +315,21 @@ margin-top: -2rem;
                         font-size: 1.1rem;
                     }
                 }
+            }
+        }
+
+        .toolbox-soft {
+            margin-bottom: 5rem;
+
+            .container-tools {
+                grid-template-columns: 1fr 1fr 1fr;
+                        gap: 3rem;
+        width: 22rem;
+        justify-content: center;
+
+        .box-toolbox {
+            width: 20rem;
+        }
             }
         }
     }

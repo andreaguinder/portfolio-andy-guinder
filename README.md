@@ -27,6 +27,10 @@ Bienvenido a mi portfolio personal. Este proyecto ha sido diseñado y desarrolla
 └── README.md    # Documentación técnica del repositorio
 ```
 
+## 💻 Otros Proyectos
+
+Esta sección incluye proyectos seleccionados en el apartado de "Otros Proyectos" que han sido optimizados técnica y estéticamente durante el 2025. El repositorio se encuentra en constante actualización, integrando nuevos desarrollos a medida que continúo expandiendo mi stack tecnológico.
+
 ## 📫 Contacto & Disponibilidad
 
 Me encuentro en Olavarría, Buenos Aires, Argentina, con total disponibilidad para trabajo remoto. Estoy en constante aprendizaje y abierta a nuevos desafíos técnicos.

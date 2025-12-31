@@ -585,6 +585,10 @@ button {
   display: block;
 }
 
+.visible-tablet {
+  display: block;
+}
+
 .texto-oculto-accesibilidad {
   position: absolute;
   width: 1px;
@@ -1080,6 +1084,9 @@ footer .behance:hover {
   .visible-xs {
     display: none;
   }
+  .visible-tablet {
+    display: block;
+  }
   .titulo-general {
     font-size: 1.75rem;
     margin: 1rem auto 2rem;
@@ -1130,6 +1137,9 @@ footer .behance:hover {
     display: block;
   }
   .visible-xs {
+    display: none;
+  }
+  .visible-tablet {
     display: none;
   }
   .btn-link {

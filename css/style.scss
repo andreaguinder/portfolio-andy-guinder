@@ -23,6 +23,11 @@ button {
     border: none;
 }
 
+i {
+position: relative;
+z-index: 1;
+}
+
 .full-width {
     width: 100%;
     margin: 0rem;
@@ -40,17 +45,6 @@ button {
     display: block;
 }
 
-.texto-oculto-accesibilidad {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
 .titulo-general {
     font-weight: 700;
     color: var(--text-general);
@@ -58,6 +52,16 @@ button {
     text-align: center;
     margin: 1.75rem auto 2.5rem;
 }
+
+    .h3-con-boton {
+        @include flexCenter(row);
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--text-general);
+    }
 
 .btn {
     background-color: var(--botones-bg);
@@ -78,24 +82,27 @@ button {
     background-color: var(--bg-btn-hover);
 }
 
-.btn-square {
-    background: var(--bg-card-light);
+.btn-square-red {
     color: var(--botones);
     cursor: pointer;
     font-family: var(--font-general);
-    font-size: 1.5rem;
-    font-weight: 700;
-    transform: translate(15.6rem, -1rem);
-    border: 3px solid var(--border-card);
-    padding: 0.4rem 0.8rem;
-    border-radius: 10px;
-    margin-top: 1rem;
+    font-size: 2rem;
     display: block;
 }
 
-.btn-link:hover {
-    color: var(--accent);
+.btn-square-mas {
+    color: var(--botones);
+    cursor: pointer;
+    font-family: var(--font-general);
+    font-size: 1.25rem;
+    font-weight: 700;
+    transform: translate(15.6rem, -1rem);
+    border: 1.5px solid var(--border-card);
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+    display: block;
 }
+
 
 .intro {
     width: 84%;
@@ -383,32 +390,15 @@ footer {
         margin-top: 1rem;
     }
 
-    h3 {
+    i {
+        color: var(--text-general);
+    }
+
+    .h3-sin-boton {
         color: var(--title-card);
         text-align: center;
         padding: 2rem 0.5rem;
         font-size: 1.2rem;
-    }
-
-    .h3-con-boton {
-        @include flexCenter(row);
-        padding: 1rem 0.5rem;
-        gap: 1rem;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-
-        .btn-square {
-            text-decoration: none;
-            padding: 0.7rem;
-            @include flexCenter(column);
-            transform: translateX(0rem);
-            margin-top: 0rem;
-
-            i {
-                margin: 0rem;
-            }
-        }
     }
 
     img {
@@ -424,9 +414,6 @@ footer {
         font-family: var(--font-general);
     }
 
-    i {
-        margin-left: 1rem;
-    }
 
     %card-primary-habilidad-img {
         width: 85%;
@@ -547,10 +534,14 @@ footer {
         height: auto !important;
     }
 
-    h3 {
+    .titulo {
         font-size: 1.25rem;
         color: var(--text-card);
         margin: 1rem 2rem 0rem;
+                display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
     }
 
     .subtitulo {
@@ -558,6 +549,15 @@ footer {
         font-size: 1rem;
         line-height: 1.1rem;
         margin: 1rem 0rem;
+    }
+
+    i {
+        color: var(--text-card);
+    }
+
+    .fa-github {
+        font-size: 1.75rem;
+        margin-bottom: 0.6rem;
     }
 
     p {
@@ -821,15 +821,11 @@ footer {
         height: 25rem;
         width: 20rem;
 
-        h3 {
+        .h3-sin-boton {
             text-align: center;
             font-size: 1.3rem;
             margin: 0rem auto;
             padding: 2rem 1rem;
-        }
-
-        .h3-con-boton {
-            gap: 0.75rem;
         }
 
         p {
@@ -882,7 +878,7 @@ footer {
                 font-size: 0.85rem;
             }
 
-            h3 {
+           .titulo {
                 padding: 0rem 0rem 0.5rem 2rem;
                 margin-left: 0rem;
             }

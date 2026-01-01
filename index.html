@@ -10,8 +10,7 @@
   <meta name="keywords"
     content="diseño ux ui, desarrollo frontend, maquetación web, andrea guinder portfolio, sass, javascript vanilla, diseño web argentina, accesibilidad web, diseño gráfico y desarrollo, programadora frontend olavarría">
   <!-----Bots y especificaciones---->
-  <meta name="ROBOTS" content="INDEX, FOLLOW">
-  <meta name="ROBOTS" content="ALL">
+  <meta name="ROBOTS" content="INDEX, FOLLOW, ALL">
   <meta name="revisit-after" content="5 Days">
   <meta name="language" content="Spanish">
   <meta http-equiv="Content-Language" content="Es">
@@ -26,12 +25,11 @@
   <!--------Autor y titulo-------->
   <meta name="author" content="Andrea Belén Guinder Vichich">
   <meta name="title" content="Andrea Guinder Portfolio">
-  <!----------Fuentes de Google------------>
+   <!----------Fuentes de Google------------>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!------------Logo en URL------------>
   <link rel="shortcut icon" href="img/short-icon.png" type="image/x-icon">
   <!--------Enlace a FontAwesome---------->
@@ -98,7 +96,7 @@
     <section class="container__habilidades">
 
       <div class="card-primary">
-        <h3>Frontend Dev<i class="fa fa-edit" aria-label="Icono Frontend"></i></h3>
+        <h3 class="h3-sin-boton">Frontend Dev</h3>
         <div class="img-front"></div>
         <div>
           <p>
@@ -110,27 +108,37 @@
       </div>
 
       <div class="card-primary">
-        <h3>Graphic Design<i class="fa fa-pen-nib" aria-label="Icono Graphic Desing"></i></h3>
+                        <h3 class="h3-con-boton">Graphic Design
+                            <span>
+                                <a href="https://www.behance.net/andreaguinder" class="btn-square-red"
+                                    target="_blank" aria-label="Ver trabajos graficos en Behance">
+                                    <i class="fa-brands fa-square-behance" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                        </h3>
         <div class="img-graph"></div>
         <div>
           <p>
             +10 años creando conceptos visuales potentes. Desde mi proyecto <b>Life Diseño Gráfico</b> hasta
-            consultorías corporativas, traduzco valores de marca en diseño de alto nivel.<br>
-            <a class="btn full-width" href="https://www.behance.net/andreaguinder" target="_blank">[ Explora mi
-              portfolio en Behance ]</a>
+            consultorías corporativas, traduzco valores de marca en diseño de alto nivel.
           </p>
         </div>
       </div>
 
       <div class="card-primary">
-        <h3>Social media<i class="fa-solid fa-mobile-screen" aria-label="Icono Social Media"></i></h3>
+                        <h3 class="h3-con-boton">Social Media
+                            <span>
+                                <a href="https://www.behance.net/andreaguinder" class="btn-square-red"
+                                    target="_blank" aria-label="Ver trabajos de Social Media en Behance">
+                                    <i class="fa-brands fa-square-behance" aria-hidden="true"></i>
+                                </a>
+                            </span>
+                        </h3>
         <div class="img-social"></div>
         <div>
           <p>
             Gestión estratégica de redes para el rubro estética. +2 años potenciando marcas a través de contenido
-            creativo y trato personalizado con el cliente.<br>
-            <a class="btn full-width" href="https://www.behance.net/andreaguinder" target="_blank">[ Ver casos de éxito
-              en mi Behance ]</a>
+            creativo y trato personalizado con el cliente.
           </p>
         </div>
       </div>
@@ -150,13 +158,8 @@
             <div class="swiper-wrapper">
 
               <div class="swiper-slide card card-secondary">
-                <h3>Lucas Giuliani</h3>
+                <h3 class="titulo">Lucas Giuliani</h3>
                 <p class="subtitulo">Ex-líder team UX/Maquetado en Movistar Argentina</p>
-                <button>
-                  <a class="btn" href="https://www.linkedin.com/in/lucas-giuliani/" target="_blank"
-                    alt="enlace para ir a linkedin">[ Ver
-                    LinkedIn ]</a>
-                </button>
                 <div class="expandible-wrapper">
                   <p class="texto-info">
                     "Tuve la oportunidad de trabajar con Andrea en Movistar y fue una experiencia muy enriquecedora.
@@ -173,20 +176,22 @@
                     limpios e inclusivos.
                     Recomiendo sinceramente contar con ella en tu equipo de desarrollo."
                   </p>
+                                  <button>
+                  <a class="btn" href="https://www.linkedin.com/in/lucas-giuliani/" target="_blank"
+                    alt="enlace para ir a linkedin">[ Ver
+                    LinkedIn ]</a>
+                </button>
                 </div>
-                <button class="btn-ver-mas btn-square"
+                <button class="btn-ver-mas btn-square-mas"
                   aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus"
                     aria-hidden="true"></i>
                 </button>
               </div>
 
               <div class="swiper-slide card card-secondary">
-                <h3>Jeanette Ulloa</h3>
+                <h3 class="titulo">Jeanette Ulloa</h3>
                 <p class="subtitulo">Compañera team UX de CoE UX en Movistar Argentina</p>
-                <button>
-                  <a class="btn " href="https://www.linkedin.com/in/ulloa-jeanette/" target="_blank"
-                    alt="enlace para ir a linkedin">[ Ver
-                    LinkedIn ]</a></button>
+
                 <div class="expandible-wrapper">
                   <p class="texto-info">
                     "Andy es una persona resolutiva, empática y detallista. Combinó diseño centrado en el usuario con
@@ -195,19 +200,21 @@
                     responsabilidad genera entregables de alta calidad en tiempo y forma, lo que evita retrabajos y
                     acorta los tiempos de puesta en producción. Trabajar con ella es un placer."
                   </p>
+                                  <button>
+                  <a class="btn " href="https://www.linkedin.com/in/ulloa-jeanette/" target="_blank"
+                    alt="enlace para ir a linkedin">[ Ver
+                    LinkedIn ]</a></button>
                 </div>
-                <button class="btn-ver-mas btn-square"
+                <button class="btn-ver-mas btn-square-mas"
                   aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus"
                     aria-hidden="true"></i>
                 </button>
               </div>
 
               <div class="swiper-slide card card-secondary">
-                <h3>Nicolás Dume</h3>
+                <h3 class="titulo">Nicolás Dume</h3>
                 <p class="subtitulo">Ex-compañero de estudios en Desarrollo Web</p>
-                <button>
-                  <a class="btn " href="https://www.linkedin.com/in/nicolas-artemio-dume-626223371/" target="_blank"
-                    alt="enlace para ir a linkedin">[ Ver LinkedIn ]</a></button>
+
                 <div class="expandible-wrapper">
                   <p class="texto-info">
                     "Andy tiene una visión clara de cómo crear productos que funcionen. En el MVP del supermercado,
@@ -216,20 +223,20 @@
                     siempre la usabilidad. Es una profesional con iniciativa que entiende que un buen diseño UI solo es
                     efectivo si está respaldado por un código bien estructurado y eficiente."
                   </p>
+                                  <button>
+                  <a class="btn " href="https://www.linkedin.com/in/nicolas-artemio-dume-626223371/" target="_blank"
+                    alt="enlace para ir a linkedin">[ Ver LinkedIn ]</a></button>
                 </div>
-                <button class="btn-ver-mas btn-square"
+                <button class="btn-ver-mas btn-square-mas"
                   aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus"
                     aria-hidden="true" aria-label="boton para expandir y ver mas información"></i>
                 </button>
               </div>
 
               <div class="swiper-slide card card-secondary">
-                <h3>Nicolás Fernandéz</h3>
+                <h3 class="titulo">Nicolás Fernandéz</h3>
                 <p class="subtitulo">Compañero team Maquetado CoE UX en Movistar Argentina</p>
-                <button>
-                  <a class="btn " href="https://www.linkedin.com/in/nicolasfernandezstrizic/" target="_blank"
-                    alt="enlace para ir a linkedin">[
-                    Ver LinkedIn ]</a></button>
+
                 <div class="expandible-wrapper">
                   <p class="texto-info">
                     "Trabajar con ella ha sido una experiencia sumamente positiva y enriquecedora. Se destaca por su
@@ -239,20 +246,21 @@
                     trabajo y con la empresa, asumiendo responsabilidades con seriedad, cumpliendo plazos y buscando
                     siempre mejorar."
                   </p>
+                                  <button>
+                  <a class="btn " href="https://www.linkedin.com/in/nicolasfernandezstrizic/" target="_blank"
+                    alt="enlace para ir a linkedin">[
+                    Ver LinkedIn ]</a></button>
                 </div>
-                <button class="btn-ver-mas btn-square"
+                <button class="btn-ver-mas btn-square-mas"
                   aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus"
                     aria-hidden="true"></i>
                 </button>
               </div>
 
               <div class="swiper-slide card card-secondary">
-                <h3>Sofía Goldenhörn</h3>
+                <h3 class="titulo">Sofía Goldenhörn</h3>
                 <p class="subtitulo">Compañera team UX de CoE UX en Movistar Argentina</p>
-                <button>
-                  <a class="btn " href="https://www.linkedin.com/in/sofiagolden/" target="_blank"
-                    alt="enlace para ir a linkedin">[ Ver
-                    LinkedIn ]</a></button>
+
                 <div class="expandible-wrapper">
                   <p class="texto-info">
                     "Andy es una persona muy atenta a la hora de trabajar y llevar los proyectos a producción. Se nota
@@ -264,20 +272,21 @@
                     siempre respondió todas mis dudas con esmero para poder generar un buen entregable a desarrollo.
                     ¡Tiene una gran pasión por su trabajo y eso se ve reflejado en el producto final!"
                   </p>
+                                  <button>
+                  <a class="btn " href="https://www.linkedin.com/in/sofiagolden/" target="_blank"
+                    alt="enlace para ir a linkedin">[ Ver
+                    LinkedIn ]</a></button>
                 </div>
-                <button class="btn-ver-mas btn-square"
+                <button class="btn-ver-mas btn-square-mas"
                   aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus"
                     aria-hidden="true"></i>
                 </button>
               </div>
 
               <div class="swiper-slide card card-secondary">
-                <h3>Agustín Di Vincenzo</h3>
+                <h3 class="titulo">Agustín Di Vincenzo</h3>
                 <p class="subtitulo">Compañero team Maquetado CoE UX en Movistar Argentina</p>
-                <button>
-                  <a class="btn " href="https://www.linkedin.com/in/agustin-di-vincenzo/" target="_blank"
-                    alt="enlace para ir a linkedin">[
-                    Ver LinkedIn ]</a></button>
+
                 <div class="expandible-wrapper">
                   <p class="texto-info">
                     "Trabajar con Andrea es contar con alguien muy atenta a los detalles, proactiva y consistente en la
@@ -286,8 +295,12 @@
                     mantiene un buen estándar incluso bajo presión. Su forma de trabajar es ordenada y precisa, y eso
                     eleva el nivel del proyecto."
                   </p>
+                                  <button>
+                  <a class="btn " href="https://www.linkedin.com/in/agustin-di-vincenzo/" target="_blank"
+                    alt="enlace para ir a linkedin">[
+                    Ver LinkedIn ]</a></button>
                 </div>
-                <button class="btn-ver-mas btn-square"
+                <button class="btn-ver-mas btn-square-mas"
                   aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i class="fa-solid fa-plus"
                     aria-hidden="true"></i>
                 </button>

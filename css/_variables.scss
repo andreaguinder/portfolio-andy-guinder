@@ -88,12 +88,12 @@ $pink-light-light: rgb(240, 213, 231);
     --text-general: #{$white};
     --accent: #{$light-pink};
     --botones: #{$white};
-    --botones-bg: #{$white};
+    --botones-bg: #{$pink-light-light};
 
     // Cards
 
     --bg-card: #{$black-dark-cards};
-    --text-card: #{$light-pink};
+    --text-card: #{$pink-light-light};
     --bg-card-light: #{$black-light};
     --bg-dark-pink: #{$black-dark};
     --border-card: #{$light-pink};

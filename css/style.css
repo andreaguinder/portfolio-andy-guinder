@@ -34,9 +34,9 @@
   --text-general: rgb(255, 255, 255);
   --accent: rgb(255, 111, 212);
   --botones: rgb(255, 255, 255);
-  --botones-bg: rgb(255, 255, 255);
+  --botones-bg: rgb(240, 213, 231);
   --bg-card: rgb(20, 19, 29);
-  --text-card: rgb(255, 111, 212);
+  --text-card: rgb(240, 213, 231);
   --bg-card-light: rgba(18, 19, 24, 0.54);
   --bg-dark-pink: rgb(15, 15, 15);
   --border-card: rgb(255, 111, 212);
@@ -66,17 +66,6 @@
   width: 100%;
   overflow: hidden;
   padding-bottom: 2rem;
-}
-.secondary-section .dos-botones {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  transform: translate(11.25rem, -1rem);
-  gap: 1rem;
-}
-.secondary-section .dos-botones .btn-square {
-  transform: translate(0rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,6 +223,7 @@
   align-items: center;
   text-align: left;
   padding: 0rem 0rem 0rem 1rem;
+  opacity: 80%;
 }
 .conocimientos .formacion .container-formacion .box-formacion ul {
   padding: 0rem 0.5rem 1rem 1rem;
@@ -572,6 +562,11 @@ button {
   border: none;
 }
 
+i {
+  position: relative;
+  z-index: 1;
+}
+
 .full-width {
   width: 100%;
   margin: 0rem;
@@ -589,23 +584,25 @@ button {
   display: block;
 }
 
-.texto-oculto-accesibilidad {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 .titulo-general {
   font-weight: 700;
   color: var(--text-general);
   font-size: 1.5rem;
   text-align: center;
   margin: 1.75rem auto 2.5rem;
+}
+
+.h3-con-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-general);
 }
 
 .btn {
@@ -630,23 +627,25 @@ button {
   background-color: var(--bg-btn-hover);
 }
 
-.btn-square {
-  background: var(--bg-card-light);
+.btn-square-red {
   color: var(--botones);
   cursor: pointer;
   font-family: var(--font-general);
-  font-size: 1.5rem;
-  font-weight: 700;
-  transform: translate(15.6rem, -1rem);
-  border: 3px solid var(--border-card);
-  padding: 0.4rem 0.8rem;
-  border-radius: 10px;
-  margin-top: 1rem;
+  font-size: 2rem;
   display: block;
 }
 
-.btn-link:hover {
-  color: var(--accent);
+.btn-square-mas {
+  color: var(--botones);
+  cursor: pointer;
+  font-family: var(--font-general);
+  font-size: 1.25rem;
+  font-weight: 700;
+  transform: translate(15.6rem, -1rem);
+  border: 1.5px solid var(--border-card);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  display: block;
 }
 
 .intro {
@@ -905,35 +904,14 @@ footer .behance:hover {
 .card-primary .btn {
   margin-top: 1rem;
 }
-.card-primary h3 {
+.card-primary i {
+  color: var(--text-general);
+}
+.card-primary .h3-sin-boton {
   color: var(--title-card);
   text-align: center;
   padding: 2rem 0.5rem;
   font-size: 1.2rem;
-}
-.card-primary .h3-con-boton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  padding: 1rem 0.5rem;
-  gap: 1rem;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-.card-primary .h3-con-boton .btn-square {
-  text-decoration: none;
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transform: translateX(0rem);
-  margin-top: 0rem;
-}
-.card-primary .h3-con-boton .btn-square i {
-  margin: 0rem;
 }
 .card-primary img {
   width: 100%;
@@ -945,9 +923,6 @@ footer .behance:hover {
   font-size: 1rem;
   color: var(--text-general);
   font-family: var(--font-general);
-}
-.card-primary i {
-  margin-left: 1rem;
 }
 .card-primary .img-graph, .card-primary .img-social, .card-primary .img-front {
   width: 85%;
@@ -1049,16 +1024,27 @@ footer .behance:hover {
 .cards-expandibles.card.card-secondary-abierta {
   height: auto !important;
 }
-.cards-expandibles h3 {
+.cards-expandibles .titulo {
   font-size: 1.25rem;
   color: var(--text-card);
   margin: 1rem 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 .cards-expandibles .subtitulo {
   color: var(--text-general);
   font-size: 1rem;
   line-height: 1.1rem;
   margin: 1rem 0rem;
+}
+.cards-expandibles i {
+  color: var(--text-card);
+}
+.cards-expandibles .fa-github {
+  font-size: 1.75rem;
+  margin-bottom: 0.6rem;
 }
 .cards-expandibles p {
   color: var(--text-general);
@@ -1278,14 +1264,11 @@ footer .behance:hover {
     height: 25rem;
     width: 20rem;
   }
-  .card-primary h3 {
+  .card-primary .h3-sin-boton {
     text-align: center;
     font-size: 1.3rem;
     margin: 0rem auto;
     padding: 2rem 1rem;
-  }
-  .card-primary .h3-con-boton {
-    gap: 0.75rem;
   }
   .card-primary p {
     padding: 1rem 1.5rem 0rem 1.5rem;
@@ -1326,7 +1309,7 @@ footer .behance:hover {
     padding-top: 1rem;
     font-size: 0.85rem;
   }
-  .cards-expandibles .card-secondary h3 {
+  .cards-expandibles .card-secondary .titulo {
     padding: 0rem 0rem 0.5rem 2rem;
     margin-left: 0rem;
   }

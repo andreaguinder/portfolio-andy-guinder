@@ -1,504 +1,674 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-------Info sitio SEO-------->
-    <meta name="description" content="Trabajos de Diseño Gráfico, Social Media, y Desarrollo Web.">
-    <meta name="keywords"
-        content="diseño ux ui, desarrollo frontend, maquetación web, andrea guinder portfolio, sass, javascript vanilla, diseño web argentina, accesibilidad web, diseño gráfico y desarrollo, programadora frontend olavarría">
+    <meta
+      name="description"
+      content="Trabajos de Diseño Gráfico, Social Media, y Desarrollo Web."
+    />
+    <meta
+      name="keywords"
+      content="diseño ux ui, desarrollo frontend, maquetación web, andrea guinder portfolio, sass, javascript vanilla, diseño web argentina, accesibilidad web, diseño gráfico y desarrollo, programadora frontend olavarría"
+    />
     <!-----Bots y especificaciones---->
-    <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <meta name="ROBOTS" content="ALL">
-    <meta name="revisit-after" content="5 Days">
-    <meta name="language" content="Spanish">
-    <meta http-equiv="Content-Language" content="Es">
-    <meta name="distribution" content="Global">
-    <meta name="GOOGLEBOT" content="index, follow, all">
+    <meta name="ROBOTS" content="INDEX, FOLLOW" />
+    <meta name="ROBOTS" content="ALL" />
+    <meta name="revisit-after" content="5 Days" />
+    <meta name="language" content="Spanish" />
+    <meta http-equiv="Content-Language" content="Es" />
+    <meta name="distribution" content="Global" />
+    <meta name="GOOGLEBOT" content="index, follow, all" />
     <!--------Ciudad y País-------->
-    <meta name="city" content="Buenos Aires">
-    <meta name="country" content="Argentina">
+    <meta name="city" content="Buenos Aires" />
+    <meta name="country" content="Argentina" />
     <!--------Tipo de web------->
-    <meta name="resource-type" content="Document">
-    <meta name="doc-type" content="Web Site">
+    <meta name="resource-type" content="Document" />
+    <meta name="doc-type" content="Web Site" />
     <!--------Autor y titulo-------->
-    <meta name="author" content="Andrea Belén Guinder Vichich">
-    <meta name="title" content="Andrea Guinder Portfolio">
-    <!----------Fuente de Google------------>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-    rel="stylesheet">
+    <meta name="author" content="Andrea Belén Guinder Vichich" />
+    <meta name="title" content="Andrea Guinder Portfolio" />
+    <!----------Fuentes de Google------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!------------Logo en URL------------>
-    <link rel="shortcut icon" href="../img/short-icon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../img/short-icon.png"
+      type="image/x-icon"
+    />
     <!--------Enlace a FontAwesome---------->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script src="https://kit.fontawesome.com/9f08a9e423.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/9f08a9e423.js"
+      crossorigin="anonymous"
+    ></script>
     <!--------JavaScript---------->
     <script src="../js/app.js"></script>
     <!---------Wow animate libreria--------->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!--Swiper Librería-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--------Estilos----------->
 
-
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
 
     <title>Andrea Guinder</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="container-nav">
-            <div class="logo">
-                <a href="../index.html"><img src="../img/logo-ag.png" alt="Logo de Andrea Guinder"></a>
-            </div>
-
-            <div class="theme-switch-wrapper">
-                <input type="checkbox" id="theme-checkbox" class="theme-checkbox">
-                <label for="theme-checkbox" class="theme-label" aria-label="switch">
-                    <span class="ball"></span>
-                </label>
-            </div>
-
-            <nav id="site__nav" class="site__nav">
-                <ul>
-                    <li><a href="../index.html">[ INICIO ]</a></li>
-                    <li>
-                        <p class="active">[ DESARROLLO WEB ]</p>
-                    </li>
-                    <li><a href="../pages/conocimientos.html">[ CONOCIMIENTOS ]</a></li>
-                    <li><a href="../pages/contact.html">[ CONTACTO ]</a></li>
-                </ul>
-            </nav>
-
-            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
-                <div class="menu-hamburguesa"></div>
-            </button>
+      <div class="container-nav">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../img/logo-ag.png" alt="Logo de Andrea Guinder"
+          /></a>
         </div>
+
+        <div class="theme-switch-wrapper">
+          <input type="checkbox" id="theme-checkbox" class="theme-checkbox" />
+          <label for="theme-checkbox" class="theme-label" aria-label="switch">
+            <span class="ball"></span>
+          </label>
+        </div>
+
+        <nav id="site__nav" class="site__nav">
+          <ul>
+            <li><a href="../index.html">[ INICIO ]</a></li>
+            <li>
+              <p class="active">[ DESARROLLO WEB ]</p>
+            </li>
+            <li><a href="../pages/conocimientos.html">[ CONOCIMIENTOS ]</a></li>
+            <li><a href="../pages/contact.html">[ CONTACTO ]</a></li>
+          </ul>
+        </nav>
+
+        <button
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+        >
+          <div class="menu-hamburguesa"></div>
+        </button>
+      </div>
     </header>
 
     <main>
+      <!--- Intro --->
+      <section>
+        <div class="intro">
+          <h1 class="titulo-general">Proyectos destacados</h1>
+          <h2>
+            Por acuerdos de confidencialidad en mi rol actual en Movistar
+            Argentina, mis desarrollos corporativos son privados. Los proyectos
+            aquí presentados reflejan las mismas tecnologías y estándares de
+            calidad que aplico profesionalmente día a día.
+          </h2>
+        </div>
+      </section>
 
-        <!--- Intro --->
-        <section>
-            <div class="intro">
-                <h1 class="titulo-general">Proyectos destacados</h1>
-                <h2>Por acuerdos de confidencialidad en mi rol actual en Movistar Argentina, mis desarrollos
-                    corporativos son privados. Los proyectos aquí presentados reflejan las mismas tecnologías y
-                    estándares de calidad que aplico profesionalmente día a día.
-                </h2>
+      <!--- Proyectos principales --->
+      <section>
+        <div class="proyectos">
+          <div class="container-cards-web">
+            <!--- Supermercado Anlas --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Supermercado "Anlas"
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/supermercado-andy-nico.git"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/supermercado-anlas-caratula.png"
+                alt="Imagen de carátula Supermercado Anlas"
+              />
+              <p>
+                Sitio web creado HTML5, CSS y Typescript. Desarrollado durante
+                la carrera de Desarrollo Web Olavarría. <b>Julio 2024.</b>
+                <a
+                  class="btn full-width"
+                  href="https://andreaguinder.github.io/supermercado-andy-nico/"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
             </div>
-        </section>
 
-        <!--- Proyectos principales --->
-        <section>
-            <div class="proyectos">
-                <div class="container-cards-web">
+            <!--- Portfolio 2023 --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Portfolio personal 2023
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/portfolio-guinderandrea"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/portafolio-old-caratula.png"
+                alt="Imagen de carátula Portfolio 2023"
+              />
+              <p>
+                Proyecto personal, previo a la aplicación de estándares de
+                accesibilidad e inclusión. Multiportafolio. <b>Agosto 2023.</b>
+                <a
+                  class="btn full-width"
+                  href="https://andreaguinder.github.io/portfolio-guinderandrea/index.html"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
+            </div>
 
-                    <!--- Supermercado Anlas --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Supermercado "Anlas"
-                            <span>
-                                <a href="https://github.com/andreaguinder/supermercado-andy-nico.git" class="btn-square"
-                                    target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/supermercado-anlas-caratula.png" alt="Imagen de carátula Supermercado Anlas">
-                        <p>Sitio web creado HTML5, CSS y Typescript. Desarrollado durante la carrera de Desarrollo Web
-                            Olavarría. <b>Julio 2024.</b>
-                            <a class="btn full-width" href="https://andreaguinder.github.io/supermercado-andy-nico/"
-                                target="_blank">[ Ver sitio ]</a>
-                        </p>
-                    </div>
+            <!--- Portfolio 2022 --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Portfolio personal 2022
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/portfolio-guinder-andrea-2022.git"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/portafolio-old-old-caratula.png"
+                alt="Imagen de carátula Portfolio 2022"
+              />
+              <p>
+                Proyecto personal, previo a la aplicación de estándares de
+                accesibilidad. Multiportafolio. <b>Enero 2022.</b>
+                <a
+                  class="btn full-width"
+                  href="https://andreaguinder.github.io/portfolio-guinder-andrea-2022/index.html"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
+            </div>
 
-                    <!--- Portfolio 2023 --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Portfolio personal 2023
-                            <span>
-                                <a href="https://github.com/andreaguinder/portfolio-guinderandrea" class="btn-square"
-                                    target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/portafolio-old-caratula.png" alt="Imagen de carátula Portfolio 2023">
-                        <p>Proyecto personal, previo a la aplicación de estándares de accesibilidad e inclusión.
-                            Multiportafolio. <b>Agosto 2023.</b>
-                            <a class="btn full-width"
-                                href="https://andreaguinder.github.io/portfolio-guinderandrea/index.html"
-                                target="_blank">[ Ver sitio ]</a>
-                        </p>
-                    </div>
+            <!--- Alyssa --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Alyssa Espacio Zen
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/react-ecommerce.git"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/alyssa-caratula.png"
+                alt="Imagen de carátula Alyssa"
+              />
+              <p>
+                Sitio web creado utilizando React app, HTML5, SASS y JavaScript.
+                Para proyecto final de React de Coderhouse.
+                <b>Diciembre 2021.</b>
+                <a
+                  class="btn full-width"
+                  href="https://react-ecommerce-ten-livid.vercel.app/"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
+            </div>
 
-                    <!--- Portfolio 2022 --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Portfolio personal 2022
-                            <span>
-                                <a href="https://github.com/andreaguinder/portfolio-guinder-andrea-2022.git"
-                                    class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/portafolio-old-old-caratula.png" alt="Imagen de carátula Portfolio 2022">
-                        <p>Proyecto personal, previo a la aplicación de estándares de accesibilidad.
-                            Multiportafolio. <b>Enero 2022.</b>
-                            <a class="btn full-width"
-                                href="https://andreaguinder.github.io/portfolio-guinder-andrea-2022/index.html"
-                                target="_blank">[ Ver sitio ]</a>
-                        </p>
-                    </div>
+            <!--- Fitness Life --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Sitio web "Fitness Life"
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/generadorderutinas-js-guinderandrea.git"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/fitness-life-caratula.png"
+                alt="Imagen de carátula Fitness Life"
+              />
+              <p>
+                Simulador de rutinas de gimnasio. Sitio creado para curso de JS
+                de Coderhouse. Utilizando HTML5, SASS y JavaScript.
+                <b>Octubre 2021.</b>
+                <a
+                  class="btn full-width"
+                  href="https://andreaguinder.github.io/generadorderutinas-js-guinderandrea/"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
+            </div>
 
-                    <!--- Alyssa --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Alyssa Espacio Zen
-                            <span>
-                                <a href="https://github.com/andreaguinder/react-ecommerce.git" class="btn-square"
-                                    target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/alyssa-caratula.png" alt="Imagen de carátula Alyssa">
-                        <p>Sitio web creado utilizando React app, HTML5, SASS y JavaScript. Para
-                            proyecto
-                            final de React de Coderhouse. <b>Diciembre 2021.</b>
-                            <a class="btn full-width" href="https://react-ecommerce-ten-livid.vercel.app/"
-                                target="_blank">[ Ver sitio ]</a>
-                        </p>
-                    </div>
+            <!--- Landing page CV --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Curriculum Vitae
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/portfolio-simple.git"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/landing-page-caratula.png"
+                alt="Imagen de carátula Landing Page"
+              />
+              <p>
+                Landing page creada con HTML5, CSS y JavaScript. Para proyecto
+                final de curso Academy Olavarría. Portfolio personal.
+                <b>Octubre 2021.</b>
 
-                    <!--- Fitness Life --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Sitio web "Fitness Life"
-                            <span>
-                                <a href="https://github.com/andreaguinder/generadorderutinas-js-guinderandrea.git"
-                                    class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/fitness-life-caratula.png" alt="Imagen de carátula Fitness Life">
-                        <p>Simulador de rutinas de gimnasio. Sitio creado para curso de JS de Coderhouse.
-                            Utilizando
-                            HTML5, SASS y JavaScript. <b>Octubre 2021.</b>
-                            <a class="btn full-width"
-                                href="https://andreaguinder.github.io/generadorderutinas-js-guinderandrea/"
-                                target="_blank">[ Ver sitio ]</a>
-                        </p>
-                    </div>
+                <a
+                  class="btn full-width"
+                  href="https://andreaguinder.github.io/portfolio-simple/"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
+            </div>
 
-                    <!--- Landing page CV --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Curriculum Vitae
-                            <span>
-                                <a href="https://github.com/andreaguinder/portfolio-simple.git" class="btn-square"
-                                    target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/landing-page-caratula.png" alt="Imagen de carátula Landing Page">
-                        <p>Landing page creada con HTML5, CSS y JavaScript. Para proyecto final de curso Academy
-                            Olavarría. Portfolio personal. <b>Octubre 2021.</b>
+            <!--- Sitio web Mamamotos --->
+            <div class="card-primary">
+              <h3 class="h3-con-boton titulo">
+                Sitio web "Mamamotos"
+                <span>
+                  <a
+                    href="https://github.com/andreaguinder/sitio-mamamotos-guinder-andrea.git"
+                    class="btn-square-red"
+                    target="_blank"
+                    aria-label="Ver código en GitHub"
+                  >
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </span>
+              </h3>
+              <img
+                src="../img/mamamotos-caratula.png"
+                alt="Imagen de carátula Mamamotos"
+              />
+              <p>
+                Sitio creado para distribuidora de articulos automotor.
+                Utilizando HTML5 y SASS. Con integración de Google Maps.
+                <b>Julio 2021.</b>
+                <a
+                  class="btn full-width"
+                  href="https://andreaguinder.github.io/sitio-mamamotos-guinder-andrea/"
+                  target="_blank"
+                  >[ Ver sitio ]</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                            <a class="btn full-width" href="https://andreaguinder.github.io/portfolio-simple/"
-                                target="_blank">[ Ver sitio ]</a>
-                        </p>
-                    </div>
+      <!--- Otros proyectos --->
+      <section>
+        <h2 class="titulo-general">Otros proyectos</h2>
 
-                    <!--- Sitio web Mamamotos --->
-                    <div class="card-primary">
-                        <h3 class="h3-con-boton">Sitio web "Mamamotos"
-                            <span>
-                                <a href="https://github.com/andreaguinder/sitio-mamamotos-guinder-andrea.git"
-                                    class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                    <i class="fab fa-github" aria-hidden="true"></i>
-                                </a>
-                            </span>
-                        </h3>
-                        <img src="../img/mamamotos-caratula.png" alt="Imagen de carátula Mamamotos">
-                        <p>Sitio creado para distribuidora de articulos automotor. Utilizando HTML5 y SASS. Con
-                            integración
-                            de Google Maps. <b>Julio 2021.</b>
-                            <a class="btn full-width"
-                                href="https://andreaguinder.github.io/sitio-mamamotos-guinder-andrea/" target="_blank">[
-                                Ver sitio ]</a>
-                        </p>
-                    </div>
-
+        <div class="secondary-section">
+          <div class="swiper-cards-secondary cards-expandibles">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <!--- ToDo List --->
+                <div class="swiper-slide card card-secondary">
+                  <h3 class="h3-con-boton titulo">
+                    ToDo List
+                    <span>
+                      <a
+                        href="https://github.com/andreaguinder/todo-list.git"
+                        class="btn-square-red"
+                        target="_blank"
+                        aria-label="Ver código en GitHub"
+                      >
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <a
+                    href="https://andreaguinder.github.io/todo-list/"
+                    target="_blank"
+                    class="btn"
+                    >[ Ver proyecto ]</a
+                  >
+                  <div class="expandible-wrapper">
+                    <p class="texto-info">
+                      La interfaz de usuario es sencilla y minimalista, con un
+                      fondo claro que facilita la lectura. En ella podemos
+                      observar un campo de entrada donde podes escribir nuevas
+                      tareas, seguido de un botón para añadirlas a la lista. Por
+                      otro lado, en un bloque se ven las tareas en una lista
+                      ordenada, cada una con un botón de eliminación al lado
+                      para permitir una gestión rápida y eficiente de tus
+                      pendientes. Reformado en 2025.
+                    </p>
+                  </div>
+                  <button
+                    class="btn-ver-mas btn-square-mas"
+                    aria-label="Ver mas si esta cerrado, ver menos si esta abierto"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </button>
                 </div>
-            </div>
 
-        </section>
-
-        <!--- Otros proyectos --->
-        <section>
-
-            <h2 class="titulo-general">Otros proyectos</h2>
-
-            <div class="secondary-section">
-
-                <div class="swiper-cards-secondary cards-expandibles">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-
-                            <!--- ToDo List --->
-                            <div class="swiper-slide card card-secondary">
-                                <h3>To-Do List</h3>
-                                <a href="https://andreaguinder.github.io/todo-list/" target="_blank" class="btn">[
-                                    Ver
-                                    proyecto ]</a>
-                                <div class="expandible-wrapper">
-                                    <p class="texto-info">
-                                        La interfaz de usuario es sencilla y minimalista, con un fondo
-                                        claro que
-                                        facilita la lectura. En ella podemos observar un campo de entrada
-                                        donde podes
-                                        escribir nuevas tareas, seguido de un botón para añadirlas a la lista.
-                                        Por otro lado, en un bloque se ven las tareas en una lista ordenada, cada
-                                        una con un botón de eliminación al lado
-                                        para permitir
-                                        una
-                                        gestión rápida y eficiente de tus pendientes. Reformado en 2025.
-                                    </p>
-                                </div>
-                                <span class="dos-botones">
-                                    <button> <a href="https://github.com/andreaguinder/todo-list.git" class="btn-square"
-                                            target="_blank" aria-label="Ver código en GitHub">
-                                            <i class="fab fa-github" aria-hidden="true"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn-ver-mas btn-square"
-                                        aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i
-                                            class="fa-solid fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </span>
-                            </div>
-
-                            <!--- Administrador de citas --->
-                            <div class="swiper-slide card card-secondary">
-                                <h3>Administrador de citas</h3>
-                                <a href="https://andreaguinder.github.io/administrador-de-citas/" target="_blank"
-                                    class="btn">[
-                                    Ver
-                                    proyecto ]</a>
-                                <div class="expandible-wrapper">
-                                    <p class="texto-info">
-                                        La interfaz presenta un diseño funcional dividido en dos bloques
-                                        principales. En el primero, se encuentra un formulario detallado permite
-                                        ingresar los
-                                        datos del dueño y la mascota, incluyendo la selección de síntomas, fecha y
-                                        horario. Al presionar el botón de creación, la cita se genera dinámicamente
-                                        en el segundo bloque, donde los turnos se organizan verticalmente separados
-                                        por divisores claros. Cada tarjeta de cita incluye opciones para eliminar o
-                                        editar; esta última recarga la información en el bloque del formulario para
-                                        su
-                                        modificación, permitiendo una gestión ágil y organizada. Reformado en 2025.
-                                    </p>
-                                </div>
-                                <span class="dos-botones">
-                                    <button> <a href="https://github.com/andreaguinder/administrador-de-citas.git"
-                                            class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                            <i class="fab fa-github" aria-hidden="true"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn-ver-mas btn-square"
-                                        aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i
-                                            class="fa-solid fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </span>
-                            </div>
-
-                            <!--- Cotizador de seguros --->
-                            <div class="swiper-slide card card-secondary">
-                                <h3>Cotizador de seguros</h3>
-                                <a href="https://andreaguinder.github.io/cotizador-de-seguros-prototypes/"
-                                    target="_blank" class="btn">[
-                                    Ver
-                                    proyecto ]</a>
-                                <div class="expandible-wrapper">
-                                    <p class="texto-info">
-                                        La aplicación presenta un diseño web responsive optimizado para una
-                                        navegación fluida en una sola columna. La interfaz cuenta con selectores
-                                        intuitivos para definir la marca y el año del vehículo, además de una opción
-                                        para elegir entre una cobertura básica o completa. Al accionar el botón de
-                                        cotización, se activa un spinner animado que mejora la experiencia de espera
-                                        del usuario mientras se procesan los datos. Finalmente, el resultado se
-                                        despliega debajo, mostrando un resumen detallado de la configuración elegida
-                                        junto al monto final del seguro, logrando un proceso de consulta rápido y
-                                        visualmente atractivo. Reformado en 2025.
-                                    </p>
-                                </div>
-                                <span class="dos-botones">
-                                    <button> <a
-                                            href="https://github.com/andreaguinder/cotizador-de-seguros-prototypes.git"
-                                            class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                            <i class="fab fa-github" aria-hidden="true"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn-ver-mas btn-square"
-                                        aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i
-                                            class="fa-solid fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </span>
-                            </div>
-
-                            <!--- Calculadora --->
-                            <div class="swiper-slide card card-secondary">
-                                <h3>Calculadora</h3>
-                                <a href="https://andreaguinder.github.io/calculadora-javascript/" target="_blank"
-                                    class="btn">[ Ver proyecto ]</a>
-                                <div class="expandible-wrapper">
-                                    <p class="texto-info">
-                                        La calculadora cuenta con las funciones básicas de suma, resta,
-                                        multiplicación
-                                        y división, permitiendo realizar cálculos aritméticos de manera sencilla.
-                                        Además, incluye un
-                                        botón de borrado para corregir errores y un botón para reiniciar la
-                                        operación, asegurando
-                                        una
-                                        experiencia de usuario eficiente. La interfaz es intuitiva, con botones
-                                        claramente
-                                        etiquetados y
-                                        un display que muestra los resultados en tiempo real. Reformado en 2025.
-                                    </p>
-                                </div>
-                                <span class="dos-botones">
-                                    <button> <a href="https://github.com/andreaguinder/calculadora-javascript.git"
-                                            class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                            <i class="fab fa-github" aria-hidden="true"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn-ver-mas btn-square"
-                                        aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i
-                                            class="fa-solid fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </span>
-                            </div>
-
-                            <!--- Simulador --->
-                            <div class="swiper-slide card card-secondary">
-                                <h3>Formulario</h3>
-                                <a href="https://andreaguinder.github.io/formulario-con-validaciones/" target="_blank"
-                                    class="btn">[ Ver proyecto ]</a>
-                                <div class="expandible-wrapper">
-                                    <p class="texto-info">
-                                        Este formulario cuenta con un sistema de validación avanzada mediante
-                                        funciones de
-                                        JavaScript y expresiones regulares (Regex), asegurando que cada campo cumpla
-                                        con formatos
-                                        específicos de contacto y longitud mínima. La interfaz ofrece feedback en
-                                        tiempo real
-                                        con mensajes de error individuales por cada ítem y una alerta general ante
-                                        datos incompletos.
-                                        Incluye funciones para restablecer los campos o enviarlos, acción que
-                                        dispara un modal
-                                        de confirmación tras validar el éxito del proceso. Además, el diseño es
-                                        totalmente
-                                        web responsive, garantizando una experiencia óptima en cualquier
-                                        dispositivo. Reformado en 2025.
-                                    </p>
-                                </div>
-                                <span class="dos-botones">
-                                    <button> <a href="https://github.com/andreaguinder/formulario-con-validaciones.git"
-                                            class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                            <i class="fab fa-github" aria-hidden="true"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn-ver-mas btn-square"
-                                        aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i
-                                            class="fa-solid fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </span>
-                            </div>
-
-                            <!--- Buscador multiples campos --->
-                            <div class="swiper-slide card card-secondary">
-                                <h3>Buscador multipes campos</h3>
-                                <a href="https://andreaguinder.github.io/buscador-de-autos/" target="_blank"
-                                    class="btn">[
-                                    Ver proyecto ]</a>
-                                <div class="expandible-wrapper">
-                                    <p class="texto-info">
-                                        La interfaz de usuario para el buscador es intuitiva. En la
-                                        parte superior,
-                                        encontrarás un conjunto de menús desplegables que te permiten seleccionar
-                                        los diferentes filtros, como marca, año y color. La búsqueda será
-                                        automática, sin necesidad de presionar
-                                        botones, y se mostrarán los resultados que coincidan con los criterios
-                                        seleccionados o un
-                                        mensaje indicando que no hay resultados disponibles. Reformado en 2025.
-                                    </p>
-                                </div>
-                                <span class="dos-botones">
-                                    <button> <a href="https://github.com/andreaguinder/buscador-de-autos.git"
-                                            class="btn-square" target="_blank" aria-label="Ver código en GitHub">
-                                            <i class="fab fa-github" aria-hidden="true"></i>
-                                        </a>
-                                    </button>
-                                    <button class="btn-ver-mas btn-square"
-                                        aria-label="Ver mas si esta cerrado, ver menos si esta abierto"><i
-                                            class="fa-solid fa-plus" aria-hidden="true"></i>
-                                    </button>
-                                </span>
-                            </div>
-
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                <!--- Administrador de citas --->
+                <div class="swiper-slide card card-secondary">
+                  <h3 class="h3-con-boton titulo">
+                    Administrador
+                    <span>
+                      <a
+                        href="https://github.com/andreaguinder/administrador-de-citas.git"
+                        class="btn-square-red"
+                        target="_blank"
+                        aria-label="Ver código en GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <a
+                    href="https://andreaguinder.github.io/administrador-de-citas/"
+                    target="_blank"
+                    class="btn"
+                    >[ Ver proyecto ]</a
+                  >
+                  <div class="expandible-wrapper">
+                    <p class="texto-info">
+                      La interfaz presenta un diseño funcional dividido en dos
+                      bloques principales. En el primero, se encuentra un
+                      formulario detallado permite ingresar los datos del dueño
+                      y la mascota, incluyendo la selección de síntomas, fecha y
+                      horario. Al presionar el botón de creación, la cita se
+                      genera dinámicamente en el segundo bloque, donde los
+                      turnos se organizan verticalmente separados por divisores
+                      claros. Cada tarjeta de cita incluye opciones para
+                      eliminar o editar; esta última recarga la información en
+                      el bloque del formulario para su modificación, permitiendo
+                      una gestión ágil y organizada. Reformado en 2025.
+                    </p>
+                  </div>
+                  <button
+                    class="btn-ver-mas btn-square-mas"
+                    aria-label="Ver mas si esta cerrado, ver menos si esta abierto"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </button>
                 </div>
-            </div>
-        </section>
 
+                <!--- Cotizador de seguros --->
+                <div class="swiper-slide card card-secondary">
+                                    <h3 class="h3-con-boton titulo">
+                    Cotizador de seguros
+                    <span>
+                      <a
+                        href="https://github.com/andreaguinder/cotizador-de-seguros-prototypes.git"
+                        class="btn-square-red"
+                        target="_blank"
+                        aria-label="Ver código en GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <a
+                    href="https://andreaguinder.github.io/cotizador-de-seguros-prototypes/"
+                    target="_blank"
+                    class="btn"
+                    >[ Ver proyecto ]</a
+                  >
+                  <div class="expandible-wrapper">
+                    <p class="texto-info">
+                      La aplicación presenta un diseño web responsive optimizado
+                      para una navegación fluida en una sola columna. La
+                      interfaz cuenta con selectores intuitivos para definir la
+                      marca y el año del vehículo, además de una opción para
+                      elegir entre una cobertura básica o completa. Al accionar
+                      el botón de cotización, se activa un spinner animado que
+                      mejora la experiencia de espera del usuario mientras se
+                      procesan los datos. Finalmente, el resultado se despliega
+                      debajo, mostrando un resumen detallado de la configuración
+                      elegida junto al monto final del seguro, logrando un
+                      proceso de consulta rápido y visualmente atractivo.
+                      Reformado en 2025.
+                    </p>
+                  </div>
+                  <button
+                    class="btn-ver-mas btn-square-mas"
+                    aria-label="Ver mas si esta cerrado, ver menos si esta abierto"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <!--- Calculadora --->
+                <div class="swiper-slide card card-secondary">
+                    <h3 class="h3-con-boton titulo">
+                    Calculadora
+                    <span>
+                      <a
+                        href="https://github.com/andreaguinder/calculadora-javascript.git"
+                        class="btn-square-red"
+                        target="_blank"
+                        aria-label="Ver código en GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <a
+                    href="https://andreaguinder.github.io/calculadora-javascript/"
+                    target="_blank"
+                    class="btn"
+                    >[ Ver proyecto ]</a
+                  >
+                  <div class="expandible-wrapper">
+                    <p class="texto-info">
+                      La calculadora cuenta con las funciones básicas de suma,
+                      resta, multiplicación y división, permitiendo realizar
+                      cálculos aritméticos de manera sencilla. Además, incluye
+                      un botón de borrado para corregir errores y un botón para
+                      reiniciar la operación, asegurando una experiencia de
+                      usuario eficiente. La interfaz es intuitiva, con botones
+                      claramente etiquetados y un display que muestra los
+                      resultados en tiempo real. Reformado en 2025.
+                    </p>
+                  </div>
+                  <button
+                    class="btn-ver-mas btn-square-mas"
+                    aria-label="Ver mas si esta cerrado, ver menos si esta abierto"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <!--- Simulador --->
+                <div class="swiper-slide card card-secondary">
+                                      <h3 class="h3-con-boton titulo">
+                    Formulario
+                    <span>
+                      <a
+                        href="https://github.com/andreaguinder/formulario-con-validaciones.git"
+                        class="btn-square-red"
+                        target="_blank"
+                        aria-label="Ver código en GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <a
+                    href="https://andreaguinder.github.io/formulario-con-validaciones/"
+                    target="_blank"
+                    class="btn"
+                    >[ Ver proyecto ]</a
+                  >
+                  <div class="expandible-wrapper">
+                    <p class="texto-info">
+                      Este formulario cuenta con un sistema de validación
+                      avanzada mediante funciones de JavaScript y expresiones
+                      regulares (Regex), asegurando que cada campo cumpla con
+                      formatos específicos de contacto y longitud mínima. La
+                      interfaz ofrece feedback en tiempo real con mensajes de
+                      error individuales por cada ítem y una alerta general ante
+                      datos incompletos. Incluye funciones para restablecer los
+                      campos o enviarlos, acción que dispara un modal de
+                      confirmación tras validar el éxito del proceso. Además, el
+                      diseño es totalmente web responsive, garantizando una
+                      experiencia óptima en cualquier dispositivo. Reformado en
+                      2025.
+                    </p>
+                  </div>
+                  <button
+                    class="btn-ver-mas btn-square-mas"
+                    aria-label="Ver mas si esta cerrado, ver menos si esta abierto"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <!--- Buscador multiples campos --->
+                <div class="swiper-slide card card-secondary">
+                                                        <h3 class="h3-con-boton titulo">
+                    Buscador
+                    <span>
+                      <a
+                        href="https://github.com/andreaguinder/buscador-de-autos.git"
+                        class="btn-square-red"
+                        target="_blank"
+                        aria-label="Ver código en GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </h3>
+                  <a
+                    href="https://andreaguinder.github.io/buscador-de-autos/"
+                    target="_blank"
+                    class="btn"
+                    >[ Ver proyecto ]</a
+                  >
+                  <div class="expandible-wrapper">
+                    <p class="texto-info">
+                      La interfaz de usuario para el buscador es intuitiva. En
+                      la parte superior, encontrarás un conjunto de menús
+                      desplegables que te permiten seleccionar los diferentes
+                      filtros, como marca, año y color. La búsqueda será
+                      automática, sin necesidad de presionar botones, y se
+                      mostrarán los resultados que coincidan con los criterios
+                      seleccionados o un mensaje indicando que no hay resultados
+                      disponibles. Reformado en 2025.
+                    </p>
+                  </div>
+                  <button
+                    class="btn-ver-mas btn-square-mas"
+                    aria-label="Ver mas si esta cerrado, ver menos si esta abierto"
+                  >
+                    <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
-
 
     <!--- Footer --->
     <footer>
-        <div>
-            <a target="_blank" class="github" href="https://github.com/andreaguinder"
-                aria-label="Ir a mi perfil de GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a target="_blank" class="behance" href="https://www.behance.net/andreaguinder"
-                aria-label="Ir a mi perfil de Behance"><i class="fa-brands fa-square-behance"
-                    aria-hidden="true"></i></a>
-            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/andrea-guinder/"
-                aria-label="Ir a mi perfil de LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-        </div>
-        <div>
-            <p>andreabelen.guinder@gmail.com</p>
-            <p>Residente en Buenos Aires, Argentina </p>
-        </div>
-        <div>
-            <p>
-                Diseño y Desarrollo por Andrea
-                Guinder
-            </p>
-            <p> Copyright © | <span id="year"></span> <br class="visible-xs"> Todos los Derechos Reservados</p>
-        </div>
+      <div>
+        <a
+          target="_blank"
+          class="github"
+          href="https://github.com/andreaguinder"
+          aria-label="Ir a mi perfil de GitHub"
+          ><i class="fab fa-github" aria-hidden="true"></i
+        ></a>
+        <a
+          target="_blank"
+          class="behance"
+          href="https://www.behance.net/andreaguinder"
+          aria-label="Ir a mi perfil de Behance"
+          ><i class="fa-brands fa-square-behance" aria-hidden="true"></i
+        ></a>
+        <a
+          target="_blank"
+          class="linkedin"
+          href="https://www.linkedin.com/in/andrea-guinder/"
+          aria-label="Ir a mi perfil de LinkedIn"
+          ><i class="fab fa-linkedin" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div>
+        <p>andreabelen.guinder@gmail.com</p>
+        <p>Residente en Buenos Aires, Argentina</p>
+      </div>
+      <div>
+        <p>Diseño y Desarrollo por Andrea Guinder</p>
+        <p>
+          Copyright © | <span id="year"></span> <br class="visible-xs" />
+          Todos los Derechos Reservados
+        </p>
+      </div>
     </footer>
-
 
     <!--- JavaScript --->
     <script src="../js/swiperLpsDesarrollo.js"></script>
-
-</body>
-
-
+  </body>
 </html>

@@ -62,12 +62,12 @@
   margin: 3rem auto 4rem;
 }
 
-.referencias {
+.secondary-section {
   width: 100%;
   overflow: hidden;
   padding-bottom: 2rem;
 }
-.referencias .dos-botones {
+.secondary-section .dos-botones {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@
   transform: translate(11.25rem, -1rem);
   gap: 1rem;
 }
-.referencias .dos-botones .btn-square {
+.secondary-section .dos-botones .btn-square {
   transform: translate(0rem);
 }
 
@@ -90,7 +90,7 @@
   .container__habilidades {
     margin: 0rem auto 6rem;
   }
-  .referencias {
+  .secondary-section {
     margin: 3rem auto 2rem;
   }
 }

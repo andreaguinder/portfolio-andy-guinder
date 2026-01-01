@@ -58,13 +58,17 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  margin: 3rem auto 4rem;
+  margin: 2rem auto 4rem;
+}
+.container__habilidades .h3-con-boton {
+  padding: 2rem 0.5rem;
 }
 
 .secondary-section {
   width: 100%;
   overflow: hidden;
   padding-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,7 +111,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .row-proyectos {
@@ -133,6 +137,9 @@
   .otros-proyectos {
     gap: 0rem;
   }
+  .otros-proyectos .secondary-section {
+    margin-top: 1.25rem;
+  }
   .row-proyectos {
     flex-direction: row;
     gap: 2rem;
@@ -149,10 +156,11 @@
   .proyectos .container-cards-web {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
+    margin-top: -5rem;
   }
   .otros-proyectos {
-    max-width: 673px;
-    margin: 3rem auto 6rem;
+    gap: 0rem;
+    margin: -7rem 0rem 0rem;
   }
 }
 .conocimientos {
@@ -604,6 +612,7 @@ i {
   border: none;
   cursor: pointer;
   color: var(--text-general);
+  margin-top: 0rem !important;
 }
 
 .btn {
@@ -876,7 +885,7 @@ footer .behance:hover {
 }
 
 .card-primary {
-  height: 25rem;
+  height: 24rem;
   width: 19.4rem;
   display: flex;
   align-items: center;
@@ -893,7 +902,7 @@ footer .behance:hover {
 .card-primary::before {
   content: "";
   position: absolute;
-  height: 25rem;
+  height: 24rem;
   width: 19.4rem;
   overflow: hidden;
   background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
@@ -931,10 +940,10 @@ footer .behance:hover {
 }
 .card-primary .img-graph, .card-primary .img-social, .card-primary .img-front {
   width: 85%;
-  height: 125px;
+  height: 115px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: -0.5rem auto;
+  margin: -0.5rem auto 0.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -947,10 +956,12 @@ footer .behance:hover {
 }
 .card-primary .img-social {
   background-image: var(--img-card-social);
+  margin: -1rem auto 0rem;
 }
 .card-primary .img-graph {
   background-image: var(--img-card-graph);
   height: 108px;
+  margin: -1rem auto 0rem;
 }
 
 .swiper-cards-secondary {
@@ -1083,7 +1094,7 @@ footer .behance:hover {
     margin: 1rem auto 2rem;
   }
   .intro {
-    width: 85%;
+    width: 86%;
   }
   .intro h2 {
     font-size: 1.1rem;
@@ -1263,7 +1274,7 @@ footer .behance:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 25rem;
+    height: 24rem;
     width: 20rem;
   }
   .card-primary .h3-sin-boton {
@@ -1278,7 +1289,7 @@ footer .behance:hover {
   }
   .card-primary::before {
     width: 20rem;
-    height: 25rem;
+    height: 24rem;
     top: 0;
   }
   .card-primary .btn {

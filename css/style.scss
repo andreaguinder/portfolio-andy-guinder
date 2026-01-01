@@ -61,6 +61,7 @@ z-index: 1;
         border: none;
         cursor: pointer;
         color: var(--text-general);
+        margin-top: 0rem !important;
     }
 
 .btn {
@@ -359,7 +360,7 @@ footer {
 // CARDS PRIMARY
 
 .card-primary {
-    height: 25rem;
+    height: 24rem;
     width: 19.4rem;
     @include flexCenter(column);
     justify-content: flex-start;
@@ -372,7 +373,7 @@ footer {
     &::before {
         content: '';
         position: absolute;
-        height: 25rem;
+        height: 24rem;
         width: 19.4rem;
         overflow: hidden;
         background:
@@ -422,9 +423,9 @@ footer {
 
     %card-primary-habilidad-img {
         width: 85%;
-        height: 125px;
+        height: 115px;
         object-fit: cover;
-        margin: -0.5rem auto;
+        margin: -0.5rem auto 0.5rem;;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -441,12 +442,14 @@ footer {
     .img-social {
         background-image: var(--img-card-social);
         @extend %card-primary-habilidad-img;
+    margin: -1rem auto 0rem;
     }
 
     .img-graph {
         background-image: var(--img-card-graph);
         @extend %card-primary-habilidad-img;
         height: 108px;
+        margin: -1rem auto 0rem;
     }
 }
 
@@ -605,7 +608,7 @@ footer {
     }
 
     .intro {
-        width: 85%;
+        width: 86%;
 
         h2 {
             font-size: 1.1rem;
@@ -819,7 +822,7 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 25rem;
+        height: 24rem;
         width: 20rem;
 
         .h3-sin-boton {
@@ -836,7 +839,7 @@ footer {
 
         &::before {
             width: 20rem;
-            height: 25rem;
+            height: 24rem;
             top: 0;
         }
 

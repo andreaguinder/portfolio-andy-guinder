@@ -13,7 +13,8 @@ $transparent: rgba(0, 0, 0, 0);
 $bg-dark: rgb(40, 40, 48);
 $font-main: "Inter",
 sans-serif;
-$pink-light-light: rgb(240, 213, 231);
+//$pink-light-light: rgb(240, 213, 231);
+$pink-light-light: rgb(240, 195, 225);
 
 @mixin flexCenter ($direct) {
     display: flex;
@@ -55,7 +56,6 @@ $pink-light-light: rgb(240, 213, 231);
     --border-card: #{$dark-pink};
     --title-card: #{$black};
     --bg-btn-hover: #{$dark-pink-dark};
-    --text-botones: #{$white};
 
     --img-card-front: #{url('../img/img-front.png')};
     --img-card-graph: #{url('../img/img-graph.png')};
@@ -88,18 +88,18 @@ $pink-light-light: rgb(240, 213, 231);
     --text-general: #{$white};
     --accent: #{$light-pink};
     --botones: #{$white};
-    --botones-bg: #{$pink-light-light};
+    --botones-bg: #{$light-pink};
 
     // Cards
 
     --bg-card: #{$black-dark-cards};
-    --text-card: #{$pink-light-light};
+    --text-card: #{$light-pink};
     --bg-card-light: #{$black-light};
     --bg-dark-pink: #{$black-dark};
     --border-card: #{$light-pink};
     --title-card: #{$white};
     --title-menu: #{$light-pink};
-    --bg-btn-hover: #{$dark-pink};
+    --bg-btn-hover: #{$light-pink};
 
     --img-card-front: #{url('../img/img-front-dark.png')};
     --img-card-graph: #{url('../img/img-graph-dark.png')};

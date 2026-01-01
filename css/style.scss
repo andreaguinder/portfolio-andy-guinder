@@ -78,7 +78,7 @@ z-index: 1;
 }
 
 .btn:hover {
-    color: $white;
+    color: var(--text-botones);
     background-color: var(--bg-btn-hover);
 }
 
@@ -96,7 +96,7 @@ z-index: 1;
     font-family: var(--font-general);
     font-size: 1.25rem;
     font-weight: 700;
-    transform: translate(15.6rem, -1rem);
+    transform: translate(16.6rem, -1rem);
     border: 1.5px solid var(--border-card);
     padding: 0.2rem 0.5rem;
     border-radius: 10px;
@@ -392,6 +392,11 @@ footer {
 
     i {
         color: var(--text-general);
+        font-size: 1.75rem;
+    }
+
+    .fa-github {
+            padding-bottom: 0.4rem;
     }
 
     .h3-sin-boton {
@@ -557,7 +562,7 @@ footer {
 
     .fa-github {
         font-size: 1.75rem;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.5rem;
     }
 
     p {
@@ -669,10 +674,6 @@ footer {
 
     .btn-link {
         font-size: 1rem;
-    }
-
-    .btn {
-        font-size: 0.85rem;
     }
 
     .titulo-general {

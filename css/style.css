@@ -5,7 +5,7 @@
   --line: rgb(255, 255, 255);
   --text-general: rgb(0, 0, 0);
   --accent: rgb(207, 45, 134);
-  --title-menu: rgb(240, 213, 231);
+  --title-menu: rgb(240, 195, 225);
   --font-general: Inter, sans-serif;
   --botones: rgb(207, 45, 134);
   --botones-bg: rgb(207, 45, 134);
@@ -17,7 +17,6 @@
   --border-card: rgb(207, 45, 134);
   --title-card: rgb(0, 0, 0);
   --bg-btn-hover: rgb(137, 7, 78);
-  --text-botones: rgb(255, 255, 255);
   --img-card-front: url("../img/img-front.png");
   --img-card-graph: url("../img/img-graph.png");
   --img-card-social: url("../img/img-social.png");
@@ -34,15 +33,15 @@
   --text-general: rgb(255, 255, 255);
   --accent: rgb(255, 111, 212);
   --botones: rgb(255, 255, 255);
-  --botones-bg: rgb(240, 213, 231);
+  --botones-bg: rgb(255, 111, 212);
   --bg-card: rgb(20, 19, 29);
-  --text-card: rgb(240, 213, 231);
+  --text-card: rgb(255, 111, 212);
   --bg-card-light: rgba(18, 19, 24, 0.54);
   --bg-dark-pink: rgb(15, 15, 15);
   --border-card: rgb(255, 111, 212);
   --title-card: rgb(255, 255, 255);
   --title-menu: rgb(255, 111, 212);
-  --bg-btn-hover: rgb(207, 45, 134);
+  --bg-btn-hover: rgb(255, 111, 212);
   --img-card-front: url("../img/img-front-dark.png");
   --img-card-graph: url("../img/img-graph-dark.png");
   --img-card-social: url("../img/img-social-dark.png");
@@ -484,6 +483,7 @@
 }
 .body-contacto .card-primary .redes-contacto h4 i {
   width: 30px;
+  color: var(--text-general);
 }
 .body-contacto .card-primary .btn {
   flex-direction: row;
@@ -496,6 +496,7 @@
   max-width: 35px;
   text-align: center;
   margin-left: 0rem;
+  color: var(--text-botones);
 }
 
 @media only screen and (min-width: 768px) {
@@ -623,7 +624,7 @@ i {
 }
 
 .btn:hover {
-  color: rgb(255, 255, 255);
+  color: var(--text-botones);
   background-color: var(--bg-btn-hover);
 }
 
@@ -641,7 +642,7 @@ i {
   font-family: var(--font-general);
   font-size: 1.25rem;
   font-weight: 700;
-  transform: translate(15.6rem, -1rem);
+  transform: translate(16.6rem, -1rem);
   border: 1.5px solid var(--border-card);
   padding: 0.2rem 0.5rem;
   border-radius: 10px;
@@ -765,7 +766,7 @@ header .container-nav .site__nav ul li p:focus,
 header .container-nav .site__nav ul li p.active {
   background-color: transparent !important;
   border: none !important;
-  color: rgb(240, 213, 231) !important;
+  color: rgb(240, 195, 225) !important;
   font-weight: bold !important;
   outline: none !important;
 }
@@ -906,6 +907,10 @@ footer .behance:hover {
 }
 .card-primary i {
   color: var(--text-general);
+  font-size: 1.75rem;
+}
+.card-primary .fa-github {
+  padding-bottom: 0.4rem;
 }
 .card-primary .h3-sin-boton {
   color: var(--title-card);
@@ -1044,7 +1049,7 @@ footer .behance:hover {
 }
 .cards-expandibles .fa-github {
   font-size: 1.75rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 .cards-expandibles p {
   color: var(--text-general);
@@ -1130,9 +1135,6 @@ footer .behance:hover {
   }
   .btn-link {
     font-size: 1rem;
-  }
-  .btn {
-    font-size: 0.85rem;
   }
   .titulo-general {
     color: var(--text-general);

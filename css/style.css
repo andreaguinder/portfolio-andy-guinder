@@ -203,6 +203,7 @@
 .seccion-perfil .container-perfil .intro p {
   text-align: left;
   padding: 0.25rem 0rem;
+  color: var(--text-general);
 }
 .seccion-perfil .foto-perfil {
   flex-shrink: 0;

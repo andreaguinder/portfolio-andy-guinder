@@ -200,7 +200,7 @@
 .seccion-perfil .container-perfil .intro {
   margin: 0rem;
 }
-.seccion-perfil .container-perfil .intro h2 {
+.seccion-perfil .container-perfil .intro p {
   text-align: left;
   padding: 0.25rem 0rem;
 }
@@ -369,14 +369,14 @@
     justify-content: center;
     flex-direction: row;
     width: 44rem;
-    height: 30rem;
+    height: 24rem;
     align-items: center;
     gap: 1rem;
     margin: 0rem;
     padding: 0rem 2rem;
   }
   .seccion-perfil .container-perfil::before {
-    height: 30rem;
+    height: 24rem;
     width: 44rem;
   }
   .seccion-perfil .container-perfil .intro {
@@ -452,17 +452,17 @@
     margin: 0rem 0rem 1rem;
     padding: 1rem 0.5rem;
     width: 71rem;
-    height: 25rem;
+    height: 17rem;
   }
   .seccion-perfil .container-perfil::before {
-    height: 25rem;
+    height: 17rem;
     width: 71rem;
   }
   .seccion-perfil .container-perfil .intro {
     margin: 0rem;
     width: 50rem;
     padding: 2rem 0rem;
-    height: 24rem;
+    height: 17.5rem;
   }
   .conocimientos {
     margin: 0rem;

@@ -941,7 +941,7 @@ header .container-nav .site__navAbrir {
 header .container-nav .menu-toggle {
   width: 3.5rem;
   height: 3.25rem;
-  border: 2px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 0.3rem;
   background: transparent;
   cursor: pointer;
@@ -1183,6 +1183,9 @@ footer .behance:hover {
   border-bottom-left-radius: 28px;
   min-height: 166px;
 }
+.cards-expandibles .card.card-secondary .h3-con-boton {
+  padding: 0.5rem 0rem 0rem;
+}
 .cards-expandibles .expandible-wrapper {
   max-height: 0;
   overflow: hidden;
@@ -1218,7 +1221,8 @@ footer .behance:hover {
 .cards-expandibles i {
   color: var(--text-card);
 }
-.cards-expandibles .fa-github {
+.cards-expandibles .fa-github,
+.cards-expandibles .fa-circle-user {
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
 }

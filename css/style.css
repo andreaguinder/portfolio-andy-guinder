@@ -886,7 +886,7 @@ footer .fab:hover,
 footer .fa-brands:hover,
 footer .fa-square-behance:hover,
 footer .behance:hover {
-  color: rgb(255, 111, 212);
+  color: var(--title-menu);
 }
 
 .card-primary {
@@ -1243,13 +1243,6 @@ footer .behance:hover {
     font-size: 1rem;
     padding: 0.25rem 0.5rem 0rem;
   }
-  footer p a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-  footer p a:hover {
-    color: rgb(255, 131, 199);
-  }
   footer div:nth-child(2),
   footer div:nth-child(3) {
     display: flex;
@@ -1271,7 +1264,7 @@ footer .behance:hover {
   footer .fa-brands:hover,
   footer .fa-square-behance:hover,
   footer .behance:hover {
-    color: rgb(255, 111, 212);
+    color: var(--title-menu);
   }
   .card-primary {
     color: rgb(255, 255, 255);

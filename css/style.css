@@ -750,7 +750,7 @@ header .container-nav .site__nav ul {
   padding-left: 7%;
   padding-right: 7%;
   list-style: none;
-  width: 11.5rem;
+  width: 14rem;
   margin-bottom: 0px !important;
   height: -moz-fit-content;
   height: fit-content;
@@ -767,7 +767,7 @@ header .container-nav .site__nav ul li p {
   padding: 0rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin: 1rem;
   outline: none !important;
 }

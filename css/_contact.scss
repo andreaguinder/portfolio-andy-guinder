@@ -65,7 +65,7 @@
                 gap: 1rem;
             }
 
-            h4 {
+            h3 {
                 @include flexCenter(row);
                 font-size: 1rem;
                 font-weight: 400;
@@ -148,7 +148,7 @@ margin: 0rem auto 4rem;
                         width: 380px;
                     }
 
-                    h4 i {
+                    h3 i {
                         margin-left: 0.8rem;
                     }
                 }

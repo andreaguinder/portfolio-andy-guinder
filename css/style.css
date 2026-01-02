@@ -602,7 +602,7 @@
   width: 100%;
   gap: 1rem;
 }
-.contacto .card-primary .redes-contacto h4 {
+.contacto .card-primary .redes-contacto h3 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -613,10 +613,10 @@
   gap: 1rem;
   margin-top: 0rem;
 }
-.contacto .card-primary .redes-contacto h4 a {
+.contacto .card-primary .redes-contacto h3 a {
   color: rgb(255, 255, 255);
 }
-.contacto .card-primary .redes-contacto h4 i {
+.contacto .card-primary .redes-contacto h3 i {
   width: 30px;
   color: var(--text-general);
 }
@@ -671,7 +671,7 @@
   .contacto .card-primary .redes-contacto button {
     width: 380px;
   }
-  .contacto .card-primary .redes-contacto h4 i {
+  .contacto .card-primary .redes-contacto h3 i {
     margin-left: 0.8rem;
   }
 }

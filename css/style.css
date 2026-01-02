@@ -60,7 +60,7 @@
   gap: 3rem;
   margin: 2rem auto 4rem;
 }
-.container__habilidades .h3-con-boton {
+.container__habilidades .titulo-con-boton {
   padding: 2rem 0.5rem;
 }
 
@@ -546,31 +546,31 @@
     width: 20rem;
   }
 }
-.contacto .card-primary {
-  margin: 9rem auto 5rem;
-  height: 36rem;
-  padding: 1rem;
-  width: 21rem;
-}
-.contacto .card-primary::before {
-  height: 36rem;
-  width: 21rem;
-  top: 0rem;
-}
-.contacto .card-primary .titulo {
+.contacto .titulo {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-card);
   padding: 0.5rem 0rem 0.5rem;
-  transform: translateX(0rem);
+  margin: 7rem auto 2rem;
+  text-align: center;
+}
+.contacto .card-primary {
+  margin: 0rem auto 4rem;
+  height: 35rem;
+  padding: 1rem;
+  width: 21rem;
+}
+.contacto .card-primary::before {
+  height: 35rem;
+  width: 21rem;
+  top: 0rem;
+}
+.contacto .card-primary .titulo-sin-boton {
+  padding: 1.5rem;
+  margin: 0rem auto;
 }
 .contacto .card-primary .bajada {
-  font-size: 1rem;
-  color: var(--text-general);
-  text-align: left;
-  padding: 0rem;
-  font-family: var(--font-general);
-  font-weight: 400;
+  padding: 0rem 1rem;
 }
 .contacto .card-primary .subtitulo {
   margin-bottom: 1rem;
@@ -588,10 +588,11 @@
   align-items: flex-start;
   justify-content: center;
   gap: 1.5rem;
-  padding: 1.5rem 0rem;
+  width: 310px;
+  padding: 2rem 1rem 0rem;
 }
 .contacto .card-primary .redes-contacto button {
-  width: 310px;
+  width: 290px;
 }
 .contacto .card-primary .redes-contacto .datos-contacto {
   display: flex;
@@ -636,22 +637,25 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .contacto .titulo {
+    font-size: 3rem;
+    padding: 1rem 0rem;
+  }
   .contacto .card-primary {
-    margin: 10rem auto 5rem;
+    margin: 0rem auto 4rem;
     width: 28rem;
     align-items: flex-start;
-    height: 34rem;
+    height: 30rem;
+    padding: 2rem;
   }
   .contacto .card-primary::before {
     width: 27.9rem;
     left: 0rem;
     top: 0rem;
-    height: 34rem;
+    height: 30rem;
   }
-  .contacto .card-primary .titulo {
-    font-size: 3rem;
-    transform: translateX(3rem);
-    padding: 1rem 0rem;
+  .contacto .card-primary .titulo-sin-boton {
+    padding: 0.5rem 0rem 1.5rem;
   }
   .contacto .card-primary .subtitulo {
     font-size: 1.25rem;
@@ -662,14 +666,21 @@
   }
   .contacto .card-primary .redes-contacto {
     padding: 1.5rem 0.5rem;
+    width: 390px;
   }
   .contacto .card-primary .redes-contacto button {
-    width: 400px;
+    width: 380px;
+  }
+  .contacto .card-primary .redes-contacto h4 i {
+    margin-left: 0.8rem;
   }
 }
 @media only screen and (min-width: 1024px) {
+  .contacto {
+    margin: -2rem auto 5em;
+  }
   .contacto .card-primary {
-    margin: 5rem auto;
+    margin: 0rem auto 4rem;
     width: 28rem;
     align-items: flex-start;
   }
@@ -721,7 +732,7 @@ i {
   margin: 1.75rem auto 2.5rem;
 }
 
-.h3-con-boton {
+.titulo-con-boton {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1054,7 +1065,7 @@ footer .behance:hover {
 .card-primary .fa-github {
   padding-bottom: 0.4rem;
 }
-.card-primary .h3-sin-boton {
+.card-primary .titulo-sin-boton {
   color: var(--title-card);
   text-align: center;
   padding: 2rem 0.5rem;
@@ -1163,7 +1174,7 @@ footer .behance:hover {
   border-bottom-left-radius: 28px;
   min-height: 166px;
 }
-.cards-expandibles .card.card-secondary .h3-con-boton {
+.cards-expandibles .card.card-secondary .titulo-con-boton {
   padding: 0.5rem 0rem 0rem;
 }
 .cards-expandibles .expandible-wrapper {
@@ -1410,7 +1421,7 @@ footer .behance:hover {
     height: 24rem;
     width: 20rem;
   }
-  .card-primary .h3-sin-boton {
+  .card-primary .titulo-sin-boton {
     text-align: center;
     font-size: 1.3rem;
     margin: 0rem auto;
@@ -1463,7 +1474,7 @@ footer .behance:hover {
   .cards-expandibles .card-secondary .subtitulo {
     width: 295px;
   }
-  .cards-expandibles .card.card-secondary .h3-con-boton {
+  .cards-expandibles .card.card-secondary .titulo-con-boton {
     padding: 0.5rem 2rem 0rem;
   }
   .swiper-cards-secondary .swiper {

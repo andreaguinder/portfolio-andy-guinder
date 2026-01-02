@@ -4,33 +4,34 @@
 
     .contacto {
 
-    .card-primary {
-        margin: 9rem auto 5rem;
-        height: 36rem;
-        padding: 1rem;
-        width: 21rem;
-
-        &::before {
-            height: 36rem;
-            width: 21rem;
-            top: 0rem;
-        }
-
-        .titulo {
+                .titulo {
             font-size: 2.5rem;
             font-weight: 600;
             color: var(--text-card);
             padding: 0.5rem 0rem 0.5rem;
-            transform: translateX(0rem);
+    margin: 7rem auto 2rem;
+            text-align: center;
+        }
+
+    .card-primary {
+        margin: 0rem auto 4rem;
+        height: 35rem;
+        padding: 1rem;
+        width: 21rem;
+
+        &::before {
+            height: 35rem;
+            width: 21rem;
+            top: 0rem;
+        }
+
+        .titulo-sin-boton {
+            padding: 1.5rem;
+            margin: 0rem auto;
         }
 
         .bajada {
-            font-size: 1rem;
-            color: var(--text-general);
-            text-align: left;
-            padding: 0rem;
-            font-family: var(--font-general);
-            font-weight: 400;
+            padding: 0rem 1rem;
         }
 
         .subtitulo {
@@ -50,11 +51,12 @@
             align-items: flex-start;
             justify-content: center;
             gap: 1.5rem;
-            padding: 1.5rem 0rem;
+            width: 310px;
+                padding: 2rem 1rem 0rem;
 
             
                 button {
-                    width: 310px;
+                    width: 290px;
                 }
 
             .datos-contacto {
@@ -106,23 +108,27 @@
     // BODY CONTACTO TABLET
         .contacto {
 
+                            .titulo {
+                    font-size: 3rem;
+                    padding: 1rem 0rem;
+                }
+
             .card-primary {
-                margin: 10rem auto 5rem;
+margin: 0rem auto 4rem;
                 width: 28rem;
                 align-items: flex-start;
-                height: 34rem;
+                height: 30rem;
+                padding: 2rem;
 
                 &::before {
                     width: 27.9rem;
                     left: 0rem;
                     top: 0rem;
-                    height: 34rem;
+                    height: 30rem;
                 }
 
-                .titulo {
-                    font-size: 3rem;
-                    transform: translateX(3rem);
-                    padding: 1rem 0rem;
+                .titulo-sin-boton {
+                            padding: 0.5rem 0rem 1.5rem;
                 }
 
                 .subtitulo {
@@ -136,9 +142,14 @@
 
                 .redes-contacto {
                     padding: 1.5rem 0.5rem;
+                    width: 390px;
 
                     button {
-                        width: 400px;
+                        width: 380px;
+                    }
+
+                    h4 i {
+                        margin-left: 0.8rem;
                     }
                 }
             }
@@ -150,10 +161,13 @@
     // BODY CONTACTO DESKTOP
         .contacto {
 
+            margin: -2rem auto 5em;
+
             .card-primary {
-                margin: 5rem auto;
+                margin: 0rem auto 4rem;
                 width: 28rem;
                 align-items: flex-start;
             }
+
         }
     }

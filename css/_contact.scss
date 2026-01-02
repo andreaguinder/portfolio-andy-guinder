@@ -15,12 +15,12 @@
 
     .card-primary {
         margin: 9rem auto 5rem;
-        height: 31rem;
+        height: 36rem;
         padding: 1rem;
         width: 21rem;
 
         &::before {
-            height: 31rem;
+            height: 36rem;
             width: 21rem;
             top: 0rem;
         }
@@ -61,6 +61,17 @@
             gap: 1.5rem;
             padding: 1.5rem 0rem;
 
+            
+                button {
+                    width: 310px;
+                }
+
+            .datos-contacto {
+                @include flexCenter(column);
+                width: 100%;
+                gap: 1rem;
+            }
+
             h4 {
                 @include flexCenter(row);
                 font-size: 1rem;
@@ -82,9 +93,11 @@
 
         .btn {
             flex-direction: row;
-            gap: 0.3rem;
+            gap: 1rem;
             font-size: 1rem;
             margin: 0rem;
+            justify-content: flex-start;
+    padding-left: 5%;
         }
 
         i {
@@ -111,11 +124,13 @@
                 margin: 10rem auto 5rem;
                 width: 28rem;
                 align-items: flex-start;
+                height: 34rem;
 
                 &::before {
                     width: 27.9rem;
                     left: 0rem;
                     top: 0rem;
+                    height: 34rem;
                 }
 
                 .titulo {
@@ -135,6 +150,10 @@
 
                 .redes-contacto {
                     padding: 1.5rem 0.5rem;
+
+                    button {
+                        width: 400px;
+                    }
                 }
             }
         }

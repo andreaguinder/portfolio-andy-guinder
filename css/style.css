@@ -802,6 +802,10 @@ i {
   display: block;
 }
 
+.fa-circle-user {
+  margin-bottom: 0.25rem !important;
+}
+
 .intro {
   width: 84%;
   margin: 8rem auto 2rem;
@@ -1482,6 +1486,9 @@ footer .behance:hover {
   }
   .cards-expandibles .card-secondary .subtitulo {
     width: 295px;
+  }
+  .cards-expandibles .card.card-secondary .h3-con-boton {
+    padding: 0.5rem 2rem 0rem;
   }
   .swiper-cards-secondary .swiper {
     width: 1024px;

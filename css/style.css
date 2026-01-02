@@ -708,31 +708,37 @@ header .container-nav .theme-switch-wrapper .theme-checkbox {
   display: none;
 }
 header .container-nav .theme-switch-wrapper .theme-label {
-  width: 2.8rem;
-  height: 1.2rem;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 50px;
   position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header .container-nav .theme-switch-wrapper .theme-label .ball {
-  width: 0.9rem;
-  height: 0.9rem;
-  background-color: white;
-  border-radius: 50%;
+header .container-nav .theme-switch-wrapper .theme-label i {
+  font-size: 2rem;
   position: absolute;
-  top: 50%;
-  left: 0.15rem;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label {
-  background-color: var(--accent);
-  border-color: rgb(255, 255, 255);
+header .container-nav .theme-switch-wrapper .theme-label i.fa-sun {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
-header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label .ball {
-  transform: translate(1.4rem, -50%);
+header .container-nav .theme-switch-wrapper .theme-label i.fa-moon {
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transform: rotate(-90deg) scale(0);
+}
+header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label i.fa-sun {
+  opacity: 0;
+  transform: rotate(90deg) scale(0);
+}
+header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label i.fa-moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+  color: rgb(255, 255, 255);
 }
 header .container-nav .site__nav {
   top: 100%;

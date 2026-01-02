@@ -145,48 +145,58 @@ header {
         .logo img {
             width: 4.5rem;
         }
+.theme-switch-wrapper {
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
-        .theme-switch-wrapper {
-            order: 2;
+    .theme-checkbox {
+        display: none;
+    }
+
+    .theme-label {
+        position: relative;
+        width: 2.5rem;
+        height: 2.5rem; // Lo hacemos cuadrado para que el icono rote sobre su eje
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 2rem; // Tamaño destacado ya que no hay bordes
             position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-
-            .theme-checkbox {
-                display: none;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            
+            &.fa-sun {
+                color: $white; // Color sol (podés usar tu variable si tenés una amarilla)
+                opacity: 1;
+                transform: rotate(0deg) scale(1);
             }
-
-            .theme-label {
-                width: 2.8rem;
-                height: 1.2rem;
-                border: 2px solid $white;
-                border-radius: 50px;
-                position: relative;
-                cursor: pointer;
-                display: block;
-
-                .ball {
-                    width: 0.9rem;
-                    height: 0.9rem;
-                    background-color: white;
-                    border-radius: 50%;
-                    position: absolute;
-                    top: 50%;
-                    left: 0.15rem;
-                    transform: translateY(-50%);
-                    transition: transform 0.3s ease;
-                }
-            }
-
-            .theme-checkbox:checked+.theme-label {
-                background-color: var(--accent);
-                border-color: $white;
-
-                .ball {
-                    transform: translate(1.4rem, -50%);
-                }
+            
+            &.fa-moon {
+                color: $white; // Usando tu variable
+                opacity: 0;
+                transform: rotate(-90deg) scale(0);
             }
         }
+    }
+
+    // Lógica de cambio al clickear
+    .theme-checkbox:checked + .theme-label {
+        i.fa-sun {
+            opacity: 0;
+            transform: rotate(90deg) scale(0);
+        }
+        
+        i.fa-moon {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+            color: $white; // O la variable que prefieras para la luna
+        }
+    }
+}
 
         .site__nav {
             top: 100%;

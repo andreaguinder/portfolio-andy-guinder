@@ -1080,6 +1080,7 @@ footer .behance:hover {
   width: 295px;
   font-size: 1rem;
   line-height: 1.1rem;
+  color: var(--text-general);
 }
 .cards-expandibles .card-secondary .btn {
   margin-left: 2rem;

@@ -546,36 +546,25 @@
     width: 20rem;
   }
 }
-.body-contacto {
-  background-image: var(--bg-contacto-mob);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  width: 100%;
-  background-attachment: unset;
-}
-.body-contacto .contacto {
-  width: 100%;
-}
-.body-contacto .card-primary {
+.contacto .card-primary {
   margin: 9rem auto 5rem;
   height: 36rem;
   padding: 1rem;
   width: 21rem;
 }
-.body-contacto .card-primary::before {
+.contacto .card-primary::before {
   height: 36rem;
   width: 21rem;
   top: 0rem;
 }
-.body-contacto .card-primary .titulo {
+.contacto .card-primary .titulo {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--text-card);
   padding: 0.5rem 0rem 0.5rem;
   transform: translateX(0rem);
 }
-.body-contacto .card-primary .bajada {
+.contacto .card-primary .bajada {
   font-size: 1rem;
   color: var(--text-general);
   text-align: left;
@@ -583,7 +572,7 @@
   font-family: var(--font-general);
   font-weight: 400;
 }
-.body-contacto .card-primary .subtitulo {
+.contacto .card-primary .subtitulo {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   color: var(--text-general);
@@ -593,7 +582,7 @@
   font-weight: 500;
   font-family: var(--font-general);
 }
-.body-contacto .card-primary .redes-contacto {
+.contacto .card-primary .redes-contacto {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -601,10 +590,10 @@
   gap: 1.5rem;
   padding: 1.5rem 0rem;
 }
-.body-contacto .card-primary .redes-contacto button {
+.contacto .card-primary .redes-contacto button {
   width: 310px;
 }
-.body-contacto .card-primary .redes-contacto .datos-contacto {
+.contacto .card-primary .redes-contacto .datos-contacto {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,7 +601,7 @@
   width: 100%;
   gap: 1rem;
 }
-.body-contacto .card-primary .redes-contacto h4 {
+.contacto .card-primary .redes-contacto h4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -623,14 +612,14 @@
   gap: 1rem;
   margin-top: 0rem;
 }
-.body-contacto .card-primary .redes-contacto h4 a {
+.contacto .card-primary .redes-contacto h4 a {
   color: rgb(255, 255, 255);
 }
-.body-contacto .card-primary .redes-contacto h4 i {
+.contacto .card-primary .redes-contacto h4 i {
   width: 30px;
   color: var(--text-general);
 }
-.body-contacto .card-primary .btn {
+.contacto .card-primary .btn {
   flex-direction: row;
   gap: 1rem;
   font-size: 1rem;
@@ -638,7 +627,7 @@
   justify-content: flex-start;
   padding-left: 5%;
 }
-.body-contacto .card-primary i {
+.contacto .card-primary i {
   font-size: 1.5rem;
   max-width: 35px;
   text-align: center;
@@ -647,53 +636,39 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .body-contacto {
-    background-image: var(--bg-contacto-tablet);
-    background-position: center;
-  }
-  .body-contacto .contacto {
-    width: 100%;
-  }
-  .body-contacto .contacto .card-primary {
+  .contacto .card-primary {
     margin: 10rem auto 5rem;
     width: 28rem;
     align-items: flex-start;
     height: 34rem;
   }
-  .body-contacto .contacto .card-primary::before {
+  .contacto .card-primary::before {
     width: 27.9rem;
     left: 0rem;
     top: 0rem;
     height: 34rem;
   }
-  .body-contacto .contacto .card-primary .titulo {
+  .contacto .card-primary .titulo {
     font-size: 3rem;
     transform: translateX(3rem);
     padding: 1rem 0rem;
   }
-  .body-contacto .contacto .card-primary .subtitulo {
+  .contacto .card-primary .subtitulo {
     font-size: 1.25rem;
     margin: 0rem auto 1rem;
   }
-  .body-contacto .contacto .card-primary .bajada {
+  .contacto .card-primary .bajada {
     padding: 0rem 0.5rem;
   }
-  .body-contacto .contacto .card-primary .redes-contacto {
+  .contacto .card-primary .redes-contacto {
     padding: 1.5rem 0.5rem;
   }
-  .body-contacto .contacto .card-primary .redes-contacto button {
+  .contacto .card-primary .redes-contacto button {
     width: 400px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .body-contacto {
-    background-image: var(--bg-contacto-desk);
-    background-position: center;
-  }
-  .body-contacto .contacto {
-    width: 50%;
-  }
-  .body-contacto .contacto .card-primary {
+  .contacto .card-primary {
     margin: 5rem auto;
     width: 28rem;
     align-items: flex-start;

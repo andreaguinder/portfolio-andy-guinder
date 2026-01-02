@@ -14,20 +14,20 @@
 
     .card-primary {
         margin: 9rem auto 5rem;
-        height: 30rem;
+        height: 31rem;
         padding: 1rem;
         width: 21rem;
 
         &::before {
-            height: 30rem;
+            height: 31rem;
             width: 21rem;
             top: 0rem;
         }
 
         .titulo {
-            font-size: 2rem;
-            font-weight: 400;
-            color: var(--title-card);
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--text-card);
             padding: 0.5rem 0rem 0.5rem;
             transform: translateX(0rem);
         }
@@ -43,12 +43,13 @@
 
         .subtitulo {
             margin-bottom: 1rem;
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             color: var(--text-general);
             text-align: center;
             padding: 0.5rem;
             text-align: center;
             font-weight: 500;
+                        font-family: var(--font-general);
         }
 
         .redes-contacto {
@@ -117,20 +118,21 @@
 
                 .titulo {
                     font-size: 3rem;
-                    transform: translateX(4.5rem);
+                    transform: translateX(3rem);
                     padding: 1rem 0rem;
                 }
 
                 .subtitulo {
                     font-size: 1.25rem;
+                                        margin: 0rem auto 1rem;
                 }
 
                 .bajada {
-                    padding: 0rem 1rem;
+                            padding: 0rem 0.5rem;
                 }
 
                 .redes-contacto {
-                    padding: 1.5rem 1rem;
+                    padding: 1.5rem 0.5rem;
                 }
             }
         }

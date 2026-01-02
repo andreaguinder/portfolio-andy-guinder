@@ -1,11 +1,11 @@
-// SWIPERS
+// SWIPER
 
 const swiperGeneral = new Swiper(".swiper-cards-secondary .swiper", {
   loop: true,
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 24,
-  autoHeight: true, // Fundamental para que el contenedor crezca con la card
+  autoHeight: true,
 
   pagination: {
     el: ".swiper-pagination",

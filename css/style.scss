@@ -4,7 +4,7 @@
 @use "conocimientos";
 @use "contact";
 
-// ESTILOS GENERALES
+// ESTILOS GENERALES MOB
 
 * {
     font-family: "Ubuntu", sans-serif;
@@ -24,8 +24,8 @@ button {
 }
 
 i {
-position: relative;
-z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .full-width {
@@ -53,16 +53,16 @@ z-index: 1;
     margin: 1.75rem auto 2.5rem;
 }
 
-    .h3-con-boton {
-        @include flexCenter(row);
-        padding: 1rem 0.5rem;
-        gap: 1rem;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        color: var(--text-general);
-        margin-top: 0rem !important;
-    }
+.h3-con-boton {
+    @include flexCenter(row);
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-general);
+    margin-top: 0rem !important;
+}
 
 .btn {
     background-color: var(--botones-bg);
@@ -103,7 +103,6 @@ z-index: 1;
     border-radius: 10px;
     display: block;
 }
-
 
 .intro {
     width: 84%;
@@ -397,7 +396,7 @@ footer {
     }
 
     .fa-github {
-            padding-bottom: 0.4rem;
+        padding-bottom: 0.4rem;
     }
 
     .h3-sin-boton {
@@ -420,12 +419,12 @@ footer {
         font-family: var(--font-general);
     }
 
-
     %card-primary-habilidad-img {
         width: 85%;
         height: 115px;
         object-fit: cover;
-        margin: -0.5rem auto 0.5rem;;
+        margin: -0.5rem auto 0.5rem;
+        ;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -442,7 +441,7 @@ footer {
     .img-social {
         background-image: var(--img-card-social);
         @extend %card-primary-habilidad-img;
-    margin: -1rem auto 0rem;
+        margin: -1rem auto 0rem;
     }
 
     .img-graph {
@@ -453,7 +452,7 @@ footer {
     }
 }
 
-// SWIPERS CARDS SECONDARY
+// SWIPER CARDS SECONDARY
 
 .swiper-cards-secondary {
     width: 100%;
@@ -546,7 +545,7 @@ footer {
         font-size: 1.25rem;
         color: var(--text-card);
         margin: 1rem 2rem 0rem;
-                display: flex;
+        display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 1rem;
@@ -590,6 +589,8 @@ footer {
 
 @media only screen and (min-width: 768px) {
 
+    // ESTILOS GENERALES TABLET
+
     .hidden-xs {
         display: block;
     }
@@ -615,6 +616,7 @@ footer {
         }
     }
 
+    // MENU TABLET
     header .container-nav .theme-switch-wrapper {
         order: 2;
         position: absolute;
@@ -622,6 +624,7 @@ footer {
         transform: translateX(200px);
     }
 
+    // FOOTER TABLET
     footer {
         flex-direction: row;
         height: 7rem;
@@ -632,6 +635,7 @@ footer {
         }
     }
 
+    // SWIPER TABLET
     .swiper-cards-secondary .swiper {
         width: 664px;
         margin-top: 1rem;
@@ -649,6 +653,7 @@ footer {
         }
     }
 
+    // CARD SECONDARY TABLET
     .cards-expandibles {
         .card.card-secondary {
             width: 320px;
@@ -659,6 +664,7 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
+    //ESTILOS GENERALES DESKTOP
     body {
         margin: 9rem auto 0rem;
     }
@@ -696,7 +702,7 @@ footer {
         }
     }
 
-    // MENU DESK FIX
+    // MENU DESKTOP
     header {
         height: 4.5rem;
         padding: 0;
@@ -768,6 +774,7 @@ footer {
         }
     }
 
+    // FOOTER DESKTOP
     footer {
         width: 100%;
         @include flexCenter(row);
@@ -816,6 +823,7 @@ footer {
         }
     }
 
+    // CARDS PRIMARY DESKTOP
     .card-primary {
         color: $white;
         display: flex;
@@ -870,6 +878,7 @@ footer {
         width: 22rem;
     }
 
+    // CARDS SECONDARY DESKTOP
     .cards-expandibles {
         .card-secondary {
             p {
@@ -882,13 +891,14 @@ footer {
                 font-size: 0.85rem;
             }
 
-           .titulo {
+            .titulo {
                 padding: 0rem 0rem 0.5rem 2rem;
                 margin-left: 0rem;
             }
         }
     }
 
+    // SWIPER DESKTOP
     .swiper-cards-secondary .swiper {
         width: 1024px;
 

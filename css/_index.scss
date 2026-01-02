@@ -1,5 +1,7 @@
 @use "variables"as *;
 
+
+// HABILIDADES MOB
 .container__habilidades {
     width: 100%;
     height: auto;
@@ -12,20 +14,22 @@
     }
 }
 
+// SECONDARY SECTION MOB
 .secondary-section {
     width: 100%;
     overflow: hidden;
     padding-bottom: 2rem;
-        margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
+
+    // HABILIDADES TABLET
     .container__habilidades {
         flex-wrap: wrap;
         flex-direction: row;
         gap: 2.5rem;
     }
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -33,10 +37,9 @@
     // HABILIDADES DESK
     .container__habilidades {
         margin: 0rem auto 6rem;
-
     }
 
-    // REFERENCIAS DESK
+    // SECONDARY SECTION DESKTOP
     .secondary-section {
         margin: 3rem auto 2rem;
 

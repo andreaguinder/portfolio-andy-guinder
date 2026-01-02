@@ -1,5 +1,6 @@
 @use "variables"as *;
 
+// BODY CONTACTO MOB
 .body-contacto {
     background-image: var(--bg-contacto-mob);
     background-repeat: no-repeat;
@@ -49,7 +50,7 @@
             padding: 0.5rem;
             text-align: center;
             font-weight: 500;
-                        font-family: var(--font-general);
+            font-family: var(--font-general);
         }
 
         .redes-contacto {
@@ -91,13 +92,14 @@
             max-width: 35px;
             text-align: center;
             margin-left: 0rem;
-                                color: var(--text-botones);
+            color: var(--text-botones);
         }
     }
 }
 
 @media only screen and (min-width: 768px) {
 
+    // BODY CONTACTO TABLET
     .body-contacto {
         background-image: var(--bg-contacto-tablet);
         background-position: center;
@@ -124,11 +126,11 @@
 
                 .subtitulo {
                     font-size: 1.25rem;
-                                        margin: 0rem auto 1rem;
+                    margin: 0rem auto 1rem;
                 }
 
                 .bajada {
-                            padding: 0rem 0.5rem;
+                    padding: 0rem 0.5rem;
                 }
 
                 .redes-contacto {
@@ -142,6 +144,7 @@
 
 @media only screen and (min-width: 1024px) {
 
+    // BODY CONTACTO DESKTOP
     .body-contacto {
         background-image: var(--bg-contacto-desk);
         background-position: center;

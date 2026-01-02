@@ -1,6 +1,6 @@
 @use "variables"as *;
 
-// MOBILE
+// CONOCIMIENTOS MOB
 .conocimientos {
     @include flexCenter(column);
     margin: 6rem 0rem;
@@ -72,7 +72,6 @@
                     text-align: left;
                     padding: 0rem 0rem 0rem 1rem;
                     opacity: 80%;
-
                 }
 
                 ul {

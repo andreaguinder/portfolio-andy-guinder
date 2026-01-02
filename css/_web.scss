@@ -1,7 +1,6 @@
 @use "variables"as *;
 
 // SECCION PROYECTOS PRINCIPALES MOB
-
 .proyectos {
     display: flex;
     justify-content: center;
@@ -20,12 +19,9 @@
     span {
         @include flexCenter(row);
     }
-
 }
 
-
 // SECCION OTROS PROYECTOS MOB
-
 .otros-proyectos {
     @include flexCenter(column);
     gap: 0.5rem;
@@ -42,6 +38,7 @@
 
 @media only screen and (min-width: 768px) {
 
+    // SECCION PROYECTOS TABLET
     .proyectos {
         margin: 0rem auto 3rem;
 
@@ -52,6 +49,7 @@
         }
     }
 
+    // SECCION OTROS PROYECTOS TABLET
     .otros-proyectos {
         gap: 0rem;
 
@@ -73,8 +71,7 @@
 @media only screen and (min-width: 1024px) {
 
 
-    // SECCION PROYECTOS PRINCIPALES DESK
-
+    // SECCION PROYECTOS PRINCIPALES DESKTOP
     .proyectos {
         height: 78rem;
         margin: 2rem auto 8rem;
@@ -82,13 +79,11 @@
         .container-cards-web {
             grid-template-columns: 1fr 1fr 1fr;
             gap: 3rem;
-                    margin-top: -5rem;
+            margin-top: -5rem;
         }
-
     }
 
-    // SECCION OTROS PROYECTOS DESK
-
+    // SECCION OTROS PROYECTOS DESKTOP
     .otros-proyectos {
         gap: 0rem;
         margin: -7rem 0rem 0rem;

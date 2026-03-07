@@ -412,7 +412,7 @@ footer {
     &::before {
         content: '';
         position: absolute;
-        min-height: 24rem;
+        min-height: 25rem;
         width: 19.4rem;
         overflow: hidden;
         background:
@@ -927,7 +927,7 @@ footer {
 
     .card-primary-habilidad.design::before,
     .card-primary-habilidad.social::before {
-        min-height: 25rem;
+        min-height: 26rem;
         width: 22rem;
     }
 

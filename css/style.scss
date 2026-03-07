@@ -6,6 +6,13 @@
 
 // ESTILOS GENERALES MOB
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 * {
     font-family: "Ubuntu", sans-serif;
     margin: 0rem;
@@ -48,15 +55,15 @@ i {
 .titulo-general {
     font-weight: 700;
     color: var(--text-general);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
     margin: 1.75rem auto 2.5rem;
 }
 
 .titulo-con-boton {
     @include flexCenter(row);
-    padding: 16px 8px;
-    gap: 16px;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -67,10 +74,10 @@ i {
 .btn {
     background-color: var(--botones-bg);
     color: var(--text-botones);
-    padding: 8px;
+    padding: 0.5rem;
     height: auto;
     border-radius: 2px;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     font-weight: 600;
     position: relative;
@@ -87,7 +94,7 @@ i {
     color: var(--botones);
     cursor: pointer;
     font-family: var(--font-general);
-    font-size: 32px;
+    font-size: 2rem;
     display: block;
 }
 
@@ -95,29 +102,29 @@ i {
     color: var(--botones);
     cursor: pointer;
     font-family: var(--font-general);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
-    transform: translate(16.6rem, -16px);
+    transform: translate(16.6rem, -1rem);
     border: 1.5px solid var(--border-card);
-    padding: 2px 8px;
+    padding: 0.2rem 0.5rem;
     border-radius: 10px;
     display: block;
     background-color: var(--btn-square);
 }
 
     .fa-circle-user {
-        margin-bottom: 4px !important;
+        margin-bottom: 0.25rem !important;
     }
 
 .intro {
     width: 84%;
-    margin: 8rem auto 32px;
+    margin: 8rem auto 2rem;
 
     h2 {
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--text-general);
         text-align: center;
-        padding: 8px;
+        padding: 0.5rem;
         font-family: var(--font-general);
         text-align: center;
         font-weight: 400;
@@ -140,7 +147,7 @@ header {
 
     .container-nav {
         width: 100%;
-        padding: 0rem 16px;
+        padding: 0rem 1rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -171,7 +178,7 @@ header {
                 justify-content: center;
 
                 i {
-                    font-size: 32px;
+                    font-size: 2rem;
                     position: absolute;
                     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
@@ -234,8 +241,8 @@ header {
                         padding: 0rem;
                         text-transform: uppercase;
                         text-decoration: none;
-                        font-size: 16px;
-                        margin: 16px;
+                        font-size: 1rem;
+                        margin: 1rem;
                         outline: none !important;
 
                         &:hover,
@@ -287,8 +294,8 @@ header {
         }
 
         div.menu-hamburguesa {
-            width: 24px;
-            height: 4px;
+            width: 1.5rem;
+            height: 0.25rem;
             position: relative;
             background-color: $white;
         }
@@ -298,9 +305,9 @@ header {
             content: "";
             display: block;
             background-color: $white;
-            height: 4px;
-            width: 24px;
-            border-radius: 8px;
+            height: 0.25rem;
+            width: 1.5rem;
+            border-radius: 0.5rem;
             transition: all ease-in-out 0.4s;
             position: absolute;
         }
@@ -328,23 +335,23 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     height: 16rem;
-    padding: 16px 0rem;
+    padding: 1rem 0rem;
 
     div:first-child {
         @include flexCenter(row);
-        gap: 32px;
+        gap: 2rem;
 
         i {
-            font-size: 36px;
+            font-size: 2.25rem;
         }
     }
 
     div:nth-child(2),
     div:nth-child(3) {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -354,16 +361,16 @@ footer {
     p {
         text-align: center;
         color: $white;
-        font-size: 16px;
-        line-height: 21.6px;
-        padding: 0rem 16px;
+        font-size: 1rem;
+        line-height: 1.35rem;
+        padding: 0rem 1rem;
     }
 
     .fab,
     .fa-brands,
     .fa-square-behance,
     .behance {
-        font-size: 28.8px;
+        font-size: 1.8rem;
         color: $white;
     }
 
@@ -383,7 +390,7 @@ footer {
     @include flexCenter(column);
     justify-content: flex-start;
     background-color: var(--bg-card);
-    backdrop-filter: blur(32px);
+    backdrop-filter: blur(2rem);
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     position: relative;
@@ -401,17 +408,17 @@ footer {
             linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
         background-repeat: no-repeat;
         background-size: 7.3rem 4.3rem;
-        filter: drop-shadow(0 0 8px var(--accent));
+        filter: drop-shadow(0 0 0.5rem var(--accent));
         border-radius: 2px;
     }
 
     .btn {
-        margin-top: 16px;
+        margin-top: 1rem;
     }
 
     i {
         color: var(--text-general);
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     .fa-github {
@@ -421,8 +428,8 @@ footer {
     .titulo-sin-boton {
         color: var(--title-card);
         text-align: center;
-        padding: 32px 8px;
-        font-size: 20px;
+        padding: 2rem 0.5rem;
+        font-size: 1.2rem;
     }
 
     img {
@@ -431,9 +438,9 @@ footer {
     }
 
     p {
-        padding: 16px 16px 0rem 16px;
+        padding: 1rem 1rem 0rem 1rem;
         margin: 0rem;
-        font-size: 16px;
+        font-size: 1rem;
         color: var(--text-general);
         font-family: var(--font-general);
     }
@@ -442,12 +449,12 @@ footer {
         width: 85%;
         height: 115px;
         object-fit: cover;
-        margin: -8px auto 8px;
+        margin: -0.5rem auto 0.5rem;
         ;
         text-align: center;
         display: flex;
         flex-direction: column;
-        padding-top: 16px;
+        padding-top: 1rem;
         background-size: cover;
         background-position: center;
     }
@@ -460,14 +467,14 @@ footer {
     .img-social {
         background-image: var(--img-card-social);
         @extend %card-primary-habilidad-img;
-        margin: -16px auto 0rem;
+        margin: -1rem auto 0rem;
     }
 
     .img-graph {
         background-image: var(--img-card-graph);
         @extend %card-primary-habilidad-img;
         height: 108px;
-        margin: -16px auto 0rem;
+        margin: -1rem auto 0rem;
     }
 }
 
@@ -521,8 +528,8 @@ footer {
     top: auto !important;
     bottom: 5px !important;
     color: var(--title-card);
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     z-index: 10;
 }
 
@@ -530,7 +537,7 @@ footer {
 
 .cards-expandibles {
     .card.card-secondary {
-        padding: 16px 0rem 0rem;
+        padding: 1rem 0rem 0rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -547,7 +554,7 @@ footer {
         min-height: 166px;
 
         .titulo-con-boton {
-            padding: 8px 0rem 0rem;
+            padding: 0.5rem 0rem 0rem;
         }
     }
 
@@ -566,27 +573,27 @@ footer {
     }
 
     .titulo {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: var(--text-card);
-        margin: 16px 32px 0rem;
+        margin: 1rem 2rem 0rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 16px;
+        gap: 1rem;
     }
 
     .subtitulo {
         color: var(--text-general);
-        font-size: 16px;
-        line-height: 16px;
-        margin: 16px 0rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        margin: 1rem 0rem;
         width: 295px;
-        padding-left: 32px;
+        padding-left: 2rem;
     }
 
     .div-expandible {
         width: 290px;
-        height: 24px;
+        height: 1.5rem;
     }
 
     i {
@@ -595,22 +602,22 @@ footer {
 
     .fa-github,
     .fa-circle-user {
-        font-size: 28px;
-        margin-bottom: 8px;
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
     }
 
     .texto-info {
-        padding-top: 16px;
-        padding-left: 32px;
+        padding-top: 1rem;
+        padding-left: 2rem;
         width: 295px;
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 1rem;
+        line-height: 1.1rem;
         color: var(--text-general);
     }
 
     .card-secondary .btn {
-        margin-left: 32px;
-        margin-top: 16px;
+        margin-left: 2rem;
+        margin-top: 1rem;
     }
 }
 
@@ -631,15 +638,15 @@ footer {
     }
 
     .titulo-general {
-        font-size: 28px;
-        margin: 16px auto 32px;
+        font-size: 1.75rem;
+        margin: 1rem auto 2rem;
     }
 
     .intro {
         width: 86%;
 
         h2 {
-            font-size: 16px;
+            font-size: 1.1rem;
         }
     }
 
@@ -655,22 +662,26 @@ footer {
     footer {
         flex-direction: row;
         height: 7rem;
-        gap: 4px;
+        gap: 0.25rem;
 
         div {
-            gap: 8px;
+            gap: 0.5rem;
+        }
+
+        p {
+                padding: 0rem 4px;
         }
 
         div:first-child {
-                gap: 26px;
-    margin-left: 32px;
+                gap: 1rem;
+    margin-left: 0.5rem;
         }
     }
 
     // SWIPER TABLET
     .swiper-cards-secondary .swiper {
         width: 664px;
-        margin-top: 16px;
+        margin-top: 1rem;
 
         .card {
             width: 320px;
@@ -714,13 +725,13 @@ footer {
     }
 
     .btn-link {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .titulo-general {
         color: var(--text-general);
-        margin-bottom: 24px;
-        font-size: 32px;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
     }
 
     .intro {
@@ -728,9 +739,9 @@ footer {
         margin: 0rem auto;
 
         h2 {
-            font-size: 20px;
+            font-size: 1.25rem;
             margin: 0rem auto;
-            padding: 32px 0rem 4rem;
+            padding: 2rem 0rem 4rem;
         }
     }
 
@@ -785,7 +796,7 @@ footer {
                         a,
                         p {
                             margin: 0;
-                            font-size: 16px;
+                            font-size: 1rem;
                             font-weight: 700;
                             color: $white;
 
@@ -816,8 +827,13 @@ footer {
         p {
             text-align: left;
             color: $white;
-            font-size: 16px;
-            padding: 4px 8px 0rem;
+            font-size: 1rem;
+            padding: 0.25rem 0.5rem 0rem;
+        }
+
+        div:first-child {
+        gap: 2rem;
+        margin-left: 0rem;
         }
 
         div:nth-child(2),
@@ -837,7 +853,7 @@ footer {
         .fa-brands,
         .fa-square-behance,
         .behance {
-            font-size: 28.8px;
+            font-size: 1.8rem;
             color: white;
 
             &:hover {
@@ -858,13 +874,13 @@ footer {
 
         .titulo-sin-boton {
             text-align: center;
-            font-size: 20.8px;
+            font-size: 1.3rem;
             margin: 0rem auto;
-            padding: 32px 16px;
+            padding: 2rem 1rem;
         }
 
         p {
-            padding: 16px 24px 0rem 24px;
+            padding: 1rem 1.5rem 0rem 1.5rem;
             margin-left: 0rem;
         }
 
@@ -875,7 +891,7 @@ footer {
         }
 
         .btn {
-            margin-top: 16px;
+            margin-top: 1rem;
         }
     }
 
@@ -898,7 +914,7 @@ footer {
     .card-primary-habilidad.design::before,
     .card-primary-habilidad.social::before {
         height: 25rem;
-        width: 232px;
+        width: 22rem;
     }
 
     // CARDS SECONDARY DESKTOP
@@ -911,13 +927,13 @@ footer {
             }
 
             .texto-info {
-                padding-top: 16px;
-                font-size: 16px;
+                padding-top: 1rem;
+                font-size: 1rem;
                 width: 295px;
             }
 
             .titulo {
-                padding: 0rem 0rem 8px 32px;
+                padding: 0rem 0rem 0.5rem 2rem;
                 margin-left: 0rem;
             }
 
@@ -928,7 +944,7 @@ footer {
         }
 
         .card.card-secondary .titulo-con-boton {
-                    padding: 8px 32px 0rem;
+                    padding: 0.5rem 2rem 0rem;
         }
     }
 

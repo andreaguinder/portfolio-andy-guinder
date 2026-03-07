@@ -15,6 +15,7 @@ $font-main: "Inter",
 sans-serif;
 //$pink-light-light: rgb(240, 213, 231);
 $pink-light-light: rgb(240, 195, 225);
+$btn-square: rgb(246, 228, 240);
 
 @mixin flexCenter ($direct) {
     display: flex;
@@ -45,7 +46,7 @@ $pink-light-light: rgb(240, 195, 225);
     --botones: #{$dark-pink};
     --botones-bg: #{$dark-pink};
     --text-botones: #{$white};
-
+    --btn-square: #{$btn-square};
 
     // Cards
 
@@ -89,6 +90,7 @@ $pink-light-light: rgb(240, 195, 225);
     --accent: #{$light-pink};
     --botones: #{$white};
     --botones-bg: #{$light-pink};
+    --btn-square: #{$black-dark-cards};
 
     // Cards
 

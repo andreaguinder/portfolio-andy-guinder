@@ -48,15 +48,15 @@ i {
 .titulo-general {
     font-weight: 700;
     color: var(--text-general);
-    font-size: 1.5rem;
+    font-size: 24px;
     text-align: center;
     margin: 1.75rem auto 2.5rem;
 }
 
 .titulo-con-boton {
     @include flexCenter(row);
-    padding: 1rem 0.5rem;
-    gap: 1rem;
+    padding: 16px 8px;
+    gap: 16px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -67,10 +67,10 @@ i {
 .btn {
     background-color: var(--botones-bg);
     color: var(--text-botones);
-    padding: 0.5rem;
+    padding: 8px;
     height: auto;
     border-radius: 2px;
-    font-size: 1rem;
+    font-size: 16px;
     text-decoration: none;
     font-weight: 600;
     position: relative;
@@ -87,7 +87,7 @@ i {
     color: var(--botones);
     cursor: pointer;
     font-family: var(--font-general);
-    font-size: 2rem;
+    font-size: 32px;
     display: block;
 }
 
@@ -95,28 +95,29 @@ i {
     color: var(--botones);
     cursor: pointer;
     font-family: var(--font-general);
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: 700;
-    transform: translate(16.6rem, -1rem);
+    transform: translate(16.6rem, -16px);
     border: 1.5px solid var(--border-card);
-    padding: 0.2rem 0.5rem;
+    padding: 2px 8px;
     border-radius: 10px;
     display: block;
+    background-color: var(--btn-square);
 }
 
     .fa-circle-user {
-        margin-bottom: 0.25rem !important;
+        margin-bottom: 4px !important;
     }
 
 .intro {
     width: 84%;
-    margin: 8rem auto 2rem;
+    margin: 8rem auto 32px;
 
     h2 {
-        font-size: 1rem;
+        font-size: 16px;
         color: var(--text-general);
         text-align: center;
-        padding: 0.5rem;
+        padding: 8px;
         font-family: var(--font-general);
         text-align: center;
         font-weight: 400;
@@ -139,7 +140,7 @@ header {
 
     .container-nav {
         width: 100%;
-        padding: 0rem 1rem;
+        padding: 0rem 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -170,7 +171,7 @@ header {
                 justify-content: center;
 
                 i {
-                    font-size: 2rem;
+                    font-size: 32px;
                     position: absolute;
                     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
@@ -233,8 +234,8 @@ header {
                         padding: 0rem;
                         text-transform: uppercase;
                         text-decoration: none;
-                        font-size: 1rem;
-                        margin: 1rem;
+                        font-size: 16px;
+                        margin: 16px;
                         outline: none !important;
 
                         &:hover,
@@ -286,8 +287,8 @@ header {
         }
 
         div.menu-hamburguesa {
-            width: 1.5rem;
-            height: 0.25rem;
+            width: 24px;
+            height: 4px;
             position: relative;
             background-color: $white;
         }
@@ -297,9 +298,9 @@ header {
             content: "";
             display: block;
             background-color: $white;
-            height: 0.25rem;
-            width: 1.5rem;
-            border-radius: 0.5rem;
+            height: 4px;
+            width: 24px;
+            border-radius: 8px;
             transition: all ease-in-out 0.4s;
             position: absolute;
         }
@@ -327,23 +328,23 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
     height: 16rem;
-    padding: 1rem 0rem;
+    padding: 16px 0rem;
 
     div:first-child {
         @include flexCenter(row);
-        gap: 2rem;
+        gap: 32px;
 
         i {
-            font-size: 2.25rem;
+            font-size: 36px;
         }
     }
 
     div:nth-child(2),
     div:nth-child(3) {
         display: flex;
-        gap: 1rem;
+        gap: 16px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -353,16 +354,16 @@ footer {
     p {
         text-align: center;
         color: $white;
-        font-size: 1rem;
-        line-height: 1.35rem;
-        padding: 0rem 1rem;
+        font-size: 16px;
+        line-height: 21.6px;
+        padding: 0rem 16px;
     }
 
     .fab,
     .fa-brands,
     .fa-square-behance,
     .behance {
-        font-size: 1.8rem;
+        font-size: 28.8px;
         color: $white;
     }
 
@@ -382,7 +383,7 @@ footer {
     @include flexCenter(column);
     justify-content: flex-start;
     background-color: var(--bg-card);
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(32px);
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     position: relative;
@@ -400,17 +401,17 @@ footer {
             linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
         background-repeat: no-repeat;
         background-size: 7.3rem 4.3rem;
-        filter: drop-shadow(0 0 0.5rem var(--accent));
+        filter: drop-shadow(0 0 8px var(--accent));
         border-radius: 2px;
     }
 
     .btn {
-        margin-top: 1rem;
+        margin-top: 16px;
     }
 
     i {
         color: var(--text-general);
-        font-size: 1.75rem;
+        font-size: 28px;
     }
 
     .fa-github {
@@ -420,8 +421,8 @@ footer {
     .titulo-sin-boton {
         color: var(--title-card);
         text-align: center;
-        padding: 2rem 0.5rem;
-        font-size: 1.2rem;
+        padding: 32px 8px;
+        font-size: 20px;
     }
 
     img {
@@ -430,9 +431,9 @@ footer {
     }
 
     p {
-        padding: 1rem 1rem 0rem 1rem;
+        padding: 16px 16px 0rem 16px;
         margin: 0rem;
-        font-size: 1rem;
+        font-size: 16px;
         color: var(--text-general);
         font-family: var(--font-general);
     }
@@ -441,12 +442,12 @@ footer {
         width: 85%;
         height: 115px;
         object-fit: cover;
-        margin: -0.5rem auto 0.5rem;
+        margin: -8px auto 8px;
         ;
         text-align: center;
         display: flex;
         flex-direction: column;
-        padding-top: 1rem;
+        padding-top: 16px;
         background-size: cover;
         background-position: center;
     }
@@ -459,14 +460,14 @@ footer {
     .img-social {
         background-image: var(--img-card-social);
         @extend %card-primary-habilidad-img;
-        margin: -1rem auto 0rem;
+        margin: -16px auto 0rem;
     }
 
     .img-graph {
         background-image: var(--img-card-graph);
         @extend %card-primary-habilidad-img;
         height: 108px;
-        margin: -1rem auto 0rem;
+        margin: -16px auto 0rem;
     }
 }
 
@@ -520,8 +521,8 @@ footer {
     top: auto !important;
     bottom: 5px !important;
     color: var(--title-card);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
     z-index: 10;
 }
 
@@ -529,7 +530,7 @@ footer {
 
 .cards-expandibles {
     .card.card-secondary {
-        padding: 1rem 0rem 0rem;
+        padding: 16px 0rem 0rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -546,7 +547,7 @@ footer {
         min-height: 166px;
 
         .titulo-con-boton {
-            padding: 0.5rem 0rem 0rem;
+            padding: 8px 0rem 0rem;
         }
     }
 
@@ -565,27 +566,27 @@ footer {
     }
 
     .titulo {
-        font-size: 1.25rem;
+        font-size: 20px;
         color: var(--text-card);
-        margin: 1rem 2rem 0rem;
+        margin: 16px 32px 0rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 1rem;
+        gap: 16px;
     }
 
     .subtitulo {
         color: var(--text-general);
-        font-size: 1rem;
-        line-height: 1.1rem;
-        margin: 1rem 0rem;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 16px 0rem;
         width: 295px;
-        padding-left: 2rem;
+        padding-left: 32px;
     }
 
     .div-expandible {
         width: 290px;
-        height: 1.5rem;
+        height: 24px;
     }
 
     i {
@@ -594,22 +595,22 @@ footer {
 
     .fa-github,
     .fa-circle-user {
-        font-size: 1.75rem;
-        margin-bottom: 0.5rem;
+        font-size: 28px;
+        margin-bottom: 8px;
     }
 
     .texto-info {
-        padding-top: 1rem;
-        padding-left: 2rem;
+        padding-top: 16px;
+        padding-left: 32px;
         width: 295px;
-        font-size: 1rem;
-        line-height: 1.1rem;
+        font-size: 16px;
+        line-height: 16px;
         color: var(--text-general);
     }
 
     .card-secondary .btn {
-        margin-left: 2rem;
-        margin-top: 1rem;
+        margin-left: 32px;
+        margin-top: 16px;
     }
 }
 
@@ -630,15 +631,15 @@ footer {
     }
 
     .titulo-general {
-        font-size: 1.75rem;
-        margin: 1rem auto 2rem;
+        font-size: 28px;
+        margin: 16px auto 32px;
     }
 
     .intro {
         width: 86%;
 
         h2 {
-            font-size: 1.1rem;
+            font-size: 16px;
         }
     }
 
@@ -654,17 +655,22 @@ footer {
     footer {
         flex-direction: row;
         height: 7rem;
-        gap: 0.25rem;
+        gap: 4px;
 
         div {
-            gap: 0.5rem;
+            gap: 8px;
+        }
+
+        div:first-child {
+                gap: 26px;
+    margin-left: 32px;
         }
     }
 
     // SWIPER TABLET
     .swiper-cards-secondary .swiper {
         width: 664px;
-        margin-top: 1rem;
+        margin-top: 16px;
 
         .card {
             width: 320px;
@@ -708,13 +714,13 @@ footer {
     }
 
     .btn-link {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
     .titulo-general {
         color: var(--text-general);
-        margin-bottom: 1.5rem;
-        font-size: 2rem;
+        margin-bottom: 24px;
+        font-size: 32px;
     }
 
     .intro {
@@ -722,9 +728,9 @@ footer {
         margin: 0rem auto;
 
         h2 {
-            font-size: 1.25rem;
+            font-size: 20px;
             margin: 0rem auto;
-            padding: 2rem 0rem 4rem;
+            padding: 32px 0rem 4rem;
         }
     }
 
@@ -779,7 +785,7 @@ footer {
                         a,
                         p {
                             margin: 0;
-                            font-size: 1rem;
+                            font-size: 16px;
                             font-weight: 700;
                             color: $white;
 
@@ -810,8 +816,8 @@ footer {
         p {
             text-align: left;
             color: $white;
-            font-size: 1rem;
-            padding: 0.25rem 0.5rem 0rem;
+            font-size: 16px;
+            padding: 4px 8px 0rem;
         }
 
         div:nth-child(2),
@@ -831,7 +837,7 @@ footer {
         .fa-brands,
         .fa-square-behance,
         .behance {
-            font-size: 1.8rem;
+            font-size: 28.8px;
             color: white;
 
             &:hover {
@@ -852,13 +858,13 @@ footer {
 
         .titulo-sin-boton {
             text-align: center;
-            font-size: 1.3rem;
+            font-size: 20.8px;
             margin: 0rem auto;
-            padding: 2rem 1rem;
+            padding: 32px 16px;
         }
 
         p {
-            padding: 1rem 1.5rem 0rem 1.5rem;
+            padding: 16px 24px 0rem 24px;
             margin-left: 0rem;
         }
 
@@ -869,7 +875,7 @@ footer {
         }
 
         .btn {
-            margin-top: 1rem;
+            margin-top: 16px;
         }
     }
 
@@ -892,7 +898,7 @@ footer {
     .card-primary-habilidad.design::before,
     .card-primary-habilidad.social::before {
         height: 25rem;
-        width: 22rem;
+        width: 232px;
     }
 
     // CARDS SECONDARY DESKTOP
@@ -905,13 +911,13 @@ footer {
             }
 
             .texto-info {
-                padding-top: 1rem;
-                font-size: 1rem;
+                padding-top: 16px;
+                font-size: 16px;
                 width: 295px;
             }
 
             .titulo {
-                padding: 0rem 0rem 0.5rem 2rem;
+                padding: 0rem 0rem 8px 32px;
                 margin-left: 0rem;
             }
 
@@ -922,7 +928,7 @@ footer {
         }
 
         .card.card-secondary .titulo-con-boton {
-                    padding: 0.5rem 2rem 0rem;
+                    padding: 8px 32px 0rem;
         }
     }
 

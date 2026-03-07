@@ -10,6 +10,7 @@
   --botones: rgb(207, 45, 134);
   --botones-bg: rgb(207, 45, 134);
   --text-botones: rgb(255, 255, 255);
+  --btn-square: rgb(246, 228, 240);
   --bg-card: rgba(244, 194, 228, 0.4);
   --text-card: rgb(207, 45, 134);
   --bg-card-light: rgba(244, 194, 228, 0.25);
@@ -34,6 +35,7 @@
   --accent: rgb(255, 111, 212);
   --botones: rgb(255, 255, 255);
   --botones-bg: rgb(255, 111, 212);
+  --btn-square: rgb(20, 19, 29);
   --bg-card: rgb(20, 19, 29);
   --text-card: rgb(255, 111, 212);
   --bg-card-light: rgba(18, 19, 24, 0.54);
@@ -266,7 +268,7 @@
 .conocimientos .formacion .container-formacion .box-formacion h3 {
   color: var(--text-card);
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 22.4px;
   display: inline-flex;
   gap: 1rem;
   justify-content: center;
@@ -277,7 +279,7 @@
 .conocimientos .formacion .container-formacion .box-formacion h4 {
   color: var(--text-general);
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 16.8px;
   display: inline-flex;
   gap: 1rem;
   justify-content: center;
@@ -292,7 +294,7 @@
   margin: 0.5rem 0rem 0rem 0rem;
   color: var(--text-general);
   padding: 0rem 0.25rem 0rem 1.5rem;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: var(--font-general);
   position: relative;
   list-style: none;
@@ -303,7 +305,7 @@
   left: 0;
   top: -0.6rem;
   color: var(--title-card);
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 .conocimientos .formacion .container-formacion .box-formacion button {
   border: none;
@@ -312,7 +314,7 @@
 }
 .conocimientos i {
   margin-left: 1rem;
-  font-size: 1.3rem;
+  font-size: 20.8px;
   margin: 1rem auto 2rem;
   color: var(--text-general);
 }
@@ -343,7 +345,7 @@
   gap: 2rem;
 }
 .conocimientos .toolbox .container-tools .box-toolbox h3 {
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--title-card);
 }
 .conocimientos .toolbox-soft {
@@ -414,7 +416,7 @@
     padding: 0rem 0.25rem 0.25rem 1.5rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion h3 {
-    font-size: 1.3rem;
+    font-size: 20.8px;
   }
   .conocimientos .formacion .container-formacion .box-formacion button {
     transform: translate(9rem, -1rem);
@@ -470,7 +472,7 @@
   }
   .conocimientos i {
     margin-bottom: 1.5rem;
-    font-size: 1.75rem;
+    font-size: 28px;
   }
   .conocimientos .formacion {
     margin-top: -2rem;
@@ -491,32 +493,32 @@
     height: 19.9rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion h3 {
-    font-size: 1.8rem;
+    font-size: 28.8px;
     padding: 1rem;
     padding: 2rem 0rem 0rem 2rem;
-    line-height: 1rem;
+    line-height: 16px;
   }
   .conocimientos .formacion .container-formacion .box-formacion h4 {
     padding: 0.25rem 0rem 1rem 2rem;
-    font-size: 1.4rem;
+    font-size: 22.4px;
   }
   .conocimientos .formacion .container-formacion .box-formacion ul {
     margin-top: -1rem;
     padding: 0rem 0rem 0rem 2rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion li {
-    font-size: 1rem;
+    font-size: 16px;
     padding: 0rem 0.25rem 0.5rem 1.5rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion::before {
-    font-size: 1.8rem;
+    font-size: 28.8px;
   }
   .conocimientos .formacion .container-formacion .box-formacion button {
     transform: translate(22.8rem, 14rem);
     position: absolute;
   }
   .conocimientos .formacion .container-formacion .btn {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .conocimientos .toolbox {
     width: 70rem;
@@ -531,7 +533,7 @@
     width: 16rem;
   }
   .conocimientos .toolbox .container-tools .box-toolbox h3 {
-    font-size: 1.1rem;
+    font-size: 17.6px;
   }
   .conocimientos .toolbox-soft {
     margin-bottom: 5rem;
@@ -547,7 +549,7 @@
   }
 }
 .contacto .titulo {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 600;
   color: var(--text-card);
   padding: 0.5rem 0rem 0.5rem;
@@ -557,7 +559,7 @@
 .contacto .card-primary {
   margin: 0rem auto 4rem;
   height: 35rem;
-  padding: 1rem;
+  padding: 16px;
   width: 21rem;
 }
 .contacto .card-primary::before {
@@ -570,11 +572,11 @@
   margin: 0rem auto;
 }
 .contacto .card-primary .bajada {
-  padding: 0rem 1rem;
+  padding: 0rem 16px;
 }
 .contacto .card-primary .subtitulo {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: 16px;
+  font-size: 19.2px;
   color: var(--text-general);
   text-align: center;
   padding: 0.5rem;
@@ -589,7 +591,7 @@
   justify-content: center;
   gap: 1.5rem;
   width: 310px;
-  padding: 2rem 1rem 0rem;
+  padding: 2rem 16px 0rem;
 }
 .contacto .card-primary .redes-contacto button {
   width: 290px;
@@ -600,17 +602,17 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  gap: 1rem;
+  gap: 16px;
 }
 .contacto .card-primary .redes-contacto h3 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   color: var(--text-general);
-  gap: 1rem;
+  gap: 16px;
   margin-top: 0rem;
 }
 .contacto .card-primary .redes-contacto h3 a {
@@ -622,14 +624,14 @@
 }
 .contacto .card-primary .btn {
   flex-direction: row;
-  gap: 1rem;
-  font-size: 1rem;
+  gap: 16px;
+  font-size: 16px;
   margin: 0rem;
   justify-content: flex-start;
   padding-left: 5%;
 }
 .contacto .card-primary i {
-  font-size: 1.5rem;
+  font-size: 24px;
   max-width: 35px;
   text-align: center;
   margin-left: 0rem;
@@ -638,8 +640,8 @@
 
 @media only screen and (min-width: 768px) {
   .contacto .titulo {
-    font-size: 3rem;
-    padding: 1rem 0rem;
+    font-size: 48px;
+    padding: 16px 0rem;
   }
   .contacto .card-primary {
     margin: 0rem auto 4rem;
@@ -658,8 +660,8 @@
     padding: 0.5rem 0rem 1.5rem;
   }
   .contacto .card-primary .subtitulo {
-    font-size: 1.25rem;
-    margin: 0rem auto 1rem;
+    font-size: 20px;
+    margin: 0rem auto 16px;
   }
   .contacto .card-primary .bajada {
     padding: 0rem 0.5rem;
@@ -727,7 +729,7 @@ i {
 .titulo-general {
   font-weight: 700;
   color: var(--text-general);
-  font-size: 1.5rem;
+  font-size: 24px;
   text-align: center;
   margin: 1.75rem auto 2.5rem;
 }
@@ -737,8 +739,8 @@ i {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 1rem 0.5rem;
-  gap: 1rem;
+  padding: 16px 8px;
+  gap: 16px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -749,10 +751,10 @@ i {
 .btn {
   background-color: var(--botones-bg);
   color: var(--text-botones);
-  padding: 0.5rem;
+  padding: 8px;
   height: auto;
   border-radius: 2px;
-  font-size: 1rem;
+  font-size: 16px;
   text-decoration: none;
   font-weight: 600;
   position: relative;
@@ -772,7 +774,7 @@ i {
   color: var(--botones);
   cursor: pointer;
   font-family: var(--font-general);
-  font-size: 2rem;
+  font-size: 32px;
   display: block;
 }
 
@@ -780,28 +782,29 @@ i {
   color: var(--botones);
   cursor: pointer;
   font-family: var(--font-general);
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
-  transform: translate(16.6rem, -1rem);
+  transform: translate(16.6rem, -16px);
   border: 1.5px solid var(--border-card);
-  padding: 0.2rem 0.5rem;
+  padding: 2px 8px;
   border-radius: 10px;
   display: block;
+  background-color: var(--btn-square);
 }
 
 .fa-circle-user {
-  margin-bottom: 0.25rem !important;
+  margin-bottom: 4px !important;
 }
 
 .intro {
   width: 84%;
-  margin: 8rem auto 2rem;
+  margin: 8rem auto 32px;
 }
 .intro h2 {
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--text-general);
   text-align: center;
-  padding: 0.5rem;
+  padding: 8px;
   font-family: var(--font-general);
   text-align: center;
   font-weight: 400;
@@ -821,7 +824,7 @@ header {
 }
 header .container-nav {
   width: 100%;
-  padding: 0rem 1rem;
+  padding: 0rem 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -850,7 +853,7 @@ header .container-nav .theme-switch-wrapper .theme-label {
   justify-content: center;
 }
 header .container-nav .theme-switch-wrapper .theme-label i {
-  font-size: 2rem;
+  font-size: 32px;
   position: absolute;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -906,8 +909,8 @@ header .container-nav .site__nav ul li p {
   padding: 0rem;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1rem;
-  margin: 1rem;
+  font-size: 16px;
+  margin: 16px;
   outline: none !important;
 }
 header .container-nav .site__nav ul li a:hover, header .container-nav .site__nav ul li a:focus, header .container-nav .site__nav ul li a.active,
@@ -950,8 +953,8 @@ header .container-nav .menu-abierto .menu-hamburguesa::after {
   transform: translateY(0rem) rotate(-90deg);
 }
 header .container-nav div.menu-hamburguesa {
-  width: 1.5rem;
-  height: 0.25rem;
+  width: 24px;
+  height: 4px;
   position: relative;
   background-color: rgb(255, 255, 255);
 }
@@ -960,9 +963,9 @@ header .container-nav .menu-hamburguesa::after {
   content: "";
   display: block;
   background-color: rgb(255, 255, 255);
-  height: 0.25rem;
-  width: 1.5rem;
-  border-radius: 0.5rem;
+  height: 4px;
+  width: 24px;
+  border-radius: 8px;
   transition: all ease-in-out 0.4s;
   position: absolute;
 }
@@ -984,24 +987,24 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
   height: 16rem;
-  padding: 1rem 0rem;
+  padding: 16px 0rem;
 }
 footer div:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 2rem;
+  gap: 32px;
 }
 footer div:first-child i {
-  font-size: 2.25rem;
+  font-size: 36px;
 }
 footer div:nth-child(2),
 footer div:nth-child(3) {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -1010,15 +1013,15 @@ footer div:nth-child(3) {
 footer p {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
-  line-height: 1.35rem;
-  padding: 0rem 1rem;
+  font-size: 16px;
+  line-height: 21.6px;
+  padding: 0rem 16px;
 }
 footer .fab,
 footer .fa-brands,
 footer .fa-square-behance,
 footer .behance {
-  font-size: 1.8rem;
+  font-size: 28.8px;
   color: rgb(255, 255, 255);
 }
 footer .fab:hover,
@@ -1037,8 +1040,8 @@ footer .behance:hover {
   flex-direction: column;
   justify-content: flex-start;
   background-color: var(--bg-card);
-  -webkit-backdrop-filter: blur(2rem);
-          backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
   position: relative;
@@ -1052,15 +1055,15 @@ footer .behance:hover {
   background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
   background-repeat: no-repeat;
   background-size: 7.3rem 4.3rem;
-  filter: drop-shadow(0 0 0.5rem var(--accent));
+  filter: drop-shadow(0 0 8px var(--accent));
   border-radius: 2px;
 }
 .card-primary .btn {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 .card-primary i {
   color: var(--text-general);
-  font-size: 1.75rem;
+  font-size: 28px;
 }
 .card-primary .fa-github {
   padding-bottom: 0.4rem;
@@ -1068,17 +1071,17 @@ footer .behance:hover {
 .card-primary .titulo-sin-boton {
   color: var(--title-card);
   text-align: center;
-  padding: 2rem 0.5rem;
-  font-size: 1.2rem;
+  padding: 32px 8px;
+  font-size: 20px;
 }
 .card-primary img {
   width: 100%;
   height: 125px;
 }
 .card-primary p {
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 16px 16px 0rem 16px;
   margin: 0rem;
-  font-size: 1rem;
+  font-size: 16px;
   color: var(--text-general);
   font-family: var(--font-general);
 }
@@ -1087,11 +1090,11 @@ footer .behance:hover {
   height: 115px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: -0.5rem auto 0.5rem;
+  margin: -8px auto 8px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 16px;
   background-size: cover;
   background-position: center;
 }
@@ -1100,12 +1103,12 @@ footer .behance:hover {
 }
 .card-primary .img-social {
   background-image: var(--img-card-social);
-  margin: -1rem auto 0rem;
+  margin: -16px auto 0rem;
 }
 .card-primary .img-graph {
   background-image: var(--img-card-graph);
   height: 108px;
-  margin: -1rem auto 0rem;
+  margin: -16px auto 0rem;
 }
 
 .swiper-cards-secondary {
@@ -1151,13 +1154,13 @@ footer .behance:hover {
   top: auto !important;
   bottom: 5px !important;
   color: var(--title-card);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   z-index: 10;
 }
 
 .cards-expandibles .card.card-secondary {
-  padding: 1rem 0rem 0rem;
+  padding: 16px 0rem 0rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1175,7 +1178,7 @@ footer .behance:hover {
   min-height: 166px;
 }
 .cards-expandibles .card.card-secondary .titulo-con-boton {
-  padding: 0.5rem 0rem 0rem;
+  padding: 8px 0rem 0rem;
 }
 .cards-expandibles .expandible-wrapper {
   max-height: 0;
@@ -1189,45 +1192,45 @@ footer .behance:hover {
   height: auto !important;
 }
 .cards-expandibles .titulo {
-  font-size: 1.25rem;
+  font-size: 20px;
   color: var(--text-card);
-  margin: 1rem 2rem 0rem;
+  margin: 16px 32px 0rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 16px;
 }
 .cards-expandibles .subtitulo {
   color: var(--text-general);
-  font-size: 1rem;
-  line-height: 1.1rem;
-  margin: 1rem 0rem;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 16px 0rem;
   width: 295px;
-  padding-left: 2rem;
+  padding-left: 32px;
 }
 .cards-expandibles .div-expandible {
   width: 290px;
-  height: 1.5rem;
+  height: 24px;
 }
 .cards-expandibles i {
   color: var(--text-card);
 }
 .cards-expandibles .fa-github,
 .cards-expandibles .fa-circle-user {
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  font-size: 28px;
+  margin-bottom: 8px;
 }
 .cards-expandibles .texto-info {
-  padding-top: 1rem;
-  padding-left: 2rem;
+  padding-top: 16px;
+  padding-left: 32px;
   width: 295px;
-  font-size: 1rem;
-  line-height: 1.1rem;
+  font-size: 16px;
+  line-height: 16px;
   color: var(--text-general);
 }
 .cards-expandibles .card-secondary .btn {
-  margin-left: 2rem;
-  margin-top: 1rem;
+  margin-left: 32px;
+  margin-top: 16px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1241,14 +1244,14 @@ footer .behance:hover {
     display: block;
   }
   .titulo-general {
-    font-size: 1.75rem;
-    margin: 1rem auto 2rem;
+    font-size: 28px;
+    margin: 16px auto 32px;
   }
   .intro {
     width: 86%;
   }
   .intro h2 {
-    font-size: 1.1rem;
+    font-size: 16px;
   }
   header .container-nav .theme-switch-wrapper {
     order: 2;
@@ -1259,14 +1262,18 @@ footer .behance:hover {
   footer {
     flex-direction: row;
     height: 7rem;
-    gap: 0.25rem;
+    gap: 4px;
   }
   footer div {
-    gap: 0.5rem;
+    gap: 8px;
+  }
+  footer div:first-child {
+    gap: 26px;
+    margin-left: 32px;
   }
   .swiper-cards-secondary .swiper {
     width: 664px;
-    margin-top: 1rem;
+    margin-top: 16px;
   }
   .swiper-cards-secondary .swiper .card {
     width: 320px;
@@ -1296,21 +1303,21 @@ footer .behance:hover {
     display: none;
   }
   .btn-link {
-    font-size: 1rem;
+    font-size: 16px;
   }
   .titulo-general {
     color: var(--text-general);
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-bottom: 24px;
+    font-size: 32px;
   }
   .intro {
     width: 75%;
     margin: 0rem auto;
   }
   .intro h2 {
-    font-size: 1.25rem;
+    font-size: 20px;
     margin: 0rem auto;
-    padding: 2rem 0rem 4rem;
+    padding: 32px 0rem 4rem;
   }
   header {
     height: 4.5rem;
@@ -1360,7 +1367,7 @@ footer .behance:hover {
   header .container-nav .site__nav ul li a,
   header .container-nav .site__nav ul li p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 700;
     color: rgb(255, 255, 255);
   }
@@ -1386,8 +1393,8 @@ footer .behance:hover {
   footer p {
     text-align: left;
     color: rgb(255, 255, 255);
-    font-size: 1rem;
-    padding: 0.25rem 0.5rem 0rem;
+    font-size: 16px;
+    padding: 4px 8px 0rem;
   }
   footer div:nth-child(2),
   footer div:nth-child(3) {
@@ -1403,7 +1410,7 @@ footer .behance:hover {
   footer .fa-brands,
   footer .fa-square-behance,
   footer .behance {
-    font-size: 1.8rem;
+    font-size: 28.8px;
     color: white;
   }
   footer .fab:hover,
@@ -1423,12 +1430,12 @@ footer .behance:hover {
   }
   .card-primary .titulo-sin-boton {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 20.8px;
     margin: 0rem auto;
-    padding: 2rem 1rem;
+    padding: 32px 16px;
   }
   .card-primary p {
-    padding: 1rem 1.5rem 0rem 1.5rem;
+    padding: 16px 24px 0rem 24px;
     margin-left: 0rem;
   }
   .card-primary::before {
@@ -1437,7 +1444,7 @@ footer .behance:hover {
     top: 0;
   }
   .card-primary .btn {
-    margin-top: 1rem;
+    margin-top: 16px;
   }
   .card-primary .img-front, .card-primary .img-social, .card-primary .img-graph {
     height: 110px;
@@ -1456,26 +1463,26 @@ footer .behance:hover {
   .card-primary-habilidad.design::before,
   .card-primary-habilidad.social::before {
     height: 25rem;
-    width: 22rem;
+    width: 232px;
   }
   .cards-expandibles .card-secondary .subtitulo {
     color: var(--text-general);
     width: 295px;
   }
   .cards-expandibles .card-secondary .texto-info {
-    padding-top: 1rem;
-    font-size: 1rem;
+    padding-top: 16px;
+    font-size: 16px;
     width: 295px;
   }
   .cards-expandibles .card-secondary .titulo {
-    padding: 0rem 0rem 0.5rem 2rem;
+    padding: 0rem 0rem 8px 32px;
     margin-left: 0rem;
   }
   .cards-expandibles .card-secondary .subtitulo {
     width: 295px;
   }
   .cards-expandibles .card.card-secondary .titulo-con-boton {
-    padding: 0.5rem 2rem 0rem;
+    padding: 8px 32px 0rem;
   }
   .swiper-cards-secondary .swiper {
     width: 1024px;

@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Sincronización Swiper
             let startTime = Date.now();
-            const duration = 600;
+            const duration = 1500;
 
             function syncHeight() {
                 const elapsed = Date.now() - startTime;

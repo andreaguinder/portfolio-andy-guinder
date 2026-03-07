@@ -117,7 +117,7 @@
                 h3 {
                     color: var(--text-card);
                     text-align: center;
-                    font-size: 1.4rem;
+                    font-size: 22.4px;
                     display: inline-flex;
                     gap: 1rem;
                     justify-content: center;
@@ -129,7 +129,7 @@
                 h4 {
                     color: var(--text-general);
                     text-align: center;
-                    font-size: 1.05rem;
+                    font-size: 16.8px;
                     display: inline-flex;
                     gap: 1rem;
                     justify-content: center;
@@ -146,7 +146,7 @@
                     margin: 0.5rem 0rem 0rem 0rem;
                     color: var(--text-general);
                     padding: 0rem 0.25rem 0rem 1.5rem;
-                    font-size: 1rem;
+                    font-size: 16px;
                     font-family: var(--font-general);
                     position: relative;
                     list-style: none;
@@ -157,7 +157,7 @@
                         left: 0;
                         top: -0.6rem;
                         color: var(--title-card);
-                        font-size: 1.5rem;
+                        font-size: 24px;
                     }
                 }
 
@@ -173,7 +173,7 @@
 
     i {
         margin-left: 1rem;
-        font-size: 1.3rem;
+        font-size: 20.8px;
         margin: 1rem auto 2rem;
         color: var(--text-general);
 
@@ -206,7 +206,7 @@
 
 
                 h3 {
-                    font-size: 1rem;
+                    font-size: 16px;
                     color: var(--title-card);
                 }
             }
@@ -291,7 +291,7 @@
                     }
 
                     h3 {
-                        font-size: 1.3rem;
+                        font-size: 20.8px;
                     }
 
                     button {
@@ -366,7 +366,7 @@
         i {
 
             margin-bottom: 1.5rem;
-            font-size: 1.75rem;
+            font-size: 28px;
 
         }
 
@@ -390,15 +390,15 @@
                     }
 
                     h3 {
-                        font-size: 1.8rem;
+                        font-size: 28.8px;
                         padding: 1rem;
                         padding: 2rem 0rem 0rem 2rem;
-                        line-height: 1rem;
+                        line-height: 16px;
                     }
 
                     h4 {
                         padding: 0.25rem 0rem 1rem 2rem;
-                        font-size: 1.4rem;
+                        font-size: 22.4px;
                     }
 
                     ul {
@@ -408,13 +408,13 @@
 
 
                     li {
-                        font-size: 1rem;
+                        font-size: 16px;
                         padding: 0rem 0.25rem 0.5rem 1.5rem;
                     }
 
 
                     &::before {
-                        font-size: 1.8rem;
+                        font-size: 28.8px;
                     }
 
 
@@ -426,7 +426,7 @@
 
 
                 .btn {
-                    font-size: 1rem;
+                    font-size: 16px;
                 }
 
 
@@ -449,7 +449,7 @@
                     width: 16rem;
 
                     h3 {
-                        font-size: 1.1rem;
+                        font-size: 17.6px;
                     }
                 }
             }

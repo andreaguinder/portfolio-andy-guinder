@@ -5,7 +5,7 @@
     .contacto {
 
                 .titulo {
-            font-size: 2.5rem;
+            font-size: 40px;
             font-weight: 600;
             color: var(--text-card);
             padding: 0.5rem 0rem 0.5rem;
@@ -16,7 +16,7 @@
     .card-primary {
         margin: 0rem auto 4rem;
         height: 35rem;
-        padding: 1rem;
+        padding: 16px;
         width: 21rem;
 
         &::before {
@@ -31,12 +31,12 @@
         }
 
         .bajada {
-            padding: 0rem 1rem;
+            padding: 0rem 16px;
         }
 
         .subtitulo {
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
+            margin-bottom: 16px;
+            font-size: 19.2px;
             color: var(--text-general);
             text-align: center;
             padding: 0.5rem;
@@ -52,7 +52,7 @@
             justify-content: center;
             gap: 1.5rem;
             width: 310px;
-                padding: 2rem 1rem 0rem;
+                padding: 2rem 16px 0rem;
 
             
                 button {
@@ -62,15 +62,15 @@
             .datos-contacto {
                 @include flexCenter(column);
                 width: 100%;
-                gap: 1rem;
+                gap: 16px;
             }
 
             h3 {
                 @include flexCenter(row);
-                font-size: 1rem;
+                font-size: 16px;
                 font-weight: 400;
                 color: var(--text-general);
-                gap: 1rem;
+                gap: 16px;
                 margin-top: 0rem;
 
                 a {
@@ -86,15 +86,15 @@
 
         .btn {
             flex-direction: row;
-            gap: 1rem;
-            font-size: 1rem;
+            gap: 16px;
+            font-size: 16px;
             margin: 0rem;
             justify-content: flex-start;
     padding-left: 5%;
         }
 
         i {
-            font-size: 1.5rem;
+            font-size: 24px;
             max-width: 35px;
             text-align: center;
             margin-left: 0rem;
@@ -109,8 +109,8 @@
         .contacto {
 
                             .titulo {
-                    font-size: 3rem;
-                    padding: 1rem 0rem;
+                    font-size: 48px;
+                    padding: 16px 0rem;
                 }
 
             .card-primary {
@@ -132,8 +132,8 @@ margin: 0rem auto 4rem;
                 }
 
                 .subtitulo {
-                    font-size: 1.25rem;
-                    margin: 0rem auto 1rem;
+                    font-size: 20px;
+                    margin: 0rem auto 16px;
                 }
 
                 .bajada {

@@ -19,12 +19,14 @@ Bienvenido a mi portfolio personal. Este proyecto ha sido diseñado y desarrolla
 ## 📁 Estructura del Proyecto
 ```text
 /root
-├── /pages       # Vistas internas (Web, Contacto, etc.)
-├── /css         # Estilos SASS y variables de paleta viva
-├── /js          # Lógica funcional y librerías de terceros (Carruseles)
-├── /img         # Imágenes y assets optimizados
-├── index.html   # Home principal con SEO configurado
-└── README.md    # Documentación técnica del repositorio
+├── /css            # Estilos SASS y variables de paleta viva
+├── /js             # Lógica funcional
+├── /img            # Imágenes y assets optimizados
+├── index.html      # Home principal con SEO configurado
+├── proyectos.html  # Vista interna: Proyectos
+├── sobre-mi.html   # Vista interna: Sobre mí
+├── contacto.html   # Vista interna: Contacto
+└── README.md       # Documentación técnica del repositorio
 ```
 
 ## 💻 Otros Proyectos

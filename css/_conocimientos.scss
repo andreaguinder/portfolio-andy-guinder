@@ -161,13 +161,17 @@
                     }
                 }
 
+                .btn__formacion-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 95%;
+
                 button {
                     border: none;
                     background: transparent;
-                    right: -50%;
-                    position: relative;
                 }
-
+                }
             }
         }
     }
@@ -293,7 +297,7 @@
                     padding: 1.8rem 0.5rem;
 
                     li {
-                        padding: 0rem 0.25rem 0.25rem 1.5rem;
+                        padding: 0rem 0.5rem 0.25rem 1.5rem;
                     }
 
                     h3 {
@@ -415,7 +419,7 @@
 
                     li {
                         font-size: 1rem;
-                        padding: 0rem 0.25rem 0.5rem 1.5rem;
+                        padding: 0rem 1rem 0.25rem 1.5rem;
                     }
 
 
@@ -423,10 +427,6 @@
                         font-size: 1.8rem;
                     }
 
-
-                    button {
-                        right: -70%;
-                    }
                 }
 
 

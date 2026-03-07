@@ -401,7 +401,6 @@ footer {
 
 .card-primary {
     min-height: 24rem;
-    width: 19.4rem;
     @include flexCenter(column);
     justify-content: flex-start;
     background-color: var(--bg-card);
@@ -409,12 +408,16 @@ footer {
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     position: relative;
+    width: fit-content;
+    max-width: 340px;
+    min-width: 340px;
+
 
     &::before {
         content: '';
         position: absolute;
         min-height: -webkit-fill-available;
-        width: 19.4rem;
+        width: 100%;
         overflow: hidden;
         background:
             linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
@@ -453,11 +456,12 @@ footer {
     }
 
     p {
-        padding: 1rem 1rem 2rem 1rem;
+        padding: 1rem 1.5rem 2rem 1.5rem;
         margin: 0rem;
         font-size: 1rem;
         color: var(--text-general);
         font-family: var(--font-general);
+                max-width: 20rem;
     }
 
     %card-primary-habilidad-img {
@@ -885,7 +889,9 @@ footer {
         justify-content: flex-start;
         align-items: center;
         min-height: 24rem;
-        width: 20rem;
+        width: fit-content;
+            max-width: 320px;
+            min-width: 320px;
 
         .titulo-sin-boton {
             text-align: center;
@@ -900,7 +906,7 @@ footer {
         }
 
         &::before {
-            width: 20rem;
+            width: 100%;
             min-height: -webkit-fill-available;
             top: 0;
         }
@@ -929,7 +935,7 @@ footer {
     .card-primary-habilidad.design::before,
     .card-primary-habilidad.social::before {
         min-height: -webkit-fill-available;
-        width: 22rem;
+        width: 100%;
     }
 
     // CARDS SECONDARY DESKTOP

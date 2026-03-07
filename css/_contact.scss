@@ -17,7 +17,8 @@
         margin: 0rem auto 4rem;
         min-height: 35rem;
         padding: 1rem;
-        width: 21rem;
+        width: fit-content;
+        max-width: 340px;
 
         &::before {
             min-height: -webkit-fill-available;
@@ -119,6 +120,7 @@ margin: 0rem auto 4rem;
                 align-items: flex-start;
                 min-height: 30rem;
                 padding: 2rem;
+                max-width: 450px;
 
                 &::before {
                     width: 27.9rem;

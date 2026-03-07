@@ -64,6 +64,8 @@
 }
 .container__habilidades .titulo-con-boton {
   padding: 2rem 0.5rem;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .secondary-section {
@@ -273,7 +275,7 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 0rem 0rem 0rem 1rem;
+  padding: 1rem 0rem 0rem 1rem;
   margin-top: -0.5rem;
 }
 .conocimientos .formacion .container-formacion .box-formacion h4 {
@@ -310,7 +312,8 @@
 .conocimientos .formacion .container-formacion .box-formacion button {
   border: none;
   background: transparent;
-  transform: translate(144px, -8px);
+  right: -50%;
+  position: relative;
 }
 .conocimientos i {
   margin-left: 1rem;
@@ -326,6 +329,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-top: -1rem;
+  padding: 0rem 1rem;
 }
 .conocimientos .toolbox .container-tools .box-toolbox {
   display: flex;
@@ -343,6 +347,8 @@
   width: 100%;
   margin: auto;
   gap: 2rem;
+  text-align: center;
+  min-height: 4.65rem;
 }
 .conocimientos .toolbox .container-tools .box-toolbox h3 {
   font-size: 1rem;
@@ -356,6 +362,7 @@
 }
 .conocimientos .toolbox-soft .container-tools .box-toolbox {
   width: 18rem;
+  min-height: 3.4rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -419,9 +426,6 @@
   .conocimientos .formacion .container-formacion .box-formacion h3 {
     font-size: 1.3rem;
   }
-  .conocimientos .formacion .container-formacion .box-formacion button {
-    transform: translate(9rem, -1rem);
-  }
   .conocimientos .toolbox .container-tools {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.5rem;
@@ -429,6 +433,7 @@
   }
   .conocimientos .toolbox .container-tools .box-toolbox {
     padding: 1rem;
+    min-height: 3.4rem;
   }
   .conocimientos .toolbox-soft {
     margin: 0rem auto 2rem;
@@ -516,8 +521,7 @@
     font-size: 1.8rem;
   }
   .conocimientos .formacion .container-formacion .box-formacion button {
-    transform: translate(22.8rem, 14rem);
-    position: absolute;
+    right: -70%;
   }
   .conocimientos .formacion .container-formacion .btn {
     font-size: 1rem;
@@ -593,7 +597,7 @@
   justify-content: center;
   gap: 1.5rem;
   width: 310px;
-  padding: 2rem 1rem 0rem;
+  padding: 2rem 1rem 1.5rem;
 }
 .contacto .card-primary .redes-contacto button {
   width: 290px;
@@ -758,8 +762,9 @@ i {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 1rem 0.5rem;
-  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -1098,7 +1103,7 @@ footer .behance:hover {
   min-height: 125px;
 }
 .card-primary p {
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   margin: 0rem;
   font-size: 1rem;
   color: var(--text-general);

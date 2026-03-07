@@ -76,8 +76,9 @@ i {
 
 .titulo-con-boton {
     @include flexCenter(row);
-    padding: 1rem 0.5rem;
-    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -452,7 +453,7 @@ footer {
     }
 
     p {
-        padding: 1rem 1rem 0rem 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         margin: 0rem;
         font-size: 1rem;
         color: var(--text-general);

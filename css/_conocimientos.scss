@@ -25,7 +25,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            min-height: 54rem;
+            min-height: -webkit-fill-available;
             width: 20rem;
 
             background:
@@ -100,7 +100,7 @@
                     position: absolute;
                     top: 0;
                     left: 0;
-                    min-height: 21.5rem;
+                    min-height: -webkit-fill-available;
                     width: 20rem;
 
                     background:
@@ -164,7 +164,7 @@
                 button {
                     border: none;
                     background: transparent;
-                    transform: translate(9rem, -0.5rem);
+                    transform: translate(144px, -8px);
                 }
 
             }
@@ -247,8 +247,7 @@
             padding: 0rem 2rem;
 
             &::before {
-                min-height: 24rem;
-                max-height: 24rem;
+                min-height: -webkit-fill-available;
                 width: 44rem;
             }
 
@@ -349,8 +348,7 @@
 
 
             &::before {
-                min-height: 17rem;
-                max-height: 17rem;
+                min-height: -webkit-fill-available;
                 width: 71rem;
             }
 
@@ -390,7 +388,7 @@
 
                     &::before {
                         width: 34rem;
-                        min-height: 19.9rem;
+                        min-height: -webkit-fill-available;
                     }
 
                     h3 {

@@ -20,7 +20,7 @@
         width: 21rem;
 
         &::before {
-            min-height: 35rem;
+            min-height: -webkit-fill-available;
             width: 21rem;
             top: 0rem;
         }
@@ -124,7 +124,7 @@ margin: 0rem auto 4rem;
                     width: 27.9rem;
                     left: 0rem;
                     top: 0rem;
-                    min-height: 30rem;
+                    min-height: -webkit-fill-available;
                 }
 
                 .titulo-sin-boton {

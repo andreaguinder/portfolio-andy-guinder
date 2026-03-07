@@ -931,7 +931,7 @@ header .container-nav .site__nav ul {
   padding-left: 7%;
   padding-right: 7%;
   list-style: none;
-  min-width: 14rem;
+  min-width: 13rem;
   margin-bottom: 0px !important;
   height: -moz-fit-content;
   height: fit-content;

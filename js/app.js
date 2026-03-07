@@ -14,10 +14,28 @@ function cambiarClaseMenu() {
 
 // VINCULACIÓN DE EVENTOS 
 document.addEventListener("DOMContentLoaded", function () {
-    var botonMenu = document.getElementById("menu-toggle");
+    const botonMenu = document.getElementById("menu-toggle");
+    const siteNav = document.getElementById("site__nav");
+
     if (botonMenu) {
-        botonMenu.addEventListener("click", cambiarClaseMenu);
+        botonMenu.addEventListener("click", (e) => {
+            e.stopPropagation(); // Evita que el clic en el botón se propague al documento
+            cambiarClaseMenu();
+        });
     }
+
+    // --- CERRAR AL HACER CLIC AFUERA ---
+    document.addEventListener("click", (event) => {
+        // Verificamos si el menú está abierto antes de hacer nada
+        const estaAbierto = botonMenu.classList.contains("menu-abierto");
+
+        if (estaAbierto) {
+            // Si el clic NO fue dentro del nav ni dentro del botón de toggle
+            if (!siteNav.contains(event.target) && !botonMenu.contains(event.target)) {
+                cambiarClaseMenu();
+            }
+        }
+    });
 });
 
 // PREFERENCIA DE SISTEMA

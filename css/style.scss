@@ -22,6 +22,9 @@ p, li, h1, h2, h3, h4, h5, h6, span, a {
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -939,6 +942,7 @@ footer {
             .titulo {
                 padding: 0rem 0rem 0.5rem 2rem;
                 margin-left: 0rem;
+                margin-right: 0rem;
             }
 
 

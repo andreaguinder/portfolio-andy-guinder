@@ -2,16 +2,16 @@
 
 // BODY CONTACTO MOB
 
-    .contacto {
+.contacto {
 
-                .titulo {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: var(--text-card);
-            padding: 0.5rem 0rem 0.5rem;
-    margin: 7rem auto 2rem;
-            text-align: center;
-        }
+    .titulo {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--text-general);
+        padding: 0.5rem 0rem 0.5rem;
+        margin: 7rem auto 2rem;
+        text-align: center;
+    }
 
     .card-primary {
         margin: 0rem auto 4rem;
@@ -53,12 +53,12 @@
             justify-content: center;
             gap: 1.5rem;
             width: 310px;
-                padding: 2rem 1rem 1.5rem;
+            padding: 2rem 1rem 1.5rem;
 
-            
-                button {
-                    width: 290px;
-                }
+
+            button {
+                width: 290px;
+            }
 
             .datos-contacto {
                 @include flexCenter(column);
@@ -91,7 +91,7 @@
             font-size: 1rem;
             margin: 0rem;
             justify-content: flex-start;
-    padding-left: 5%;
+            padding-left: 5%;
         }
 
         i {
@@ -107,69 +107,69 @@
 @media only screen and (min-width: 768px) {
 
     // BODY CONTACTO TABLET
-        .contacto {
+    .contacto {
 
-                            .titulo {
-                    font-size: 3rem;
-                    padding: 1rem 0rem;
+        .titulo {
+            font-size: 3rem;
+            padding: 1rem 0rem;
+        }
+
+        .card-primary {
+            margin: 0rem auto 4rem;
+            width: 28rem;
+            align-items: flex-start;
+            min-height: 30rem;
+            padding: 2rem;
+            max-width: 450px;
+
+            &::before {
+                width: 27.9rem;
+                left: 0rem;
+                top: 0rem;
+                min-height: -webkit-fill-available;
+            }
+
+            .titulo-sin-boton {
+                padding: 0.5rem 0rem 1.5rem;
+            }
+
+            .subtitulo {
+                font-size: 1.25rem;
+                margin: 0rem auto 1rem;
+            }
+
+            .bajada {
+                padding: 0rem 0.5rem;
+            }
+
+            .redes-contacto {
+                padding: 1.5rem 0.5rem;
+                width: 390px;
+
+                button {
+                    width: 380px;
                 }
 
-            .card-primary {
-margin: 0rem auto 4rem;
-                width: 28rem;
-                align-items: flex-start;
-                min-height: 30rem;
-                padding: 2rem;
-                max-width: 450px;
-
-                &::before {
-                    width: 27.9rem;
-                    left: 0rem;
-                    top: 0rem;
-                    min-height: -webkit-fill-available;
-                }
-
-                .titulo-sin-boton {
-                            padding: 0.5rem 0rem 1.5rem;
-                }
-
-                .subtitulo {
-                    font-size: 1.25rem;
-                    margin: 0rem auto 1rem;
-                }
-
-                .bajada {
-                    padding: 0rem 0.5rem;
-                }
-
-                .redes-contacto {
-                    padding: 1.5rem 0.5rem;
-                    width: 390px;
-
-                    button {
-                        width: 380px;
-                    }
-
-                    h3 i {
-                        margin-left: 0.8rem;
-                    }
+                h3 i {
+                    margin-left: 0.8rem;
                 }
             }
         }
     }
+}
 
 @media only screen and (min-width: 1024px) {
 
     // BODY CONTACTO DESKTOP
-        .contacto {
+    .contacto {
 
-            margin: -2rem auto 5em;
+        margin: -2rem auto 5em;
 
-            .card-primary {
-                margin: 0rem auto 4rem;
-                width: 28rem;
-                align-items: flex-start;
-            }
-
+        .card-primary {
+            margin: 0rem auto 4rem;
+            width: 28rem;
+            align-items: flex-start;
         }
+
     }
+}

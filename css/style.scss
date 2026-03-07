@@ -13,8 +13,14 @@ html {
     text-size-adjust: 100%;
 }
 
-p, li, h1, h2, h3, h4, h5, h6, span, a {
-    max-height: 999999px;
+p, li, h1, h2, h3, h4, h5, h6, span, a, .menu-item {
+
+    -webkit-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+
+
+    max-height: 999999px; 
+    min-height: 0.01em; 
 }
 
 * {

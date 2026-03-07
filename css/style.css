@@ -1110,7 +1110,7 @@ footer .behance:hover {
   min-height: 125px;
 }
 .card-primary p {
-  padding: 1rem 1.5rem 2rem 1.5rem;
+  padding: 1rem 1.4rem 2rem 1.4rem;
   margin: 0rem;
   font-size: 1rem;
   color: var(--text-general);
@@ -1119,7 +1119,7 @@ footer .behance:hover {
 }
 .card-primary .img-graph, .card-primary .img-social, .card-primary .img-front {
   width: 85%;
-  min-height: 115px;
+  min-height: 127px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: -0.5rem auto 0.5rem;
@@ -1139,7 +1139,7 @@ footer .behance:hover {
 }
 .card-primary .img-graph {
   background-image: var(--img-card-graph);
-  min-height: 108px;
+  min-height: 118px;
   margin: -1rem auto 0rem;
 }
 
@@ -1489,7 +1489,7 @@ footer .behance:hover {
     margin-top: 1rem;
   }
   .card-primary .img-front, .card-primary .img-social, .card-primary .img-graph {
-    min-height: 110px;
+    min-height: 122px;
     -o-object-fit: cover;
        object-fit: cover;
   }

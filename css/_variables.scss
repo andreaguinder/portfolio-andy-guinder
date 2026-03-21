@@ -15,7 +15,7 @@ $font-main: "Inter",
 sans-serif;
 //$pink-light-light: rgb(240, 213, 231);
 $pink-light-light: rgb(240, 195, 225);
-$btn-square: rgb(246, 228, 240);
+$btn-square: rgb(250, 242, 248);
 
 @mixin flexCenter ($direct) {
     display: flex;
@@ -30,7 +30,7 @@ $btn-square: rgb(246, 228, 240);
 
     // Body
 
-    --bg-body: url('../img/bg-light-tiny.png') center/cover no-repeat scroll;
+    --bg-body: url('../img/bg-light-grey-5-ty.png') center/cover no-repeat scroll;
 
     // Header & Footer
 
@@ -41,7 +41,7 @@ $btn-square: rgb(246, 228, 240);
 
     --text-general: #{$black};
     --accent: #{$dark-pink};
-    --title-menu: #{$pink-light-light};
+    --title-menu: #{$light-pink-light};
     --font-general: #{$font-main};
     --botones: #{$dark-pink};
     --botones-bg: #{$dark-pink};
@@ -50,9 +50,9 @@ $btn-square: rgb(246, 228, 240);
 
     // Cards
 
-    --bg-card: #{rgba($light-pink-light, 0.4)};
+    --bg-card: #{rgba($white, 0.75)};
     --text-card: #{$dark-pink};
-    --bg-card-light: #{rgba($light-pink-light, 0.25)};
+    --bg-card-light: #{rgba($white, 0.25)};
     --bg-dark-pink: #{$dark-pink};
     --border-card: #{$dark-pink};
     --title-card: #{$black};

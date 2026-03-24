@@ -9,6 +9,7 @@
   --font-general: Inter, sans-serif;
   --botones: rgb(207, 45, 134);
   --botones-bg: rgb(207, 45, 134);
+  --tag-bg: rgb(137, 7, 78);
   --text-botones: rgb(255, 255, 255);
   --btn-square: rgb(250, 242, 248);
   --bg-card: rgba(255, 255, 255, 0.75);
@@ -35,6 +36,7 @@
   --accent: rgb(255, 111, 212);
   --botones: rgb(255, 255, 255);
   --botones-bg: rgb(255, 111, 212);
+  --tag-bg: rgb(244, 194, 228);
   --btn-square: rgb(20, 19, 29);
   --bg-card: rgb(20, 19, 29);
   --text-card: rgb(255, 111, 212);
@@ -224,6 +226,9 @@
      object-fit: cover;
   filter: grayscale(20%);
 }
+.seccion-perfil .titulo-general {
+  margin: 1rem auto 2.5rem;
+}
 
 .conocimientos {
   display: flex;
@@ -322,6 +327,9 @@
   border: none;
   background: transparent;
 }
+.conocimientos .formacion h2.titulo-general {
+  margin: 1rem auto;
+}
 .conocimientos i {
   margin-left: 1rem;
   font-size: 1.3rem;
@@ -330,6 +338,9 @@
 }
 .conocimientos .toolbox {
   margin-bottom: 2rem;
+}
+.conocimientos .toolbox h2.titulo-general {
+  margin: 1rem auto 1.75rem;
 }
 .conocimientos .toolbox .container-tools {
   display: grid;
@@ -771,7 +782,7 @@ i {
   color: var(--text-general);
   font-size: 1.5rem;
   text-align: center;
-  margin: 1.75rem auto 2.5rem;
+  margin: -1rem auto 1.75rem;
 }
 
 .titulo-con-boton {
@@ -1153,6 +1164,21 @@ footer .behance:hover {
   background-image: var(--img-card-graph);
   min-height: 118px;
   margin: -1rem auto 0rem;
+}
+.card-primary .tag {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-botones);
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: var(--tag-bg);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  transform: translate(87px, 60px);
+  min-width: 6rem;
 }
 
 .swiper-cards-secondary {

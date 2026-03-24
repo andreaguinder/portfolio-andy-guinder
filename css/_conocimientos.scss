@@ -64,6 +64,11 @@
         }
     }
 
+    .titulo-general {
+            margin: 1rem auto 2.5rem;
+    }
+
+
 }
 
 // CONOCIMIENTOS MOB
@@ -174,6 +179,10 @@
                 }
             }
         }
+
+            h2.titulo-general {
+        margin: 1rem auto;
+    }
     }
 
     i {
@@ -187,6 +196,10 @@
     .toolbox {
         margin-bottom: 2rem;
 
+
+            h2.titulo-general {
+        margin: 1rem auto 1.75rem;
+    }
 
         .container-tools {
             display: grid;

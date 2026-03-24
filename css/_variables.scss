@@ -45,6 +45,7 @@ $btn-square: rgb(250, 242, 248);
     --font-general: #{$font-main};
     --botones: #{$dark-pink};
     --botones-bg: #{$dark-pink};
+    --tag-bg: #{$dark-pink-dark};
     --text-botones: #{$white};
     --btn-square: #{$btn-square};
 
@@ -90,6 +91,7 @@ $btn-square: rgb(250, 242, 248);
     --accent: #{$light-pink};
     --botones: #{$white};
     --botones-bg: #{$light-pink};
+    --tag-bg: #{$light-pink-light};
     --btn-square: #{$black-dark-cards};
 
     // Cards

@@ -18,7 +18,7 @@
         border-top-right-radius: 28px;
         border-bottom-left-radius: 28px;
         position: relative;
-        width: 320px;
+        width: 94%;
 
         &::before {
             content: '';
@@ -26,7 +26,7 @@
             top: 0;
             left: 0;
             min-height: -webkit-fill-available;
-            width: 20rem;
+            width: -webkit-fill-available;
 
             background:
                 linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0,
@@ -461,7 +461,7 @@
 
             &::before {
                 min-height: -webkit-fill-available;
-                width: 44rem;
+                width: -webkit-fill-available;
             }
 
             .intro {
@@ -598,7 +598,7 @@
 
             &::before {
                 min-height: -webkit-fill-available;
-                width: 71rem;
+                width: -webkit-fill-available;
             }
 
             .intro {

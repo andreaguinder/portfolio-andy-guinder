@@ -158,6 +158,10 @@ i {
     border-radius: 10px;
     display: block;
     background-color: var(--btn-square);
+
+    i {
+color: var(--text-general) !important;
+    }
 }
 
     .fa-circle-user {
@@ -642,7 +646,7 @@ footer {
 
     .titulo {
         font-size: 1.125rem;
-        color: var(--text-card);
+        color: var(--text-general);
         margin: 1rem 2rem 0rem;
         display: flex;
         align-items: center;
@@ -686,6 +690,7 @@ footer {
     .card-secondary .btn {
         margin-left: 2rem;
         margin-top: 1rem;
+        font-size: 14px;
     }
 }
 

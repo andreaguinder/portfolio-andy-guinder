@@ -9,9 +9,11 @@
   --font-general: Inter, sans-serif;
   --botones: rgb(207, 45, 134);
   --botones-bg: rgb(207, 45, 134);
+  --botones-bg-disabled: rgba(207, 45, 134, 0.5);
   --tag-bg: rgb(137, 7, 78);
   --text-botones: rgb(255, 255, 255);
   --btn-square: rgb(250, 242, 248);
+  --disabled: rgba(255, 255, 255, 0.523);
   --bg-card: rgba(255, 255, 255, 0.75);
   --text-card: rgb(207, 45, 134);
   --bg-card-light: rgba(255, 255, 255, 0.25);
@@ -36,8 +38,10 @@
   --accent: rgb(255, 111, 212);
   --botones: rgb(255, 255, 255);
   --botones-bg: rgb(255, 111, 212);
+  --botones-bg-disabled: rgba(255, 111, 212, 0.5);
   --tag-bg: rgb(244, 194, 228);
   --btn-square: rgb(20, 19, 29);
+  --disabled: rgba(0, 0, 0, 0.521);
   --bg-card: rgb(20, 19, 29);
   --text-card: rgb(255, 111, 212);
   --bg-card-light: rgba(18, 19, 24, 0.54);
@@ -236,96 +240,243 @@
   justify-content: center;
   flex-direction: column;
 }
-.conocimientos .formacion {
-  margin-bottom: 1.5rem;
+.conocimientos .btn {
+  font-size: 14px;
 }
-.conocimientos .formacion h1.titulo-general {
-  margin: 1.75rem auto 1.5rem;
-}
-.conocimientos .formacion .container-formacion {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-}
-.conocimientos .formacion .container-formacion .box-formacion {
+.conocimientos .formacion .container-formacion .box-formacion, .conocimientos .formacion .container-formacion-oficiales .box-formacion {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 20rem;
-  min-height: 20.5rem;
+  width: 94%;
+  min-height: 1px;
+  height: auto;
   background: var(--bg-card);
-  padding: 1.8rem 0.5rem;
+  padding: 2rem 1.5rem 1rem;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
   position: relative;
-  gap: 0.5rem;
+  gap: 0;
+  margin: auto;
 }
-.conocimientos .formacion .container-formacion .box-formacion::before {
+.conocimientos .formacion .container-formacion .box-formacion::before, .conocimientos .formacion .container-formacion-oficiales .box-formacion::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   min-height: -webkit-fill-available;
-  width: 20rem;
+  width: -webkit-fill-available;
   background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
   background-repeat: no-repeat;
   background-size: 7.3rem 4.3rem;
   filter: drop-shadow(0 0 0.5rem var(--accent));
 }
-.conocimientos .formacion .container-formacion .box-formacion h3 {
+.conocimientos .formacion .container-formacion .box-formacion h3, .conocimientos .formacion .container-formacion-oficiales .box-formacion h3 {
   color: var(--text-card);
-  text-align: center;
-  font-size: 1.4rem;
+  text-align: left;
+  font-size: 22px;
+  line-height: 28px;
   display: inline-flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0rem 0rem 1rem;
   margin-top: -0.5rem;
 }
-.conocimientos .formacion .container-formacion .box-formacion h4 {
+.conocimientos .formacion .container-formacion .box-formacion h4, .conocimientos .formacion .container-formacion-oficiales .box-formacion h4 {
   color: var(--text-general);
-  text-align: center;
-  font-size: 1.05rem;
+  text-align: left;
+  font-size: 18px;
   display: inline-flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   text-align: left;
-  padding: 0rem 0rem 0rem 1rem;
+  line-height: 24px;
+  padding: 1rem 0rem;
+  /*
+          padding: 0rem 0rem 0rem 1rem;*/
 }
-.conocimientos .formacion .container-formacion .box-formacion ul {
+.conocimientos .formacion .container-formacion .box-formacion h5, .conocimientos .formacion .container-formacion-oficiales .box-formacion h5 {
+  color: var(--text-general);
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-weight: 500;
+  padding: 0.25rem 0rem;
+}
+.conocimientos .formacion .container-formacion .box-formacion h5 span, .conocimientos .formacion .container-formacion-oficiales .box-formacion h5 span {
+  color: var(--botones-bg-disabled);
+  font-weight: 700;
+}
+.conocimientos .formacion .container-formacion .box-formacion ul, .conocimientos .formacion .container-formacion-oficiales .box-formacion ul {
   padding: 0rem 0.5rem 1rem 1rem;
 }
-.conocimientos .formacion .container-formacion .box-formacion li {
+.conocimientos .formacion .container-formacion .box-formacion li, .conocimientos .formacion .container-formacion-oficiales .box-formacion li {
   margin: 0.5rem 0rem 0rem 0rem;
   color: var(--text-general);
   padding: 0rem 0.25rem 0rem 1.5rem;
-  font-size: 1rem;
+  font-size: 14px;
   font-family: var(--font-general);
   position: relative;
   list-style: none;
 }
-.conocimientos .formacion .container-formacion .box-formacion li::before {
+.conocimientos .formacion .container-formacion .box-formacion li::before, .conocimientos .formacion .container-formacion-oficiales .box-formacion li::before {
   content: "•";
   position: absolute;
   left: 0;
-  top: -0.6rem;
-  color: var(--title-card);
+  top: -0.2rem;
+  color: var(--botones-bg-disabled);
   font-size: 1.5rem;
 }
-.conocimientos .formacion .container-formacion .box-formacion .btn__formacion-container {
+.conocimientos .formacion .container-formacion .box-formacion .btn__formacion-container, .conocimientos .formacion .container-formacion-oficiales .box-formacion .btn__formacion-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 95%;
 }
-.conocimientos .formacion .container-formacion .box-formacion .btn__formacion-container button {
+.conocimientos .formacion .container-formacion .box-formacion .btn__formacion-container button, .conocimientos .formacion .container-formacion-oficiales .box-formacion .btn__formacion-container button {
   border: none;
   background: transparent;
+}
+.conocimientos .formacion .container-formacion .box-formacion .btn-square-mas, .conocimientos .formacion .container-formacion-oficiales .box-formacion .btn-square-mas {
+  height: 38px;
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  right: 1.4rem;
+  /* top: 1rem; */
+  transform: none;
+  transform: translateY(-40px);
+}
+.conocimientos .formacion .container-formacion .box-formacion .btn-square-mas i, .conocimientos .formacion .container-formacion-oficiales .box-formacion .btn-square-mas i {
+  margin: 0;
+}
+.conocimientos .formacion .container-formacion .box-formacion hr, .conocimientos .formacion .container-formacion-oficiales .box-formacion hr {
+  width: 100%;
+  height: 2px;
+  background-color: var(--title-menu);
+  border: none;
+}
+.conocimientos .formacion .container-formacion .box-formacion hr.hr-card-item, .conocimientos .formacion .container-formacion-oficiales .box-formacion hr.hr-card-item {
+  width: 100%;
+  height: 1px;
+  background-color: var(--title-menu);
+  margin: 0.5rem 0rem;
+}
+.conocimientos .formacion {
+  margin-bottom: 1.5rem;
+}
+.conocimientos .formacion h1.titulo-general {
+  margin: 1.75rem auto 1.5rem;
+}
+.conocimientos .formacion .container-formacion-oficiales {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 0rem auto 3rem;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-formacion {
+  padding: 3rem 1.5rem 2.5rem;
+  min-height: 1px;
+  height: 100%;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-formacion h3 {
+  margin-bottom: 0rem;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-formacion h4 {
+  padding: 1.5rem 0rem;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-con-tag {
+  max-width: 400px;
+  min-height: 17.5rem;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-con-tag .tag {
+  z-index: 1;
+  transform: translate(166px, -7px);
+}
+.conocimientos .formacion .container-formacion-oficiales .box-con-tag h3 {
+  margin: 0;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-formacion-disabled {
+  opacity: 0.5;
+}
+.conocimientos .formacion .container-formacion-oficiales .box-formacion:has(.box-formacion-disabled) {
+  opacity: 0.4;
+}
+.conocimientos .formacion .container-formacion-oficiales .fecha {
+  color: var(--botones-bg-disabled);
+  font-weight: 700;
+  padding: 0rem 0rem 0.5rem;
+}
+.conocimientos .formacion .container-formacion {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin: 3rem auto;
+}
+.conocimientos .formacion .container-formacion .box-formacion h3 {
+  margin: 0.5rem 0rem 0rem;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card {
+  padding: 1rem 0rem;
+  width: 100%;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .card-item {
+  padding: 1rem 0rem;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .card-item-bottom {
+  padding-bottom: 4rem;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .contenedor-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1rem auto;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .contenedor-stack .stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .contenedor-stack .stack img {
+  width: 48px;
+  height: auto;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .contenedor-stack .stack p {
+  font-size: 14px;
+  color: var(--text-general);
+  line-height: 18px;
+}
+.conocimientos .formacion .container-formacion .box-formacion .card .logo-github img {
+  border-radius: 0.5rem;
+}
+.conocimientos .formacion .container-formacion .card-item-disabled {
+  opacity: 0.3;
+}
+.conocimientos .formacion .container-formacion .box-con-tag .tag {
+  z-index: 1;
+  transform: translate(0px, 11px);
+  min-width: 6rem;
+  max-width: 9rem;
+  position: relative;
+  font-size: 14px;
+}
+.conocimientos .formacion .container-formacion .box-con-tag h3 {
+  margin: 0;
 }
 .conocimientos .formacion h2.titulo-general {
   margin: 1rem auto;
@@ -426,22 +577,45 @@
   .conocimientos {
     margin: 6rem 0rem 4rem;
   }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion, .conocimientos .formacion .container-formacion .box-formacion {
+    padding: 2rem 1.5rem;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion li, .conocimientos .formacion .container-formacion .box-formacion li {
+    padding: 0rem 0.5rem 0.25rem 1.5rem;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion h3, .conocimientos .formacion .container-formacion .box-formacion h3 {
+    font-size: 1.3rem;
+  }
   .conocimientos .formacion {
     margin-bottom: 1rem;
   }
+  .conocimientos .formacion .container-formacion-oficiales {
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    gap: 2rem;
+    align-items: start;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion {
+    margin: 0;
+    width: 100%;
+    min-height: 1px;
+    height: auto;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-con-tag .tag {
+    transform: translate(153px, -7px);
+  }
   .conocimientos .formacion .container-formacion {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
   }
   .conocimientos .formacion .container-formacion .box-formacion {
-    padding: 1.8rem 0.5rem;
+    padding: 2rem 2rem 1rem;
   }
-  .conocimientos .formacion .container-formacion .box-formacion li {
-    padding: 0rem 0.5rem 0.25rem 1.5rem;
+  .conocimientos .formacion .container-formacion .box-formacion .btn-square-mas {
+    right: 2.5rem;
   }
-  .conocimientos .formacion .container-formacion .box-formacion h3 {
-    font-size: 1.3rem;
+  .conocimientos .formacion .container-formacion .box-formacion .card .contenedor-stack {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .conocimientos .toolbox .container-tools {
     grid-template-columns: 1fr 1fr 1fr;
@@ -465,7 +639,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 8rem auto 3rem;
+    margin: 0rem auto 3rem;
     gap: 2rem;
   }
   .seccion-perfil .container-perfil {
@@ -494,51 +668,51 @@
   .conocimientos {
     margin: 0rem;
   }
+  .conocimientos .btn {
+    font-size: 16px;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion, .conocimientos .formacion .container-formacion .box-formacion { /*
+        min-height: 500px;*/ }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion h3, .conocimientos .formacion .container-formacion .box-formacion h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion h4, .conocimientos .formacion .container-formacion .box-formacion h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion h5, .conocimientos .formacion .container-formacion .box-formacion h5 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 0 1.25rem;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion li, .conocimientos .formacion .container-formacion .box-formacion li {
+    font-size: 16px;
+    line-height: 22px;
+  }
   .conocimientos i {
     margin-bottom: 1.5rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .conocimientos .formacion {
     margin-top: -2rem;
   }
+  .conocimientos .formacion .container-formacion-oficiales {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 71.25rem;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-con-tag .tag {
+    transform: translate(173px, -7px);
+  }
   .conocimientos .formacion .container-formacion {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 71.25rem;
-    margin: 2.5rem auto;
   }
   .conocimientos .formacion .container-formacion .box-formacion {
-    width: 34rem;
-    gap: 1rem;
-    min-height: 20rem;
-    padding: 1.9rem 0.5rem;
+    width: 100%;
   }
-  .conocimientos .formacion .container-formacion .box-formacion::before {
-    width: 34rem;
-    min-height: -webkit-fill-available;
-  }
-  .conocimientos .formacion .container-formacion .box-formacion h3 {
-    font-size: 1.8rem;
-    padding: 1rem;
-    padding: 2rem 0rem 0rem 2rem;
-    line-height: 1rem;
-  }
-  .conocimientos .formacion .container-formacion .box-formacion h4 {
-    padding: 0.25rem 0rem 1rem 2rem;
-    font-size: 1.4rem;
-  }
-  .conocimientos .formacion .container-formacion .box-formacion ul {
-    margin-top: -1rem;
-    padding: 0rem 0rem 0rem 2rem;
-  }
-  .conocimientos .formacion .container-formacion .box-formacion li {
-    font-size: 1rem;
-    padding: 0rem 1rem 0.25rem 1.5rem;
-  }
-  .conocimientos .formacion .container-formacion .box-formacion::before {
-    font-size: 1.8rem;
-  }
-  .conocimientos .formacion .container-formacion .btn {
-    font-size: 1rem;
+  .conocimientos .formacion .container-formacion .box-formacion .card .contenedor-stack {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   .conocimientos .toolbox {
     width: 70rem;
@@ -704,6 +878,9 @@
   .contacto {
     margin: -2rem auto 5em;
   }
+  .contacto .titulo {
+    margin-top: 0;
+  }
   .contacto .card-primary {
     margin: 0rem auto 4rem;
     width: 28rem;
@@ -748,6 +925,14 @@ h1, h2, h3, h4, p, span, a, .site__nav {
 body {
   background: var(--bg-body);
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
 }
 
 button {
@@ -802,6 +987,23 @@ i {
 
 .btn {
   background-color: var(--botones-bg);
+  color: var(--text-botones);
+  padding: 0.5rem;
+  height: auto;
+  border-radius: 2px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-disabled {
+  background-color: var(--botones-bg-disabled);
   color: var(--text-botones);
   padding: 0.5rem;
   height: auto;
@@ -1165,7 +1367,8 @@ footer .behance:hover {
   min-height: 118px;
   margin: -1rem auto 0rem;
 }
-.card-primary .tag {
+
+.tag {
   position: absolute;
   display: flex;
   align-items: center;
@@ -1229,6 +1432,15 @@ footer .behance:hover {
   z-index: 10;
 }
 
+.expandible-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+.expandible-wrapper.abierto {
+  max-height: 1000px;
+}
+
 .cards-expandibles .card.card-secondary {
   padding: 1rem 0rem 0rem;
   display: flex;
@@ -1248,14 +1460,6 @@ footer .behance:hover {
 }
 .cards-expandibles .card.card-secondary .titulo-con-boton {
   padding: 0.5rem 0rem 0rem;
-}
-.cards-expandibles .expandible-wrapper {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
-}
-.cards-expandibles .expandible-wrapper.abierto {
-  max-height: 700px;
 }
 .cards-expandibles.card.card-secondary-abierta {
   height: auto !important;

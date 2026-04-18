@@ -1,13 +1,24 @@
 // VARIABLES
 
 $light-pink: rgb(255, 111, 212);
+
+$light-pink-disabled: rgba(255, 111, 212, 0.5);
+
+
 $white: rgb(255, 255, 255);
+
+$disabled-light: rgba(255, 255, 255, 0.523);
+$disabled-dark: rgba(0, 0, 0, 0.521);
 $black-light: rgba(18, 19, 24, 0.54);
 $black-dark: rgb(15, 15, 15);
 $black: rgb(0, 0, 0);
 $black-dark-cards: rgb(20, 19, 29);
 $light-pink-light: rgb(244, 194, 228);
 $dark-pink: rgb(207, 45, 134);
+
+$dark-pink-disabled: rgba(207, 45, 134, 0.5);
+
+
 $dark-pink-dark: rgb(137, 7, 78);
 $transparent: rgba(0, 0, 0, 0);
 $bg-dark: rgb(40, 40, 48);
@@ -45,10 +56,12 @@ $btn-square: rgb(250, 242, 248);
     --font-general: #{$font-main};
     --botones: #{$dark-pink};
     --botones-bg: #{$dark-pink};
+        --botones-bg-disabled: #{$dark-pink-disabled};
     --tag-bg: #{$dark-pink-dark};
     --text-botones: #{$white};
     --btn-square: #{$btn-square};
 
+    --disabled: #{$disabled-light};
     // Cards
 
     --bg-card: #{rgba($white, 0.75)};
@@ -91,9 +104,11 @@ $btn-square: rgb(250, 242, 248);
     --accent: #{$light-pink};
     --botones: #{$white};
     --botones-bg: #{$light-pink};
+        --botones-bg-disabled: #{$light-pink-disabled};
     --tag-bg: #{$light-pink-light};
     --btn-square: #{$black-dark-cards};
 
+        --disabled: #{$disabled-dark};
     // Cards
 
     --bg-card: #{$black-dark-cards};

@@ -41,7 +41,7 @@ $btn-square: rgb(250, 242, 248);
 
     // Body
 
-    --bg-body: url('../img/bg-light-grey-5-ty.png') center/cover no-repeat scroll;
+    --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
 
     // Header & Footer
 
@@ -129,4 +129,10 @@ $btn-square: rgb(250, 242, 248);
     --bg-contacto-desk: url('../img/desk-contacto-new-ty.png');
     --bg-contacto-mob: url('../img/mob-contact-new-ty.png');
     --bg-contacto-tablet: url('../img/bg-tablet-dark-ty.png');
+
+
+    .card-secondary {
+  box-shadow: 
+5px 4px 4px rgba(255, 255, 255, 0.08), 0px 3px 8px 0px rgba(255, 255, 255, 0.3) !important;
+}
 }

@@ -67,17 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = this.closest('.card');
             const wrapper = card.querySelector('.expandible-wrapper');
             const estaAbriendo = !wrapper.classList.contains('abierto');
-
+            //abro
             if (estaAbriendo) {
                 wrapper.style.maxHeight = wrapper.scrollHeight + "px";
                 wrapper.classList.add('abierto');
                 card.classList.add('card-abierta');
                 this.innerHTML = `<i class="fa-solid fa-minus"></i>`;
             } else {
+                //cierro
                 wrapper.style.maxHeight = "0px";
                 wrapper.classList.remove('abierto');
                 card.classList.remove('card-abierta');
                 this.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+
+                //seteo que cuando cierro scrollee hacia arriba contemplando 200px arriba asi vuelve aprox el usuario a donde abrio el desplegable
+                const offset = 200;
+                const cardTop = card.getBoundingClientRect().top + window.pageYOffset - offset;
+
+                // scrolleo suave
+                window.scrollTo({
+                    top: cardTop,
+                    behavior: 'smooth'
+                });
             }
 
             // Sincronización Swiper

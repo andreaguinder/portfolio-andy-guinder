@@ -14,9 +14,20 @@
     gap: 1rem;
     justify-content: center;
     }
+
+    .card-primary {
+                        .titulo-con-boton,
+.titulo-sin-boton {
+    font-size: 20px;
+}
+    }
 }
 
 // SECONDARY SECTION MOB
+
+.experiencias {
+    margin: 3rem auto -6rem;
+}
 .secondary-section {
     width: 100%;
     overflow: hidden;
@@ -32,6 +43,10 @@
         flex-direction: row;
         gap: 2.5rem;
     }
+
+    .experiencias {
+    margin: 6rem auto -6rem;
+}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -39,10 +54,21 @@
     // HABILIDADES DESK
     .container__habilidades {
         margin: 0rem auto 6rem;
+        gap: 4rem;
 
         
     .card-primary {
-        min-height: 25rem;
+        min-height: 27rem;
+                min-width: 400px;
+
+                p {
+                        max-width: 24rem;
+                }
+
+                .titulo-con-boton,
+.titulo-sin-boton {
+    font-size: 24px;
+}
     }
     
     }

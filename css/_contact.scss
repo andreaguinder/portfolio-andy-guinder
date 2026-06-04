@@ -3,19 +3,20 @@
 // BODY CONTACTO MOB
 
 .contacto {
+    margin: 6rem auto 3rem;
 
     .titulo {
         font-size: 2.5rem;
         font-weight: 600;
         color: var(--text-general);
         padding: 0.5rem 0rem 0.5rem;
-        margin: 7rem auto 2rem;
+        margin: 0rem auto 2rem;
         text-align: center;
     }
 
     .card-primary {
         margin: 0rem auto 4rem;
-        min-height: 35rem;
+        min-height: 33rem;
         padding: 1rem;
         width: fit-content;
         max-width: 340px;
@@ -102,6 +103,12 @@
             color: var(--text-botones);
         }
     }
+
+    .datos-info-mia {
+        @include flexCenter(column);
+        align-items: flex-start;
+        gap: 2rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -111,19 +118,18 @@
 
         .titulo {
             font-size: 3rem;
-            padding: 1rem 0rem;
+            padding: 3rem 0rem 0rem;
         }
 
         .card-primary {
             margin: 0rem auto 4rem;
-            width: 28rem;
             align-items: flex-start;
-            min-height: 30rem;
+            min-height: 20rem;
             padding: 2rem;
-            max-width: 450px;
+                    min-width: 700px;
 
             &::before {
-                width: 27.9rem;
+                width: -webkit-fill-available;
                 left: 0rem;
                 top: 0rem;
                 min-height: -webkit-fill-available;
@@ -140,19 +146,34 @@
 
             .bajada {
                 padding: 0rem 0.5rem;
+                max-width: 100%;
             }
 
             .redes-contacto {
                 padding: 1.5rem 0.5rem;
-                width: 390px;
+                width: 100%;
+                display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 1rem;
+
+        .datos-contacto {
+            width: auto;
+        }
 
                 button {
-                    width: 380px;
+                    /*width: 380px;*/
                 }
 
                 h3 i {
                     margin-left: 0.8rem;
                 }
+            }
+
+            .datos-info-mia {
+                @include flexCenter(column);
+                gap: 2rem;
+                align-items: flex-start;
             }
         }
     }
@@ -163,17 +184,44 @@
     // BODY CONTACTO DESKTOP
     .contacto {
 
-        margin: -2rem auto 5em;
+        margin: -4rem auto 5em;
 
         .titulo {
                         margin-top: 0;
         }
         
+
         .card-primary {
             margin: 0rem auto 4rem;
-            width: 28rem;
+            min-width: 1140px;
             align-items: flex-start;
+                    min-height: 10rem;
+
+                    .bajada {
+                                max-width: 100%;
+                    }
+
+                    .redes-contacto {
+
+                        h3 {
+                            width: 100%;
+                        }
+
+                        .datos-contacto {
+                                    flex-wrap: nowrap;
+        flex-direction: row;
+                        }
+                    }
+
+                    .datos-info-mia {
+                        flex-direction: row;
+                        gap: 0rem;
+                    }
         }
 
+    }
+
+    .experiencias {
+        margin: 3rem auto 0rem;
     }
 }

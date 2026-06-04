@@ -1,7 +1,7 @@
 @use "variables"as *;
 @use "index";
 @use "web";
-@use "conocimientos";
+@use "formacion";
 @use "contact";
 
 // ESTILOS GENERALES MOB
@@ -14,24 +14,41 @@ html {
     font-size: 16px !important;
 }
 
-p, li, h1, h2, h3, h4, h5, h6, span, a, .menu-item {
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+.menu-item {
 
     -webkit-text-size-adjust: none !important;
     text-size-adjust: none !important;
 
 
-    max-height: 999999px; 
-    min-height: 0.01em; 
+    max-height: 999999px;
+    min-height: 0.01em;
 }
 
 /* Aplicamos la transición a los elementos que cambian de color */
-body, 
-header, 
-footer, 
-.box-formacion, 
-section, 
-div, 
-h1, h2, h3, h4, p, span, a, .site__nav {
+body,
+header,
+footer,
+.box-formacion,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a,
+.site__nav {
     transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -108,15 +125,36 @@ i {
 .btn {
     background-color: var(--botones-bg);
     color: var(--text-botones);
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     height: auto;
-    border-radius: 2px;
-    font-size: 1rem;
+    font-size: 14px;
+    line-height: 18px;
     text-decoration: none;
     font-weight: 600;
     position: relative;
     z-index: 1;
     @include flexCenter(column);
+
+        border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--botones-bg);
+    color: var(--text-general);
+    padding: 0.5rem 1rem;
+    height: auto;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    @include flexCenter(column);
+    font-size: 14px;
+    line-height: 18px;
+    
+        border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 .btn-disabled {
@@ -160,13 +198,13 @@ i {
     background-color: var(--btn-square);
 
     i {
-color: var(--text-general) !important;
+        color: var(--text-general) !important;
     }
 }
 
-    .fa-circle-user {
-        margin-bottom: 0.25rem !important;
-    }
+.fa-circle-user {
+    margin-bottom: 0.25rem !important;
+}
 
 .intro {
     width: 84%;
@@ -446,8 +484,8 @@ footer {
     border-bottom-left-radius: 28px;
     position: relative;
     width: fit-content;
-    max-width: 340px;
-    min-width: 340px;
+    max-width: 330px;
+    min-width: 330px;
 
 
     &::before {
@@ -498,7 +536,7 @@ footer {
         font-size: 1rem;
         color: var(--text-general);
         font-family: var(--font-general);
-                max-width: 20rem;
+        max-width: 20rem;
     }
 
     %card-primary-habilidad-img {
@@ -520,12 +558,6 @@ footer {
         @extend %card-primary-habilidad-img;
     }
 
-    .img-social {
-        background-image: var(--img-card-social);
-        @extend %card-primary-habilidad-img;
-        margin: -1rem auto 0rem;
-    }
-
     .img-graph {
         background-image: var(--img-card-graph);
         @extend %card-primary-habilidad-img;
@@ -536,18 +568,71 @@ footer {
 
 }
 
+.contenedor-tags {
+    position: absolute;
+    @include flexCenter(column);
+    gap: 0.5rem;
+    align-items: flex-end;
+        top: 4rem;
+    right: 1rem;
+            
+
     .tag {
-        position: absolute;
-        @include flexCenter(column);
         color: var(--text-botones);
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: 600;
         background-color: var(--tag-bg);
         padding: 0.2rem 0.4rem;
         border-radius: 0.25rem;
-           transform: translate(87px, 60px);
-    min-width: 6rem;
+        min-width: 3rem;
+        width: fit-content;
     }
+
+    .javascript {
+        color: var(--text-botones);
+        background-color: var(--javascript);
+    }
+
+    .typescript {
+        color: var(--text-botones);
+        background-color: var(--typescript);
+    }
+
+    .css {
+        color: var(--text-botones);
+        background-color: var(--css);
+    }
+
+    .sass {
+        color: var(--text-botones);
+        background-color: var(--sass);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // SWIPER CARDS SECONDARY
 
 .swiper-cards-secondary {
@@ -606,14 +691,14 @@ footer {
 // ESTILOS CARDS SECONDARY
 
 .expandible-wrapper {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out;
 
-        &.abierto {
-            max-height: 1000px;
-        }
+    &.abierto {
+        max-height: 1800px !important;
     }
+}
 
 .cards-expandibles {
 
@@ -634,14 +719,14 @@ footer {
         min-height: 166px;
 
         box-shadow:
-                5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+            5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
 
         .titulo-con-boton {
             padding: 0.5rem 0rem 0rem;
         }
     }
 
-    
+
 
     &.card.card-secondary-abierta {
         height: auto !important;
@@ -685,9 +770,10 @@ footer {
         padding-top: 1rem;
         padding-left: 2rem;
         width: 295px;
-        font-size: 1rem;
-        line-height: 1.1rem;
+        font-size: 14px;
+        line-height: 16px;
         color: var(--text-general);
+        font-family: var(--font-general);
     }
 
     .card-secondary .btn {
@@ -726,6 +812,10 @@ footer {
         }
     }
 
+    .btn, .btn-secondary {
+            font-size: 16px;
+    line-height: 18px;
+    }
     // MENU TABLET
     header .container-nav .theme-switch-wrapper {
         order: 2;
@@ -745,12 +835,12 @@ footer {
         }
 
         p {
-                padding: 0rem 4px;
+            padding: 0rem 4px;
         }
 
         div:first-child {
-                gap: 1rem;
-    margin-left: 0.5rem;
+            gap: 1rem;
+            margin-left: 0.5rem;
         }
     }
 
@@ -813,6 +903,7 @@ footer {
     .intro {
         width: 75%;
         margin: 0rem auto;
+        max-width: 1000px;
 
         h2 {
             font-size: 1.25rem;
@@ -909,8 +1000,8 @@ footer {
         }
 
         div:first-child {
-        gap: 2rem;
-        margin-left: 0rem;
+            gap: 2rem;
+            margin-left: 0rem;
         }
 
         div:nth-child(2),
@@ -948,8 +1039,8 @@ footer {
         align-items: center;
         min-height: 24rem;
         width: fit-content;
-            max-width: 320px;
-            min-width: 320px;
+        max-width: 320px;
+        min-width: 320px;
 
         .titulo-sin-boton {
             text-align: center;
@@ -975,13 +1066,12 @@ footer {
     }
 
     %card-primary-habilidad-img {
-        min-height: 122px;
+        min-height: 148px;
         object-fit: cover;
     }
 
     .img-front,
-    .img-graph,
-    .img-social {
+    .img-graph {
         min-height: 200px;
         width: 90%;
     }
@@ -990,8 +1080,7 @@ footer {
         width: 93%;
     }
 
-    .card-primary-habilidad.design::before,
-    .card-primary-habilidad.social::before {
+    .card-primary-habilidad.design::before {
         min-height: -webkit-fill-available;
         width: 100%;
     }
@@ -1002,12 +1091,6 @@ footer {
 
             .subtitulo {
                 color: var(--text-general);
-                width: 295px;
-            }
-
-            .texto-info {
-                padding-top: 1rem;
-                font-size: 1rem;
                 width: 295px;
             }
 
@@ -1024,7 +1107,7 @@ footer {
         }
 
         .card.card-secondary .titulo-con-boton {
-                    padding: 0.5rem 2rem 0rem;
+            padding: 0.5rem 2rem 0rem;
         }
     }
 

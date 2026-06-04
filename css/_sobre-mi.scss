@@ -1,0 +1,150 @@
+@use "variables"as *;
+
+
+// SECCION ABOUT ME
+
+.seccion-perfil {
+    @include flexCenter(column);
+    margin: 6rem 0rem 1rem;
+
+    .container-perfil {
+        @include flexCenter(column);
+        align-items: center;
+
+        min-height: 53rem;
+        position: relative;
+            margin: 2rem auto -4rem;
+
+
+
+
+        .intro {
+                    width: 94%;
+            margin: 0rem;
+                    background: var(--bg-card);
+            padding: 7rem 1.5rem 2.5rem;
+        border-radius: 28px;
+
+            p {
+                text-align: left;
+                padding: 0.25rem 0rem;
+                color: var(--text-general);
+                    font-family: var(--font-general);
+            }
+        }
+
+    }
+
+    .foto-perfil {
+        flex-shrink: 0;
+        position: absolute;
+    top: -2rem;
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid var(--accent);
+            object-fit: cover;
+        }
+    }
+
+    .titulo-general {
+        margin: 1rem auto 2.5rem;
+    }
+
+
+}
+
+
+//TABLET
+
+@media only screen and (min-width: 768px) {
+
+    
+    .seccion-perfil {
+        @include flexCenter(column);
+        margin: 8rem auto -3rem;
+
+        .container-perfil {
+            @include flexCenter(row);
+            width: 44rem;
+            min-height: 24rem;
+            max-height: 24rem;
+            align-items: center;
+            gap: 1rem;
+                    margin: 15rem auto 3rem;
+            padding: 0rem 2rem;
+
+            &::before {
+                min-height: -webkit-fill-available;
+                width: -webkit-fill-available;
+            }
+
+            .intro {
+                margin: 0rem;
+                width: 100%;
+        padding: 12rem 1.5rem 2.5rem;
+        min-width: 700px;
+            }
+
+        }
+
+        .foto-perfil {
+            flex-shrink: 0;
+        top: -13rem;
+
+            img {
+            height: 300px;
+            width: 300px;
+                border-radius: 50%;
+                border: 5px solid var(--accent); // Usando tu variable
+                object-fit: cover;
+            }
+        }
+
+    }
+
+}
+
+//DESKTOP
+
+@media only screen and (min-width: 1024px)  {
+
+    
+    .seccion-perfil {
+        @include flexCenter(column);
+        margin: 0rem auto 3rem;
+        gap: 2rem;
+
+        .container-perfil {
+            margin: 0rem 0rem 1rem;
+            padding: 1rem 0.5rem;
+            min-height: 17rem;
+            max-height: 17rem;
+            width: 1140px;
+            justify-content: flex-end;
+
+
+            &::before {
+                min-height: -webkit-fill-available;
+                width: -webkit-fill-available;
+            }
+
+            .intro {
+                        margin: 0rem;
+        width: 61rem;
+        padding: 2rem 2rem 2rem 12rem;
+        min-height: 17.5rem;
+            }
+
+        }
+
+                .foto-perfil {
+            flex-shrink: 0;
+                top: -1rem;
+        left: 1rem;
+        }
+    }
+
+}

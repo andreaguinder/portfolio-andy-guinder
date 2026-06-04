@@ -28,6 +28,18 @@ sans-serif;
 $pink-light-light: rgb(240, 195, 225);
 $btn-square: rgb(250, 242, 248);
 
+
+// tags lenguajes
+
+$javascript-light: rgb(187, 143, 0);
+$javascript-dark: rgb(254, 222, 117);
+$css-light: rgb(0, 75, 112);
+$css-dark: rgb(5, 149, 222);
+$sass-light: rgb(137, 7, 78);
+$sass-dark: rgb(255, 111, 212);
+$typescript-light: rgb(20, 7, 137);
+$typescript-dark: rgb(155, 179, 228);
+
 @mixin flexCenter ($direct) {
     display: flex;
     align-items: center;
@@ -64,9 +76,9 @@ $btn-square: rgb(250, 242, 248);
     --disabled: #{$disabled-light};
     // Cards
 
-    --bg-card: #{rgba($white, 0.75)};
+    --bg-card: #{$white};
     --text-card: #{$dark-pink};
-    --bg-card-light: #{rgba($white, 0.75)};
+    --bg-card-light: #{rgba($white, 0.5)};
     --bg-dark-pink: #{$dark-pink};
     --border-card: #{$dark-pink};
     --title-card: #{$black};
@@ -74,13 +86,19 @@ $btn-square: rgb(250, 242, 248);
 
     --img-card-front: #{url('../img/img-front.png')};
     --img-card-graph: #{url('../img/img-graph.png')};
-    --img-card-social: #{url('../img/img-social.png')};
 
     // Contacto
 
     --bg-contacto-desk: url('../img/desk-contacto-white-ty.png');
     --bg-contacto-mob: url('../img/mob-contacto-light-ty.png');
     --bg-contacto-tablet: url('../img/bg-tablet-white-ty.png');
+
+    // tags lenguajes
+
+    --javascript: #{$javascript-light};
+    --typescript: #{$typescript-light};
+    --css: #{$css-light};
+    --sass: #{$sass-light};
 }
 
 
@@ -122,7 +140,6 @@ $btn-square: rgb(250, 242, 248);
 
     --img-card-front: #{url('../img/img-front-dark.png')};
     --img-card-graph: #{url('../img/img-graph-dark.png')};
-    --img-card-social: #{url('../img/img-social-dark.png')};
 
     // Contacto
 
@@ -130,8 +147,15 @@ $btn-square: rgb(250, 242, 248);
     --bg-contacto-mob: url('../img/mob-contact-new-ty.png');
     --bg-contacto-tablet: url('../img/bg-tablet-dark-ty.png');
 
+    // tags lenguajes
 
-    .card-secondary {
+    --javascript: #{$javascript-dark};
+    --typescript: #{$typescript-dark};
+    --css: #{$css-dark};
+    --sass: #{$sass-dark};
+
+    .card-secondary,
+    .card-primary-proyectos {
   box-shadow: 
 5px 4px 4px rgba(255, 255, 255, 0.08), 0px 3px 8px 0px rgba(255, 255, 255, 0.3) !important;
 }

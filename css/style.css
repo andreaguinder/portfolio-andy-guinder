@@ -3,7 +3,7 @@
   /*
       --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
   */
-  --bg-body: url('../img/bg-light-40-up-ty.png') top/cover no-repeat scroll;
+  --bg-body: url('../img/bg-light-grey-5-up-ty.png') top/cover no-repeat scroll;
   --bg-header-footer: rgb(255, 255, 255);
   --line: rgb(207, 45, 134);
   --text-general: rgb(0, 0, 0);
@@ -601,7 +601,7 @@
   align-items: center;
   min-height: 53rem;
   position: relative;
-  margin: 2rem auto -4rem;
+  margin-bottom: -3rem;
 }
 .seccion-perfil .container-perfil .intro {
   width: 94%;
@@ -609,6 +609,7 @@
   background: var(--bg-card);
   padding: 7rem 1.5rem 2.5rem;
   border-radius: 28px;
+  transform: translateY(-96px);
 }
 .seccion-perfil .container-perfil .intro p {
   text-align: left;
@@ -618,8 +619,8 @@
 }
 .seccion-perfil .foto-perfil {
   flex-shrink: 0;
-  position: absolute;
-  top: -2rem;
+  position: relative;
+  z-index: 1;
 }
 .seccion-perfil .foto-perfil img {
   width: 200px;
@@ -994,12 +995,14 @@
   .seccion-perfil .container-perfil .intro {
     margin: 0rem;
     width: 100%;
-    padding: 12rem 1.5rem 2.5rem;
+    padding: 10rem 1.5rem 2.5rem;
     min-width: 700px;
+    transform: translateY(-36px);
   }
   .seccion-perfil .foto-perfil {
+    position: absolute;
     flex-shrink: 0;
-    top: -13rem;
+    top: -14rem;
   }
   .seccion-perfil .foto-perfil img {
     height: 300px;
@@ -1098,7 +1101,7 @@
   }
   .seccion-perfil .foto-perfil {
     flex-shrink: 0;
-    top: -1rem;
+    top: -3.5rem;
     left: 1rem;
   }
   .conocimientos {

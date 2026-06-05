@@ -10,13 +10,9 @@
     .container-perfil {
         @include flexCenter(column);
         align-items: center;
-
         min-height: 53rem;
         position: relative;
-        margin: 2rem auto -4rem;
-
-
-
+        margin-bottom: -3rem;
 
         .intro {
             width: 94%;
@@ -24,6 +20,7 @@
             background: var(--bg-card);
             padding: 7rem 1.5rem 2.5rem;
             border-radius: 28px;
+                transform: translateY(-96px);
 
             p {
                 text-align: left;
@@ -37,8 +34,8 @@
 
     .foto-perfil {
         flex-shrink: 0;
-        position: absolute;
-        top: -2rem;
+        position: relative;
+                z-index: 1;
 
         img {
             width: 200px;
@@ -487,15 +484,17 @@
             .intro {
                 margin: 0rem;
                 width: 100%;
-                padding: 12rem 1.5rem 2.5rem;
+                padding: 10rem 1.5rem 2.5rem;
                 min-width: 700px;
+                transform: translateY(-36px);
             }
 
         }
 
         .foto-perfil {
+            position: absolute;
             flex-shrink: 0;
-            top: -13rem;
+            top: -14rem;
 
             img {
                 height: 300px;
@@ -633,7 +632,7 @@
 
         .foto-perfil {
             flex-shrink: 0;
-            top: -1rem;
+            top: -3.5rem;
             left: 1rem;
         }
     }

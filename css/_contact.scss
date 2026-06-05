@@ -5,6 +5,10 @@
 .contacto {
     margin: 6rem auto 3rem;
 
+    .titulo-general {
+        margin: 7rem auto 2rem;
+        font-size: 2rem;
+    }
     .titulo {
         font-size: 2.5rem;
         font-weight: 600;
@@ -184,7 +188,13 @@
     // BODY CONTACTO DESKTOP
     .contacto {
 
-        margin: -4rem auto 5em;
+        .titulo-general {
+            margin-bottom: 3rem;
+                    font-size: 2.5rem;
+        margin: 2rem auto 3rem;
+        }
+
+        margin: 2rem auto 5em;
 
         .titulo {
                         margin-top: 0;

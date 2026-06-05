@@ -52,9 +52,10 @@ $typescript-dark: rgb(155, 179, 228);
 :root {
 
     // Body
-
+/*
     --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
-
+*/
+    --bg-body: url('../img/bg-light-40.png') top/cover no-repeat scroll;
     // Header & Footer
 
     --bg-header-footer: #{$white};
@@ -78,7 +79,7 @@ $typescript-dark: rgb(155, 179, 228);
 
     --bg-card: #{$white};
     --text-card: #{$dark-pink};
-    --bg-card-light: #{rgba($white, 0.5)};
+    --bg-card-light: #{rgba($white, 0.54)};
     --bg-dark-pink: #{$dark-pink};
     --border-card: #{$dark-pink};
     --title-card: #{$black};
@@ -107,12 +108,14 @@ $typescript-dark: rgb(155, 179, 228);
 [data-theme="dark"] {
 
     // Body
-
+/*
     --bg-body: #{$bg-dark};
+*/
 
+--bg-body: url('../img/bg-dark-15.png') top/cover no-repeat scroll;
     // Header
 
-    --bg-header-footer: #{$black-dark};
+    --bg-header-footer: #{$black};
     --line: #{$light-pink};
     --text-botones: #{$black};
 
@@ -128,8 +131,10 @@ $typescript-dark: rgb(155, 179, 228);
 
         --disabled: #{$disabled-dark};
     // Cards
+/*
+    --bg-card: #{$black-dark-cards};*/
+--bg-card: #{$black};
 
-    --bg-card: #{$black-dark-cards};
     --text-card: #{$light-pink};
     --bg-card-light: #{$black-light};
     --bg-dark-pink: #{$black-dark};

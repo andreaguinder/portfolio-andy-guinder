@@ -1,6 +1,9 @@
 @charset "UTF-8";
 :root {
-  --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
+  /*
+      --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
+  */
+  --bg-body: url('../img/bg-light-40.png') top/cover no-repeat scroll;
   --bg-header-footer: rgb(255, 255, 255);
   --line: rgb(207, 45, 134);
   --text-general: rgb(0, 0, 0);
@@ -16,7 +19,7 @@
   --disabled: rgba(255, 255, 255, 0.523);
   --bg-card: rgb(255, 255, 255);
   --text-card: rgb(207, 45, 134);
-  --bg-card-light: rgba(255, 255, 255, 0.5);
+  --bg-card-light: rgba(255, 255, 255, 0.54);
   --bg-dark-pink: rgb(207, 45, 134);
   --border-card: rgb(207, 45, 134);
   --title-card: rgb(0, 0, 0);
@@ -33,8 +36,11 @@
 }
 
 [data-theme=dark] {
-  --bg-body: rgb(40, 40, 48);
-  --bg-header-footer: rgb(15, 15, 15);
+  /*
+      --bg-body: rgb(40, 40, 48);
+  */
+  --bg-body: url('../img/bg-dark-15.png') top/cover no-repeat scroll;
+  --bg-header-footer: rgb(0, 0, 0);
   --line: rgb(255, 111, 212);
   --text-botones: rgb(0, 0, 0);
   --text-general: rgb(255, 255, 255);
@@ -45,7 +51,9 @@
   --tag-bg: rgb(244, 194, 228);
   --btn-square: rgb(20, 19, 29);
   --disabled: rgba(0, 0, 0, 0.521);
-  --bg-card: rgb(20, 19, 29);
+  /*
+      --bg-card: rgb(20, 19, 29);*/
+  --bg-card: rgb(0, 0, 0);
   --text-card: rgb(255, 111, 212);
   --bg-card-light: rgba(18, 19, 24, 0.54);
   --bg-dark-pink: rgb(15, 15, 15);
@@ -146,7 +154,7 @@
   justify-content: center;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: var(--bg-card);
+  background-color: var(--bg-card-light);
   backdrop-filter: blur(2rem);
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -294,6 +302,22 @@
   align-items: center;
 }
 
+.card-primary-proyectos.card-portfolios {
+  box-shadow: none !important;
+  background-color: var(--bg-card) !important;
+}
+.card-primary-proyectos.card-portfolios::before {
+  content: "";
+  position: absolute;
+  min-height: -webkit-fill-available;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to bottom, var(--accent) 0.3rem, transparent 0.3rem) 0 0, linear-gradient(to left, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%, linear-gradient(to top, var(--accent) 0.3rem, transparent 0.3rem) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 7.3rem 4.3rem;
+  filter: drop-shadow(0 0 0.5rem var(--accent));
+  border-radius: 2px;
+}
 .card-primary-proyectos.card-portfolios .cards-cada-portfolio {
   display: flex;
   align-items: center;
@@ -763,10 +787,10 @@
   margin: 0.5rem 0rem;
 }
 .conocimientos .formacion {
-  margin-bottom: 1.5rem;
+  margin: 6rem auto 2rem;
 }
 .conocimientos .formacion h1.titulo-general {
-  margin: 1.75rem auto 1.5rem;
+  margin: 1.75rem auto 3rem;
 }
 .conocimientos .formacion .container-formacion-oficiales {
   display: grid;
@@ -983,7 +1007,7 @@
     font-size: 1.3rem;
   }
   .conocimientos .formacion {
-    margin-bottom: 1rem;
+    margin: 0 auto;
   }
   .conocimientos .formacion .container-formacion-oficiales {
     grid-template-columns: 1fr 1fr;
@@ -1067,8 +1091,10 @@
   .conocimientos .btn {
     font-size: 16px;
   }
-  .conocimientos .formacion .container-formacion-oficiales .box-formacion, .conocimientos .formacion .container-formacion .box-formacion { /*
-        min-height: 500px;*/ }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion, .conocimientos .formacion .container-formacion .box-formacion {
+    /*
+                        min-height: 500px;*/
+  }
   .conocimientos .formacion .container-formacion-oficiales .box-formacion h3, .conocimientos .formacion .container-formacion .box-formacion h3 {
     font-size: 24px;
     line-height: 30px;
@@ -1091,11 +1117,18 @@
     font-size: 1.5rem;
   }
   .conocimientos .formacion {
-    margin-top: -2rem;
+    margin: -1rem auto 3rem;
+  }
+  .conocimientos .formacion .container-formacion {
+    margin: 5rem auto 3rem;
+  }
+  .conocimientos .formacion h1.titulo-general {
+    margin-bottom: 4rem;
   }
   .conocimientos .formacion .container-formacion-oficiales {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 71.25rem;
+    gap: 4rem;
   }
   .conocimientos .formacion .container-formacion-oficiales .box-con-tag .tag {
     transform: translate(173px, -7px);
@@ -1140,6 +1173,10 @@
 }
 .contacto {
   margin: 6rem auto 3rem;
+}
+.contacto .titulo-general {
+  margin: 7rem auto 2rem;
+  font-size: 2rem;
 }
 .contacto .titulo {
   font-size: 2.5rem;
@@ -1297,8 +1334,13 @@
   }
 }
 @media only screen and (min-width: 1024px) {
+  .contacto .titulo-general {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    margin: 2rem auto 3rem;
+  }
   .contacto {
-    margin: -4rem auto 5em;
+    margin: 2rem auto 5em;
   }
   .contacto .titulo {
     margin-top: 0;

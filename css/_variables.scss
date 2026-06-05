@@ -160,7 +160,8 @@ $typescript-dark: rgb(155, 179, 228);
     --sass: #{$sass-dark};
 
     .card-secondary,
-    .card-primary-proyectos {
+    .card-primary-proyectos,
+    .container-formacion .box-formacion {
   box-shadow: 
 5px 4px 4px rgba(255, 255, 255, 0.08), 0px 3px 8px 0px rgba(255, 255, 255, 0.3) !important;
 }

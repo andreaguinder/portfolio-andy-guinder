@@ -316,9 +316,9 @@ header {
                 padding-right: 7%;
                 list-style: none;
                 min-width: 13rem;
-                width: fit-content;
+                width: max-content;
                 margin-bottom: 0px !important;
-                height: 10.5rem;
+                min-height: 10.5rem;
                 border: 3px solid var(--line);
                 border-right: 0px;
 
@@ -484,16 +484,16 @@ footer {
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     position: relative;
-    width: fit-content;
-    max-width: 94%;
-    min-width: 330px;
+            width: fit-content;
+            max-width: 94%;
+            min-width: 330px;
 
 
     &::before {
         content: '';
         position: absolute;
         min-height: -webkit-fill-available;
-        width: 100%;
+        width: -webkit-fill-available;
         overflow: hidden;
         background:
             linear-gradient(to right, var(--accent) 0.3rem, transparent 0.3rem) 0 0,

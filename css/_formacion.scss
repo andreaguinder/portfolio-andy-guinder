@@ -140,6 +140,10 @@
             padding: 1rem 0rem;
             overflow-wrap: break-word;
   word-break: break-word;
+  white-space: normal;     
+  overflow-wrap: break-word;
+  word-break: break-word; 
+  padding-right: 50px;
         }
 
         h5 {
@@ -279,7 +283,7 @@
             }
 
             .box-formacion:has(.box-formacion-disabled) {
-                opacity: 0.4;
+                opacity: 0.5;
             }
 
             .fecha {
@@ -297,7 +301,19 @@
 
             .box-formacion {
                 @extend %box-formacion;
+                backdrop-filter: blur(2rem);
+            border-top-right-radius: 28px;
+            border-bottom-left-radius: 28px;
+            
+            box-shadow:
+                5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+                align-self: start;
                 background-color: var(--bg-card-light) !important;
+
+                &::before {
+                background: none;
+            }
+
 
                 h3 {
                     margin: 0.5rem 0rem 0rem;
@@ -513,7 +529,7 @@
 
             .container-formacion-oficiales {
                 grid-template-columns: 1fr 1fr;
-                max-width: 700px;
+                max-width: 732px;
                 gap: 2rem;
                 align-items: start;
 
@@ -522,6 +538,7 @@
                     width: 100%;
                     min-height: 1px;
                     height: auto;
+                    min-width: 350px;
                 }
 
                 .box-con-tag {
@@ -629,8 +646,7 @@
         }
 
         %box-formacion {
-            /*
-                                min-height: 500px;*/
+min-width: 380px;
 
             h3 {
                 font-size: 24px;
@@ -675,8 +691,8 @@
 
             .container-formacion-oficiales {
                 grid-template-columns: 1fr 1fr 1fr;
-                max-width: 71.25rem;
-                gap: 4rem;
+                max-width: 1204px;
+                gap: 2rem;
 
                 .box-con-tag {
                     .tag {

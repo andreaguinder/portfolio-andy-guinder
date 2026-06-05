@@ -316,8 +316,9 @@ header {
                 padding-right: 7%;
                 list-style: none;
                 min-width: 13rem;
+                width: fit-content;
                 margin-bottom: 0px !important;
-                height: fit-content;
+                height: 10.5rem;
                 border: 3px solid var(--line);
                 border-right: 0px;
 
@@ -484,7 +485,7 @@ footer {
     border-bottom-left-radius: 28px;
     position: relative;
     width: fit-content;
-    max-width: 330px;
+    max-width: 94%;
     min-width: 330px;
 
 
@@ -918,6 +919,7 @@ footer {
         padding: 0;
         position: fixed;
         border-bottom: 2px solid var(--accent);
+        max-height: 5.5rem;
 
         .container-nav {
             width: 100%;

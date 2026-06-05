@@ -161,7 +161,7 @@
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 330px;
+  max-width: 94%;
   min-width: 330px;
   margin: auto;
   box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
@@ -197,6 +197,7 @@
   top: 0;
   right: 0;
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 .proyectos .container-cards-web .card-primary-proyectos .contenedor-titulo-y-tags .contenedor-tags .tag {
   color: var(--text-botones);
@@ -333,13 +334,14 @@
   border: none;
 }
 .card-primary-proyectos.card-portfolios .cards-cada-portfolio .card {
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  width: 330px;
+  min-width: 330px;
+  max-width: 94%;
   position: relative;
 }
 .card-primary-proyectos.card-portfolios .cards-cada-portfolio .card h4 {
@@ -709,8 +711,8 @@
   text-align: left;
   line-height: 24px;
   padding: 1rem 0rem;
-  /*
-          padding: 0rem 0rem 0rem 1rem;*/
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 .conocimientos .formacion .container-formacion .box-formacion h5, .conocimientos .formacion .container-formacion-oficiales .box-formacion h5 {
   color: var(--text-general);
@@ -1671,9 +1673,10 @@ header .container-nav .site__nav ul {
   padding-right: 7%;
   list-style: none;
   min-width: 13rem;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 0px !important;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 10.5rem;
   border: 3px solid var(--line);
   border-right: 0px;
 }
@@ -1823,7 +1826,7 @@ footer .behance:hover {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 330px;
+  max-width: 94%;
   min-width: 330px;
 }
 .card-primary::before {
@@ -2150,6 +2153,7 @@ footer .behance:hover {
     padding: 0;
     position: fixed;
     border-bottom: 2px solid var(--accent);
+    max-height: 5.5rem;
   }
   header .container-nav {
     width: 100%;

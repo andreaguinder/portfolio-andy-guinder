@@ -23,11 +23,11 @@
         min-height: 33rem;
         padding: 1rem;
         width: fit-content;
-        max-width: 340px;
+        max-width: 94%;
 
         &::before {
             min-height: -webkit-fill-available;
-            width: 21rem;
+            width: -webkit-fill-available;
             top: 0rem;
         }
 

@@ -3,7 +3,7 @@
   /*
       --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
   */
-  --bg-body: url('../img/bg-light-grey-5-up-ty.png') top/cover no-repeat scroll;
+  --bg-body: url('../img/bg-light-grey-5-up-ty.png') center/cover no-repeat scroll;
   --bg-header-footer: rgb(255, 255, 255);
   --line: rgb(207, 45, 134);
   --text-general: rgb(0, 0, 0);
@@ -39,7 +39,7 @@
   /*
       --bg-body: rgb(40, 40, 48);
   */
-  --bg-body: url('../img/bg-dark-15-up-ty.png') top/cover no-repeat scroll;
+  --bg-body: url('../img/bg-dark-15-up-ty.png') center/cover no-repeat scroll;
   --bg-header-footer: rgb(0, 0, 0);
   --line: rgb(255, 111, 212);
   --text-botones: rgb(0, 0, 0);
@@ -1210,11 +1210,11 @@
   padding: 1rem;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 340px;
+  max-width: 94%;
 }
 .contacto .card-primary::before {
   min-height: -webkit-fill-available;
-  width: 21rem;
+  width: -webkit-fill-available;
   top: 0rem;
 }
 .contacto .card-primary .titulo-sin-boton {

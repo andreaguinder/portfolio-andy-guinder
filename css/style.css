@@ -3,7 +3,7 @@
   /*
       --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
   */
-  --bg-body: url('../img/bg-light-40.png') top/cover no-repeat scroll;
+  --bg-body: url('../img/bg-light-40-up-ty.png') top/cover no-repeat scroll;
   --bg-header-footer: rgb(255, 255, 255);
   --line: rgb(207, 45, 134);
   --text-general: rgb(0, 0, 0);
@@ -39,7 +39,7 @@
   /*
       --bg-body: rgb(40, 40, 48);
   */
-  --bg-body: url('../img/bg-dark-15.png') top/cover no-repeat scroll;
+  --bg-body: url('../img/bg-dark-15-up-ty.png') top/cover no-repeat scroll;
   --bg-header-footer: rgb(0, 0, 0);
   --line: rgb(255, 111, 212);
   --text-botones: rgb(0, 0, 0);

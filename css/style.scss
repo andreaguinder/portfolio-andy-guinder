@@ -273,13 +273,13 @@ header {
                     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
                     &.fa-sun {
-                        color: $white;
+                        color: var(--text-general);
                         opacity: 1;
                         transform: rotate(0deg) scale(1);
                     }
 
                     &.fa-moon {
-                        color: $white;
+                        color:  var(--text-general);
                         opacity: 0;
                         transform: rotate(-90deg) scale(0);
                     }
@@ -295,7 +295,7 @@ header {
                 i.fa-moon {
                     opacity: 1;
                     transform: rotate(0deg) scale(1);
-                    color: $white;
+                    color: var(--text-general);
                 }
             }
         }
@@ -326,7 +326,7 @@ header {
 
                     a,
                     p {
-                        color: $white;
+                        color: var(--text-general);
                         display: block;
                         padding: 0rem;
                         text-transform: uppercase;
@@ -340,7 +340,7 @@ header {
                         &.active {
                             background-color: transparent !important;
                             border: none !important;
-                            color: var(--title-menu) !important;
+                            color: var(--accent) !important;
                             font-weight: bold !important;
                             outline: none !important;
                         }
@@ -362,7 +362,7 @@ header {
         .menu-toggle {
             width: 3.5rem;
             min-height: 3.25rem;
-            border: 1px solid $white;
+            border: 1px solid var(--text-general);
             border-radius: 0.3rem;
             background: transparent;
             cursor: pointer;
@@ -387,14 +387,14 @@ header {
             width: 1.5rem;
             min-height: 0.25rem;
             position: relative;
-            background-color: $white;
+            background-color: var(--text-general);
         }
 
         .menu-hamburguesa::before,
         .menu-hamburguesa::after {
             content: "";
             display: block;
-            background-color: $white;
+            background-color: var(--text-general);
             min-height: 0.25rem;
             width: 1.5rem;
             border-radius: 0.5rem;
@@ -420,7 +420,7 @@ footer {
     font-family: var(--font-general);
     background-position-x: center;
     width: 100%;
-    color: $white;
+    color: var(--text-general);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,7 +450,7 @@ footer {
 
     p {
         text-align: center;
-        color: $white;
+        color: var(--text-general);
         font-size: 1rem;
         line-height: 1.35rem;
         padding: 0rem 1rem;
@@ -461,14 +461,14 @@ footer {
     .fa-square-behance,
     .behance {
         font-size: 1.8rem;
-        color: $white;
+        color: var(--text-general);
     }
 
     .fab:hover,
     .fa-brands:hover,
     .fa-square-behance:hover,
     .behance:hover {
-        color: var(--title-menu);
+        color: var(--accent);
     }
 }
 
@@ -951,7 +951,7 @@ footer {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 2.5rem;
+                    gap: 4rem;
                     border: none;
                     margin: 0;
                     padding: 0;
@@ -964,14 +964,14 @@ footer {
                         a,
                         p {
                             margin: 0;
-                            font-size: 1rem;
+                            font-size: 1.25rem;
                             font-weight: 700;
-                            color: $white;
+                            color: var(--text-general);
 
                             &:hover,
                             &:focus,
                             &.active {
-                                color: var(--title-menu) !important;
+                                color: var(--accent) !important;
                                 background: transparent !important;
                             }
                         }
@@ -994,7 +994,7 @@ footer {
 
         p {
             text-align: left;
-            color: $white;
+            color: var(--text-general);
             font-size: 1rem;
             padding: 0.25rem 0.5rem 0rem;
         }
@@ -1022,10 +1022,10 @@ footer {
         .fa-square-behance,
         .behance {
             font-size: 1.8rem;
-            color: white;
+            color: var(--text-general);
 
             &:hover {
-                color: var(--title-menu);
+                color: var(--accent);
             }
         }
     }

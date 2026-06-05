@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
   --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
-  --bg-header-footer: rgb(137, 7, 78);
-  --line: rgb(255, 255, 255);
+  --bg-header-footer: rgb(255, 255, 255);
+  --line: rgb(207, 45, 134);
   --text-general: rgb(0, 0, 0);
   --accent: rgb(207, 45, 134);
   --title-menu: rgb(244, 194, 228);
@@ -1594,12 +1594,12 @@ header .container-nav .theme-switch-wrapper .theme-label i {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 header .container-nav .theme-switch-wrapper .theme-label i.fa-sun {
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
   opacity: 1;
   transform: rotate(0deg) scale(1);
 }
 header .container-nav .theme-switch-wrapper .theme-label i.fa-moon {
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
   opacity: 0;
   transform: rotate(-90deg) scale(0);
 }
@@ -1610,7 +1610,7 @@ header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-lab
 header .container-nav .theme-switch-wrapper .theme-checkbox:checked + .theme-label i.fa-moon {
   opacity: 1;
   transform: rotate(0deg) scale(1);
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
 }
 header .container-nav .site__nav {
   top: 3.8rem;
@@ -1640,7 +1640,7 @@ header .container-nav .site__nav ul li {
 }
 header .container-nav .site__nav ul li a,
 header .container-nav .site__nav ul li p {
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
   display: block;
   padding: 0rem;
   text-transform: uppercase;
@@ -1655,7 +1655,7 @@ header .container-nav .site__nav ul li p:focus,
 header .container-nav .site__nav ul li p.active {
   background-color: transparent !important;
   border: none !important;
-  color: var(--title-menu) !important;
+  color: var(--accent) !important;
   font-weight: bold !important;
   outline: none !important;
 }
@@ -1671,7 +1671,7 @@ header .container-nav .site__navAbrir {
 header .container-nav .menu-toggle {
   width: 3.5rem;
   min-height: 3.25rem;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid var(--text-general);
   border-radius: 0.3rem;
   background: transparent;
   cursor: pointer;
@@ -1692,13 +1692,13 @@ header .container-nav div.menu-hamburguesa {
   width: 1.5rem;
   min-height: 0.25rem;
   position: relative;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--text-general);
 }
 header .container-nav .menu-hamburguesa::before,
 header .container-nav .menu-hamburguesa::after {
   content: "";
   display: block;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--text-general);
   min-height: 0.25rem;
   width: 1.5rem;
   border-radius: 0.5rem;
@@ -1718,7 +1718,7 @@ footer {
   font-family: var(--font-general);
   background-position-x: center;
   width: 100%;
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1748,7 +1748,7 @@ footer div:nth-child(3) {
 }
 footer p {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
   font-size: 1rem;
   line-height: 1.35rem;
   padding: 0rem 1rem;
@@ -1758,13 +1758,13 @@ footer .fa-brands,
 footer .fa-square-behance,
 footer .behance {
   font-size: 1.8rem;
-  color: rgb(255, 255, 255);
+  color: var(--text-general);
 }
 footer .fab:hover,
 footer .fa-brands:hover,
 footer .fa-square-behance:hover,
 footer .behance:hover {
-  color: var(--title-menu);
+  color: var(--accent);
 }
 
 .card-primary {
@@ -2139,7 +2139,7 @@ footer .behance:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2.5rem;
+    gap: 4rem;
     border: none;
     margin: 0;
     padding: 0;
@@ -2152,15 +2152,15 @@ footer .behance:hover {
   header .container-nav .site__nav ul li a,
   header .container-nav .site__nav ul li p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: rgb(255, 255, 255);
+    color: var(--text-general);
   }
   header .container-nav .site__nav ul li a:hover, header .container-nav .site__nav ul li a:focus, header .container-nav .site__nav ul li a.active,
   header .container-nav .site__nav ul li p:hover,
   header .container-nav .site__nav ul li p:focus,
   header .container-nav .site__nav ul li p.active {
-    color: var(--title-menu) !important;
+    color: var(--accent) !important;
     background: transparent !important;
   }
   header .container-nav .menu-toggle {
@@ -2177,7 +2177,7 @@ footer .behance:hover {
   }
   footer p {
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: var(--text-general);
     font-size: 1rem;
     padding: 0.25rem 0.5rem 0rem;
   }
@@ -2200,13 +2200,13 @@ footer .behance:hover {
   footer .fa-square-behance,
   footer .behance {
     font-size: 1.8rem;
-    color: white;
+    color: var(--text-general);
   }
   footer .fab:hover,
   footer .fa-brands:hover,
   footer .fa-square-behance:hover,
   footer .behance:hover {
-    color: var(--title-menu);
+    color: var(--accent);
   }
   .card-primary {
     color: rgb(255, 255, 255);

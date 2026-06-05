@@ -476,7 +476,7 @@ footer {
 // CARDS PRIMARY
 
 .card-primary {
-    min-height: 24rem;
+    min-height: 28rem;
     @include flexCenter(column);
     justify-content: flex-start;
     background-color: var(--bg-card);
@@ -542,7 +542,7 @@ footer {
 
     %card-primary-habilidad-img {
         width: 85%;
-        min-height: 127px;
+        min-height: 135px;
         object-fit: cover;
         margin: -0.5rem auto 0.5rem;
         ;

@@ -115,7 +115,7 @@
     gap: 2.5rem;
   }
   .experiencias {
-    margin: 6rem auto -6rem;
+    margin: 4rem auto -6rem;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -979,14 +979,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 44rem;
     min-height: 24rem;
-    max-height: 24rem;
-    align-items: center;
+    height: auto;
     gap: 1rem;
-    margin: 15rem auto 3rem;
+    margin: 11rem auto 3rem;
     padding: 0rem 2rem;
+    position: relative;
   }
   .seccion-perfil .container-perfil::before {
     min-height: -webkit-fill-available;
@@ -995,15 +995,24 @@
   .seccion-perfil .container-perfil .intro {
     margin: 0rem;
     width: 100%;
-    padding: 10rem 1.5rem 2.5rem;
     min-width: 700px;
-    transform: translateY(-120px);
-    margin-top: 200px;
+    background: var(--bg-card);
+    padding: 10rem 2rem 2.5rem;
+    border-radius: 28px;
+    transform: none;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
   .seccion-perfil .foto-perfil {
     position: absolute;
     flex-shrink: 0;
-    top: -14rem;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
   }
   .seccion-perfil .foto-perfil img {
     height: 300px;
@@ -1083,13 +1092,13 @@
     gap: 2rem;
   }
   .seccion-perfil .container-perfil {
+    flex-direction: row;
     margin: 0rem 0rem 1rem;
     padding: 1rem 0.5rem;
     min-height: 17rem;
     max-height: 17rem;
     width: 1140px;
     justify-content: flex-end;
-    transform: translateY(100px);
   }
   .seccion-perfil .container-perfil::before {
     min-height: -webkit-fill-available;
@@ -1103,8 +1112,9 @@
   }
   .seccion-perfil .foto-perfil {
     flex-shrink: 0;
-    top: -8.5rem;
+    top: -1.5rem;
     left: 1rem;
+    transform: none;
   }
   .conocimientos {
     margin: 0rem;
@@ -1831,7 +1841,7 @@ footer .behance:hover {
 }
 
 .card-primary {
-  min-height: 24rem;
+  min-height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1889,7 +1899,7 @@ footer .behance:hover {
 }
 .card-primary .img-graph, .card-primary .img-front {
   width: 85%;
-  min-height: 127px;
+  min-height: 135px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: -0.5rem auto 0.5rem;

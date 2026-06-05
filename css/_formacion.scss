@@ -467,14 +467,14 @@
         margin: 8rem auto -3rem;
 
         .container-perfil {
-            @include flexCenter(row);
+            @include flexCenter(column);
             width: 44rem;
             min-height: 24rem;
-            max-height: 24rem;
-            align-items: center;
+            height: auto;
             gap: 1rem;
-            margin: 15rem auto 3rem;
+            margin: 11rem auto 3rem;
             padding: 0rem 2rem;
+            position: relative;
 
             &::before {
                 min-height: -webkit-fill-available;
@@ -484,10 +484,21 @@
             .intro {
                 margin: 0rem;
                 width: 100%;
-                padding: 10rem 1.5rem 2.5rem;
                 min-width: 700px;
-                        transform: translateY(-120px);
-        margin-top: 200px;
+                background: var(--bg-card);
+                
+                // Le damos un padding-top generoso para que el texto empiece abajo de la foto absoluta
+                padding: 10rem 2rem 2.5rem; 
+                border-radius: 28px;
+                
+                // ELIMINAMOS los transform y margin-top mágicos que rompían el flujo
+                transform: none;
+                margin-top: 0;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
             }
 
         }
@@ -495,13 +506,16 @@
         .foto-perfil {
             position: absolute;
             flex-shrink: 0;
-            top: -14rem;
+            top: -10rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
 
             img {
                 height: 300px;
                 width: 300px;
                 border-radius: 50%;
-                border: 5px solid var(--accent); // Usando tu variable
+                border: 5px solid var(--accent); 
                 object-fit: cover;
             }
         }
@@ -609,13 +623,13 @@
         gap: 2rem;
 
         .container-perfil {
+            flex-direction: row;
             margin: 0rem 0rem 1rem;
             padding: 1rem 0.5rem;
             min-height: 17rem;
             max-height: 17rem;
             width: 1140px;
             justify-content: flex-end;
-        transform: translateY(100px);
 
             &::before {
                 min-height: -webkit-fill-available;
@@ -633,8 +647,9 @@
 
         .foto-perfil {
             flex-shrink: 0;
-            top: -8.5rem;
+            top: -1.5rem;
             left: 1rem;
+            transform: none;
         }
     }
 

@@ -11,8 +11,8 @@
         @include flexCenter(column);
         align-items: center;
 
-        min-height:41rem;
-        position: static;
+        min-height: 53rem;
+        position: relative;
             margin: 2rem auto -4rem;
 
 
@@ -20,7 +20,7 @@
 
         .intro {
                     width: 94%;
-            margin: 5rem auto;
+            margin: 0rem;
                     background: var(--bg-card);
             padding: 7rem 1.5rem 2.5rem;
         border-radius: 28px;
@@ -46,7 +46,6 @@
             border-radius: 50%;
             border: 5px solid var(--accent);
             object-fit: cover;
-
         }
     }
 

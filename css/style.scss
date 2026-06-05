@@ -486,7 +486,7 @@ footer {
     position: relative;
             width: fit-content;
             max-width: 94%;
-            min-width: 330px;
+            min-width: 94%;
 
 
     &::before {
@@ -825,6 +825,10 @@ footer {
         transform: translateX(200px);
     }
 
+    .card-primary {
+                max-width: 320px;
+        min-width: 320px;
+    }
     // FOOTER TABLET
     footer {
         flex-direction: row;
@@ -868,6 +872,7 @@ footer {
         .card.card-secondary {
             width: 320px;
             justify-content: flex-start;
+            min-height: 200px;
         }
     }
 }
@@ -1110,6 +1115,13 @@ footer {
 
         .card.card-secondary .titulo-con-boton {
             padding: 0.5rem 2rem 0rem;
+        }
+    }
+
+        // CARD SECONDARY TABLET
+    .cards-expandibles {
+        .card.card-secondary {
+            min-height: 166px;
         }
     }
 

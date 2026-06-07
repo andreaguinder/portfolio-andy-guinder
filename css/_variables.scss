@@ -51,11 +51,7 @@ $typescript-dark: rgb(155, 179, 228);
 
 :root {
 
-    // Body
-/*
-    --bg-body: url('../img/bg-light-grey-5-ty.png') top/cover no-repeat scroll;
-*/
-    --bg-body: url('../img/bg-light-grey-5-up-ty.png') center/cover no-repeat scroll;
+
     // Header & Footer
 
     --bg-header-footer: #{$white};
@@ -107,12 +103,6 @@ $typescript-dark: rgb(155, 179, 228);
 
 [data-theme="dark"] {
 
-    // Body
-/*
-    --bg-body: #{$bg-dark};
-*/
-
---bg-body: url('../img/bg-dark-15-up-ty.png') center/cover no-repeat scroll;
     // Header
 
     --bg-header-footer: #{$black};

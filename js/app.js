@@ -38,7 +38,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/*
 // PREFERENCIA DE SISTEMA
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+} else if (systemPrefersDark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+}*/
+
+// PREFERENCIA DE SISTEMA (Inmediato)
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -50,7 +61,7 @@ if (savedTheme) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
+/*
     // --- LIGHT / DARK MODE ---
     const checkbox = document.getElementById('theme-checkbox');
     if (checkbox) {
@@ -60,7 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
         });
+    }*/
+
+        const checkbox = document.getElementById('theme-checkbox');
+    if (checkbox) {
+        // Sincroniza el estado del icono/checkbox con el tema activo
+        checkbox.checked = document.documentElement.getAttribute('data-theme') === 'dark';
+        
+        checkbox.addEventListener('change', () => {
+            const newTheme = checkbox.checked ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
     }
+
 
     document.querySelectorAll('.btn-ver-mas').forEach(boton => {
         boton.addEventListener('click', function () {

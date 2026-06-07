@@ -701,7 +701,7 @@ min-width: 380px;
             }
 
             h1.titulo-general {
-                margin-bottom: 4rem;
+                        margin: 4rem auto;
             }
 
             .container-formacion-oficiales {
@@ -777,4 +777,8 @@ min-width: 380px;
             }
         }
     }
+
+    .seccion-perfil .titulo-general {
+    margin: 4rem auto 2.5rem !important;
+}
 }

@@ -1,57 +1,7 @@
 @use "variables"as *;
 
 
-// SECCION ABOUT ME
 
-.seccion-perfil {
-    @include flexCenter(column);
-    margin: 6rem 0rem 1rem;
-
-    .container-perfil {
-        @include flexCenter(column);
-        align-items: center;
-        min-height: 53rem;
-        position: relative;
-        margin-bottom: -3rem;
-
-        .intro {
-            width: 94%;
-            margin: 0rem;
-            background: var(--bg-card);
-            padding: 7rem 1.5rem 2.5rem;
-            border-radius: 28px;
-                transform: translateY(-96px);
-
-            p {
-                text-align: left;
-                padding: 0.25rem 0rem;
-                color: var(--text-general);
-                font-family: var(--font-general);
-            }
-        }
-
-    }
-
-    .foto-perfil {
-        flex-shrink: 0;
-        position: relative;
-                z-index: 1;
-
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 5px solid var(--accent);
-            object-fit: cover;
-        }
-    }
-
-    .titulo-general {
-        margin: 1rem auto 2.5rem;
-    }
-
-
-}
 
 // CONOCIMIENTOS MOB
 .conocimientos {
@@ -136,11 +86,11 @@
             line-height: 24px;
             padding: 1rem 0rem;
             overflow-wrap: break-word;
-  word-break: break-word;
-  white-space: normal;     
-  overflow-wrap: break-word;
-  word-break: break-word; 
-  padding-right: 50px;
+            word-break: break-word;
+            white-space: normal;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            padding-right: 50px;
         }
 
         h5 {
@@ -299,17 +249,17 @@
             .box-formacion {
                 @extend %box-formacion;
                 backdrop-filter: blur(2rem);
-            border-top-right-radius: 28px;
-            border-bottom-left-radius: 28px;
-            
-            box-shadow:
-                5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+                border-top-right-radius: 28px;
+                border-bottom-left-radius: 28px;
+
+                box-shadow:
+                    5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
                 align-self: start;
                 background-color: var(--bg-card-light) !important;
 
                 &::before {
-                background: none;
-            }
+                    background: none;
+                }
 
 
                 h3 {
@@ -401,126 +351,11 @@
 
     }
 
-    .toolbox {
-        margin-bottom: 2rem;
-
-
-        h2.titulo-general {
-            margin: 1rem auto 1.75rem;
-        }
-
-        .container-tools {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-top: -1rem;
-            padding: 0rem 1rem;
-
-
-
-            .box-toolbox {
-                @include flexCenter(column);
-                padding: 1rem 0.5rem;
-                background-color: var(--bg-card-light);
-                backdrop-filter: blur(10px);
-                border: 2px solid var(--border-card);
-                box-sizing: border-box;
-                border-top-right-radius: 28px;
-                border-bottom-left-radius: 28px;
-                width: 100%;
-                margin: auto;
-                gap: 2rem;
-                text-align: center;
-                min-height: 4.65rem;
-
-
-                h3 {
-                    font-size: 1rem;
-                    color: var(--title-card);
-                }
-            }
-        }
-
-
-    }
-
-    .toolbox-soft {
-        margin: 0rem auto 5rem;
-
-        .container-tools {
-            grid-template-columns: 1fr;
-
-            .box-toolbox {
-                width: 18rem;
-                min-height: 3.4rem;
-            }
-        }
-    }
 }
 
 //TABLET
 
 @media only screen and (min-width: 768px) {
-
-    .seccion-perfil {
-        @include flexCenter(column);
-        margin: 8rem auto -3rem;
-
-        .container-perfil {
-            @include flexCenter(column);
-            width: 44rem;
-            min-height: 24rem;
-            height: auto;
-            gap: 1rem;
-            margin: 11rem auto 3rem;
-            padding: 0rem 2rem;
-            position: relative;
-
-            &::before {
-                min-height: -webkit-fill-available;
-                width: -webkit-fill-available;
-            }
-
-            .intro {
-                margin: 0rem;
-                width: 100%;
-                min-width: 700px;
-                background: var(--bg-card);
-                
-                // Le damos un padding-top generoso para que el texto empiece abajo de la foto absoluta
-                padding: 10rem 2rem 2.5rem; 
-                border-radius: 28px;
-                
-                // ELIMINAMOS los transform y margin-top mágicos que rompían el flujo
-                transform: none;
-                margin-top: 0;
-                
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-            }
-
-        }
-
-        .foto-perfil {
-            position: absolute;
-            flex-shrink: 0;
-            top: -10rem;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
-
-            img {
-                height: 300px;
-                width: 300px;
-                border-radius: 50%;
-                border: 5px solid var(--accent); 
-                object-fit: cover;
-            }
-        }
-
-    }
 
     .conocimientos {
         margin: 6rem 0rem 4rem;
@@ -587,28 +422,6 @@
 
         }
 
-        .toolbox {
-            .container-tools {
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 1.5rem;
-                margin-top: -1rem;
-
-                .box-toolbox {
-                    padding: 1rem;
-                    min-height: 3.4rem;
-                }
-            }
-
-        }
-
-        .toolbox-soft {
-            margin: 0rem auto 2rem;
-
-            .container-tools {
-                grid-template-columns: 1fr 1fr;
-
-            }
-        }
     }
 }
 
@@ -617,41 +430,6 @@
 @media only screen and (min-width: 1024px) {
 
 
-    .seccion-perfil {
-        @include flexCenter(column);
-        margin: 0rem auto 3rem;
-        gap: 2rem;
-
-        .container-perfil {
-            flex-direction: row;
-            margin: 0rem 0rem 1rem;
-            padding: 1rem 0.5rem;
-            min-height: 17rem;
-            max-height: 17rem;
-            width: 1140px;
-            justify-content: flex-end;
-
-            &::before {
-                min-height: -webkit-fill-available;
-                width: -webkit-fill-available;
-            }
-
-            .intro {
-                margin: 0rem;
-                width: 61rem;
-                padding: 2rem 2rem 2rem 12rem;
-                min-height: 17.5rem;
-            }
-
-        }
-
-        .foto-perfil {
-            flex-shrink: 0;
-            top: -1.5rem;
-            left: 1rem;
-            transform: none;
-        }
-    }
 
     .conocimientos {
         margin: 0rem;
@@ -661,7 +439,7 @@
         }
 
         %box-formacion {
-min-width: 380px;
+            min-width: 380px;
 
             h3 {
                 font-size: 24px;
@@ -701,7 +479,7 @@ min-width: 380px;
             }
 
             h1.titulo-general {
-                        margin: 4rem auto;
+                margin: 4rem auto;
             }
 
             .container-formacion-oficiales {
@@ -733,52 +511,14 @@ min-width: 380px;
                     }
                 }
 
-
-
-
-
-
             }
 
         }
 
 
-        .toolbox {
-            width: 70rem;
-            gap: 2rem;
-
-            .container-tools {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                gap: 2rem;
-                margin: 2.5rem auto 1rem;
-
-                .box-toolbox {
-                    width: 16rem;
-
-                    h3 {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-        }
-
-        .toolbox-soft {
-            margin-bottom: 5rem;
-
-            .container-tools {
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 3rem;
-                width: 22rem;
-                justify-content: center;
-
-                .box-toolbox {
-                    width: 20rem;
-                }
-            }
-        }
     }
 
     .seccion-perfil .titulo-general {
-    margin: 4rem auto 2.5rem !important;
-}
+        margin: 4rem auto 2.5rem !important;
+    }
 }

@@ -65,7 +65,7 @@ $typescript-dark: rgb(155, 179, 228);
     --font-general: #{$font-main};
     --botones: #{$dark-pink};
     --botones-bg: #{$dark-pink};
-        --botones-bg-disabled: #{$dark-pink-disabled};
+    --botones-bg-disabled: #{$dark-pink-disabled};
     --tag-bg: #{$dark-pink-dark};
     --text-botones: #{$white};
     --btn-square: #{$btn-square};
@@ -92,11 +92,11 @@ $typescript-dark: rgb(155, 179, 228);
     --sass: #{$sass-light};
 
     // Logo
-    --logo-andy: #{url('../img/iso-andrea-guinder-light.png')};
+    --logo-andy: #{url('../img/iso-andrea-guinder-dark.png')};
 
     // img-portfolios-personales
 
-    --img-portfolios-personales: #{url('../img/cartulaportafolio-2026-light.png')};
+    --img-portfolios-personales: #{url('../img/cartulaportafolio-2026.png')};
 }
 
 
@@ -116,15 +116,15 @@ $typescript-dark: rgb(155, 179, 228);
     --accent: #{$light-pink};
     --botones: #{$white};
     --botones-bg: #{$light-pink};
-        --botones-bg-disabled: #{$light-pink-disabled};
+    --botones-bg-disabled: #{$light-pink-disabled};
     --tag-bg: #{$light-pink-light};
     --btn-square: #{$black-dark-cards};
 
-        --disabled: #{$disabled-dark};
+    --disabled: #{$disabled-dark};
     // Cards
-/*
+    /*
     --bg-card: #{$black-dark-cards};*/
---bg-card: #{$black};
+    --bg-card: #{$black};
 
     --text-card: #{$light-pink};
     --bg-card-light: #{$black-light};
@@ -137,7 +137,7 @@ $typescript-dark: rgb(155, 179, 228);
     --img-card-front: #{url('../img/img-front-dark.png')};
     --img-card-graph: #{url('../img/img-graph-dark.png')};
 
-    
+
     // tags lenguajes
 
     --javascript: #{$javascript-dark};
@@ -145,17 +145,17 @@ $typescript-dark: rgb(155, 179, 228);
     --css: #{$css-dark};
     --sass: #{$sass-dark};
 
-        // Logo
-    --logo-andy: #{url('../img/iso-andrea-guinder-dark.png')};
-    
+    // Logo
+    --logo-andy: #{url('../img/iso-andrea-guinder-light.png')};
+
     // img-portfolios-personales
 
-    --img-portfolios-personales: #{url('../img/cartulaportafolio-2026.png')};
+    --img-portfolios-personales: #{url('../img/cartulaportafolio-2026-light.png')};
 
     .card-secondary,
     .card-primary-proyectos,
     .container-formacion .box-formacion {
-  box-shadow: 
-5px 4px 4px rgba(255, 255, 255, 0.08), 0px 3px 8px 0px rgba(255, 255, 255, 0.3) !important;
-}
+        box-shadow:
+            5px 4px 4px rgba(255, 255, 255, 0.08), 0px 3px 8px 0px rgba(255, 255, 255, 0.3) !important;
+    }
 }

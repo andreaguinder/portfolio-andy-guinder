@@ -3,6 +3,11 @@
 
 // SECCION ABOUT ME
 
+// SECCION ABOUT ME
+
+
+// SECCION ABOUT ME
+
 .seccion-perfil {
     @include flexCenter(column);
     margin: 6rem 0rem 1rem;
@@ -10,26 +15,23 @@
     .container-perfil {
         @include flexCenter(column);
         align-items: center;
-
         min-height: 53rem;
         position: relative;
-            margin: 2rem auto -4rem;
-
-
-
+        margin-bottom: -3rem;
 
         .intro {
-                    width: 94%;
+            width: 94%;
             margin: 0rem;
-                    background: var(--bg-card);
+            background: var(--bg-card);
             padding: 7rem 1.5rem 2.5rem;
-        border-radius: 28px;
+            border-radius: 28px;
+            transform: translateY(-96px);
 
             p {
                 text-align: left;
                 padding: 0.25rem 0rem;
                 color: var(--text-general);
-                    font-family: var(--font-general);
+                font-family: var(--font-general);
             }
         }
 
@@ -37,8 +39,8 @@
 
     .foto-perfil {
         flex-shrink: 0;
-        position: absolute;
-    top: -2rem;
+        position: relative;
+        z-index: 1;
 
         img {
             width: 200px;
@@ -56,25 +58,152 @@
 
 }
 
+// SECONDARY SECTION MOB
+
+.experiencias {
+    margin: 3rem auto -6rem;
+}
+
+.secondary-section {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.contacto {
+    margin: 6rem auto 3rem;
+
+    .titulo-general {
+        margin: 7rem auto 2rem;
+        font-size: 2rem;
+    }
+
+    .titulo {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: var(--text-general);
+        padding: 0.5rem 0rem 0.5rem;
+        margin: 0rem auto 2rem;
+        text-align: center;
+    }
+
+    .card-primary {
+        margin: 0rem auto 4rem;
+        min-height: 33rem;
+        padding: 1rem;
+        width: fit-content;
+        max-width: 94%;
+
+        &::before {
+            min-height: -webkit-fill-available;
+            width: -webkit-fill-available;
+            top: 0rem;
+        }
+
+        .titulo-sin-boton {
+            padding: 1.5rem;
+            margin: 0rem auto;
+        }
+
+        .bajada {
+            padding: 0rem 1rem;
+        }
+
+        .subtitulo {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            color: var(--text-general);
+            text-align: center;
+            padding: 0.5rem;
+            text-align: center;
+            font-weight: 500;
+            font-family: var(--font-general);
+        }
+
+        .redes-contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 1.5rem;
+            width: 310px;
+            padding: 2rem 1rem 1.5rem;
+
+
+            button {
+                width: 290px;
+            }
+
+            .datos-contacto {
+                @include flexCenter(column);
+                width: 100%;
+                gap: 1rem;
+            }
+
+            h3 {
+                @include flexCenter(row);
+                font-size: 1rem;
+                font-weight: 400;
+                color: var(--text-general);
+                gap: 1rem;
+                margin-top: 0rem;
+
+                a {
+                    color: $white;
+                }
+
+                i {
+                    width: 30px;
+                    color: var(--text-general);
+                }
+            }
+        }
+
+        .btn {
+            flex-direction: row;
+            gap: 1rem;
+            font-size: 1rem;
+            margin: 0rem;
+            justify-content: flex-start;
+            padding-left: 5%;
+        }
+
+        i {
+            font-size: 1.5rem;
+            max-width: 35px;
+            text-align: center;
+            margin-left: 0rem;
+            color: var(--text-botones);
+        }
+    }
+
+    .datos-info-mia {
+        @include flexCenter(column);
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}
 
 //TABLET
 
 @media only screen and (min-width: 768px) {
 
-    
+
     .seccion-perfil {
         @include flexCenter(column);
         margin: 8rem auto -3rem;
 
         .container-perfil {
-            @include flexCenter(row);
+            @include flexCenter(column);
             width: 44rem;
             min-height: 24rem;
-            max-height: 24rem;
-            align-items: center;
+            height: auto;
             gap: 1rem;
-                    margin: 15rem auto 3rem;
+            margin: 11rem auto 3rem;
             padding: 0rem 2rem;
+            position: relative;
 
             &::before {
                 min-height: -webkit-fill-available;
@@ -84,40 +213,125 @@
             .intro {
                 margin: 0rem;
                 width: 100%;
-        padding: 12rem 1.5rem 2.5rem;
-        min-width: 700px;
+                min-width: 700px;
+                background: var(--bg-card);
+
+                // Le damos un padding-top generoso para que el texto empiece abajo de la foto absoluta
+                padding: 10rem 2rem 2.5rem;
+                border-radius: 28px;
+
+                // ELIMINAMOS los transform y margin-top mágicos que rompían el flujo
+                transform: none;
+                margin-top: 0;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
             }
 
         }
 
         .foto-perfil {
+            position: absolute;
             flex-shrink: 0;
-        top: -13rem;
+            top: -10rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
 
             img {
-            height: 300px;
-            width: 300px;
+                height: 300px;
+                width: 300px;
                 border-radius: 50%;
-                border: 5px solid var(--accent); // Usando tu variable
+                border: 5px solid var(--accent);
                 object-fit: cover;
             }
         }
 
     }
 
+    .experiencias {
+        margin: 4rem auto -6rem;
+    }
+
+    .contacto {
+
+        .titulo {
+            font-size: 3rem;
+            padding: 3rem 0rem 0rem;
+        }
+
+        .card-primary {
+            margin: 0rem auto 4rem;
+            align-items: flex-start;
+            min-height: 20rem;
+            padding: 2rem;
+            min-width: 700px;
+
+            &::before {
+                width: -webkit-fill-available;
+                left: 0rem;
+                top: 0rem;
+                min-height: -webkit-fill-available;
+            }
+
+            .titulo-sin-boton {
+                padding: 0.5rem 0rem 1.5rem;
+            }
+
+            .subtitulo {
+                font-size: 1.25rem;
+                margin: 0rem auto 1rem;
+            }
+
+            .bajada {
+                padding: 0rem 0.5rem;
+                max-width: 100%;
+            }
+
+            .redes-contacto {
+                padding: 1.5rem 0.5rem;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                margin: 0 auto;
+                gap: 1rem;
+
+                .datos-contacto {
+                    width: auto;
+                }
+
+                button {
+                    /*width: 380px;*/
+                }
+
+                h3 i {
+                    margin-left: 0.8rem;
+                }
+            }
+
+            .datos-info-mia {
+                @include flexCenter(column);
+                gap: 2rem;
+                align-items: flex-start;
+            }
+        }
+    }
+
 }
 
 //DESKTOP
 
-@media only screen and (min-width: 1024px)  {
+@media only screen and (min-width: 1024px) {
 
-    
     .seccion-perfil {
         @include flexCenter(column);
         margin: 0rem auto 3rem;
         gap: 2rem;
 
         .container-perfil {
+            flex-direction: row;
             margin: 0rem 0rem 1rem;
             padding: 1rem 0.5rem;
             min-height: 17rem;
@@ -125,26 +339,82 @@
             width: 1140px;
             justify-content: flex-end;
 
-
             &::before {
                 min-height: -webkit-fill-available;
                 width: -webkit-fill-available;
             }
 
             .intro {
-                        margin: 0rem;
-        width: 61rem;
-        padding: 2rem 2rem 2rem 12rem;
-        min-height: 17.5rem;
+                margin: 0rem;
+                width: 61rem;
+                padding: 2rem 2rem 2rem 12rem;
+                min-height: 17.5rem;
             }
 
         }
 
-                .foto-perfil {
+        .foto-perfil {
             flex-shrink: 0;
-                top: -1rem;
-        left: 1rem;
+            top: -1.5rem;
+            left: 1rem;
+            transform: none;
         }
     }
+
+
+    // SECONDARY SECTION DESKTOP
+    .secondary-section {
+        margin: 3rem auto 2rem;
+    }
+
+    .experiencias {
+        margin: 3rem auto 0rem;
+    }
+
+    .contacto {
+
+        .titulo-general {
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            margin: 2rem auto 3rem;
+        }
+
+        margin: 2rem auto 5em;
+
+        .titulo {
+            margin-top: 0;
+        }
+
+
+        .card-primary {
+            margin: 0rem auto 4rem;
+            max-width: 1140px;
+            align-items: flex-start;
+            min-height: 10rem;
+
+            .bajada {
+                max-width: 100%;
+            }
+
+            .redes-contacto {
+
+                h3 {
+                    width: 100%;
+                }
+
+                .datos-contacto {
+                    flex-wrap: nowrap;
+                    flex-direction: row;
+                }
+            }
+
+            .datos-info-mia {
+                flex-direction: row;
+                gap: 0rem;
+            }
+        }
+
+    }
+
 
 }

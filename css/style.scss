@@ -66,38 +66,7 @@ a,
 html {
     min-height: 100vh;
     position: relative;
-     background: url('../img/bg-light-grey-5-up-ty.png') center top / cover no-repeat fixed;
-
-    &::before {
-        content: "";
-        position: fixed; 
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url('../img/bg-dark-15-up-ty.png') center top / cover no-repeat fixed #121212;
-        
-        clip-path: circle(0% at 100% 0%);
-        z-index: -1; 
-        transition: clip-path 1.3s cubic-bezier(0.4, 0, 0.2, 1);
-        pointer-events: none;
-    }
-
-
-    &::after {
-        content: "";
-        position: fixed; 
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url('../img/bg-light-grey-5-up-ty.png') center top / cover no-repeat fixed;
-        
-        clip-path: circle(0% at 100% 0%);
-        z-index: -1;
-        transition: clip-path 1.3s cubic-bezier(0.4, 0, 0.2, 1);
-        pointer-events: none;
-    }
+    overflow-x: hidden;
 }
 
 body {
@@ -105,33 +74,63 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: url('../img/bg-light-grey-5-up-ty.png') center top / cover no-repeat fixed; 
+    background-color: #ffffff;
+
+    &::before {
+        content: "";
+        position: absolute;
+        // El truco definitivo: JS le va a decir a qué altura de la pantalla estás
+        top: var(--scroll-y, 0px);
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background: url('../img/bg-dark-15-up-ty.png') center top / cover no-repeat scroll #121212;
+        clip-path: circle(0% at 100% 0%);
+        transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none;
+        transform: translateZ(0);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: var(--scroll-y, 0px);
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background: url('../img/bg-light-grey-5-up-ty.png') center top / cover no-repeat scroll #ffffff;
+        clip-path: circle(0% at 100% 0%);
+        transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        pointer-events: none;
+        transform: translateZ(0);
+    }
 
     > * {
         position: relative;
-        z-index: 1;
+        z-index: 3;
     }
 }
 
-
 html[data-theme='dark'] {
-    &::before {
-        z-index: -1;
+    body::before {
+        z-index: 2;
         clip-path: circle(150% at 100% 0%);
     }
-    &::after {
-        z-index: -2;
+    body::after {
+        z-index: 1;
         clip-path: circle(0% at 100% 0%);
     }
 }
 
 html[data-theme='light'] {
-    &::after {
-        z-index: -1;
+    body::after {
+        z-index: 2;
         clip-path: circle(150% at 100% 0%);
     }
-    &::before {
-        z-index: -2;
+    body::before {
+        z-index: 1;
         clip-path: circle(0% at 100% 0%);
     }
 }
@@ -140,20 +139,7 @@ header {
     z-index: 1000 !important;
 }
 
-body,
-header,
-footer,
-.box-formacion,
-section,
-div,
-h1,
-h2,
-h3,
-h4,
-p,
-span,
-a,
-.site__nav {
+body, header, footer, .box-formacion, section, div, h1, h2, h3, h4, p, span, a, .site__nav {
     transition: color 1.1s ease, border-color 1.1s ease, background-color 1.1s ease;
 }
 

@@ -86,6 +86,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
+    // Actualiza la posición de los telones según el scroll de forma ultra liviana
+window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+});
+
+// Ejecutar una vez al cargar por si arranca scrolleado
+document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+
+
+
     document.querySelectorAll('.btn-ver-mas').forEach(boton => {
         boton.addEventListener('click', function () {
             const card = this.closest('.card');

@@ -65,73 +65,103 @@ a,
 // Efecto para que al cambiar de theme tenga transition con estilo
 html {
     min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
 }
 
 body {
     min-height: 100vh;
     margin: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-
+    
+    // ------------------------------------------
+    // TELÓN OSCURO (::before)
+    // ------------------------------------------
     &::before {
         content: "";
-        position: absolute;
-        // El truco definitivo: JS le va a decir a qué altura de la pantalla estás
-        top: var(--scroll-y, 0px);
+        position: fixed; // Clavado a la pantalla para que el fondo no se deforme al scrollear
+        top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
         z-index: 1;
-        background: url('../img/bg-dark-15-up-ty.png') center top / cover no-repeat scroll #121212;
-        clip-path: circle(0% at 100% 0%);
-        transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        background: url('../img/bg-dark-15-up-ty.png') center top / cover no-repeat fixed #121212;
         pointer-events: none;
-        transform: translateZ(0);
+        
+        // COMPU: Tu animación cruzada hermosa y limpia
+        @media (min-width: 769px) {
+            clip-path: circle(0% at 100% 0%);
+            transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        // CELULAR: Opacidad clásica para que no exploten los píxeles
+        @media (max-width: 768px) {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
     }
 
+    // ------------------------------------------
+    // TELÓN CLARO (::after)
+    // ------------------------------------------
     &::after {
         content: "";
-        position: absolute;
-        top: var(--scroll-y, 0px);
+        position: fixed; // Clavado a la pantalla para que el fondo no se deforme al scrollear
+        top: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
         z-index: 1;
-        background: url('../img/bg-light-grey-5-up-ty.png') center top / cover no-repeat scroll #ffffff;
-        clip-path: circle(0% at 100% 0%);
-        transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        background: url('../img/bg-light-grey-5-up-ty.png') center top / cover no-repeat fixed #ffffff;
         pointer-events: none;
-        transform: translateZ(0);
+        
+        // COMPU: Tu animación cruzada hermosa y limpia
+        @media (min-width: 769px) {
+            clip-path: circle(0% at 100% 0%);
+            transition: clip-path 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        // CELULAR: Opacidad clásica para que no exploten los píxeles
+        @media (max-width: 768px) {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
     }
-
+    
     > * {
         position: relative;
         z-index: 3;
     }
 }
 
+// ------------------------------------------
+// LOGICA DE THEMES (Intercambio simétrico de z-index)
+// ------------------------------------------
+
 html[data-theme='dark'] {
     body::before {
         z-index: 2;
-        clip-path: circle(150% at 100% 0%);
+        @media (min-width: 769px) { clip-path: circle(150% at 100% 0%); }
+        @media (max-width: 768px) { opacity: 1; }
     }
     body::after {
         z-index: 1;
-        clip-path: circle(0% at 100% 0%);
+        @media (min-width: 769px) { clip-path: circle(0% at 100% 0%); }
+        @media (max-width: 768px) { opacity: 0; }
     }
 }
 
 html[data-theme='light'] {
     body::after {
         z-index: 2;
-        clip-path: circle(150% at 100% 0%);
+        @media (min-width: 769px) { clip-path: circle(150% at 100% 0%); }
+        @media (max-width: 768px) { opacity: 1; }
     }
     body::before {
         z-index: 1;
-        clip-path: circle(0% at 100% 0%);
+        @media (min-width: 769px) { clip-path: circle(0% at 100% 0%); }
+        @media (max-width: 768px) { opacity: 0; }
     }
 }
 

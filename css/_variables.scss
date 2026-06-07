@@ -84,18 +84,19 @@ $typescript-dark: rgb(155, 179, 228);
     --img-card-front: #{url('../img/img-front.png')};
     --img-card-graph: #{url('../img/img-graph.png')};
 
-    // Contacto
-
-    --bg-contacto-desk: url('../img/desk-contacto-white-ty.png');
-    --bg-contacto-mob: url('../img/mob-contacto-light-ty.png');
-    --bg-contacto-tablet: url('../img/bg-tablet-white-ty.png');
-
     // tags lenguajes
 
     --javascript: #{$javascript-light};
     --typescript: #{$typescript-light};
     --css: #{$css-light};
     --sass: #{$sass-light};
+
+    // Logo
+    --logo-andy: #{url('../img/iso-andrea-guinder-light.png')};
+
+    // img-portfolios-personales
+
+    --img-portfolios-personales: #{url('../img/cartulaportafolio-2026-light.png')};
 }
 
 
@@ -136,18 +137,20 @@ $typescript-dark: rgb(155, 179, 228);
     --img-card-front: #{url('../img/img-front-dark.png')};
     --img-card-graph: #{url('../img/img-graph-dark.png')};
 
-    // Contacto
-
-    --bg-contacto-desk: url('../img/desk-contacto-new-ty.png');
-    --bg-contacto-mob: url('../img/mob-contact-new-ty.png');
-    --bg-contacto-tablet: url('../img/bg-tablet-dark-ty.png');
-
+    
     // tags lenguajes
 
     --javascript: #{$javascript-dark};
     --typescript: #{$typescript-dark};
     --css: #{$css-dark};
     --sass: #{$sass-dark};
+
+        // Logo
+    --logo-andy: #{url('../img/iso-andrea-guinder-dark.png')};
+    
+    // img-portfolios-personales
+
+    --img-portfolios-personales: #{url('../img/cartulaportafolio-2026.png')};
 
     .card-secondary,
     .card-primary-proyectos,

@@ -100,12 +100,21 @@
             .contenedor-general {
 
                 .contenedor-left {
-                    img {
-                        width: 290px;
+                    img, span .img-portfolios-personales {
+                        width: 280px;
                         height: auto;
                         border-top-right-radius: 20px;
                         border-bottom-left-radius: 20px;
                         min-height: auto;
+                    }
+
+                    span.img-portfolios-personales {
+                        background-image: var(--img-portfolios-personales);
+                        width: 280px;
+                        height: 112px;
+                        background-size: cover;
+                        border-top-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
                     }
                 }
 
@@ -249,9 +258,6 @@ background-color: var(--bg-card) !important;
     transform: none;
             }
 
-            .btn-square-mas.btn-2025 {
-
-            }
 
             .contenedor-tags {
                 position: relative;
@@ -504,6 +510,15 @@ grid-auto-flow: row;
                         min-height: auto;
                         max-width: 400px;
                         min-width: 400px;
+                    }
+
+                                        span.img-portfolios-personales {
+                        background-image: var(--img-portfolios-personales);
+                                width: 450px;
+        height: 190px;
+                        background-size: cover;
+                        border-top-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
                     }
                 }
 

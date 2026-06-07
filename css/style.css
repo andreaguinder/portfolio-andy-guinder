@@ -2301,7 +2301,7 @@ footer .behance:hover {
     min-height: 4.5rem;
     padding: 0;
     position: fixed;
-    border-bottom: 2px solid var(--accent);
+    border-bottom: 3px solid var(--accent);
     max-height: 5.5rem;
   }
   header .container-nav {

@@ -710,12 +710,10 @@ transform: translateY(50px);*/
 }
 
 .contenedor-tags {
-    position: absolute;
-    @include flexCenter(column);
+    @include flexCenter(row);
     gap: 0.5rem;
-    align-items: flex-end;
-    top: 4rem;
-    right: 1rem;
+    padding: 0.5rem 0.5rem 1rem;
+    flex-wrap: wrap;
 
 
     .tag {
@@ -725,7 +723,7 @@ transform: translateY(50px);*/
         background-color: var(--tag-bg);
         padding: 0.2rem 0.4rem;
         border-radius: 0.25rem;
-        min-width: 3rem;
+        min-width: fit-content;
         width: fit-content;
     }
 
@@ -747,6 +745,11 @@ transform: translateY(50px);*/
     .sass {
         color: var(--text-botones);
         background-color: var(--sass);
+    }
+
+        .react {
+        color: var(--text-botones);
+        background-color: var(--react);
     }
 
 }

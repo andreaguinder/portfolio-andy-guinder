@@ -22,6 +22,7 @@
   --bg-btn-hover: rgb(137, 7, 78);
   --img-card-front: url("../img/img-front.png");
   --img-card-graph: url("../img/img-graph.png");
+  --react: rgb(1, 103, 155);
   --javascript: rgb(187, 143, 0);
   --typescript: rgb(20, 7, 137);
   --css: rgb(0, 75, 112);
@@ -54,6 +55,7 @@
   --bg-btn-hover: rgb(255, 111, 212);
   --img-card-front: url("../img/img-front-dark.png");
   --img-card-graph: url("../img/img-graph-dark.png");
+  --react: rgb(129, 207, 246);
   --javascript: rgb(254, 222, 117);
   --typescript: rgb(155, 179, 228);
   --css: rgb(5, 149, 222);
@@ -122,7 +124,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 2rem 0rem 1rem;
+  padding: 2rem 0rem 0.25rem;
   gap: 1rem;
 }
 .proyectos .container-cards-web .card-primary-proyectos .contenedor-titulo-y-tags .titulo-sin-boton {
@@ -278,6 +280,9 @@
   filter: drop-shadow(0 0 0.5rem var(--accent));
   border-radius: 2px;
 }
+.card-primary-proyectos.card-portfolios .titulo-sin-boton {
+  padding-bottom: 1rem;
+}
 .card-primary-proyectos.card-portfolios .cards-cada-portfolio {
   display: flex;
   align-items: center;
@@ -400,13 +405,18 @@
   .proyectos .container-cards-web .card-primary-proyectos {
     min-width: 600px;
     max-width: 600px;
-    min-height: 305px;
+    min-height: 327px;
     padding: 0rem 1.5rem 1.5rem;
     margin-top: 0;
   }
+  .proyectos .container-cards-web .card-primary-proyectos .contenedor-tags {
+    padding: 0.5rem 0rem 1rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
   .proyectos .container-cards-web .card-primary-proyectos .contenedor-titulo-y-tags {
     flex-direction: row;
-    padding: 2rem 0rem;
+    padding: 2rem 0rem 0.3rem;
     gap: 0;
     justify-content: space-between;
     min-width: 552px;
@@ -448,6 +458,9 @@
   }
   .proyectos .container-cards-web .card-primary-proyectos .btn-square-mas {
     transform: translate(16rem, 0.5rem);
+  }
+  .proyectos .card-primary-proyectos.card-portfolios .titulo-sin-boton {
+    padding-bottom: 0rem;
   }
   .proyectos .card-primary-proyectos.card-portfolios .cards-cada-portfolio {
     min-width: 550px;
@@ -565,6 +578,9 @@
   }
   .proyectos .card-primary-proyectos.card-portfolios .cards-cada-portfolio .card .contenedor-titulo-y-tags {
     min-width: 800px;
+  }
+  .proyectos .card-primary-proyectos.card-portfolios .cards-cada-portfolio .card .contenedor-titulo-y-tags .titulo-sin-boton {
+    padding-bottom: 0.5rem;
   }
   .card-primary-proyectos {
     align-self: start;
@@ -2141,15 +2157,13 @@ footer .behance:hover {
 }
 
 .contenedor-tags {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5rem;
-  align-items: flex-end;
-  top: 4rem;
-  right: 1rem;
+  padding: 0.5rem 0.5rem 1rem;
+  flex-wrap: wrap;
 }
 .contenedor-tags .tag {
   color: var(--text-botones);
@@ -2158,7 +2172,8 @@ footer .behance:hover {
   background-color: var(--tag-bg);
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
-  min-width: 3rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -2177,6 +2192,10 @@ footer .behance:hover {
 .contenedor-tags .sass {
   color: var(--text-botones);
   background-color: var(--sass);
+}
+.contenedor-tags .react {
+  color: var(--text-botones);
+  background-color: var(--react);
 }
 
 .swiper-cards-secondary {

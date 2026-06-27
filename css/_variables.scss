@@ -31,6 +31,8 @@ $btn-square: rgb(250, 242, 248);
 
 // tags lenguajes
 
+$react-light: rgb(1, 103, 155);
+$react-dark: rgb(129, 207, 246);
 $javascript-light: rgb(187, 143, 0);
 $javascript-dark: rgb(254, 222, 117);
 $css-light: rgb(0, 75, 112);
@@ -86,6 +88,7 @@ $typescript-dark: rgb(155, 179, 228);
 
     // tags lenguajes
 
+    --react: #{$react-light};
     --javascript: #{$javascript-light};
     --typescript: #{$typescript-light};
     --css: #{$css-light};
@@ -140,6 +143,7 @@ $typescript-dark: rgb(155, 179, 228);
 
     // tags lenguajes
 
+    --react: #{$react-dark};
     --javascript: #{$javascript-dark};
     --typescript: #{$typescript-dark};
     --css: #{$css-dark};

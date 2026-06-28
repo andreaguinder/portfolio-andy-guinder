@@ -564,8 +564,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
-    min-height: 16rem;
+    gap: 12px;
+    min-height: 13rem;
     padding: 1rem 0rem;
     /*
 transform: translateY(50px);*/
@@ -582,7 +582,7 @@ transform: translateY(50px);*/
     div:nth-child(2),
     div:nth-child(3) {
         display: flex;
-        gap: 1rem;
+        gap: 12px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -592,7 +592,7 @@ transform: translateY(50px);*/
     p {
         text-align: center;
         color: var(--text-general);
-        font-size: 1rem;
+        font-size: 14px;
         line-height: 1.35rem;
         padding: 0rem 1rem;
     }
@@ -874,6 +874,33 @@ transform: translateY(50px);*/
 
     &.card.card-secondary-abierta {
         height: auto !important;
+    }
+
+        .card.card-secondary.card-secondary-experiencias {
+        min-height: 284px;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 2rem;
+
+            img {
+                width: 90px;
+                height: auto;
+                border-radius: 100%;
+                border: 2.5px solid var(--border-card);
+            }
+
+            .btn-square-mas {
+                transform: translate(7.6rem, -1rem);
+            }
+
+            .subtitulo, .texto-info {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+
+            .titulo-sin-boton {
+                padding-left: 0rem;
+            }
     }
 
     .titulo {

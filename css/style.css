@@ -2216,9 +2216,15 @@ footer .behance:hover {
   display: flex;
 }
 .swiper-cards-secondary .swiper .swiper-button-prev {
-  left: 4.35rem;
+  left: 2.35rem;
 }
 .swiper-cards-secondary .swiper .swiper-button-next {
+  left: 16.5rem;
+}
+.swiper-cards-secondary .swiper .swiper-button-prev.experiencias-prev {
+  left: 4.35rem;
+}
+.swiper-cards-secondary .swiper .swiper-button-next.experiencias-next {
   left: 14.5rem;
 }
 
@@ -2259,7 +2265,7 @@ footer .behance:hover {
   padding: 1rem 0rem 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   background-color: var(--bg-card-light);
   backdrop-filter: blur(10px);
@@ -2274,6 +2280,19 @@ footer .behance:hover {
 }
 .cards-expandibles .card.card-secondary .titulo-con-boton {
   padding: 0.5rem 0rem 0rem;
+  line-height: 2rem;
+  align-items: flex-start;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.cards-expandibles .card.card-secondary .contenedor-tags {
+  justify-content: flex-start;
+  padding-left: 32px;
+}
+.cards-expandibles .div-fantasma-2025 {
+  height: 24.4px;
+  width: 100px;
+  background-color: transparent;
 }
 .cards-expandibles.card.card-secondary-abierta {
   height: auto !important;
@@ -2405,9 +2424,15 @@ footer .behance:hover {
     width: 320px;
   }
   .swiper-cards-secondary .swiper .swiper-button-prev {
-    left: 15rem;
+    left: 13rem;
   }
   .swiper-cards-secondary .swiper .swiper-button-next {
+    left: 27rem;
+  }
+  .swiper-cards-secondary .swiper .swiper-button-prev.experiencias-prev {
+    left: 15rem;
+  }
+  .swiper-cards-secondary .swiper .swiper-button-next.experiencias-next {
     left: 25rem;
   }
   .cards-expandibles .card.card-secondary {
@@ -2631,9 +2656,15 @@ footer .behance:hover {
     width: 1024px;
   }
   .swiper-cards-secondary .swiper .swiper-button-prev {
-    left: 26rem;
+    left: 24rem;
   }
   .swiper-cards-secondary .swiper .swiper-button-next {
+    left: 39rem;
+  }
+  .swiper-cards-secondary .swiper .swiper-button-prev.experiencias-prev {
+    left: 26rem;
+  }
+  .swiper-cards-secondary .swiper .swiper-button-next.experiencias-next {
     left: 37rem;
   }
 }/*# sourceMappingURL=style.css.map */

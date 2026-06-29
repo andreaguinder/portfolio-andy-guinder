@@ -798,10 +798,18 @@ transform: translateY(50px);*/
         }
 
         .swiper-button-prev {
-            left: 4.35rem;
+            left: 2.35rem;
         }
 
         .swiper-button-next {
+            left: 16.5rem;
+        }
+
+                .swiper-button-prev.experiencias-prev {
+            left: 4.35rem;
+        }
+
+        .swiper-button-next.experiencias-next {
             left: 14.5rem;
         }
     }
@@ -850,7 +858,7 @@ transform: translateY(50px);*/
         padding: 1rem 0rem 0rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         background-color: var(--bg-card-light);
         backdrop-filter: blur(10px);
@@ -867,14 +875,28 @@ transform: translateY(50px);*/
 
         .titulo-con-boton {
             padding: 0.5rem 0rem 0rem;
+                                line-height: 2rem;
+        align-items: flex-start;
+        width: fit-content;
+        }
+
+        .contenedor-tags {
+            justify-content: flex-start;
+            padding-left: 32px;
         }
     }
 
+    .div-fantasma-2025 {
+        height: 24.4px;
+        width: 100px;
+        background-color: transparent;
+    }
 
 
     &.card.card-secondary-abierta {
         height: auto !important;
     }
+
 
         .card.card-secondary.card-secondary-experiencias {
         min-height: 284px;
@@ -892,6 +914,8 @@ transform: translateY(50px);*/
             .btn-square-mas {
                 transform: translate(7.6rem, -1rem);
             }
+
+
 
             .subtitulo, .texto-info {
                 padding-left: 2rem;
@@ -1037,10 +1061,18 @@ transform: translateY(50px);*/
         }
 
         .swiper-button-prev {
-            left: 15rem;
+            left: 13rem;
         }
 
         .swiper-button-next {
+            left: 27rem;
+        }
+
+                        .swiper-button-prev.experiencias-prev {
+            left: 15rem;
+        }
+
+        .swiper-button-next.experiencias-next {
             left: 25rem;
         }
     }
@@ -1319,10 +1351,18 @@ transform: translateY(50px);*/
         width: 1024px;
 
         .swiper-button-prev {
-            left: 26rem;
+            left: 24rem;
         }
 
         .swiper-button-next {
+            left: 39rem;
+        }
+
+                        .swiper-button-prev.experiencias-prev {
+            left: 26rem;
+        }
+
+        .swiper-button-next.experiencias-next {
             left: 37rem;
         }
     }

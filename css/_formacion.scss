@@ -32,7 +32,7 @@
         @include flexCenter(column);
         align-items: flex-start;
         justify-content: flex-start;
-        width: 94%;
+        width: 92%;
         min-height: 1px;
         height: auto;
         background: var(--bg-card);
@@ -65,7 +65,7 @@
         h3 {
             color: var(--text-card);
             text-align: left;
-            font-size: 22px;
+            font-size: 20px;
             line-height: 28px;
             display: inline-flex;
             gap: 1rem;
@@ -77,14 +77,14 @@
         h4 {
             color: var(--text-general);
             text-align: left;
-            font-size: 18px;
+            font-size: 16px;
             display: inline-flex;
             gap: 1rem;
             justify-content: center;
             align-items: center;
             text-align: left;
             line-height: 24px;
-            padding: 1rem 0rem;
+            padding: 0rem 0rem 1rem;
             overflow-wrap: break-word;
             word-break: break-word;
             white-space: normal;
@@ -196,123 +196,123 @@
 
             // CARDS PROYECTOS PRINCIPALES
 
-        .box-formacion-oficial {
-            @extend %box-formacion;
-            min-height: 24rem;
-            @include flexCenter(column);
-            justify-content: flex-start;
-            background-color: var(--bg-card);
-            backdrop-filter: blur(2rem);
-            border-top-right-radius: 28px;
-            border-bottom-left-radius: 28px;
-            position: relative;
-            width: fit-content;
-            max-width: 94%;
-            min-width: 330px;
-            margin: auto;
-
-            align-self: start;
-
-
-            .contenedor-titulo-y-tags {
+            .box-formacion-oficial {
+                @extend %box-formacion;
+                min-height: 24rem;
                 @include flexCenter(column);
+                justify-content: flex-start;
+                background-color: var(--bg-card);
+                backdrop-filter: blur(2rem);
+                border-top-right-radius: 28px;
+                border-bottom-left-radius: 28px;
+                position: relative;
+                width: fit-content;
+                max-width: 92%;
+                min-width: 330px;
+                margin: auto;
+
+                align-self: start;
+
+
+                .contenedor-titulo-y-tags {
+                    @include flexCenter(column);
                     align-items: flex-start;
-                gap: 1rem;
+                    gap: 0.75rem;
 
 
-                
-            }
 
-            .contenedor-general,
-            .contenedor-left,
-            .contenedor-right {
-                @include flexCenter(column);
-                gap: 1rem;
-            }
-
-            .contenedor-general {
-
-                .contenedor-left {
-
-                    img,
-                    span .img-portfolios-personales {
-                        width: 220px;
-                        height: auto;
-                        border-top-right-radius: 20px;
-                        border-bottom-left-radius: 20px;
-                        min-height: auto;
-                        border: 3px solid var(--accent);
-                    }
-
-                    span.img-portfolios-personales {
-                        background-image: var(--img-portfolios-personales);
-                        width: 220px;
-                        height: 112px;
-                        background-size: cover;
-                        border-top-right-radius: 20px;
-                        border-bottom-left-radius: 20px;
-                        border: 3px solid var(--accent);
-                    }
                 }
 
+                .contenedor-general,
+                .contenedor-left,
                 .contenedor-right {
-                    align-items: flex-start;
-                    min-width: 330px;
+                    @include flexCenter(column);
+                    gap: 1rem;
+                }
+
+                .contenedor-general {
+
+                    .contenedor-left {
+
+                        img,
+                        span .img-portfolios-personales {
+                            width: 220px;
+                            height: auto;
+                            border-top-right-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            min-height: auto;
+                            border: 3px solid var(--accent);
+                        }
+
+                        span.img-portfolios-personales {
+                            background-image: var(--img-portfolios-personales);
+                            width: 220px;
+                            height: 112px;
+                            background-size: cover;
+                            border-top-right-radius: 20px;
+                            border-bottom-left-radius: 20px;
+                            border: 3px solid var(--accent);
+                        }
+                    }
+
+                    .contenedor-right {
+                        align-items: flex-start;
+                        min-width: 330px;
                         padding: 0rem 3.2rem 0rem 1.5rem;
-                    gap: 0.5rem;
+                        gap: 0.5rem;
 
-                    .info-item {
+                        .info-item {
 
-                        b,
-                        p {
-                            color: var(--text-general);
-                            font-size: 16px;
-                            line-height: 20px;
+                            b,
+                            p {
+                                color: var(--text-general);
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
                         }
                     }
                 }
-            }
 
-            .contenedor-info-cards-proyectos {
-                @include flexCenter(column);
-                gap: 1rem;
-                align-items: flex-start;
-                padding: 2rem 0rem;
-
-
-                p {
-                    margin: 0rem;
-                    font-size: 14px;
-                    line-height: 18px;
-                    color: var(--text-general);
-                    font-family: var(--font-general);
-                    max-width: 20rem;
-                    padding-top: 1rem;
-                }
-
-                .contenedor-botones-cards-proyectos {
+                .contenedor-info-cards-proyectos {
                     @include flexCenter(column);
                     gap: 1rem;
-                    min-width: 100%;
+                    align-items: flex-start;
+                    padding: 2rem 0rem;
+
+
+                    p {
+                        margin: 0rem;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: var(--text-general);
+                        font-family: var(--font-general);
+                        max-width: 20rem;
+                        padding-top: 1rem;
+                    }
+
+                    .contenedor-botones-cards-proyectos {
+                        @include flexCenter(column);
+                        gap: 1rem;
+                        min-width: 100%;
+                    }
                 }
+
+                .btn-square-mas {
+                    height: 38px;
+                    width: 38px;
+                    @include flexCenter(column);
+                    position: absolute;
+                    right: -7.6rem;
+                    top: -1rem;
+                    transform: none;
+                    position: relative;
+
+                    i {
+                        margin: 0;
+                    }
+                }
+
             }
-
-                    .btn-square-mas {
-            height: 38px;
-            width: 38px;
-            @include flexCenter(column);
-            position: absolute;
-                right: -7.6rem;
-    top: -1rem;
-            transform: none;
-            position: relative;
-
-            i {
-                margin: 0;
-            }
-        }
-
-        }
 
 
 
@@ -506,85 +506,93 @@
             .container-formacion-oficiales {
                 grid-template-columns: 1fr;
                 max-width: 732px;
-                gap: 2rem;
+                gap: 2.5rem;
                 align-items: start;
 
                 .box-formacion-oficial {
-                min-width: 600px;
-                max-width: 600px;
-                min-height: 305px;
-                        min-height: 345px;
-                padding: 0rem 1.5rem 1.5rem;
-                margin-top: 0;
+                    min-width: 600px;
+                    max-width: 600px;
+                    min-height: 305px;
+                    min-height: 345px;
+                    padding: 0rem 1.5rem 0rem;
+                    margin-top: 0;
 
-                .contenedor-titulo-y-tags {
-align-items: flex-start;
-                    padding: 2rem 0rem 0.25rem;
-                    gap: 0;
-                    justify-content: space-between;
-                    min-width: 552px;
+                    .contenedor-titulo-y-tags {
+                        align-items: flex-start;
+                        padding: 2rem 0rem 0.25rem;
+                        gap: 0;
+                        justify-content: space-between;
+                        min-width: 552px;
 
-                                h3 {
-                font-size: 22px;
-                line-height: 28px;
-                margin-top: 0px;
-            }
-                }
+                        h3 {
+                            font-size: 22px;
+                            line-height: 28px;
+                            margin-top: 0px;
+                        }
 
-
-                .contenedor-general {
-                    flex-direction: row-reverse;
-                    text-align: left;
-                    justify-content: space-between;
-                    min-width: 552px;
-                    align-items: flex-start;
-
-                    .contenedor-left,
-                    .contenedor-right {
-                        flex-direction: column;
-                    }
-
-                    .contenedor-left {
-                        img {
-                            width: 100%;
-                            min-height: auto;
-                            max-width: 280px;
-                            min-width: 270px;
-                                    border: 3px solid var(--accent);
+                        .titulo {
+                            padding-bottom: 0.5rem;
                         }
                     }
 
-                    .contenedor-right {
-                        min-width: 200px;
-                        padding: 0rem;
+
+                    .contenedor-general {
+                        flex-direction: row-reverse;
+                        text-align: left;
+                        justify-content: space-between;
+                        min-width: 552px;
+                        align-items: flex-start;
+
+                        .contenedor-left,
+                        .contenedor-right {
+                            flex-direction: column;
+                        }
+
+                        .contenedor-left {
+                            img {
+                                width: 100%;
+                                min-height: auto;
+                                max-width: 280px;
+                                min-width: 270px;
+                                border: 3px solid var(--accent);
+                            }
+                        }
+
+                        .contenedor-right {
+                            min-width: 200px;
+                            padding: 0rem;
+                        }
                     }
-                }
 
-                .contenedor-info-cards-proyectos {
-                    flex-direction: column;
-                    gap: 1.5rem;
-                    min-width: 600px;
-                    padding: 2rem 1.5rem 1rem;
+                    .contenedor-info-cards-proyectos {
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        min-width: 600px;
+                        padding: 2rem 1.5rem 1rem;
 
-                    p {
-                        padding: 0;
-                        max-width: 600px;
-                        font-size: 16px;
-                        line-height: 20px;
+                        p {
+                            padding: 0;
+                            max-width: 600px;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+
+
+                        .contenedor-botones-cards-proyectos {
+                            flex-direction: row;
+                        }
                     }
 
-
-                    .contenedor-botones-cards-proyectos {
-                        flex-direction: row;
+                    .btn-square-mas {
+                        right: -15.6rem;
+                        top: -2rem;
                     }
-                }
 
-                .btn-square-mas {
-                            right: -15.6rem;
-        top: 0rem;
-                }
+                    .btn__formacion-container {
+                        transform: translateY(-41px);
+                    }
 
-            }
+                }
 
                 .box-formacion {
                     margin: 0;
@@ -684,7 +692,7 @@ align-items: flex-start;
             .container-formacion-oficiales {
                 grid-template-columns: 1fr 1fr;
                 max-width: 1260px;
-                gap: 2rem;
+                gap: 3rem;
 
 
             }

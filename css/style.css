@@ -22,6 +22,7 @@
   --bg-btn-hover: rgb(137, 7, 78);
   --img-card-front: url("../img/img-front.png");
   --img-card-graph: url("../img/img-graph.png");
+  --img-card-front-graph: url("../img/img-front-graph-comb-light.png");
   --react: rgb(1, 103, 155);
   --javascript: rgb(187, 143, 0);
   --typescript: rgb(20, 7, 137);
@@ -55,6 +56,7 @@
   --bg-btn-hover: rgb(255, 111, 212);
   --img-card-front: url("../img/img-front-dark.png");
   --img-card-graph: url("../img/img-graph-dark.png");
+  --img-card-front-graph: url("../img/img-front-graph-comb-dark.png");
   --react: rgb(129, 207, 246);
   --javascript: rgb(254, 222, 117);
   --typescript: rgb(155, 179, 228);
@@ -77,20 +79,65 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  margin: 2rem auto 4rem;
+  margin: 3rem auto 4rem;
 }
 .container__habilidades .titulo-con-boton {
   padding: 2rem 0.5rem;
   gap: 1rem;
   justify-content: center;
 }
+.container__habilidades .card-primary {
+  margin-top: 5rem;
+}
 .container__habilidades .card-primary .titulo-con-boton,
 .container__habilidades .card-primary .titulo-sin-boton {
   font-size: 20px;
 }
+.container__habilidades .card-primary .images-front-graph {
+  background-image: var(--img-card-front-graph);
+  width: 78%;
+  min-height: 170px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container__habilidades .card-primary .titulo-principal {
+  color: var(--accent);
+  text-align: center;
+  padding: 2rem 0.5rem;
+  font-size: 1.65rem;
+  line-height: 1.65rem;
+}
+.container__habilidades .card-primary .titulo-principal span {
+  color: var(--text-general);
+}
+.container__habilidades .card-primary .titulo-principal-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  width: 300px;
+}
+.container__habilidades .card-primary .titulo-principal-mobile div:first-child {
+  text-align: left;
+}
+.container__habilidades .card-primary .titulo-principal-mobile div:nth-child(2) {
+  text-align: center;
+}
+.container__habilidades .card-primary .titulo-principal-mobile div:last-child {
+  text-align: right;
+}
+.container__habilidades .card-primary .titulo-principal-desktop {
+  display: none;
+}
 
 .proyectos {
-  margin: 0rem auto 4em;
+  margin: 3rem auto 4em;
 }
 .proyectos .container-cards-web {
   display: grid;
@@ -113,8 +160,8 @@
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 94%;
-  min-width: 330px;
+  max-width: 92%;
+  min-width: 92%;
   margin: auto;
   box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.1), 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
   align-self: start;
@@ -269,6 +316,32 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
+    margin-top: 4rem;
+  }
+  .container__habilidades .card-primary {
+    min-width: 656px;
+  }
+  .container__habilidades .card-primary p {
+    max-width: 39rem;
+    padding-bottom: 2.5rem;
+  }
+  .container__habilidades .card-primary .images-front-graph {
+    min-height: 238px;
+    width: 70%;
+  }
+  .container__habilidades .card-primary .titulo-principal-mobile {
+    display: none;
+  }
+  .container__habilidades .card-primary .titulo-principal-desktop {
+    display: inline-flex;
+    gap: 1rem;
+    color: var(--accent);
+    text-align: center;
+    padding: 2rem 0.5rem 1.3rem;
+    font-size: 1.8rem;
+  }
+  .container__habilidades .card-primary .titulo-principal-desktop span {
+    color: var(--text-general);
   }
   .proyectos {
     margin: 0rem auto 3rem;
@@ -354,22 +427,38 @@
     margin-top: 4rem;
   }
   .container__habilidades {
-    margin: 0rem auto 6rem;
+    margin: 1rem auto 6rem;
     gap: 4rem;
   }
   .container__habilidades .card-primary {
     min-height: 27rem;
-    min-width: 400px;
+    min-width: 900px;
+  }
+  .container__habilidades .card-primary .images-front-graph {
+    flex-direction: row;
+  }
+  .container__habilidades .card-primary .images-front-graph .img-front,
+  .container__habilidades .card-primary .images-front-graph .img-graph {
+    min-height: 300px;
+    width: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .container__habilidades .card-primary p {
-    max-width: 24rem;
+    max-width: 54rem;
+    padding-bottom: 3rem;
+    font-size: 18px;
   }
   .container__habilidades .card-primary .titulo-con-boton,
   .container__habilidades .card-primary .titulo-sin-boton {
     font-size: 24px;
   }
+  .container__habilidades .card-primary .titulo-principal-desktop {
+    font-size: 2rem;
+    padding: 2.5rem 0 1.8rem;
+  }
   .proyectos {
-    min-height: 78rem;
+    min-height: 77rem;
     margin: 7rem auto 0rem;
   }
   .proyectos .container-cards-web {
@@ -427,7 +516,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 94%;
+  width: 92%;
   min-height: 1px;
   height: auto;
   background: var(--bg-card);
@@ -453,7 +542,7 @@
 .conocimientos .formacion .container-formacion .box-formacion h3, .conocimientos .formacion .container-formacion-oficiales .box-formacion h3, .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial h3 {
   color: var(--text-card);
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 28px;
   display: inline-flex;
   gap: 1rem;
@@ -464,14 +553,14 @@
 .conocimientos .formacion .container-formacion .box-formacion h4, .conocimientos .formacion .container-formacion-oficiales .box-formacion h4, .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial h4 {
   color: var(--text-general);
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   display: inline-flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
   text-align: left;
   line-height: 24px;
-  padding: 1rem 0rem;
+  padding: 0rem 0rem 1rem;
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
@@ -579,7 +668,7 @@
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 94%;
+  max-width: 92%;
   min-width: 330px;
   margin: auto;
   align-self: start;
@@ -590,7 +679,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .contenedor-general,
 .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .contenedor-left,
@@ -807,7 +896,7 @@
   .conocimientos .formacion .container-formacion-oficiales {
     grid-template-columns: 1fr;
     max-width: 732px;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: start;
   }
   .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial {
@@ -815,7 +904,7 @@
     max-width: 600px;
     min-height: 305px;
     min-height: 345px;
-    padding: 0rem 1.5rem 1.5rem;
+    padding: 0rem 1.5rem 0rem;
     margin-top: 0;
   }
   .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .contenedor-titulo-y-tags {
@@ -829,6 +918,9 @@
     font-size: 22px;
     line-height: 28px;
     margin-top: 0px;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .contenedor-titulo-y-tags .titulo {
+    padding-bottom: 0.5rem;
   }
   .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .contenedor-general {
     flex-direction: row-reverse;
@@ -869,7 +961,10 @@
   }
   .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .btn-square-mas {
     right: -15.6rem;
-    top: 0rem;
+    top: -2rem;
+  }
+  .conocimientos .formacion .container-formacion-oficiales .box-formacion-oficial .btn__formacion-container {
+    transform: translateY(-41px);
   }
   .conocimientos .formacion .container-formacion-oficiales .box-formacion {
     margin: 0;
@@ -935,7 +1030,7 @@
   .conocimientos .formacion .container-formacion-oficiales {
     grid-template-columns: 1fr 1fr;
     max-width: 1260px;
-    gap: 2rem;
+    gap: 3rem;
   }
   .conocimientos .formacion .container-formacion {
     grid-template-columns: 1fr;
@@ -1213,9 +1308,6 @@
   }
   .contacto .card-primary .redes-contacto .datos-contacto {
     width: auto;
-  }
-  .contacto .card-primary .redes-contacto button {
-    /*width: 380px;*/
   }
   .contacto .card-primary .redes-contacto h3 i {
     margin-left: 0.8rem;
@@ -1893,8 +1985,8 @@ footer .behance:hover {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  max-width: 94%;
-  min-width: 94%;
+  max-width: 92%;
+  min-width: 92%;
 }
 .card-primary::before {
   content: "";

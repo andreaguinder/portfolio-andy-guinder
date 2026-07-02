@@ -746,7 +746,7 @@ transform: translateY(50px);*/
         background-color: var(--sass);
     }
 
-        .react {
+    .react {
         color: var(--text-botones);
         background-color: var(--react);
     }
@@ -804,7 +804,7 @@ transform: translateY(50px);*/
             left: 16.5rem;
         }
 
-                .swiper-button-prev.experiencias-prev {
+        .swiper-button-prev.experiencias-prev {
             left: 4.35rem;
         }
 
@@ -874,9 +874,9 @@ transform: translateY(50px);*/
 
         .titulo-con-boton {
             padding: 0.5rem 0rem 0rem;
-                                line-height: 2rem;
-        align-items: flex-start;
-        width: fit-content;
+            line-height: 2rem;
+            align-items: flex-start;
+            width: fit-content;
         }
 
         .contenedor-tags {
@@ -897,33 +897,34 @@ transform: translateY(50px);*/
     }
 
 
-        .card.card-secondary.card-secondary-experiencias {
+    .card.card-secondary.card-secondary-experiencias {
         min-height: 284px;
-            justify-content: flex-start;
-            align-items: center;
-            padding-top: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 2rem;
 
-            img {
-                width: 90px;
-                height: auto;
-                border-radius: 100%;
-                border: 2.5px solid var(--border-card);
-            }
+        img {
+            width: 90px;
+            height: auto;
+            border-radius: 100%;
+            border: 2.5px solid var(--border-card);
+        }
 
-            .btn-square-mas {
-                transform: translate(7.6rem, -1rem);
-            }
+        .btn-square-mas {
+            transform: translate(7.6rem, -1rem);
+        }
 
 
 
-            .subtitulo, .texto-info {
-                padding-left: 2rem;
-                padding-right: 2rem;
-            }
+        .subtitulo,
+        .texto-info {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
 
-            .titulo-sin-boton {
-                padding-left: 0rem;
-            }
+        .titulo-sin-boton {
+            padding-left: 0rem;
+        }
     }
 
     .titulo {
@@ -1067,7 +1068,7 @@ transform: translateY(50px);*/
             left: 27rem;
         }
 
-                        .swiper-button-prev.experiencias-prev {
+        .swiper-button-prev.experiencias-prev {
             left: 15rem;
         }
 
@@ -1357,7 +1358,7 @@ transform: translateY(50px);*/
             left: 39rem;
         }
 
-                        .swiper-button-prev.experiencias-prev {
+        .swiper-button-prev.experiencias-prev {
             left: 26rem;
         }
 

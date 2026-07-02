@@ -472,6 +472,7 @@
     grid-auto-rows: max-content;
     align-items: start;
     grid-auto-flow: row dense;
+    margin-bottom: 7rem;
   }
   .card-primary-proyectos {
     align-self: start;

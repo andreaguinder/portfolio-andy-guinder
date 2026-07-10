@@ -38,7 +38,7 @@ $javascript-dark: rgb(254, 222, 117);
 $css-light: rgb(0, 75, 112);
 $css-dark: rgb(5, 149, 222);
 $sass-light: rgb(137, 7, 78);
-$sass-dark: rgb(255, 111, 212);
+$sass-dark: rgb(253, 163, 226);
 $typescript-light: rgb(20, 7, 137);
 $typescript-dark: rgb(155, 179, 228);
 
@@ -85,7 +85,7 @@ $typescript-dark: rgb(155, 179, 228);
 
     --img-card-front: #{url('../img/img-front.png')};
     --img-card-graph: #{url('../img/img-graph.png')};
-    --img-card-front-graph:  #{url('../img/img-front-graph-comb-light.png')};
+    --img-card-front-graph: #{url('../img/img-front-graph-comb-light.png')};
 
     // tags lenguajes
 
@@ -101,6 +101,9 @@ $typescript-dark: rgb(155, 179, 228);
     // img-portfolios-personales
 
     --img-portfolios-personales: #{url('../img/cartulaportafolio-2026.png')};
+
+    // img-guinderstudio
+    --img-guinderstudio: #{url('../img/cartulaguinderstudio-logo-dark.png')};
 }
 
 
@@ -140,7 +143,7 @@ $typescript-dark: rgb(155, 179, 228);
 
     --img-card-front: #{url('../img/img-front-dark.png')};
     --img-card-graph: #{url('../img/img-graph-dark.png')};
-        --img-card-front-graph:  #{url('../img/img-front-graph-comb-dark.png')};
+    --img-card-front-graph: #{url('../img/img-front-graph-comb-dark.png')};
 
 
     // tags lenguajes
@@ -157,6 +160,10 @@ $typescript-dark: rgb(155, 179, 228);
     // img-portfolios-personales
 
     --img-portfolios-personales: #{url('../img/cartulaportafolio-2026-light.png')};
+
+    
+    // img-guinderstudio
+    --img-guinderstudio: #{url('../img/cartulaguinderstudio-logo-white.png')};
 
     .card-secondary,
     .card-primary-proyectos,

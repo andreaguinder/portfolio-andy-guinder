@@ -30,6 +30,7 @@
   --sass: rgb(137, 7, 78);
   --logo-andy: url("../img/iso-andrea-guinder-dark.png");
   --img-portfolios-personales: url("../img/cartulaportafolio-2026.png");
+  --img-guinderstudio: url("../img/cartulaguinderstudio-logo-dark.png");
 }
 
 [data-theme=dark] {
@@ -61,9 +62,10 @@
   --javascript: rgb(254, 222, 117);
   --typescript: rgb(155, 179, 228);
   --css: rgb(5, 149, 222);
-  --sass: rgb(255, 111, 212);
+  --sass: rgb(253, 163, 226);
   --logo-andy: url("../img/iso-andrea-guinder-light.png");
   --img-portfolios-personales: url("../img/cartulaportafolio-2026-light.png");
+  --img-guinderstudio: url("../img/cartulaguinderstudio-logo-white.png");
 }
 [data-theme=dark] .card-secondary,
 [data-theme=dark] .card-primary-proyectos,
@@ -234,21 +236,24 @@
   flex-direction: column;
   gap: 1rem;
 }
-.proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left img,
-.proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left span .img-portfolios-personales {
+.proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left img {
   width: 280px;
   height: auto;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   min-height: auto;
+  border: 1.5px solid var(--border-card);
 }
-.proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left span.img-portfolios-personales {
-  background-image: var(--img-portfolios-personales);
-  width: 280px;
-  height: 112px;
+.proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left .img-guinderstudio {
+  background-image: var(--img-guinderstudio);
+  background-position: center;
   background-size: cover;
+  width: 280px;
+  height: 114.66px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  min-height: auto;
+  border: 1.5px solid var(--border-card);
 }
 .proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-right {
   align-items: flex-start;
@@ -291,6 +296,12 @@
 .proyectos .container-cards-web .card-primary-proyectos .btn-square-mas {
   transform: translate(8.6rem, -1rem);
 }
+.proyectos .container-cards-web .card-primary-proyectos.card-doble {
+  background-color: var(--bg-card);
+}
+.proyectos .container-cards-web .card-primary-proyectos.card-doble .titulo-sin-boton {
+  color: var(--accent);
+}
 
 .otros-proyectos {
   display: flex;
@@ -319,7 +330,7 @@
     margin-top: 4rem;
   }
   .container__habilidades .card-primary {
-    min-width: 656px;
+    min-width: 664px;
   }
   .container__habilidades .card-primary p {
     max-width: 39rem;
@@ -408,6 +419,47 @@
   .proyectos .container-cards-web .card-primary-proyectos .btn-square-mas {
     transform: translate(16rem, 0.5rem);
   }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble {
+    min-width: 664px;
+    max-width: 664px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .titulo-sin-boton {
+    font-size: 22px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-info-cards-proyectos {
+    padding: 2rem 0rem 1rem;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-info-cards-proyectos p {
+    min-width: 616px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .card-doble-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0rem 1rem;
+    width: 100%;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .card-doble-title .contenedor-titulo-y-tags {
+    min-width: 200px;
+    padding: 0;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .card-doble-title .contenedor-tags {
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-general .contenedor-left .img-guinderstudio {
+    background-size: contain;
+    width: 300px;
+    height: 126px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .btn-square-mas {
+    transform: translate(18rem, 0.5rem);
+  }
   .otros-proyectos {
     gap: 0rem;
   }
@@ -467,12 +519,37 @@
          column-gap: 1rem;
     row-gap: 3.5rem;
     margin: -3rem auto;
-    max-width: 1340px;
+    max-width: 1260px;
     grid-auto-flow: row;
     grid-auto-rows: max-content;
     align-items: start;
     grid-auto-flow: row dense;
     margin-bottom: 7rem;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble {
+    grid-column: span 2;
+    min-width: 1240px;
+    max-width: 1240px;
+    min-height: 270px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .card-doble-title {
+    max-width: 1100px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-general {
+    min-width: 1100px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-general .contenedor-left .img-guinderstudio {
+    min-width: 580px;
+    background-size: cover;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .btn-square-mas {
+    transform: translate(36rem, 0.5rem);
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-info-cards-proyectos {
+    min-width: 1100px;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos.card-doble .contenedor-info-cards-proyectos p {
+    max-width: 1100px;
   }
   .card-primary-proyectos {
     align-self: start;
@@ -2207,7 +2284,8 @@ footer .behance:hover {
 .cards-expandibles .card.card-secondary.card-secondary-experiencias .btn-square-mas {
   transform: translate(7.6rem, -1rem);
 }
-.cards-expandibles .card.card-secondary.card-secondary-experiencias .subtitulo, .cards-expandibles .card.card-secondary.card-secondary-experiencias .texto-info {
+.cards-expandibles .card.card-secondary.card-secondary-experiencias .subtitulo,
+.cards-expandibles .card.card-secondary.card-secondary-experiencias .texto-info {
   padding-left: 2rem;
   padding-right: 2rem;
 }

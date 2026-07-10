@@ -1532,7 +1532,7 @@ html {
   --bg-dinamico: #c2c0c0;
 }
 :root.dark {
-  --bg-dinamico: #0c0c0c;
+  --bg-dinamico: #101011;
 }
 
 html, body {
@@ -1559,7 +1559,8 @@ body::before {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  background: url("../img/bg-dark-15-up-ty.png") center top/cover no-repeat #121212;
+  background: url("../img/bg-dark-15-up-ty.png") center top/cover no-repeat #101011;
+  background-color: #101011;
   background-attachment: fixed;
   pointer-events: none;
 }
@@ -1587,7 +1588,8 @@ body::after {
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  background: url("../img/bg-light-grey-5-up-ty.png") center top/cover no-repeat #ffffff;
+  background: url("../img/bg-light-grey-5-up-ty.png") center top/cover no-repeat #c2c0c0;
+  background-color: #c2c0c0;
   background-attachment: fixed;
   pointer-events: none;
 }

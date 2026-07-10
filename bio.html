@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta property="og:title" content="Andrea Guinder | Enlaces">
+    <meta property="og:description" content="Conocé mi trabajo y estemos en contacto.">
+    <meta property="og:image" content="https://andreaguinder.com/img/og-andrea-guinder.jpg">
+    <!--- Enlace a FontAwesome --->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./img/short-icon-ag.png" type="image/x-icon">
+    <title>Andrea Guinder | Enlaces</title>
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            background-image: url("./img/bg-light-grey-5-up-ty.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Cartel de advertencia para iOS */
+        #alerta-ios {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 14px;
+            border-bottom: 1px solid #ffeeba;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        .contenedorInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+            margin: 50px auto 0px;
+        }
+
+        .contenedorLinks {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: black;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: black;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+        }
+
+        .contenedorBotones {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            min-width: 240px;
+        }
+
+
+        .btn {
+            display: block;
+            background-color: rgb(207, 45, 134);
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(137, 7, 78);
+        }
+
+        .btn i {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contenedor para el cartel de iPhone (oculto por defecto) -->
+    <div id="alerta-ios" style="display: none;">
+        ⚠️ Para ver los sitios en su diseño original, tocá los tres puntitos (<strong>...</strong>) arriba a la derecha
+        y elegí <strong>"Abrir en el navegador"</strong>.
+    </div>
+
+    <div class="logo">
+        <img src="./img/iso-andrea-guinder-light.png" alt="Logo Andrea Guinder">
+    </div>
+    <h1>Andrea Guinder</h1>
+    <div class="contenedorInfo">
+
+        <div class="contenedorLinks">
+            <h2>Mis sitios web</h2>
+            <div class="contenedorBotones">
+                <!-- Ahora son etiquetas <a> con la clase .btn -->
+                <a id="btn-portfolio" class="btn" href="#">Portfolio<i class="fas fa-globe" aria-hidden="true"></i></a>
+                <a id="btn-studio" class="btn" href="#">Guinder Studio<i class="fas fa-globe"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+
+        <div class="contenedorLinks">
+            <h2>Mis redes sociales</h2>
+            <div class="contenedorBotones">
+                <a id="btn-linkedin" class="btn" href="#">LinkedIn<i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a id="btn-github" class="btn" href="#">GitHub<i class="fab fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const ua = navigator.userAgent || navigator.vendor || window.opera;
+            const isInstagram = ua.includes("Instagram") || ua.includes("FBAN") || ua.includes("FBAV");
+            const isAndroid = ua.includes("Android");
+            const isIphone = ua.includes("iPhone") || ua.includes("iPad") || ua.includes("iPod");
+
+            const btnPortfolio = document.getElementById("btn-portfolio");
+            const btnStudio = document.getElementById("btn-studio");
+            const btnGithub = document.getElementById("btn-github");
+            const btnLinkedin = document.getElementById("btn-linkedin");
+
+            if (isInstagram && isAndroid) {
+                // --- CASO ANDROID: Forzamos la salida directa a Chrome ---
+                btnPortfolio.href =
+                    "intent://andreaguinder.com/#Intent;scheme=https;package=com.android.chrome;end";
+                btnStudio.href =
+                    "intent://guinderstudio.com/#Intent;scheme=https;package=com.android.chrome;end";
+                btnGithub.href =
+                    "intent://github.com/andreaguinder/#Intent;scheme=https;package=com.android.chrome;end";
+                btnLinkedin.href =
+                    "intent://linkedin.com/in/andrea-guinder/#Intent;scheme=https;package=com.android.chrome;end";
+
+            } else if (isInstagram && isIphone) {
+                // --- CASO IPHONE: Links normales + cartel de advertencia ---
+                btnPortfolio.href = "https://andreaguinder.com/";
+                btnStudio.href = "https://guinderstudio.com/";
+                btnGithub.href = "https://github.com/andreaguinder";
+                btnLinkedin.href = "https://www.linkedin.com/in/andrea-guinder/";
+
+                const alertaIos = document.getElementById("alerta-ios");
+                if (alertaIos) {
+                    alertaIos.style.display = "block";
+                }
+            } else {
+                // --- CASO NAVEGADOR NORMAL (PC o afuera de Meta) ---
+                btnPortfolio.href = "https://andreaguinder.com/";
+                btnStudio.href = "https://guinderstudio.com/";
+                btnGithub.href = "https://github.com/andreaguinder";
+                btnLinkedin.href = "https://www.linkedin.com/in/andrea-guinder/";
+            }
+        });
+    </script>
+</body>
+
+</html>

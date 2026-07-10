@@ -1,5 +1,6 @@
 @charset "UTF-8";
 :root {
+  --background-color: #c2c0c0;
   --bg-header-footer: rgb(255, 255, 255);
   --line: rgb(207, 45, 134);
   --text-general: rgb(0, 0, 0);
@@ -34,6 +35,7 @@
 }
 
 [data-theme=dark] {
+  --background-color: #0c0c0c;
   --bg-header-footer: rgb(0, 0, 0);
   --line: rgb(255, 111, 212);
   --text-botones: rgb(0, 0, 0);
@@ -1524,6 +1526,12 @@ a,
 
 html {
   min-height: 100vh;
+}
+
+html, body {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease; /* Para que el cambio de modo sea fluido en la raíz también */
+  min-height: 100dvh;
 }
 
 body {

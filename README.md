@@ -36,3 +36,10 @@ Esta sección incluye proyectos seleccionados en el apartado de "Otros Proyectos
 ## 📫 Contacto & Disponibilidad
 
 Me encuentro en Olavarría, Buenos Aires, Argentina, con total disponibilidad para trabajo remoto. Estoy en constante aprendizaje y abierta a nuevos desafíos técnicos.
+
+## ¿Te gustaría colaborar o tenés un desafío laboral?
+
+¡Me encantaría conectar con vos! Estoy abierta a nuevas oportunidades, proyectos desafiantes o simplemente charlar sobre tecnología.
+
+* **Email:** [andreabelen.guinder@gmail.com](mailto:andreabelen.guinder@gmail.com)
+* **LinkedIn:** [https://www.linkedin.com/in/andrea-guinder/](https://www.linkedin.com/in/andrea-guinder/)

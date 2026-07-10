@@ -65,10 +65,20 @@ html {
     min-height: 100vh;
 }
 
+:root {
+  --bg-dinamico: #{$bg-light};
+  
+  &.dark { // O body.dark, según dónde inyectes la clase
+    --bg-dinamico: #{$bg-dark};
+  }
+}
+
 html, body {
-  background-color: var(--background-color);
-  transition: background-color 0.3s ease; /* Para que el cambio de modo sea fluido en la raíz también */
+  background-color: var(--bg-dinamico);
   min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
 }
 
 body {

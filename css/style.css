@@ -1528,10 +1528,19 @@ html {
   min-height: 100vh;
 }
 
+:root {
+  --bg-dinamico: #c2c0c0;
+}
+:root.dark {
+  --bg-dinamico: #0c0c0c;
+}
+
 html, body {
-  background-color: var(--background-color);
-  transition: background-color 0.3s ease; /* Para que el cambio de modo sea fluido en la raíz también */
+  background-color: var(--bg-dinamico);
   min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
 }
 
 body {

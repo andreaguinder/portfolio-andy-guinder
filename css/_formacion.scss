@@ -184,6 +184,15 @@
             margin: 1.75rem auto 3rem;
         }
 
+        .disclaimer {
+            font-size: 14px;
+            color: var(--text-general);
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+            padding: 0px 2rem 2rem;
+        }
+
         .container-formacion-oficiales {
             display: grid;
             grid-template-columns: 1fr;
@@ -503,6 +512,12 @@
         .formacion {
             margin: 0 auto;
 
+                    .disclaimer {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+
             .container-formacion-oficiales {
                 grid-template-columns: 1fr;
                 max-width: 732px;
@@ -680,6 +695,10 @@
 
         .formacion {
             margin: -1rem auto 3rem;
+
+                                .disclaimer {
+            max-width: 1260px;
+        }
 
             .container-formacion {
                 margin: 5rem auto 3rem;

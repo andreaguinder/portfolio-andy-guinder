@@ -824,15 +824,15 @@ transform: translateY(50px);*/
         }
 
         .swiper-button-prev {
-            left: 2.35rem;
+            left: 1.35rem;
         }
 
         .swiper-button-next {
-            left: 16.5rem;
+            left: 17.5rem;
         }
 
         .swiper-button-prev.experiencias-prev {
-            left: 4.35rem;
+            left: 2.35rem;
         }
 
         .swiper-button-next.experiencias-next {
@@ -949,6 +949,7 @@ transform: translateY(50px);*/
             padding-right: 2rem;
         }
 
+
         .titulo-sin-boton {
             padding-left: 0rem;
         }
@@ -997,6 +998,18 @@ transform: translateY(50px);*/
         color: var(--text-general);
         font-family: var(--font-general);
     }
+
+    .lista-info-context-api {
+        @include flexCenter(column);
+        gap: 8px;
+        padding: 2rem;
+    }
+
+            .lista-info-context-api li {
+            font-size: 14px;
+            color: var(--text-general);
+            
+        }
 
     .card-secondary .btn {
         margin-left: 2rem;
@@ -1088,11 +1101,11 @@ transform: translateY(50px);*/
         }
 
         .swiper-button-prev {
-            left: 13rem;
+            left: 12rem;
         }
 
         .swiper-button-next {
-            left: 27rem;
+            left: 28rem;
         }
 
         .swiper-button-prev.experiencias-prev {
@@ -1386,7 +1399,7 @@ transform: translateY(50px);*/
         }
 
         .swiper-button-prev.experiencias-prev {
-            left: 26rem;
+            left: 25.5rem;
         }
 
         .swiper-button-next.experiencias-next {

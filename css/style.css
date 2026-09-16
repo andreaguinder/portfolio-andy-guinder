@@ -29,6 +29,7 @@
   --typescript: rgb(20, 7, 137);
   --css: rgb(0, 75, 112);
   --sass: rgb(137, 7, 78);
+  --node: rgb(3, 97, 6);
   --logo-andy: url("../img/iso-andrea-guinder-dark.png");
   --img-portfolios-personales: url("../img/cartulaportafolio-2026.png");
   --img-guinderstudio: url("../img/cartulaguinderstudio-logo-dark.png");
@@ -65,6 +66,7 @@
   --typescript: rgb(155, 179, 228);
   --css: rgb(5, 149, 222);
   --sass: rgb(253, 163, 226);
+  --node: rgb(4, 158, 48);
   --logo-andy: url("../img/iso-andrea-guinder-light.png");
   --img-portfolios-personales: url("../img/cartulaportafolio-2026-light.png");
   --img-guinderstudio: url("../img/cartulaguinderstudio-logo-white.png");
@@ -257,6 +259,14 @@
   min-height: auto;
   border: 1.5px solid var(--border-card);
 }
+.proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left img .imagen-caratula-recortada-mob {
+  width: 280px;
+  height: auto;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  min-height: auto;
+  border: 1.5px solid var(--border-card);
+}
 .proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-right {
   align-items: flex-start;
   min-width: 330px;
@@ -277,6 +287,9 @@
   gap: 1rem;
   align-items: flex-start;
   padding: 0rem 2rem 2rem;
+}
+.proyectos .container-cards-web .card-primary-proyectos .contenedor-info-cards-proyectos img.imagen-caratula-recortada-desk {
+  display: none;
 }
 .proyectos .container-cards-web .card-primary-proyectos .contenedor-info-cards-proyectos p {
   margin: 0rem;
@@ -399,6 +412,9 @@
     max-width: 280px;
     min-width: 280px;
   }
+  .proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-left img.imagen-caratula-recortada-mob {
+    display: none;
+  }
   .proyectos .container-cards-web .card-primary-proyectos .contenedor-general .contenedor-right {
     min-width: 200px;
     padding: 0rem;
@@ -408,6 +424,21 @@
     gap: 1.5rem;
     min-width: 600px;
     padding: 2rem 1.5rem 1rem;
+  }
+  .proyectos .container-cards-web .card-primary-proyectos .contenedor-info-cards-proyectos img.imagen-caratula-recortada-desk {
+    display: flex;
+    max-width: 280px;
+    min-width: 280px;
+    min-height: 115px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    min-height: auto;
+    border: 1.5px solid var(--border-card);
   }
   .proyectos .container-cards-web .card-primary-proyectos .contenedor-info-cards-proyectos p {
     padding: 0;
@@ -2211,6 +2242,10 @@ footer .behance:hover {
 .contenedor-tags .react {
   color: var(--text-botones);
   background-color: var(--react);
+}
+.contenedor-tags .node {
+  color: var(--text-botones);
+  background-color: var(--node);
 }
 
 .swiper-cards-secondary {

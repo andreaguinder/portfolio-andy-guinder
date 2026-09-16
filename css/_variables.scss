@@ -42,6 +42,9 @@ $sass-dark: rgb(253, 163, 226);
 $typescript-light: rgb(20, 7, 137);
 $typescript-dark: rgb(155, 179, 228);
 
+$node-light: rgb(3, 97, 6);
+$node-dark: rgb(4, 158, 48);
+
 $bg-light: #c2c0c0; // O el tono exacto que uses de día
 $bg-dark: #101011;
 
@@ -97,6 +100,7 @@ $bg-dark: #101011;
     --typescript: #{$typescript-light};
     --css: #{$css-light};
     --sass: #{$sass-light};
+    --node: #{$node-light};
 
     // Logo
     --logo-andy: #{url('../img/iso-andrea-guinder-dark.png')};
@@ -157,6 +161,7 @@ $bg-dark: #101011;
     --typescript: #{$typescript-dark};
     --css: #{$css-dark};
     --sass: #{$sass-dark};
+        --node: #{$node-dark};
 
     // Logo
     --logo-andy: #{url('../img/iso-andrea-guinder-light.png')};

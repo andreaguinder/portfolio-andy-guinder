@@ -195,6 +195,15 @@
                         min-height: auto;
                             border: 1.5px solid var(--border-card);
                     }
+
+                                            img .imagen-caratula-recortada-mob {
+                        width: 280px;
+                        height: auto;
+                        border-top-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        min-height: auto;
+                            border: 1.5px solid var(--border-card);
+                        }
                 }
 
                 .contenedor-right {
@@ -221,6 +230,9 @@
                 align-items: flex-start;
                 padding: 0rem 2rem 2rem;
 
+                img.imagen-caratula-recortada-desk {
+                    display: none;
+                }
 
                 p {
                     margin: 0rem;
@@ -364,7 +376,14 @@
                             min-height: auto;
                             max-width: 280px;
                             min-width: 280px;
+
                         }
+
+                                                                            img.imagen-caratula-recortada-mob {
+                                                        display: none;
+                        }
+
+
 
 
                     }
@@ -380,6 +399,21 @@
                     gap: 1.5rem;
                     min-width: 600px;
                     padding: 2rem 1.5rem 1rem;
+
+                                                                        img.imagen-caratula-recortada-desk {
+                                                        display: flex;
+                            max-width: 280px;
+                            min-width: 280px;
+                            min-height: 115px;
+                            object-fit: cover;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                            border-top-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                        min-height: auto;
+                            border: 1.5px solid var(--border-card);
+                        }
 
                     p {
                         padding: 0;
@@ -442,6 +476,7 @@ font-size: 22px;
     width: 300px;
     height: 126px;
                         }
+
                     }
                 }
 
@@ -563,6 +598,8 @@ font-size: 22px;
                         min-width: 580px;
                         background-size: cover;
                     }
+
+
                 }
             }
 

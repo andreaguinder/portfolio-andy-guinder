@@ -24,7 +24,7 @@
   <meta name="description"
     content="Desarrolladora Web con 5 años de experiencia y Diseñadora Gráfica con +10 años de experiencia, especializada en interfaces accesibles. Conocé mi trabajo.">
   <meta name="keywords"
-    content="diseño ux ui, desarrollo frontend, maquetación web, andrea guinder portfolio, sass, javascript vanilla, diseño web argentina, accesibilidad web, diseño gráfico y desarrollo, programadora frontend olavarría">
+    content="diseño ux ui, desarrollo full-stack, maquetación web, andrea guinder portfolio, sass, javascript vanilla, diseño web argentina, accesibilidad web, diseño gráfico y desarrollo, programadora full-stack olavarría">
   <!--- Bots y especificaciones --->
   <meta name="ROBOTS" content="INDEX, FOLLOW, ALL">
   <meta name="revisit-after" content="5 Days">
@@ -71,7 +71,7 @@
   <!--- Estilos --->
   <link rel="stylesheet" href="/css/style.css">
 
-  <title>Andrea Guinder | Frontend Developer & Graphic Designer</title>
+  <title>Andrea Guinder | Full-Stack Developer & Graphic Designer</title>
 </head>
 
 <body>
@@ -118,22 +118,23 @@
       <div class="card-primary">
         <h1 class="titulo-principal titulo-principal-mobile">
           <div><span>
-              <</span> Frontend Dev</div> <div><span>&</span></div>
+              <</span> Full-Stack Dev</div> <div><span>&</span></div>
           <div>Graphic Designer <span>/></span></div>
         </h1>
         <h1 class="titulo-principal titulo-principal-desktop hidden-xs"><span>
-            <</span> Frontend Dev <span>&
+            <</span> Full-Stack Dev <span>&
           </span> Graphic Designer <span>/></span></h1>
         <div class="images-front-graph"></div>
         <div>
           <p>
-            Desarrolladora Frontend con más de 4 años de experiencia en el equipo de desarrollo de Movistar Argentina y
-            una sólida trayectoria previa de una década en Diseño Gráfico. Especializada en construir interfaces
-            escalables donde la funcionalidad del código y la estrategia visual conviven en perfecto equilibrio.
+            Desarrolladora Full-Stack con más de 5 años de experiencia en desarrollo web —4 de ellos en el equipo de
+            desarrollo de Movistar Argentina— y una sólida trayectoria previa de una década en Diseño Gráfico.
+            Especializada en construir interfaces escalables donde la funcionalidad del código, la integración backend y
+            la estrategia visual conviven en perfecto equilibrio.
 
-            Mi enfoque híbrido me permite conectar de forma nativa el diseño UI/UX con el desarrollo web, aportando una
-            visión técnica integral. Además de mi experiencia corporativa, gestiono proyectos independientes en Guinder
-            Studio y actualmente me formo como Full Stack.
+            Mi enfoque híbrido me permite conectar de forma nativa el diseño UI/UX con la arquitectura de desarrollo,
+            aportando una visión técnica integral. Además de mi experiencia corporativa, gestiono y desarrollo productos
+            digitales a medida en Guinder Studio.
           </p>
         </div>
       </div>
@@ -151,6 +152,85 @@
       <div class="proyectos">
 
         <div class="container-cards-web">
+
+          <!--- App Estética Artemisa --->
+          <div class="card-primary-proyectos card">
+            <div class="contenedor-titulo-y-tags">
+              <h3 class="titulo-sin-boton titulo">App Estética Artemisa Full Stack | 2026</h3>
+
+            </div>
+            <div class="contenedor-tags">
+              <div class="tag react">Next.js</div>
+              <div class="tag javascript">JavaScript</div>
+              <div class="tag node">Node.js</div>
+              <div class="tag javascript">Express</div>
+              <div class="tag react">MySQL</div>
+              <div class="tag css">CSS Modules</div>
+            </div>
+            <div class="contenedor-general">
+              <div class="contenedor-left">
+                <img src="./img/caratula-artemisa.png" alt="Imagen de carátula App Estética Artemisa" class="imagen-caratula-recortada-mob"/>
+              </div>
+
+              <div class="contenedor-right">
+                <div class="info-item">
+                  <b>Arquitectura Decoplada</b>
+                  <p>Frontend SSR/SSG en Next.js y API REST en Node.js / Express</p>
+                </div>
+
+                <div class="info-item">
+                  <b>Base de Datos Relacional</b>
+                  <p>Persistencia en MySQL (Aiven) con pool de conexiones y SSL</p>
+                </div>
+
+                <div class="info-item">
+                  <b>Servicios & Contacto</b>
+                  <p>Catálogo dinámico y envío de mails integrado con Mailtrap</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="expandible-wrapper">
+              <div class="contenedor-info-cards-proyectos">
+                <img src="./img/caratula-artemisa.png" alt="Imagen de carátula App Estética Artemisa"
+                  class="imagen-caratula-recortada-desk" />
+                <p>
+                  Aplicación web Full Stack para el centro de estética Artemisa. Cuenta con una arquitectura desacoplada
+                  con
+                  frontend desarrollado en Next.js (desplegado en Vercel) y una API REST desarrollada en Node.js con
+                  Express
+                  (desplegada en Render).
+                  El sistema consume y renderiza dinámicamente el catálogo de servicios desde una base de datos MySQL
+                  alojada en la nube (Aiven), e integra un formulario de contacto funcional conectado a Mailtrap para el
+                  procesamiento seguro de consultas.
+                </p>
+
+                <div class="contenedor-botones-cards-proyectos">
+                  <a class="btn full-width" href="https://esteticas-frontend.vercel.app/" target="_blank">[
+                    Ver sitio Frontend ]</a>
+                  <a href="https://github.com/andreaguinder/esteticas-frontend" class="btn-secondary full-width"
+                    target="_blank" aria-label="Ver código en GitHub">
+                    [ Ver código Frontend ]
+                  </a>
+
+                </div>
+
+                <div class="contenedor-botones-cards-proyectos">
+
+                  <a class="btn full-width" href="https://esteticas-backend.onrender.com/" target="_blank">[
+                    Ver sitio Backend ]</a>
+                  <a href="https://github.com/andreaguinder/esteticas-backend" class="btn-secondary full-width"
+                    target="_blank" aria-label="Ver código en GitHub">
+                    [ Ver código Backend ]
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="btn-ver-mas btn-square-mas" aria-label="Ver mas si esta cerrado, ver menos si esta abierto">
+              <i class="fa-solid fa-plus" aria-hidden="true"></i>
+            </button>
+          </div>
+
 
           <!--- App Veterinaria --->
           <div class="card-primary-proyectos card">
@@ -767,12 +847,18 @@
                     para compartir y consumir información de estado global en toda la aplicación, evitando el prop
                     drilling y aplicando buenas prácticas de desarrollo, performance y arquitectura limpia.
                     <ul class="lista-info-context-api">
-                      <li>Creación y Planificación del Contexto: Implementación de AuthContext en un archivo independiente dentro de src/context/ para gestionar la autenticación global.
-</li>
-                      <li>Encapsulamiento con Provider: Creación del componente AuthProvider en el nivel adecuado de la aplicación para distribuir el estado global y sus funciones.</li>
-                      <li>Consumo Eficiente: Uso del custom hook useAuth() para consumir el contexto desde múltiples componentes en distintas partes del árbol de la aplicación.</li>
-                      <li>Optimización de Performance: Uso del hook useMemo en la definición del objeto value provisto por el contexto para evitar re-renders innecesarios.</li>
-                      <li>Prueba Funcional y Manejo de Undefined: Validación explícita del consumo del contexto para lanzar un error descriptivo en caso de que un componente consumidor sea ejecutado fuera del AuthProvider.</li>
+                      <li>Creación y Planificación del Contexto: Implementación de AuthContext en un archivo
+                        independiente dentro de src/context/ para gestionar la autenticación global.
+                      </li>
+                      <li>Encapsulamiento con Provider: Creación del componente AuthProvider en el nivel adecuado de la
+                        aplicación para distribuir el estado global y sus funciones.</li>
+                      <li>Consumo Eficiente: Uso del custom hook useAuth() para consumir el contexto desde múltiples
+                        componentes en distintas partes del árbol de la aplicación.</li>
+                      <li>Optimización de Performance: Uso del hook useMemo en la definición del objeto value provisto
+                        por el contexto para evitar re-renders innecesarios.</li>
+                      <li>Prueba Funcional y Manejo de Undefined: Validación explícita del consumo del contexto para
+                        lanzar un error descriptivo en caso de que un componente consumidor sea ejecutado fuera del
+                        AuthProvider.</li>
                     </ul>
                   </p>
                   <div class="contenedor-tags">

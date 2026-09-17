@@ -308,6 +308,10 @@
   gap: 1rem;
   min-width: 100%;
 }
+.proyectos .container-cards-web .card-primary-proyectos .contenedor-info-cards-proyectos .link-mail {
+  color: var(--accent);
+  text-underline-offset: 4px;
+}
 .proyectos .container-cards-web .card-primary-proyectos .btn-square-mas {
   transform: translate(8.6rem, -1rem);
 }

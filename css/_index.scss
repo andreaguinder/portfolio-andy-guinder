@@ -249,6 +249,11 @@
                     gap: 1rem;
                     min-width: 100%;
                 }
+
+                .link-mail {
+                    color: var(--accent);
+                    text-underline-offset: 4px;
+                }
             }
 
             .btn-square-mas {
